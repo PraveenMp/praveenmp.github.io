@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Indian Stock Average Calculator</title>
+      <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+   
+   <style> body {
+        font-family: 'Open Sans', sans-serif;
+   }</style>
+  </head>
+
+  <body>
+    <h2 style="color:red">Stock market average calculator</h2>
+  <h3>First Buy</h3>
+  <div>
+  <label style="float:left;margin-right:10px;">Units</label>
+  <input type="number" id="units1">
+  </div>
+  <div style="margin-top:15px">
+  <label style="float:left;margin-right:10px;">Price</label>
+  <input type="number" id="Price1">
+  </div>
+   <h3>Second Buy</h3>
+  <div>
+  <label style="float:left;margin-right:10px;">Units</label>
+  <input type="number" id="units2">
+  </div>
+  <div style="margin-top:15px">
+  <label style="float:left;margin-right:10px;">Price</label>
+  <input type="number" id="Price2">
+  </div>
+  <h3> <button onclick="getAverage()"> Calculate Average</button> <span id="result"></span></h3>
+  <h4><button onclick="clearFields()">Clear Fields</button></h4>
+ 
+ <script>
+function getAverage() {
+  var unit1=document.getElementById("units1").value;
+  var price1=document.getElementById("Price1").value;
+  var unit2=document.getElementById("units2").value;
+  var price2=document.getElementById("Price2").value;
+
+  var res1=(unit1*price1)+(unit2*price2);
+  var res2=+unit1 + +unit2;
+  var  result=res1/res2;
+  document.getElementById("result").innerHTML="Average units "+ result;
+}
+function clearFields() {
+  document.getElementById("units1").value='';
+  document.getElementById("Price1").value='';
+  document.getElementById("units2").value='';
+  document.getElementById("Price2").value='';
+  document.getElementById("result").innerHTML='';
+}
+</script>
+  </body>
+
+</html>
