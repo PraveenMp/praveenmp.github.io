@@ -1,5 +1,5 @@
-# praveenmp.github.io
-Welocome Page
+# Praveenmp.github.io
+Welocome!
 
 Find My React Js Projects Here
  PlayNine: https://praveenmp.github.io/playnine
