@@ -7,4 +7,4 @@ Find My React Js Projects Here
 Find My Angular Projects Here
 
 
-Find Samll usefull applications here
+Find usefull applications here
