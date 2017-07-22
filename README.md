@@ -7,7 +7,9 @@ Welocome!
   
 ## Find out My Angular Projects Here
  ### Check out the weather in your city
-  Source files https://github.com/PraveenMp/weather-app
+ 
+  Source files https://github.com/PraveenMp/weather-app 
+ 
   Application https://www.praveenmp.github.io/weather
 
-Find usefull applications here
+## Find usefull applications here
