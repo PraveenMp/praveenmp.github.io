@@ -6,7 +6,7 @@ Welocome!
  Play the Game here : https://praveenmp.github.io/playnine
   
 ## Find out My Angular Projects Here
- # Check out the weather in your city
+ ### Check out the weather in your city
   Source files https://github.com/PraveenMp/weather-app
   Application https://www.praveenmp.github.io/weather
 
