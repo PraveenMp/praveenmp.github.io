@@ -95,7 +95,7 @@ var AppComponent = (function () {
     };
     AppComponent.prototype.getWeatherDetailService = function (city, units) {
         if (units === void 0) { units = 'metric'; }
-        var baseUrl = 'http://api.openweathermap.org/data/2.5/forecast';
+        var baseUrl = 'https://api.openweathermap.org/data/2.5/forecast';
         var appid = '1ca57754955adb45edc2b8a855684429';
         var url = baseUrl + "?appid=" + appid + "&q=" + city + "&units=" + units;
         return this.http.request(new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Request */]({ method: __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* RequestMethod */].Get, url: url }))
