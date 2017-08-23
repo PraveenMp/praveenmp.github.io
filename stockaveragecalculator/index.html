@@ -38,7 +38,31 @@
     bold {
       font-weight: bold;
     }
+    input[type="number"] {
+      text-align: right;
+    }
 
+    #investedamount1,#investedamount2 {
+     text-align: right;
+    color: green;
+    padding-right: 23px;
+    border-top: 1px solid;
+    padding-top: 10px;
+    font-size: 14px;
+    }
+    #investedamount1 span,#investedamount2 span {
+    padding-right: 12px;
+    font-size: 11px;
+    color: green;
+    }
+     #result {
+       margin-top: 15px;
+     }
+    #result span {
+      padding-right: 12px;
+    font-size: 14px;
+    color: green;
+    }
     footer {
       position: absolute;
       bottom: 0;
@@ -86,12 +110,22 @@
           </div>
           <div style="margin-top:15px">
             <label style="float:left;margin-right:10px;">Price</label>
-            <input class="form-control" type="number" id="Price2" autocomplete="off" onchange="unitChanged('Price2','error4')">
+            <input class="form-control" type="number" id="Price2" autocomplete="off" onchange="unitChanged('Price2','error4');getAverage()">
             <span id='error4'></span>
           </div>
       </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h5 id="investedamount1"></h5>
+      </div>
+      <div class="col-md-4">
+          <h5 id="investedamount2"></h5>
+      </div>
+    </div>
+    <div class="row">
       <div class="col-md-12 st">
-        <h4 id="result"></h4>
+        <h5 id="result"></h5>
       </div>
       <div class="col-md-12 st">
         <button class="btn btn-success" onclick="getAverage()"> Calculate Average</button>
@@ -138,8 +172,12 @@
       var res1 = (unit1 * price1) + (unit2 * price2);
       var res2 = +unit1 + +unit2;
       var result = res1 / res2;
-      document.getElementById("result").innerHTML = "Total units &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<bold>"
-        + res2 + "</bold><br/><br/>Average Price &nbsp;&nbsp;&nbsp;<bold>" + result + "</bold>";
+      document.getElementById("investedamount1").innerHTML ="<span>Amount invested </span> " + unit1 * price1;
+      document.getElementById("investedamount2").innerHTML ="<span>Amount invested </span> " + unit2 * price2;
+      document.getElementById("result").innerHTML = "<span>Total units </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<bold>"
+        + res2 + "</bold><br/><br/><span>Average Price</span> &nbsp;&nbsp;&nbsp;<bold>" + result + "</bold>" 
+        + "<br/><br/><span>Total Amount</span> &nbsp;&nbsp;&nbsp;<bold>"
+        + res1 + "</bold>";
     }
     function clearFields() {
       document.getElementById("units1").value = '';
@@ -147,6 +185,8 @@
       document.getElementById("units2").value = '';
       document.getElementById("Price2").value = '';
       document.getElementById("result").innerHTML = '';
+      document.getElementById("investedamount1").innerHTML = '';
+      document.getElementById("investedamount2").innerHTML = '';
     }
   </script>
 </body>
