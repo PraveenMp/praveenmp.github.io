@@ -62,7 +62,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n@media only screen and (max-width: 543px) {\n  .login-screen {\n      padding-top: 0px !important;\n  }\n  .login-sidebar {\n    height: 340px !important;\n  }\n  .login-form {\n    padding: 60px 20px !important;\n    height: 270px !important;\n  }\n\n  .dashboard-sidebar {\n    min-height: 20vh !important;\n  }\n  .small-device {\n    width:400px;\n    overflow: auto;\n  }\n  .margin-top-small {\n    margin-top: 15px;\n  }\n}\n", ""]);
 
 // exports
 
