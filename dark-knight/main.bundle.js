@@ -229,12 +229,13 @@ var DashboardComponent = /** @class */ (function () {
 /***/ "../../../../../src/app/dashboard/historical/historical.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
+var escape = __webpack_require__("../../../../css-loader/lib/url/escape.js");
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
 // imports
 
 
 // module
-exports.push([module.i, ".historical {\r\n  padding: 15px 0px;\r\n}\r\n.card-sm {\r\n  padding: 25px;\r\n  text-align: center;\r\n}\r\n.text-white {\r\n  color: #fff;\r\n}\r\n.text-black {\r\n  color: #000;\r\n}\r\n.card-blue {\r\n  background-color: #0f9aee !important;\r\n}\r\n.card-green {\r\n  background-color:#37c936 !important\r\n}\r\n.card-pink {\r\n  background-color: #ff3c7e !important;\r\n}\r\n.card-orange {\r\n  background-color: #DDB218 !important;\r\n}\r\n.card-white {\r\n  background-color: #FFFFFF !important;\r\n}\r\n.margin-top-15 {\r\n  margin-top: 15px;\r\n}\r\nh3 {\r\n  font-size: 16px !important;\r\n}\r\n.loading {\r\n  position: absolute;\r\n  left: 0px;\r\n  top: 0px;\r\n  width: 100%;\r\n  height: 100%;\r\n  z-index: 9999;\r\n  background: url(https://praveenmp.github.io/dark-knight/../../assets/loading.gif) 50% 22% no-repeat rgb(249,249,249);\r\n}\r\n", ""]);
+exports.push([module.i, ".historical {\r\n  padding: 15px 0px;\r\n}\r\n.card-sm {\r\n  padding: 25px;\r\n  text-align: center;\r\n}\r\n.text-white {\r\n  color: #fff;\r\n}\r\n.text-black {\r\n  color: #000;\r\n}\r\n.card-blue {\r\n  background-color: #0f9aee !important;\r\n}\r\n.card-green {\r\n  background-color:#37c936 !important\r\n}\r\n.card-pink {\r\n  background-color: #ff3c7e !important;\r\n}\r\n.card-orange {\r\n  background-color: #DDB218 !important;\r\n}\r\n.card-white {\r\n  background-color: #FFFFFF !important;\r\n}\r\n.margin-top-15 {\r\n  margin-top: 15px;\r\n}\r\nh3 {\r\n  font-size: 16px !important;\r\n}\r\n.loading {\r\n  position: absolute;\r\n  left: 0px;\r\n  top: 0px;\r\n  width: 100%;\r\n  height: 100%;\r\n  z-index: 9999;\r\n  background: url(" + escape(__webpack_require__("../../../../../src/assets/loading.gif")) + ") 50% 22% no-repeat rgb(249,249,249);\r\n}\r\n", ""]);
 
 // exports
 
@@ -438,12 +439,13 @@ var HistoricalComponent = /** @class */ (function () {
 /***/ "../../../../../src/app/dashboard/twitter/twitter.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
+var escape = __webpack_require__("../../../../css-loader/lib/url/escape.js");
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
 // imports
 
 
 // module
-exports.push([module.i, ".twitterdata {\r\n  padding: 15px 0px;\r\n}\r\n.card-min-height {\r\nheight: 450px;\r\noverflow: auto;\r\n}\r\n.card-sm {\r\n  padding: 25px;\r\n}\r\n.text-white {\r\n  color: #fff;\r\n}\r\n.text-black {\r\n  color: #000;\r\n}\r\n.card-blue {\r\n  background-color: #0f9aee !important;\r\n}\r\n.card-green {\r\n  background-color:#37c936 !important\r\n}\r\n.card-pink {\r\n  background-color: #ff3c7e !important;\r\n}\r\n.card-orange {\r\n  background-color: #DDB218 !important;\r\n}\r\n.card-white {\r\n  background-color: #FFFFFF !important;\r\n}\r\n.margin-top-15 {\r\n  margin-top: 15px;\r\n}\r\n.twittext {\r\n  border-bottom: 1px solid #f4f6f9;\r\n  padding-bottom: 15px;\r\n  padding: 8px;\r\n}\r\n.headerfix {\r\n  position: absolute;\r\n  background: #fff;\r\n  width: 81%;\r\n  top: 0px;\r\n  padding: 15px 0px;\r\n}\r\n.loading {\r\n  position: absolute;\r\n  left: 0px;\r\n  top: 0px;\r\n  width: 100%;\r\n  height: 100%;\r\n  z-index: 9999;\r\n  background: url(https://praveenmp.github.io/dark-knight/../../assets/loading.gif) 50% 22% no-repeat rgb(249,249,249);\r\n}\r\n.chart-box {\r\n  height: 45px;\r\n  width: 45px;\r\n  float: left;\r\n  border: 1px solid;\r\n  margin-right: 20px;\r\n}\r\n.chart-indicator {\r\n  font-size: 24px;\r\n}\r\n.strong-sell {\r\n  background: #8d0000;\r\n}\r\n.sell {\r\n  background: #e57878;\r\n}\r\n.neutral {\r\n  background: #99f6ff;\r\n}\r\n.buy {\r\n  background: #2cfc7f;\r\n}\r\n.strong-buy {\r\n  background: #00762f;\r\n}\r\n.chart-box-ul {\r\n  padding: 25px 0px;\r\n}\r\n.guage {\r\n      padding-right: 0px;\r\n      background: #fff;\r\n      margin-left: 15px;\r\n}\r\n", ""]);
+exports.push([module.i, ".twitterdata {\r\n  padding: 15px 0px;\r\n}\r\n.card-min-height {\r\nheight: 450px;\r\noverflow: auto;\r\n}\r\n.card-sm {\r\n  padding: 25px;\r\n}\r\n.text-white {\r\n  color: #fff;\r\n}\r\n.text-black {\r\n  color: #000;\r\n}\r\n.card-blue {\r\n  background-color: #0f9aee !important;\r\n}\r\n.card-green {\r\n  background-color:#37c936 !important\r\n}\r\n.card-pink {\r\n  background-color: #ff3c7e !important;\r\n}\r\n.card-orange {\r\n  background-color: #DDB218 !important;\r\n}\r\n.card-white {\r\n  background-color: #FFFFFF !important;\r\n}\r\n.margin-top-15 {\r\n  margin-top: 15px;\r\n}\r\n.twittext {\r\n  border-bottom: 1px solid #f4f6f9;\r\n  padding-bottom: 15px;\r\n  padding: 8px;\r\n}\r\n.headerfix {\r\n  position: absolute;\r\n  background: #fff;\r\n  width: 81%;\r\n  top: 0px;\r\n  padding: 15px 0px;\r\n}\r\n.loading {\r\n  position: absolute;\r\n  left: 0px;\r\n  top: 0px;\r\n  width: 100%;\r\n  height: 100%;\r\n  z-index: 9999;\r\n  background: url(" + escape(__webpack_require__("../../../../../src/assets/loading.gif")) + ") 50% 22% no-repeat rgb(249,249,249);\r\n}\r\n.chart-box {\r\n  height: 45px;\r\n  width: 45px;\r\n  float: left;\r\n  border: 1px solid;\r\n  margin-right: 20px;\r\n}\r\n.chart-indicator {\r\n  font-size: 24px;\r\n}\r\n.strong-sell {\r\n  background: #8d0000;\r\n}\r\n.sell {\r\n  background: #e57878;\r\n}\r\n.neutral {\r\n  background: #99f6ff;\r\n}\r\n.buy {\r\n  background: #2cfc7f;\r\n}\r\n.strong-buy {\r\n  background: #00762f;\r\n}\r\n.chart-box-ul {\r\n  padding: 25px 0px;\r\n}\r\n.guage {\r\n      padding-right: 0px;\r\n      background: #fff;\r\n      margin-left: 15px;\r\n}\r\n", ""]);
 
 // exports
 
@@ -892,6 +894,13 @@ var TwitterService = /** @class */ (function () {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "bkg1.3dbac522ef28c2f9d60b.png";
+
+/***/ }),
+
+/***/ "../../../../../src/assets/loading.gif":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "loading.cb17b80a942d7c317a35.gif";
 
 /***/ }),
 
