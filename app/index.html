@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Canvas Paint - Example 5</title>
+    <link rel="stylesheet" href="css/draw.css" />
+    <link rel="stylesheet" href="css/videorecord.css" />
+    <style>
+        body {
+            width: 970px;
+            margin: 0px auto;
+        }
+
+        .btn {
+            min-width: 90px;
+            height: 35px;
+            border: 1px solid #c8c8c8;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body data-gr-c-s-loaded="true">
+    <div class="question wrapper">
+        <h3>Question 1: Sample Question ?</h3>
+        <button class="btn" onclick="enableSection(1)">Draw</button>
+        <button class="btn" onclick="enableSection(2)">Upload Image</button>
+        <button class="btn" onclick="enableSection(3)">Take Snapshot</button>
+        <button class="btn" onclick="enableSection(4)">Record Video</button>
+        <button class="btn" onclick="enableSection(5)">Record Audio </button>
+    </div>
+    <section id="draw">
+        <p>
+            <label>Drawing tool:
+                <select id="dtool">
+                    <option value="line">Line</option>
+                    <option value="rect">Rectangle</option>
+                    <option value="pencil">Pencil</option>
+                </select>
+            </label>
+        </p>
+        <div id="container">
+            <canvas id="imageView" width="400" height="300">
+                <p>Unfortunately, your browser is currently unsupported by our web application. We are sorry for the inconvenience.
+                    Please use one of the supported browsers listed below, or draw the image you want using an offline tool.</p>
+                <p>Supported browsers:
+                    <a href="http://www.opera.com">Opera</a>,
+                    <a href="http://www.mozilla.com">Firefox</a>,
+                    <a href="http://www.apple.com/safari">Safari</a>, and
+                    <a href="http://www.konqueror.org">Konqueror</a>.</p>
+            </canvas>
+            <canvas id="imageTemp" width="400" height="300"></canvas>
+        </div>
+        <div>
+            <img id="canvasimg" style="display:none;">
+            <input type="button" value="save" id="btn" class="btn" onclick="save()">
+            <input type="button" value="clear" id="clr" class="btn" onclick="erase()">
+        </div>
+    </section>
+    <section id="imageupload">
+            <input type="file" id="uploadfile" onchange="previewFile()" style="margin: 25px;"><br>
+            <img id="uploadprev" src="" height="200" alt="">
+    </section>
+    <section id="takesnapshot">
+
+        <video id="videosnap" playsinline autoplay></video>
+
+        <label for="filter">Filter: </label>
+        <select id="filter">
+            <option value="none">None</option>
+            <option value="blur">Blur</option>
+            <option value="grayscale">Grayscale</option>
+            <option value="invert">Invert</option>
+            <option value="sepia">Sepia</option>
+        </select>
+
+        <button class="btn" id="snapshot">Take snapshot</button>
+
+        <canvas id="canvasnap"></canvas>
+    </section>
+    <section id="videorecord">
+        <video id="gum" playsinline autoplay muted></video>
+        <video id="recorded" playsinline loop controls></video>
+
+        <div>
+            <button class="btn" id="record" disabled>Start Recording</button>
+            <button class="btn" id="play" disabled>Play</button>
+            <button class="btn" id="download" disabled>Download</button>
+        </div>
+    </section>
+    <section id="audio">
+        <h1>Audio</h1>
+    </section>
+
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script type="text/javascript" src="js/draw.js"></script>
+    <script type="text/javascript" src="js/upload.js"></script>
+    <!-- <script type="text/javascript" src="js/takesnapshot.js"></script>
+    <script type="text/javascript" src="js/videorecord.js"></script> -->
+
+</body>
+
+</html>
