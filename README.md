@@ -10,6 +10,6 @@ Welocome!
  
   Source files https://github.com/PraveenMp/weather-app 
  
-  Application https://www.praveenmp.github.io/weather
+  Application https://praveenmp.github.io/weather
 
 ## Find usefull applications here
