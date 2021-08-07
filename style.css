@@ -1,12 +1,19 @@
 body {
-font-family: 'Open Sans', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 .my-resume {
-        margin: 60px 0px;
+        margin-bottom: 50px;
 }
 .resume-profile {
-    text-align: right;
-    padding-right: 30px;
+    padding-top: 15px;
+    background-color: #54b689;
+    color: white;
+    position: fixed;
+    z-index: 55;
+    height: 100vh;
+}
+.resume-info {
+    padding-top: 25px;
 }
 .resume-info-section {
 padding-bottom: 50px;
@@ -24,4 +31,24 @@ padding-bottom: 50px;
     margin-right: 15px;
     margin-bottom: 10px;
     color: #000;
+}
+*{
+    scroll-behavior: smooth !important;
+}
+
+.list-inline-item svg path {
+    fill: white;
+}
+.list-group-c li a {
+    color: white;
+}
+
+.left-border-header {
+    border-left: 5px solid #54b689;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.rns-logo {
+
 }
