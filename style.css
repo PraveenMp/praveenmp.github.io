@@ -4,6 +4,15 @@ body {
 .my-resume {
         margin-bottom: 50px;
 }
+.bg-p {
+    background-color: #54b689;
+    color: white;
+}
+
+.bg-p:hover {
+    background-color: #61bb91;
+    color: white;
+}
 .resume-profile {
     padding-top: 15px;
     background-color: #54b689;
@@ -51,4 +60,7 @@ padding-bottom: 50px;
 
 .rns-logo {
 
+}
+.border-radius-none {
+    border-radius: 0px;
 }
