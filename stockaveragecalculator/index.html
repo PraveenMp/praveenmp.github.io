@@ -26,10 +26,20 @@
       position: relative;
       min-height: 100%;
     }
+    #investedamount1 span.unit-amount,
+    #investedamount2 span.unit-amount {
+        font-size: 16px;
+        padding-right: 0px;
+    }
+
+    .wrapper-body {
+        padding:25px 25px 60px 25px;
+        width: 100%;
+        overflow: hidden;
+    }
 
     body {
       font-family: 'Open Sans', sans-serif;
-      margin: 20px 50px 60px 50px;
     }
 
     .st {
@@ -85,7 +95,7 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid wrapper-body">
     <div class="row">
       <div class="col-md-12">
         <header>
@@ -104,7 +114,7 @@
             <span id='error1'></span>
           </div>
           <div style="margin-top:15px">
-            <label style="float:left;margin-right:10px;">Price</label>
+            <label style="float:left;margin-right:10px;">Price per share</label>
             <input class="form-control" type="number" id="Price1" autocomplete="off" onchange="unitChanged('Price1','error2')" />
             <span id='error2'></span>
           </div>
@@ -118,23 +128,12 @@
             <span id='error3'></span>
           </div>
           <div style="margin-top:15px">
-            <label style="float:left;margin-right:10px;">Price</label>
+            <label style="float:left;margin-right:10px;">Price per share</label>
             <input class="form-control" type="number" id="Price2" autocomplete="off" onchange="unitChanged('Price2','error4');getAverage()">
             <span id='error4'></span>
           </div>
       </div>
       <div class="col-md-1 st">
-      </div>
-      <div class="col-md-3 st">
-        <div>
-          <h4>Other Usefull Apps</h4>
-          <hr>
-         <div>
-           <ul>
-             <li>Profit Calculator</li>
-           </ul>
-        </div>
-        </div>
       </div>
     </div>
     <div class="row">
@@ -157,7 +156,7 @@
   </div>
   <footer>
     <div class="container">
-      &copy; free to use share or modify.  August - 2017. Feedback:praveen_mp@live.com</div>
+      &copy; free to use share or modify.  August - 2023. Feedback:<a href="mailto:praveen_mp@live.com">praveen_mp@live.com</a></div>
   </footer>
 
   </div>
@@ -191,15 +190,15 @@
       var unit2 = document.getElementById("units2").value;
       var price2 = document.getElementById("Price2").value;
 
-      var res1 = (unit1 * price1) + (unit2 * price2);
-      var res2 = +unit1 + +unit2;
-      var result = res1 / res2;
-      document.getElementById("investedamount1").innerHTML ="<span>Amount invested </span> " + unit1 * price1;
-      document.getElementById("investedamount2").innerHTML ="<span>Amount invested </span> " + unit2 * price2;
+      var totalAmount = ((unit1 * price1) + (unit2 * price2)).toLocaleString('en-IN');
+      var totalUnits = +unit1 + +unit2;
+      var averagePrice = (((unit1 * price1) + (unit2 * price2)) / totalUnits).toLocaleString('en-IN');
+      document.getElementById("investedamount1").innerHTML ="<span>Amount invested on 1st buy: </span>  <span class='unit-amount'>" + (unit1 * price1).toLocaleString('en-IN') + "</span>";
+      document.getElementById("investedamount2").innerHTML ="<span>Amount invested on 2nd buy: </span> <span class='unit-amount'>" + (unit2 * price2).toLocaleString('en-IN') + "</span>";
       document.getElementById("result").innerHTML = "<span>Total units </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<bold>"
-        + res2 + "</bold><br/><br/><span>Average Price</span> &nbsp;&nbsp;&nbsp;<bold>" + result + "</bold>" 
+        + totalUnits + "</bold><br/><br/><span>Average Price</span> &nbsp;&nbsp;&nbsp;<bold>" + averagePrice + "</bold>" 
         + "<br/><br/><span>Total Amount</span> &nbsp;&nbsp;&nbsp;<bold>"
-        + res1 + "</bold>";
+        + totalAmount + "</bold>";
     }
     function clearFields() {
       document.getElementById("units1").value = '';
