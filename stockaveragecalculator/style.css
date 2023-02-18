@@ -1,0 +1,58 @@
+.top-menu ul {
+  padding: 0px 0px 0px 15px;
+  margin-bottom: 20px;
+}
+.top-menu ul li {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.top-menu ul li.active {
+  border-bottom: 1px solid #3b863b;
+  color: #3b863b;
+}
+
+#average-calculator.active,
+#sip-calculator.active {
+  display: block;
+}
+
+#average-calculator.hide,
+#sip-calculator.hide {
+  display: none;
+}
+
+.headers {
+    color: #8a9b7c;
+    margin-top: 15px;
+    font-size: 28px;
+}
+
+.results span {
+    float: right;
+}
+
+#sip-result-wrapper {
+    margin: 10px 0px;
+}
+
+.r-sip {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.results span { 
+    color: #00360c;
+    font-weight: 600;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+    .headers {
+        color: #8a9b7c;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+}
