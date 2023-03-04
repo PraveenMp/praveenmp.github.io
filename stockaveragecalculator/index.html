@@ -3,324 +3,247 @@
 
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPBH15FMY4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JPBH15FMY4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-JPBH15FMY4');
-</script>
+    gtag('config', 'G-JPBH15FMY4');
+  </script>
   <title>Indian Stock market Average Calculator</title>
   <meta charset="UTF-8">
-  <meta name="description" content="This application allows to calculate stock average on entering first and second buy details" />
-  <meta name="keywords" content="Indian stock market, average calculator, stock calculator, cash and carry calculator,">
+  <meta name="description"
+    content="This application allows to calculate stock average on entering first and second buy details. A stock average calculator is a tool used to calculate the average value of a list of stock prices." />
+  <meta name="keywords" content="Indian stock market, average calculator, stock calculator, percentage calculator,  cash and carry calculator, Stock prices, Average, Calculation, Performance, Investors, Time period, Investment decisions, Spreadsheet, Software program, Stock charting, Technical analysis, Analyzing, Comparison, Investment performance, Stock market.">
   <meta name="author" content="Praveen MP">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Styles -->
   <link rel="stylesheet" href="./style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <style>
-    html {
-      position: relative;
-      min-height: 100%;
-    }
-    #investedamount1 span.unit-amount,
-    #investedamount2 span.unit-amount {
-        font-size: 16px;
-        padding-right: 0px;
-    }
 
-    .wrapper-body {
-        padding:25px 25px 60px 25px;
-        width: 100%;
-        overflow: hidden;
-    }
-
-    body {
-      font-family: 'Open Sans', sans-serif;
-    }
-
-    .st {
-      margin: 10px 0px;
-    }
-
-    .btn {
-      cursor: pointer;
-    }
-
-    span {
-      color: #ef6666;
-    }
-
-    bold {
-      font-weight: bold;
-    }
-    input[type="number"] {
-      text-align: right;
-    }
-
-    #investedamount1,#investedamount2 {
-     text-align: right;
-    color: green;
-    padding-right: 23px;
-    border-top: 1px solid;
-    padding-top: 10px;
-    font-size: 14px;
-    }
-    #investedamount1 span,#investedamount2 span {
-    padding-right: 12px;
-    font-size: 11px;
-    color: green;
-    }
-     #result {
-       margin-top: 15px;
-     }
-    #result span {
-      padding-right: 12px;
-    font-size: 14px;
-    color: green;
-    }
-    footer {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 53px;
-      background-color: #f5f5f5;
-      text-align: center;
-      padding-top: 13px;
-    }
   </style>
 </head>
 
 <body>
   <div class="container-fluid wrapper-body">
     <div class="row">
-        <div class="top-menu">
-            <ul>
-                <li id="ac" class="active" onclick="activeSection('ac')">Stock Average Calculator</li>
-                <li id="sc" class="" onclick="activeSection('sc')">SIP Calculator</li>
-            </ul>
-        </div>
+      <div class="top-menu">
+        <ul>
+          <li id="ac" title="Stock Average Calculator" class="active" onclick="activeSection('ac')"><a href="#average-calculator">Stock Average Calculator</a></li>
+          <li id="sc" title="SIP Calculator" class="" onclick="activeSection('sc')"><a href="#sip-calculator">SIP Calculator</a></li>
+          <li id="pc" title="Percentage Calculator" class="" onclick="activeSection('pc')"><a href="#percentage-calculator">Percentage Calculator</a></li>
+        </ul>
+      </div>
     </div>
     <div id="average-calculator">
-    <div class="row">
-      <div class="col-md-12">
-        <header>
-          <h2 class="headers">Indian stock market average calculator</h2>
-        </header>
-        <hr/>
+      <div class="row">
+        <div class="col-md-12">
+          <header>
+            <h2 class="headers">Indian stock market average calculator</h2>
+          </header>
+          <hr />
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4 st">
-        <h4>First Buy</h3>
-          <hr>
-          <div>
-            <label style="float:left;margin-right:10px;">Units</label>
-            <input class="form-control" type="number" id="units1" autocomplete="off" onchange="unitChanged('units1','error1')" />
-            <span id='error1'></span>
-          </div>
-          <div style="margin-top:15px">
-            <label style="float:left;margin-right:10px;">Price per share</label>
-            <input class="form-control" type="number" id="Price1" autocomplete="off" onchange="unitChanged('Price1','error2')" />
-            <span id='error2'></span>
-          </div>
+      <div class="row">
+        <div class="col-md-3 st">
+          <h4>First Buy</h3>
+            <hr>
+            <div>
+              <label style="float:left;margin-right:10px;">Units</label>
+              <input class="form-control" type="number" id="units1" autocomplete="off"
+                onchange="unitChanged('units1','error1')" />
+              <span id='error1'></span>
+            </div>
+            <div style="margin-top:15px">
+              <label style="float:left;margin-right:10px;">Price per share</label>
+              <input class="form-control" type="number" id="Price1" autocomplete="off"
+                onchange="unitChanged('Price1','error2')" />
+              <span id='error2'></span>
+            </div>
+        </div>
+        <div class="col-md-3 st">
+          <h4>Second Buy</h3>
+            <hr>
+            <div>
+              <label style="float:left;margin-right:10px;">Units</label>
+              <input class="form-control" type="number" id="units2" autocomplete="off"
+                onchange="unitChanged('units2','error3')" />
+              <span id='error3'></span>
+            </div>
+            <div style="margin-top:15px">
+              <label style="float:left;margin-right:10px;">Price per share</label>
+              <input class="form-control" type="number" id="Price2" autocomplete="off"
+                onchange="unitChanged('Price2','error4');getAverage()">
+              <span id='error4'></span>
+            </div>
+        </div>
+        <div class="col-md-1 st">
+        </div>
+        <div class="col-md-4 st banner-ad-desktop">
+          <script type="text/javascript" language="javascript">
+            var aax_size='300x250';
+            var aax_pubname = 'stockaveragec-21';
+            var aax_src='302';
+          </script>
+          <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+        </div>
       </div>
-      <div class="col-md-4 st">
-        <h4>Second Buy</h3>
-          <hr>
-          <div>
-            <label style="float:left;margin-right:10px;">Units</label>
-            <input class="form-control" type="number" id="units2" autocomplete="off" onchange="unitChanged('units2','error3')" />
-            <span id='error3'></span>
-          </div>
-          <div style="margin-top:15px">
-            <label style="float:left;margin-right:10px;">Price per share</label>
-            <input class="form-control" type="number" id="Price2" autocomplete="off" onchange="unitChanged('Price2','error4');getAverage()">
-            <span id='error4'></span>
-          </div>
-      </div>
-      <div class="col-md-1 st">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4">
-        <h5 id="investedamount1"></h5>
-      </div>
-      <div class="col-md-4">
+      <div class="row">
+        <div class="col-md-3">
+          <h5 id="investedamount1"></h5>
+        </div>
+        <div class="col-md-3">
           <h5 id="investedamount2"></h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 st">
+          <h5 id="result"></h5>
+        </div>
+        <div class="col-md-12 st">
+          <button class="btn btn-success" onclick="getAverage()"> Calculate Average</button>
+          <button class="btn btn-warning" onclick="clearFields()">Clear Fields</button>
+        </div>
+        <div class="col-md-12 d-block d-md-none display-mobile-ad">
+          <script type="text/javascript" language="javascript">
+            var aax_size='300x250';
+            var aax_pubname = 'stockaveragec-21';
+            var aax_src='302';
+          </script>
+          <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 st">
-        <h5 id="result"></h5>
-      </div>
-      <div class="col-md-12 st">
-        <button class="btn btn-success" onclick="getAverage()"> Calculate Average</button>
-        <button class="btn btn-warning" onclick="clearFields()">Clear Fields</button>
-      </div>
-    </div>
-  </div>
-  <div id="sip-calculator" class="hide">
-    <div class="row">
+    <div id="sip-calculator" class="hide">
+      <div class="row">
         <div class="col-md-12">
           <header>
             <h2 class="headers">SIP(Systematic Investment Plan) calculator</h2>
           </header>
-          <hr/>
+          <hr />
         </div>
       </div>
       <div class="row">
         <div id="sip-result-wrapper" class="col-md-4">
-              <div>
-                <label style="float:left;margin-right:10px;">Monthly Investment Amount</label>
-                <input class="form-control" type="number" id="investment" autocomplete="off" onchange="sipCalculator()" />
-                <span id='error1'></span>
-              </div>
-              <div style="margin-top:15px">
-                <label style="float:left;margin-right:10px;">Investment Period in years</label>
-                <input class="form-control" type="number" id="years" autocomplete="off" onchange="sipCalculator()" />
-                <span id='error2'></span>
-              </div>
-              <div style="margin-top:15px">
-                <label style="float:left;margin-right:10px;">Expected Annual Returns(%)</label>
-                <input class="form-control" type="number" id="rateOfInterest" autocomplete="off" onchange="sipCalculator()" />
-                <span id='error2'></span>
-              </div>
+          <div>
+            <label style="float:left;margin-right:10px;">Monthly Investment Amount</label>
+            <input class="form-control" type="number" id="investment" autocomplete="off" onchange="sipCalculator()" />
+            <span id='error1'></span>
           </div>
-          <div class="col-md-8">
+          <div style="margin-top:15px">
+            <label style="float:left;margin-right:10px;">Investment Period in years</label>
+            <input class="form-control" type="number" id="years" autocomplete="off" onchange="sipCalculator()" />
+            <span id='error2'></span>
           </div>
-</div>
-<div class="row">
-    <div class="col-md-4">
-        <div class="r-sip">
-        <div class="results">Expected Amount : <span id="tm">0</span> </div>
-        <hr />
-        <div class="results"> Amount Invested : <span id="im">0</span></div>
-        <hr>
-        <div class="results">Total Gain : <span id="gm">0</span> </div>
-    </div>
-
-    </div>
-  </div>
-          <div class="row">
-            <div class="col-md-12 st">
-                <button class="btn btn-success" onclick="sipCalculator()"> Calculate</button>
-                <button class="btn btn-warning" onclick="clearFields1()">Clear Fields</button>
-              </div>
+          <div style="margin-top:15px">
+            <label style="float:left;margin-right:10px;">Expected Annual Returns(%)</label>
+            <input class="form-control" type="number" id="rateOfInterest" autocomplete="off"
+              onchange="sipCalculator()" />
+            <span id='error2'></span>
           </div>
+        </div>
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-4 banner-ad-desktop">
+          <script type="text/javascript" language="javascript">
+            var aax_size='300x250';
+            var aax_pubname = 'stockaveragec-21';
+            var aax_src='302';
+          </script>
+          <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+        </div>
       </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="r-sip">
+            <div class="results">Expected Amount : <span id="tm">0</span> </div>
+            <hr />
+            <div class="results"> Amount Invested : <span id="im">0</span></div>
+            <hr>
+            <div class="results">Total Gain : <span id="gm">0</span> </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 st">
+          <button class="btn btn-success" onclick="sipCalculator()"> Calculate</button>
+          <button class="btn btn-warning" onclick="clearFields1()">Clear Fields</button>
+        </div>
+        <div class="col-md-12 d-block d-md-none display-mobile-ad">
+          <script type="text/javascript" language="javascript">
+            var aax_size='300x250';
+            var aax_pubname = 'stockaveragec-21';
+            var aax_src='302';
+          </script>
+          <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+        </div>
+      </div>
+    </div>
+    <div id="percentage-calculator" class="hide">
+      <div class="row">
+        <div class="col-md-12">
+          <header>
+            <h2 class="headers">Percentage(%) calculator</h2>
+          </header>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div id="percentage-result-wrapper" class="col-md-4">
+          <div class="percentage-wrapper">
+            <label>What is </label>
+            <input class="form-control percentage-input" type="number" id="percentage" autocomplete="off" onchange="checkPercentage()" />
+          </div>
+          <div class="percentage-wrapper">
+            <label>% (Percentage) of </label>
+            <input class="form-control percentage-input" type="number" id="percentageNumber" autocomplete="off" onchange="checkPercentage()" />
+            <label>?</label>
+          </div>
+        </div>
+        <div class="col-md-8">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-xs-12">
+          <div class="r-sip">
+            <div class="results">Result : <span id="percentageResult">0</span> </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-4 banner-ad-desktop">
+          <script type="text/javascript" language="javascript">
+            var aax_size='300x250';
+            var aax_pubname = 'stockaveragec-21';
+            var aax_src='302';
+          </script>
+          <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+        </div>
+        <div class="col-xs-12 d-block d-md-none display-mobile-ad">
+          <script type="text/javascript" language="javascript">
+            var aax_size='300x250';
+            var aax_pubname = 'stockaveragec-21';
+            var aax_src='302';
+          </script>
+          <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+  </div>
   <footer>
     <div class="container">
       &copy; August - 2023. Feedback:<a href="mailto:praveen_mp@live.com">praveen_mp@live.com</a></div>
   </footer>
 
   </div>
-  <script>
-    function unitChanged(id, error) {
-      if (document.getElementById(id).value != '') {
-        document.getElementById(error).innerHTML = '';
-        return;
-      } else {
-        document.getElementById(error).innerHTML = 'Field is Required';
-      }
-    }
-    function getAverage() {
-
-      if (document.getElementById("units1").value == '') {
-        document.getElementById("error1").innerHTML = "Units required";
-        return;
-      } else if (document.getElementById("Price1").value == '') {
-        document.getElementById("error2").innerHTML = "Price required";
-        return;
-      } else if (document.getElementById("units2").value == '') {
-        document.getElementById("error3").innerHTML = "Units required";
-        return;
-      } else if (document.getElementById("Price2").value == '') {
-        document.getElementById("error4").innerHTML = "Price required";
-        return;
-      }
-
-      var unit1 = document.getElementById("units1").value;
-      var price1 = document.getElementById("Price1").value;
-      var unit2 = document.getElementById("units2").value;
-      var price2 = document.getElementById("Price2").value;
-
-      var totalAmount = ((unit1 * price1) + (unit2 * price2)).toLocaleString('en-IN');
-      var totalUnits = +unit1 + +unit2;
-      var averagePrice = (((unit1 * price1) + (unit2 * price2)) / totalUnits).toLocaleString('en-IN');
-      document.getElementById("investedamount1").innerHTML ="<span>Amount invested on 1st buy: </span>  <span class='unit-amount'>" + (unit1 * price1).toLocaleString('en-IN') + "</span>";
-      document.getElementById("investedamount2").innerHTML ="<span>Amount invested on 2nd buy: </span> <span class='unit-amount'>" + (unit2 * price2).toLocaleString('en-IN') + "</span>";
-      document.getElementById("result").innerHTML = "<span>Total units </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<bold>"
-        + totalUnits + "</bold><br/><br/><span>Average Price</span> &nbsp;&nbsp;&nbsp;<bold>" + averagePrice + "</bold>" 
-        + "<br/><br/><span>Total Amount</span> &nbsp;&nbsp;&nbsp;<bold>"
-        + totalAmount + "</bold>";
-    }
-    function clearFields() {
-      document.getElementById("units1").value = '';
-      document.getElementById("Price1").value = '';
-      document.getElementById("units2").value = '';
-      document.getElementById("Price2").value = '';
-      document.getElementById("result").innerHTML = '';
-      document.getElementById("investedamount1").innerHTML = '';
-      document.getElementById("investedamount2").innerHTML = '';
-    }
-
-
-    function activeSection(value) {
-        switch(value) {
-            case 'ac':
-                document.getElementById("average-calculator").classList.remove("hide"); 
-                document.getElementById("average-calculator").classList.add("active");
-                document.getElementById("sip-calculator").classList.remove("active");
-                document.getElementById("sip-calculator").classList.add("hide");
-                document.getElementById("sip-calculator").classList.add("hide");
-
-                document.getElementById("ac").classList.add("active");
-                document.getElementById("sc").classList.remove("active");
-            break;
-            case 'sc': 
-                document.getElementById("sip-calculator").classList.remove("hide");
-                document.getElementById("sip-calculator").classList.add("active");
-                document.getElementById("average-calculator").classList.remove("active");
-                document.getElementById("average-calculator").classList.add("hide");
-
-                document.getElementById("sc").classList.add("active");
-                document.getElementById("ac").classList.remove("active");
-            break;
-            default: break;
-        }
-    }
-
-    function sipCalculator() {
-        var investment = parseInt(document.getElementById("investment").value); 
-        var rateOfInterest = parseInt(document.getElementById("rateOfInterest").value);
-        var years = parseInt(document.getElementById("years").value);
-        var monthlyRate = rateOfInterest/12/100;	
-        var months= years*12;
-        var totalGain = (investment *(Math.pow((1 + monthlyRate), months) - 1)/monthlyRate *(1+monthlyRate));	
-        if(investment && rateOfInterest && years) {
-            document.getElementById("im").innerHTML = (investment * months).toLocaleString('en-IN');	
-            document.getElementById("tm").innerHTML = totalGain.toLocaleString('en-IN');
-            document.getElementById("gm").innerHTML = (totalGain - (investment * months)).toLocaleString('en-IN') ;
-        }
-        }
-
-function clearFields1() {
-      document.getElementById("investment").value = '';
-      document.getElementById("rateOfInterest").value = '';
-      document.getElementById("years").value = '';
-      document.getElementById("tm").innerHTML = '0';
-      document.getElementById("im").innerHTML = '0';
-      document.getElementById("gm").innerHTML = '0';
-    }
-
-  </script>
+  <script src="./script.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
