@@ -140,6 +140,14 @@ footer {
   margin: 10px auto;
 }
 
+.ans-btn {
+  margin-top: 12px;
+}
+.banner-ad-desktop a , .display-mobile-ad a {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 @media all and (-maxwidth: 600px) and (orientation:landscape) 
 {
   .display-mobile-ad {
@@ -179,6 +187,9 @@ footer {
     }
     .banner-ad-desktop {
       display: none;
+    }
+    .ans-btn-wrapper {
+      text-align: center;
     }
 }
 
