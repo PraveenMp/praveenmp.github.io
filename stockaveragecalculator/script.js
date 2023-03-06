@@ -1,3 +1,6 @@
+const intlLanguage = navigator.language === 'en-GB' ? 'en-IN' : 'en-US';
+
+
 function unitChanged(id, error) {
     const unit1 = document.getElementById("units1").value;
     const price1 = document.getElementById("Price1").value;
@@ -40,11 +43,16 @@ function unitChanged(id, error) {
     var unit2 = document.getElementById("units2").value;
     var price2 = document.getElementById("Price2").value;
 
-    var totalAmount = ((unit1 * price1) + (unit2 * price2)).toLocaleString('en-IN');
+
+
+
+
+
+    var totalAmount = ((unit1 * price1) + (unit2 * price2)).toLocaleString(intlLanguage);
     var totalUnits = +unit1 + +unit2;
-    var averagePrice = (((unit1 * price1) + (unit2 * price2)) / totalUnits).toLocaleString('en-IN');
-    document.getElementById("investedamount1").innerHTML ="<span>Amount invested on 1st buy: </span>  <span class='unit-amount'>" + (unit1 * price1).toLocaleString('en-IN') + "</span>";
-    document.getElementById("investedamount2").innerHTML ="<span>Amount invested on 2nd buy: </span> <span class='unit-amount'>" + (unit2 * price2).toLocaleString('en-IN') + "</span>";
+    var averagePrice = (((unit1 * price1) + (unit2 * price2)) / totalUnits).toLocaleString(intlLanguage);
+    document.getElementById("investedamount1").innerHTML ="<span>Amount invested on 1st buy: </span>  <span class='unit-amount'>" + (unit1 * price1).toLocaleString(intlLanguage) + "</span>";
+    document.getElementById("investedamount2").innerHTML ="<span>Amount invested on 2nd buy: </span> <span class='unit-amount'>" + (unit2 * price2).toLocaleString(intlLanguage) + "</span>";
     document.getElementById("result").innerHTML = "<span>Total units </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<bold>"
       + totalUnits + "</bold><br/><br/><span>Average Price</span> &nbsp;&nbsp;&nbsp;<bold>" + averagePrice + "</bold>" 
       + "<br/><br/><span>Total Amount</span> &nbsp;&nbsp;&nbsp;<bold>"
@@ -118,9 +126,9 @@ function unitChanged(id, error) {
       var months= years*12;
       var totalGain = (investment *(Math.pow((1 + monthlyRate), months) - 1)/monthlyRate *(1+monthlyRate));	
       if(investment && rateOfInterest && years) {
-          document.getElementById("im").innerHTML = (investment * months).toLocaleString('en-IN');	
-          document.getElementById("tm").innerHTML = totalGain.toLocaleString('en-IN');
-          document.getElementById("gm").innerHTML = (totalGain - (investment * months)).toLocaleString('en-IN') ;
+          document.getElementById("im").innerHTML = (investment * months).toLocaleString(intlLanguage);	
+          document.getElementById("tm").innerHTML = totalGain.toLocaleString(intlLanguage);
+          document.getElementById("gm").innerHTML = (totalGain - (investment * months)).toLocaleString(intlLanguage) ;
       }
       }
 
