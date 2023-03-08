@@ -1,5 +1,6 @@
-const intlLanguage = navigator.language === 'en-GB' ? 'en-IN' : 'en-US';
 
+
+const intlLanguage = Intl.DateTimeFormat().resolvedOptions().timeZone === 'Asia/Calcutta' ? 'en-IN' : 'en-US';
 
 function unitChanged(id, error) {
     const unit1 = document.getElementById("units1").value;
@@ -43,20 +44,15 @@ function unitChanged(id, error) {
     var unit2 = document.getElementById("units2").value;
     var price2 = document.getElementById("Price2").value;
 
-
-
-
-
-
-    var totalAmount = ((unit1 * price1) + (unit2 * price2)).toLocaleString(intlLanguage);
+    var totalAmount = Number(((unit1 * price1) + (unit2 * price2)).toFixed(2));
     var totalUnits = +unit1 + +unit2;
-    var averagePrice = (((unit1 * price1) + (unit2 * price2)) / totalUnits).toLocaleString(intlLanguage);
+    var averagePrice = Number((((unit1 * price1) + (unit2 * price2)) / totalUnits).toFixed(2));
     document.getElementById("investedamount1").innerHTML ="<span>Amount invested on 1st buy: </span>  <span class='unit-amount'>" + (unit1 * price1).toLocaleString(intlLanguage) + "</span>";
     document.getElementById("investedamount2").innerHTML ="<span>Amount invested on 2nd buy: </span> <span class='unit-amount'>" + (unit2 * price2).toLocaleString(intlLanguage) + "</span>";
     document.getElementById("result").innerHTML = "<span>Total units </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<bold>"
-      + totalUnits + "</bold><br/><br/><span>Average Price</span> &nbsp;&nbsp;&nbsp;<bold>" + averagePrice + "</bold>" 
+      + totalUnits + "</bold><br/><br/><span>Average Price</span> &nbsp;&nbsp;&nbsp;<bold>" + averagePrice.toLocaleString(intlLanguage) + "</bold>" 
       + "<br/><br/><span>Total Amount</span> &nbsp;&nbsp;&nbsp;<bold>"
-      + totalAmount + "</bold>";
+      + totalAmount.toLocaleString(intlLanguage) + "</bold>";
   }
   function clearFields() {
     document.getElementById("units1").value = '';
@@ -126,9 +122,9 @@ function unitChanged(id, error) {
       var months= years*12;
       var totalGain = (investment *(Math.pow((1 + monthlyRate), months) - 1)/monthlyRate *(1+monthlyRate));	
       if(investment && rateOfInterest && years) {
-          document.getElementById("im").innerHTML = (investment * months).toLocaleString(intlLanguage);	
-          document.getElementById("tm").innerHTML = totalGain.toLocaleString(intlLanguage);
-          document.getElementById("gm").innerHTML = (totalGain - (investment * months)).toLocaleString(intlLanguage) ;
+          document.getElementById("im").innerHTML = Number((investment * months).toFixed(2)).toLocaleString(intlLanguage);	
+          document.getElementById("tm").innerHTML = Number(totalGain.toFixed(2)).toLocaleString(intlLanguage);
+          document.getElementById("gm").innerHTML = Number((totalGain - (investment * months)).toFixed(2)).toLocaleString(intlLanguage) ;
       }
       }
 
@@ -152,5 +148,5 @@ function clearFields1() {
 
 	let finalNum = (num/100) * percent;
 
-	result.innerHTML = num + " % " + percent + " is = " + finalNum;
+	result.innerHTML = percent + " Percentage(%) of " + num + " is = " + finalNum.toFixed(2);
 }
