@@ -223,7 +223,7 @@
     // Initialize deferredPrompt for use later to show browser install prompt.
 let deferredPrompt;
 let buttonInstall = document.getElementById("buttonInstall");
-buttonInstall.style.display = 'block';
+buttonInstall.style.display = 'none';
 
 window.addEventListener('beforeinstallprompt', (e) => {
   // Prevent the mini-infobar from appearing on mobile
@@ -231,7 +231,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
   // Stash the event so it can be triggered later.
   deferredPrompt = e;
   // Update UI notify the user they can install the PWA
-  buttonInstall.style.display = 'inline-block';
+  buttonInstall.style.display = 'block';
   buttonInstall.addEventListener('click', async () => {
   // Hide the app provided install promotion
   // buttonInstall.style.display = 'none';
