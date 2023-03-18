@@ -39,7 +39,7 @@
           <li id="ac" title="Stock Average Calculator" class="active" onclick="activeSection('ac')">Stock Average Calculator</li>
           <li id="sc" title="SIP Calculator" class="" onclick="activeSection('sc')">SIP Calculator</li>
           <li id="pc" title="Percentage Calculator" class="" onclick="activeSection('pc')">Percentage Calculator</li>
-          <li id="buttonInstall">Install App</li>
+      
         </ul>
       </div>
     </div>
@@ -107,6 +107,7 @@
           <button class="btn btn-warning" onclick="clearFields()">Clear Fields</button>
         </div>
         <div class="col-md-12 d-block d-md-none display-mobile-ad">
+          <div id="buttonInstall"><image title="Download" src="/stockaveragecalculator/images/download.jpg" height="40px" width="40px" />Install App</div>
         </div>
       </div>
     </div>
@@ -161,6 +162,7 @@
           <button class="btn btn-warning" onclick="clearFields1()">Clear Fields</button>
         </div>
         <div class="col-md-12 d-block d-md-none display-mobile-ad">
+         
         </div>
       </div>
     </div>
@@ -221,7 +223,7 @@
     // Initialize deferredPrompt for use later to show browser install prompt.
 let deferredPrompt;
 let buttonInstall = document.getElementById("buttonInstall");
-buttonInstall.style.display = 'none';
+buttonInstall.style.display = 'block';
 
 window.addEventListener('beforeinstallprompt', (e) => {
   // Prevent the mini-infobar from appearing on mobile
@@ -229,7 +231,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
   // Stash the event so it can be triggered later.
   deferredPrompt = e;
   // Update UI notify the user they can install the PWA
-  buttonInstall.style.display = 'block';
+  buttonInstall.style.display = 'inline-block';
   buttonInstall.addEventListener('click', async () => {
   // Hide the app provided install promotion
   // buttonInstall.style.display = 'none';

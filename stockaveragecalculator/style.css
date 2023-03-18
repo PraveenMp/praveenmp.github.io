@@ -207,3 +207,13 @@ footer {
   padding: 15px 15px;
   margin: 10px;
 }
+#buttonInstall {
+  display: block;
+  border: 1px solid #449d44;
+  border-radius: 5px;
+  width: 150px;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  background: black;
+}
