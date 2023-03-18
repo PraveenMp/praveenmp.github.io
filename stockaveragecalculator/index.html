@@ -39,6 +39,7 @@
           <li id="ac" title="Stock Average Calculator" class="active" onclick="activeSection('ac')">Stock Average Calculator</li>
           <li id="sc" title="SIP Calculator" class="" onclick="activeSection('sc')">SIP Calculator</li>
           <li id="pc" title="Percentage Calculator" class="" onclick="activeSection('pc')">Percentage Calculator</li>
+          <li id="buttonInstall">Install App</li>
         </ul>
       </div>
     </div>
@@ -211,6 +212,44 @@
 
   </div>
   <script src="./script.js" crossorigin="anonymous"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/service-worker.js');
+    });
+}
+    // Initialize deferredPrompt for use later to show browser install prompt.
+let deferredPrompt;
+let buttonInstall = document.getElementById("buttonInstall");
+buttonInstall.style.display = 'none';
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent the mini-infobar from appearing on mobile
+  e.preventDefault();
+  // Stash the event so it can be triggered later.
+  deferredPrompt = e;
+  // Update UI notify the user they can install the PWA
+  buttonInstall.style.display = 'block';
+  buttonInstall.addEventListener('click', async () => {
+  // Hide the app provided install promotion
+  // buttonInstall.style.display = 'none';
+  // Show the install prompt
+  deferredPrompt.prompt();
+  // Wait for the user to respond to the prompt
+  const { outcome } = await deferredPrompt.userChoice;
+  // Optionally, send analytics event with outcome of user choice
+  console.log(`User response to the install prompt: ${outcome}`);
+  // We've used the prompt, and can't use it again, throw it away
+  deferredPrompt = null;
+});
+  // Optionally, send analytics event that PWA install promo was shown.
+  console.log(`'beforeinstallprompt' event was fired.`);
+});
+
+
+
+
+  </script>
 </body>
 
 </html>
