@@ -157,7 +157,7 @@
 </div>
 
 <div id="timer"></div>
-<input class="input-number" type="number" id="minutes" placeholder="Enter minutes">
+<input class="input-number" type="number" id="minutes" placeholder="Enter upto 60 minutes">
 <button onclick="startCountdown()">Start Countdown</button>
 <button onclick="pauseResumeCountdown()">Pause/Resume</button>
 <button onclick="resetCountdown()">Reset</button>
@@ -235,7 +235,9 @@
         // Reset the countdown by setting a new end time
         clearInterval(countdown);
         paused = false;
-        startCountdown();
+        document.getElementById("timer").innerHTML = "00:00";
+        // Set the input value to 0
+        document.getElementById("minutes").value = 0;
     }
 </script>
 
