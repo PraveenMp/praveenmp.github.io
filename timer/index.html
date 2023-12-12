@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Simple countdown timer web page with customizable themes and options.">
+    <meta name="keywords" content="countdown timer, countdown timer with pause options, web page, theme options, JavaScript, HTML, CSS">
+    <meta name="author" content="Praveen M P">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Countdown Timer">
+    <meta property="og:description" content="Simple countdown timer web page with customizable themes and options.">
+    <meta property="og:image" content="URL_TO_YOUR_IMAGE">
+    <meta property="og:url" content="URL_TO_YOUR_PAGE">
+
+    <!-- Twitter -->
+    <meta property="twitter:title" content="Countdown Timer">
+    <meta property="twitter:description" content="Simple countdown timer web page with customizable themes and options.">
+    <meta property="twitter:image" content="URL_TO_YOUR_IMAGE">
+    <meta property="twitter:url" content="URL_TO_YOUR_PAGE">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        button {
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding: 8px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #555;
+            color: #fff;
+        }
+
+        .input-number {
+            font-size: 20px;
+            height: 30px;
+            border-radius: 1px;
+            border: 1px solid #033700;
+        }
+
+        #timer {
+            font-size: 6em;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            position: absolute;
+            font-weight: bold;
+            top: 38%;
+            left: 0;
+            width: 100%;
+        }
+
+        input {
+            margin-bottom: 10px;
+        }
+
+        button {
+            margin-right: 10px;
+        }
+
+        /* Theme styles */
+        #theme-options {
+            margin-bottom: 10px;
+            float: right;
+        }
+
+        #theme-options label {
+            margin-right: 10px;
+        }
+
+        /* Warm theme */
+        body.warm-theme {
+            background-color: #FFD700; /* Gold */
+            color: #8B4513; /* SaddleBrown */
+        }
+
+        /* Sunset theme */
+        body.sunset-theme {
+            background-color: #FF4500; /* OrangeRed */
+            color: #8B4513; /* SaddleBrown */
+        }
+
+        /* Coral theme */
+        body.coral-theme {
+            background-color: #FF6F61; /* Coral */
+            color: #8B4513; /* SaddleBrown */
+        }
+
+        /* Rust theme */
+        body.rust-theme {
+            background-color: #B7410E; /* Rust */
+            color: #F5DEB3; /* Wheat */
+        }
+
+        /* Black and white theme */
+        body.black-white-theme {
+            background-color: #000;
+            color: #fff;
+        }
+
+        /* Classic black and white theme */
+        body.classic-black-white-theme {
+            background-color: #fff;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+<div id="theme-options">
+    <label>
+        <input type="radio" name="theme" value="warm-theme" onchange="setTheme(this.value)"> Warm
+    </label>
+    <label>
+        <input type="radio" name="theme" value="sunset-theme" onchange="setTheme(this.value)"> Sunset
+    </label>
+    <label>
+        <input type="radio" name="theme" value="coral-theme" onchange="setTheme(this.value)"> Coral
+    </label>
+    <label>
+        <input type="radio" name="theme" value="rust-theme" onchange="setTheme(this.value)"> Rust
+    </label>
+    <label>
+        <input type="radio" name="theme" value="black-white-theme" onchange="setTheme(this.value)"> Black & White
+    </label>
+    <label>
+        <input type="radio" name="theme" value="classic-black-white-theme" onchange="setTheme(this.value)"> Classic B&W
+    </label>
+</div>
+
+<div id="timer"></div>
+<input class="input-number" type="number" id="minutes" placeholder="Enter minutes">
+<button onclick="startCountdown()">Start Countdown</button>
+<button onclick="pauseResumeCountdown()">Pause/Resume</button>
+<button onclick="resetCountdown()">Reset</button>
+
+<script>
+    let countdown;
+    let endTime;
+    let paused = false;
+
+    // Apply theme from local storage if available
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        document.body.className = savedTheme;
+    }
+
+    function setTheme(theme) {
+        document.body.className = theme;
+        // Save the selected theme to local storage
+        localStorage.setItem('theme', theme);
+    }
+
+    function startCountdown() {
+        // Clear any existing countdown
+        if (countdown) {
+            clearInterval(countdown);
+        }
+
+        // Get user input for minutes
+        const minutesInput = document.getElementById("minutes");
+        const minutes = parseInt(minutesInput.value, 10) || 30; // Default to 30 minutes if no input or invalid input
+
+        // If paused, calculate the remaining time
+        const remainingTime = paused ? endTime - new Date().getTime() : minutes * 60 * 1000;
+
+        // Set the countdown end time
+        endTime = new Date().getTime() + remainingTime;
+
+        // Update the timer every second
+        countdown = setInterval(updateTimer, 1000);
+    }
+
+    function updateTimer() {
+        const now = new Date().getTime();
+        const distance = endTime - now;
+
+        // Calculate minutes and seconds
+        const minutesRemaining = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const secondsRemaining = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the timer
+        const timerElement = document.getElementById("timer");
+        timerElement.innerHTML = `${minutesRemaining}m ${secondsRemaining}s`;
+
+        // If the countdown is finished, clear the interval
+        if (distance < 0) {
+            clearInterval(countdown);
+            timerElement.innerHTML = "Countdown Expired!";
+        }
+    }
+
+    function pauseResumeCountdown() {
+        // Toggle the paused state
+        paused = !paused;
+
+        // If paused, clear the interval
+        if (paused) {
+            clearInterval(countdown);
+        } else {
+            // If resuming, start the countdown with the remaining time
+            startCountdown();
+        }
+    }
+
+    function resetCountdown() {
+        // Reset the countdown by setting a new end time
+        clearInterval(countdown);
+        paused = false;
+        startCountdown();
+    }
+</script>
+
+</body>
+</html>
