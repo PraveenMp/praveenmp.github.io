@@ -122,6 +122,13 @@
             background-color: #fff;
             color: #000;
         }
+                /* Font size controls */
+        #font-controls {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 20px;
+        }
     </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JGX5LQX5R5"></script>
@@ -161,11 +168,18 @@
 <button onclick="startCountdown()">Start Countdown</button>
 <button onclick="pauseResumeCountdown()">Pause/Resume</button>
 <button onclick="resetCountdown()">Reset</button>
+<button onclick="toggleMute()">Toggle Mute</button>
+<div id="font-controls">
+    <button onclick="increaseFontSize()">+</button>
+    <button onclick="decreaseFontSize()">-</button>
+</div>
 
 <script>
     let countdown;
     let endTime;
     let paused = false;
+    let tickSound = new Audio('tick.mp3'); // Replace 'tick.mp3' with your tick sound file
+    let isMuted = false;
 
     // Apply theme from local storage if available
     const savedTheme = localStorage.getItem('theme');
@@ -177,6 +191,15 @@
         document.body.className = theme;
         // Save the selected theme to local storage
         localStorage.setItem('theme', theme);
+    }
+
+    function toggleMute() {
+        isMuted = !isMuted;
+        if (isMuted) {
+            tickSound.pause();
+        } else {
+            tickSound.play();
+        }
     }
 
     function startCountdown() {
@@ -211,6 +234,12 @@
         const timerElement = document.getElementById("timer");
         timerElement.innerHTML = `${minutesRemaining}m ${secondsRemaining}s`;
 
+          // Play tick sound if not muted
+          if (!isMuted) {
+            tickSound.currentTime = 0; // Reset the sound to the beginning
+            tickSound.play();
+        }
+
         // If the countdown is finished, clear the interval
         if (distance < 0) {
             clearInterval(countdown);
@@ -238,6 +267,20 @@
         document.getElementById("timer").innerHTML = "00:00";
         // Set the input value to 0
         document.getElementById("minutes").value = 0;
+    }
+
+    function increaseFontSize() {
+        adjustFontSize(2); // Increase font size by 2 pixels
+    }
+
+    function decreaseFontSize() {
+        adjustFontSize(-2); // Decrease font size by 2 pixels
+    }
+
+    function adjustFontSize(amount) {
+        const timerElement = document.getElementById("timer");
+        const currentSize = parseFloat(window.getComputedStyle(timerElement).fontSize);
+        timerElement.style.fontSize = `${currentSize + amount}px`;
     }
 </script>
 
