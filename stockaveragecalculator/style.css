@@ -4,18 +4,18 @@ html {
 }
 #investedamount1 span.unit-amount,
 #investedamount2 span.unit-amount {
-    font-size: 16px;
-    padding-right: 0px;
+  font-size: 16px;
+  padding-right: 0px;
 }
 
 .wrapper-body {
-    padding:25px 25px 60px 25px;
-    width: 100%;
-    overflow: hidden;
+  padding: 25px 25px 60px 25px;
+  width: 100%;
+  overflow: hidden;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: "Open Sans", sans-serif !important;
 }
 
 .st {
@@ -37,26 +37,28 @@ input[type="number"] {
   text-align: right;
 }
 
-#investedamount1,#investedamount2 {
- text-align: right;
-color: green;
-padding-right: 23px;
-border-top: 1px solid;
-padding-top: 10px;
-font-size: 14px;
+#investedamount1,
+#investedamount2 {
+  text-align: right;
+  color: green;
+  padding-right: 23px;
+  border-top: 1px solid;
+  padding-top: 10px;
+  font-size: 14px;
 }
-#investedamount1 span,#investedamount2 span {
-padding-right: 12px;
-font-size: 11px;
-color: green;
+#investedamount1 span,
+#investedamount2 span {
+  padding-right: 12px;
+  font-size: 11px;
+  color: green;
 }
- #result {
-   margin-top: 15px;
- }
+#result {
+  margin-top: 15px;
+}
 #result span {
   padding-right: 12px;
-font-size: 14px;
-color: green;
+  font-size: 14px;
+  color: green;
 }
 footer {
   position: absolute;
@@ -83,8 +85,10 @@ footer {
 }
 
 .top-menu ul li.active {
-  border-bottom: 1px solid #3b863b;
+  border-bottom: 1px solid #125c12;
   color: #3b863b;
+  background-color: rgba(131, 234, 129, 0.311);
+  border-radius: 5px;
 }
 
 .top-menu ul li.active a {
@@ -92,9 +96,9 @@ footer {
 }
 
 .top-menu ul li.active a:focus,
-.top-menu ul li.active a:hover, 
+.top-menu ul li.active a:hover,
 .top-menu ul li a:focus,
-.top-menu ul li a:hover  {
+.top-menu ul li a:hover {
   text-decoration: none;
 }
 
@@ -111,28 +115,28 @@ footer {
 }
 
 .headers {
-    color: #8a9b7c;
-    margin-top: 15px;
-    font-size: 28px;
+  color: #8a9b7c;
+  margin-top: 15px;
+  font-size: 28px;
 }
 
 .results span {
-    float: right;
+  float: right;
 }
 
 #sip-result-wrapper {
-    margin: 10px 0px;
+  margin: 10px 0px;
 }
 
 .r-sip {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin: 10px 0px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0px;
 }
 
-.results span { 
-    color: #00360c;
-    font-weight: 600;
+.results span {
+  color: #00360c;
+  font-weight: 600;
 }
 
 .display-mobile-ad {
@@ -143,17 +147,16 @@ footer {
 .ans-btn {
   margin-top: 12px;
 }
-.banner-ad-desktop a , .display-mobile-ad a {
+.banner-ad-desktop a,
+.display-mobile-ad a {
   font-weight: 600;
   text-decoration: underline;
 }
 
-@media all and (-maxwidth: 600px) and (orientation:landscape) 
-{
+@media all and (-maxwidth: 600px) and (orientation: landscape) {
   .display-mobile-ad {
     display: block !important;
   }
-
 }
 
 /* Small Devices, Tablets */
@@ -164,40 +167,40 @@ footer {
   .top-menu ul li {
     margin-top: 5px;
   }
-    .headers {
-        color: #8a9b7c;
-        margin-top: 10px;
-        font-size: 20px;
-    }
-    .percentage-wrapper  .percentage-input  {
-      width: 55% !important;
-      text-align: center;
-      margin: 10px auto;
-      display: block !important;
-    }
-    #percentage-result-wrapper {
-      margin: 10px 0px;
-      background: #f5f5f7;
-      font-weight: bold;
-      padding: 26px 0px;
-    }
-    .percentage-wrapper {
-      text-align: center;
-      display: block !important;
-    }
-    .banner-ad-desktop {
-      display: none;
-    }
-    .ans-btn-wrapper {
-      text-align: center;
-    }
+  .headers {
+    color: #8a9b7c;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .percentage-wrapper .percentage-input {
+    width: 55% !important;
+    text-align: center;
+    margin: 10px auto;
+    display: block !important;
+  }
+  #percentage-result-wrapper {
+    margin: 10px 0px;
+    background: #f5f5f7;
+    font-weight: bold;
+    padding: 26px 0px;
+  }
+  .percentage-wrapper {
+    text-align: center;
+    display: block !important;
+  }
+  .banner-ad-desktop {
+    display: none;
+  }
+  .ans-btn-wrapper {
+    text-align: center;
+  }
 }
 
 /******************************************************/
 .percentage-wrapper {
   display: inline-block;
 }
-.percentage-wrapper  .percentage-input {
+.percentage-wrapper .percentage-input {
   display: inline-block;
   width: 150px;
 }

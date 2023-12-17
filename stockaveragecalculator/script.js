@@ -148,5 +148,5 @@ function clearFields1() {
 
 	let finalNum = (num/100) * percent;
 
-	result.innerHTML = percent + " Percentage(%) of " + num + " is = " + finalNum.toFixed(2);
+	result.innerHTML = finalNum.toFixed(2);
 }
