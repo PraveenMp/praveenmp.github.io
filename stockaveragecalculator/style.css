@@ -130,7 +130,8 @@ footer {
 
 #average-calculator.active,
 #sip-calculator.active,
-#percentage-calculator.active {
+#percentage-calculator.active,
+#emi-calculator.active {
   display: block;
 }
 

@@ -142,7 +142,7 @@ function unitChanged(id, error) {
           default: break;
       }
 
-      if (isMobile()) {
+      if (isMobile() || window.innerWidth < 768) {
         var sidebar = document.getElementById('sidebar');
         sidebar.style.left = '-500px';
       } 
