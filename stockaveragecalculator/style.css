@@ -8,10 +8,35 @@ html {
     padding-right: 0px;
 }
 
+.app-logo {
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+  padding: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
 .wrapper-body {
-    padding:25px 25px 60px 25px;
+    padding:0px 25px 60px 25px;
     width: 100%;
     overflow: hidden;
+}
+
+.content-body-wrapper {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 15px;
+  margin: 15px;
+}
+
+.sidebar.col-md-2 {
+padding: 0px;
+border-right: 1px solid #ddd;
+height: 92vh;
+}
+
+.form-control {
+  border: 1px solid #b1b1b1 !important;
 }
 
 body {
@@ -68,23 +93,28 @@ footer {
   padding-top: 13px;
 }
 .top-menu ul {
-  padding: 0px 0px 0px 15px;
+  padding: 0px;
   margin-bottom: 20px;
 }
 .top-menu ul li {
   display: inline-block;
   cursor: pointer;
-  margin-right: 20px;
-  padding: 5px;
+  padding: 10px 5px 10px 15px;
+  margin: 10px 0px 0px 0px;
+  width: 100%;
 }
 
 .top-menu ul li a {
   color: #000;
 }
 
+.top-menu ul li:hover {
+  color: #5cb85c;
+}
+
 .top-menu ul li.active {
-  border-bottom: 1px solid #3b863b;
-  color: #3b863b;
+  color: #FFF;
+  background: #038edc;
 }
 
 .top-menu ul li.active a {
@@ -106,14 +136,22 @@ footer {
 
 #average-calculator.hide,
 #sip-calculator.hide,
-#percentage-calculator.hide {
+#percentage-calculator.hide,
+#emi-calculator.hide {
   display: none;
 }
 
+#clock {
+  font-size: 24px;
+  color: #000;
+  position: absolute;
+  right: 3%;
+  top: 3.5%;
+}
+
 .headers {
-    color: #8a9b7c;
-    margin-top: 15px;
-    font-size: 28px;
+  color: #112632;
+  font-size: 24px;
 }
 
 .results span {
@@ -148,6 +186,10 @@ footer {
   text-decoration: underline;
 }
 
+.hidden-on-desktop-tablet {
+  display: none;
+}
+
 @media all and (-maxwidth: 600px) and (orientation:landscape) 
 {
   .display-mobile-ad {
@@ -156,8 +198,25 @@ footer {
 
 }
 
+@media only screen and (min-width: 768px) {
+  /* Tablets and larger screens */
+  .hidden-on-desktop-tablet {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Desktops and larger screens */
+  .hidden-on-desktop-tablet {
+    display: none;
+  }
+}
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .hidden-on-desktop-tablet {
+    display: block;
+  }
   .wrapper-body {
     padding-top: 10px;
   }
@@ -190,6 +249,40 @@ footer {
     }
     .ans-btn-wrapper {
       text-align: center;
+    }
+    .sidebar.col-md-2 {
+      height: 92vh;
+      position: absolute;
+      background: #eceff0;
+      color: #000;
+      z-index: 1;
+      top: 40px;
+      left: -500px;
+      transition: left 0.5s ease-in-out;
+      width: 62%;
+      font-size: 13px;
+      border-radius: 0px 5px 5px 0px;
+    }
+    #clock {
+      display: none;
+    }
+    .app-logo {
+      display: none;
+    }
+    #mobile-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .mobile-app-logo {
+      font-size: 18px;
+      padding: 5px 21px 0px 50px;
+      margin: 0px;
+    }
+    #toggle-btn {
+      padding: 0px 15px;
+    font-size: 18px;
     }
 }
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JPBH15FMY4"></script>
@@ -16,7 +17,8 @@
   <meta charset="UTF-8">
   <meta name="description"
     content="This application allows to calculate stock average on entering first and second buy details. A stock average calculator is a tool used to calculate the average value of a list of stock prices." />
-  <meta name="keywords" content="Indian Stock market average Calculator, USA Stock Market average calculator, US stock market average calculator, Japan stock market average-calculator, Australia stock market average calculator. average calculator, stock calculator, percentage calculator,  cash and carry calculator, Stock prices, Average, Calculation, Performance, Investors, Time period, Investment decisions, Spreadsheet, Software program, Stock charting, Technical analysis, Analyzing, Comparison, Investment performance, Stock market.">
+  <meta name="keywords"
+    content="Indian Stock market average Calculator, USA Stock Market average calculator, US stock market average calculator, Japan stock market average-calculator, Australia stock market average calculator. average calculator, stock calculator, percentage calculator,  cash and carry calculator, Stock prices, Average, Calculation, Performance, Investors, Time period, Investment decisions, Spreadsheet, Software program, Stock charting, Technical analysis, Analyzing, Comparison, Investment performance, Stock market.">
   <meta name="author" content="Praveen MP">
   <meta property="og:title" content="Stock market Average Calculator" />
   <meta property="og:url" content="https://praveenmp.github.io/stockaveragecalculator/" />
@@ -24,6 +26,7 @@
   <!-- Styles -->
   <link rel="stylesheet" href="./style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
     integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <style>
@@ -34,219 +37,314 @@
 <body>
   <div class="container-fluid wrapper-body">
     <div class="row">
-      <div class="top-menu">
-        <ul>
-          <li id="ac" title="Stock Average Calculator" class="active" onclick="activeSection('ac')">Stock Average Calculator</li>
-          <li id="sc" title="SIP Calculator" class="" onclick="activeSection('sc')">SIP Calculator</li>
-          <li id="pc" title="Percentage Calculator" class="" onclick="activeSection('pc')">Percentage Calculator</li>
-      
-        </ul>
-      </div>
-    </div>
-    <div id="average-calculator">
-      <div class="row">
-        <div class="col-md-12">
-          <header>
-            <h2 class="headers">Stock market average calculator</h2>
-          </header>
-          <hr />
+      <div id="mobile-header" class="hidden-on-desktop-tablet">
+        <div id="toggle-btn">
+          <i class="fas fa-bars"></i> Menu
+        </div>
+        <div class="mobile-logo">
+          <h2 class="mobile-app-logo"><i class="fas fa-calculator"></i> Stock-Calc</h2>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-3 st">
-          <h4>First Purchase</h3>
-            <hr>
-            <div>
-              <label style="float:left;margin-right:10px;">Units</label>
-              <input class="form-control" type="number" id="units1" autocomplete="off"
-                onchange="unitChanged('units1','error1')" />
-              <span id='error1'></span>
-            </div>
-            <div style="margin-top:15px">
-              <label style="float:left;margin-right:10px;">Price per share</label>
-              <input class="form-control" type="number" id="Price1" autocomplete="off"
-                onchange="unitChanged('Price1','error2')" />
-              <span id='error2'></span>
-            </div>
-        </div>
-        <div class="col-md-3 st">
-          <h4>Second Purchase</h3>
-            <hr>
-            <div>
-              <label style="float:left;margin-right:10px;">Units</label>
-              <input class="form-control" type="number" id="units2" autocomplete="off"
-                onchange="unitChanged('units2','error3')" />
-              <span id='error3'></span>
-            </div>
-            <div style="margin-top:15px">
-              <label style="float:left;margin-right:10px;">Price per share</label>
-              <input class="form-control" type="number" id="Price2" autocomplete="off"
-                onchange="unitChanged('Price2','error4');getAverage()">
-              <span id='error4'></span>
-            </div>
-        </div>
-        <div class="col-md-1 st">
-        </div>
-        <div class="col-md-4 st banner-ad-desktop">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3">
-          <h5 id="investedamount1"></h5>
-        </div>
-        <div class="col-md-3">
-          <h5 id="investedamount2"></h5>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 st">
-          <h5 id="result"></h5>
-        </div>
-        <div class="col-md-12 st">
-          <button class="btn btn-success" onclick="getAverage()"> Calculate Average</button>
-          <button class="btn btn-warning" onclick="clearFields()">Clear Fields</button>
-        </div>
-        <div class="col-md-12 d-block d-md-none display-mobile-ad">
-          <div id="buttonInstall"><image title="Download" src="/stockaveragecalculator/images/download.jpg" height="40px" width="40px" />Install App</div>
-        </div>
-      </div>
-    </div>
-    <div id="sip-calculator" class="hide">
-      <div class="row">
-        <div class="col-md-12">
-          <header>
-            <h2 class="headers">SIP(Systematic Investment Plan) calculator</h2>
-          </header>
-          <hr />
-        </div>
-      </div>
-      <div class="row">
-        <div id="sip-result-wrapper" class="col-md-4">
-          <div>
-            <label style="float:left;margin-right:10px;">Monthly Investment Amount</label>
-            <input class="form-control" type="number" id="investment" autocomplete="off" onchange="sipCalculator()" />
-            <span id='error1'></span>
-          </div>
-          <div style="margin-top:15px">
-            <label style="float:left;margin-right:10px;">Investment Period in years</label>
-            <input class="form-control" type="number" id="years" autocomplete="off" onchange="sipCalculator()" />
-            <span id='error2'></span>
-          </div>
-          <div style="margin-top:15px">
-            <label style="float:left;margin-right:10px;">Expected Annual Returns(%)</label>
-            <input class="form-control" type="number" id="rateOfInterest" autocomplete="off"
-              onchange="sipCalculator()" />
-            <span id='error2'></span>
-          </div>
-        </div>
-        <div class="col-md-2">
-        </div>
-        <div class="col-md-4 banner-ad-desktop">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="r-sip">
-            <div class="results">Expected Amount : <span id="tm">0</span> </div>
-            <hr />
-            <div class="results"> Amount Invested : <span id="im">0</span></div>
-            <hr>
-            <div class="results">Total Gain : <span id="gm">0</span> </div>
-          </div>
+      <div class="col-md-2 sidebar" id="sidebar">
+        <h2 class="app-logo"><i class="fas fa-calculator"></i> Stock-Calc</h2>
+        <div class="top-menu">
+          <ul>
+            <li id="ac" title="Stock Average Calculator" class="active" onclick="activeSection('ac')">
+              <i class="fas fa-tachometer-alt"></i> Stock Average Calculator
+            </li>
+            <li id="sc" title="SIP Calculator" class="" onclick="activeSection('sc')">
 
+              <i class="fas fa-coins"></i> SIP Calculator
+            </li>
+            <li id="pc" title="Percentage Calculator" class="" onclick="activeSection('pc')">
+              <i class="fas fa-percentage"></i> Percentage Calculator
+            </li>
+            <li id="pc" title="Percentage Calculator" class="" onclick="activeSection('em')">
+              <i class="fas fa-wallet"></i> EMI Calculator
+            </li>
+            <!-- <li id="pc" title="Percentage Calculator" class="" onclick="activeSection('bc')">
+              <i class="fas fa-receipt"></i> Brokerage Calculator
+            </li>
+            <li id="pc" title="Percentage Calculator" class="" onclick="activeSection('dyc')">
+              <i class="fas fa-hand-holding-usd"></i> Dividend Yield Calculator
+            </li>
+            <li id="pc" title="Percentage Calculator" class="" onclick="activeSection('cc')">
+              <i class="fas fa-sort-amount-up-alt"></i> CAGR Calculator
+            </li>
+            <li id="pc" title="Percentage Calculator" class="" onclick="activeSection('roi')">
+              <i class="fas fa-retweet"></i> Return on Investment (ROI) Calculator
+            </li>
+            <li id="pc" title="Percentage Calculator" class="" onclick="activeSection('cgtc')">
+              <i class="fas fa-heart-broken"></i> CAPITAL GAIN TAX CALCULATOR
+            </li> -->
+          </ul>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12 st">
-          <button class="btn btn-success" onclick="sipCalculator()"> Calculate</button>
-          <button class="btn btn-warning" onclick="clearFields1()">Clear Fields</button>
-        </div>
-        <div class="col-md-12 d-block d-md-none display-mobile-ad">
-         
-        </div>
-      </div>
-    </div>
-    <div id="percentage-calculator" class="hide">
-      <div class="row">
-        <div class="col-md-12">
-          <header>
-            <h2 class="headers">Percentage(%) calculator</h2>
-          </header>
-          <hr />
-        </div>
-      </div>
-      <div class="row">
-        <div id="percentage-result-wrapper" class="col-md-4">
-          <div class="percentage-wrapper">
-            <label>What is </label>
-            <input class="form-control percentage-input" type="number" id="percentage" autocomplete="off" onchange="checkPercentage()" />
+      <div class="col-md-10">
+        <div id="clock"></div>
+        <div id="average-calculator" class="content-body-wrapper">
+          <div class="row">
+            <div class="col-md-12">
+              <header>
+                <h2 class="headers">Stock market average calculator</h2>
+              </header>
+              <hr />
+            </div>
           </div>
-          <div class="percentage-wrapper">
-            <label>% (Percentage) of </label>
-            <input class="form-control percentage-input" type="number" id="percentageNumber" autocomplete="off" onchange="checkPercentage()" />
-            <label>?</label>
+          <div class="row">
+            <div class="col-md-3 st">
+              <h4>First Purchase</h3>
+                <hr>
+                <div>
+                  <label style="float:left;margin-right:10px;">Units</label>
+                  <input class="form-control" type="number" id="units1" autocomplete="off"
+                    onchange="unitChanged('units1','error1')" />
+                  <span id='error1'></span>
+                </div>
+                <div style="margin-top:15px">
+                  <label style="float:left;margin-right:10px;">Price per share</label>
+                  <input class="form-control" type="number" id="Price1" autocomplete="off"
+                    onchange="unitChanged('Price1','error2')" />
+                  <span id='error2'></span>
+                </div>
+            </div>
+            <div class="col-md-3 st">
+              <h4>Second Purchase</h3>
+                <hr>
+                <div>
+                  <label style="float:left;margin-right:10px;">Units</label>
+                  <input class="form-control" type="number" id="units2" autocomplete="off"
+                    onchange="unitChanged('units2','error3')" />
+                  <span id='error3'></span>
+                </div>
+                <div style="margin-top:15px">
+                  <label style="float:left;margin-right:10px;">Price per share</label>
+                  <input class="form-control" type="number" id="Price2" autocomplete="off"
+                    onchange="unitChanged('Price2','error4');getAverage()">
+                  <span id='error4'></span>
+                </div>
+            </div>
+            <div class="col-md-1 st">
+            </div>
+            <div class="col-md-4 st banner-ad-desktop">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <h5 id="investedamount1"></h5>
+            </div>
+            <div class="col-md-3">
+              <h5 id="investedamount2"></h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 st">
+              <h5 id="result"></h5>
+            </div>
+            <div class="col-md-12 st">
+              <button class="btn btn-success" onclick="getAverage()"> Calculate Average</button>
+              <button class="btn btn-warning" onclick="clearFields()">Clear Fields</button>
+            </div>
+            <div class="col-md-12 d-block d-md-none display-mobile-ad">
+              <div id="buttonInstall">
+                <image title="Download" src="/stockaveragecalculator/images/download.jpg" height="40px" width="40px" />
+                Install App
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-8">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-xs-12">
-          <div class="r-sip">
-            <div class="results">Result : <span id="percentageResult">0</span> </div>
+        <div id="sip-calculator" class="hide content-body-wrapper">
+          <div class="row">
+            <div class="col-md-12">
+              <header>
+                <h2 class="headers">SIP(Systematic Investment Plan) calculator</h2>
+              </header>
+              <hr />
+            </div>
+          </div>
+          <div class="row">
+            <div id="sip-result-wrapper" class="col-md-4">
+              <div>
+                <label style="float:left;margin-right:10px;">Monthly Investment Amount</label>
+                <input class="form-control" type="number" id="investment" autocomplete="off"
+                  onchange="sipCalculator()" />
+                <span id='error1'></span>
+              </div>
+              <div style="margin-top:15px">
+                <label style="float:left;margin-right:10px;">Investment Period in years</label>
+                <input class="form-control" type="number" id="years" autocomplete="off" onchange="sipCalculator()" />
+                <span id='error2'></span>
+              </div>
+              <div style="margin-top:15px">
+                <label style="float:left;margin-right:10px;">Expected Annual Returns(%)</label>
+                <input class="form-control" type="number" id="rateOfInterest" autocomplete="off"
+                  onchange="sipCalculator()" />
+                <span id='error2'></span>
+              </div>
+            </div>
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-4 banner-ad-desktop">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="r-sip">
+                <div class="results">Expected Amount : <span id="tm">0</span> </div>
+                <hr />
+                <div class="results"> Amount Invested : <span id="im">0</span></div>
+                <hr>
+                <div class="results">Total Gain : <span id="gm">0</span> </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 st">
+              <button class="btn btn-success" onclick="sipCalculator()"> Calculate</button>
+              <button class="btn btn-warning" onclick="clearFields1()">Clear Fields</button>
+            </div>
+            <div class="col-md-12 d-block d-md-none display-mobile-ad">
+
+            </div>
           </div>
         </div>
-        <div class="col-md-2 ans-btn-wrapper">
-          <button class="btn btn-success ans-btn"> Answer</button>
+        <div id="percentage-calculator" class="hide content-body-wrapper">
+          <div class="row">
+            <div class="col-md-12">
+              <header>
+                <h2 class="headers">Percentage(%) calculator</h2>
+              </header>
+              <hr />
+            </div>
+          </div>
+          <div class="row">
+            <div id="percentage-result-wrapper" class="col-md-6">
+              <div class="percentage-wrapper">
+                <label>What is </label>
+                <input class="form-control percentage-input" type="number" id="percentage" autocomplete="off"
+                  onchange="checkPercentage()" />
+              </div>
+              <div class="percentage-wrapper">
+                <label>% (Percentage) of </label>
+                <input class="form-control percentage-input" type="number" id="percentageNumber" autocomplete="off"
+                  onchange="checkPercentage()" />
+                <label>?</label>
+              </div>
+            </div>
+            <div class="col-md-8">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-xs-12">
+              <div class="r-sip">
+                <div class="results">Result : <span id="percentageResult">0</span> </div>
+              </div>
+            </div>
+            <div class="col-md-2 ans-btn-wrapper">
+              <button class="btn btn-success ans-btn"> Answer</button>
+            </div>
+            <div class="col-md-4 banner-ad-desktop">
+            </div>
+            <div class="col-xs-12 d-block d-md-none display-mobile-ad">
+            </div>
+          </div>
         </div>
-        <div class="col-md-4 banner-ad-desktop">
-        </div>
-        <div class="col-xs-12 d-block d-md-none display-mobile-ad">
+        <div id="emi-calculator" class="hide content-body-wrapper">
+          <div class="row">
+            <div class="col-md-12">
+              <header>
+                <h2 class="headers">EMI calculator</h2>
+              </header>
+              <hr />
+            </div>
+          </div>
+          <div class="row">
+            <div id="sip-result-wrapper" class="col-md-4">
+              <div>
+                <label style="float:left;margin-right:10px;">Loan Amount</label>
+                <input class="form-control" type="number" id="loanAmount" placeholder="Enter loan amount"
+                  autocomplete="off" onchange="calculateEMI()" required>
+                <span id='error1'></span>
+              </div>
+              <div style="margin-top:15px">
+                <label style="float:left;margin-right:10px;" for="interestRate">Annual Interest Rate (%):</label>
+                <input class="form-control" type="number" id="interestRate" placeholder="Enter annual interest rate"
+                  autocomplete="off" onchange="calculateEMI()" required>
+                <span id='error2'></span>
+              </div>
+              <div style="margin-top:15px">
+                <label style="float:left;margin-right:10px;" for="loanTerm">Loan Term (Months):</label>
+                <input class="form-control" type="number" id="loanTerm" placeholder="Enter loan term in months"
+                  autocomplete="off" onchange="calculateEMI()" required>
+                <span id='error2'></span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="r-sip">
+                <div class="results">EMI : <span id="total-emi">0</span> </div>
+                <hr />
+              </div>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 st">
+                <button class="btn btn-success" onclick="calculateEMI()"> Calculate</button>
+                <button class="btn btn-warning" onclick="clearFields2()">Clear Fields</button>
+              </div>
+              <div class="col-md-12 d-block d-md-none display-mobile-ad">
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   </div>
+
   <footer>
     <div class="container">
-      &copy; August - 2023. Feedback:<a href="mailto:praveen_mp@live.com">praveen_mp@live.com</a></div>
+      &copy; 2018 - 2099. Feedback:<a href="mailto:praveen_mp@live.com">praveen_mp@live.com</a></div>
   </footer>
 
   </div>
   <script src="./script.js" crossorigin="anonymous"></script>
   <script>
     if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/stockaveragecalculator/service-worker.js');
-    });
-}
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/stockaveragecalculator/service-worker.js');
+      });
+    }
     // Initialize deferredPrompt for use later to show browser install prompt.
-let deferredPrompt;
-let buttonInstall = document.getElementById("buttonInstall");
-buttonInstall.style.display = 'none';
+    let deferredPrompt;
+    let buttonInstall = document.getElementById("buttonInstall");
+    buttonInstall.style.display = 'none';
 
-window.addEventListener('beforeinstallprompt', (e) => {
-  // Prevent the mini-infobar from appearing on mobile
-  e.preventDefault();
-  // Stash the event so it can be triggered later.
-  deferredPrompt = e;
-  // Update UI notify the user they can install the PWA
-  buttonInstall.style.display = 'block';
-  buttonInstall.addEventListener('click', async () => {
-  // Hide the app provided install promotion
-  // buttonInstall.style.display = 'none';
-  // Show the install prompt
-  deferredPrompt.prompt();
-  // Wait for the user to respond to the prompt
-  const { outcome } = await deferredPrompt.userChoice;
-  // Optionally, send analytics event with outcome of user choice
-  console.log(`User response to the install prompt: ${outcome}`);
-  // We've used the prompt, and can't use it again, throw it away
-  deferredPrompt = null;
-});
-  // Optionally, send analytics event that PWA install promo was shown.
-  console.log(`'beforeinstallprompt' event was fired.`);
-});
+    window.addEventListener('beforeinstallprompt', (e) => {
+      // Prevent the mini-infobar from appearing on mobile
+      e.preventDefault();
+      // Stash the event so it can be triggered later.
+      deferredPrompt = e;
+      // Update UI notify the user they can install the PWA
+      buttonInstall.style.display = 'block';
+      buttonInstall.addEventListener('click', async () => {
+        // Hide the app provided install promotion
+        // buttonInstall.style.display = 'none';
+        // Show the install prompt
+        deferredPrompt.prompt();
+        // Wait for the user to respond to the prompt
+        const { outcome } = await deferredPrompt.userChoice;
+        // Optionally, send analytics event with outcome of user choice
+        console.log(`User response to the install prompt: ${outcome}`);
+        // We've used the prompt, and can't use it again, throw it away
+        deferredPrompt = null;
+      });
+      // Optionally, send analytics event that PWA install promo was shown.
+      console.log(`'beforeinstallprompt' event was fired.`);
+    });
 
 
 

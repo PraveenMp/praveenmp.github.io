@@ -47,8 +47,8 @@ function unitChanged(id, error) {
     var totalAmount = Number(((unit1 * price1) + (unit2 * price2)).toFixed(2));
     var totalUnits = +unit1 + +unit2;
     var averagePrice = Number((((unit1 * price1) + (unit2 * price2)) / totalUnits).toFixed(2));
-    document.getElementById("investedamount1").innerHTML ="<span>Amount invested on 1st buy: </span>  <span class='unit-amount'>" + (unit1 * price1).toLocaleString(intlLanguage) + "</span>";
-    document.getElementById("investedamount2").innerHTML ="<span>Amount invested on 2nd buy: </span> <span class='unit-amount'>" + (unit2 * price2).toLocaleString(intlLanguage) + "</span>";
+    document.getElementById("investedamount1").innerHTML ="<span>The amount invested in the 1st purchase: </span>  <span class='unit-amount'>" + (unit1 * price1).toLocaleString(intlLanguage) + "</span>";
+    document.getElementById("investedamount2").innerHTML ="<span>The amount invested in the 2nd purchase: </span> <span class='unit-amount'>" + (unit2 * price2).toLocaleString(intlLanguage) + "</span>";
     document.getElementById("result").innerHTML = "<span>Total units </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<bold>"
       + totalUnits + "</bold><br/><br/><span>Average Price</span> &nbsp;&nbsp;&nbsp;<bold>" + averagePrice.toLocaleString(intlLanguage) + "</bold>" 
       + "<br/><br/><span>Total Amount</span> &nbsp;&nbsp;&nbsp;<bold>"
@@ -77,10 +77,14 @@ function unitChanged(id, error) {
               document.getElementById("percentage-calculator").classList.remove("active");
               document.getElementById("percentage-calculator").classList.add("hide");
 
+              document.getElementById("emi-calculator").classList.remove("active");
+              document.getElementById("emi-calculator").classList.add("hide");
+
 
               document.getElementById("ac").classList.add("active");
               document.getElementById("sc").classList.remove("active");
               document.getElementById("pc").classList.remove("active");
+              document.getElementById("em").classList.remove("active");
           break;
           case 'sc': 
               document.getElementById("sip-calculator").classList.remove("hide");
@@ -92,9 +96,13 @@ function unitChanged(id, error) {
               document.getElementById("percentage-calculator").classList.remove("active");
               document.getElementById("percentage-calculator").classList.add("hide");
 
+              document.getElementById("emi-calculator").classList.remove("active");
+              document.getElementById("emi-calculator").classList.add("hide");
+
               document.getElementById("sc").classList.add("active");
               document.getElementById("ac").classList.remove("active");
               document.getElementById("pc").classList.remove("active");
+              document.getElementById("em").classList.remove("active");
           break;
           case 'pc': 
           document.getElementById("percentage-calculator").classList.add("active");
@@ -106,12 +114,38 @@ function unitChanged(id, error) {
           document.getElementById("average-calculator").classList.remove("active");
           document.getElementById("average-calculator").classList.add("hide");
 
+          document.getElementById("emi-calculator").classList.remove("active");
+          document.getElementById("emi-calculator").classList.add("hide");
+
           document.getElementById("pc").classList.add("active");
           document.getElementById("ac").classList.remove("active");
           document.getElementById("sc").classList.remove("active");
+          document.getElementById("em").classList.remove("active");
+          case 'em': 
+          document.getElementById("emi-calculator").classList.add("active");
+          document.getElementById("emi-calculator").classList.remove("hide");
+
+          document.getElementById("sip-calculator").classList.remove("active");
+          document.getElementById("sip-calculator").classList.add("hide");
+
+          document.getElementById("average-calculator").classList.remove("active");
+          document.getElementById("average-calculator").classList.add("hide");
+
+          document.getElementById("percentage-calculator").classList.remove("active");
+          document.getElementById("percentage-calculator").classList.add("hide");
+
+          document.getElementById("em").classList.add("active");
+          document.getElementById("ac").classList.remove("active");
+          document.getElementById("sc").classList.remove("active");
+          document.getElementById("pc").classList.remove("active");
       break;
           default: break;
       }
+
+      if (isMobile()) {
+        var sidebar = document.getElementById('sidebar');
+        sidebar.style.left = '-500px';
+      } 
   }
 
   function sipCalculator() {
@@ -137,6 +171,13 @@ function clearFields1() {
     document.getElementById("gm").innerHTML = '0';
   }
 
+  function clearFields2() {
+    document.getElementById("loanAmount").value = '';
+    document.getElementById("interestRate").value = '';
+    document.getElementById("loanTerm").value = '';
+    document.getElementById("total-emi").innerHTML = '0';
+  }
+
   function checkPercentage() {
 	let num = Number(document.getElementById("percentageNumber").value);
 	let percent = Number(document.getElementById("percentage").value);
@@ -150,3 +191,61 @@ function clearFields1() {
 
 	result.innerHTML = percent + " Percentage(%) of " + num + " is = " + finalNum.toFixed(2);
 }
+
+function calculateEMI() {
+  var loanAmount = document.getElementById('loanAmount').value;
+  var interestRate = document.getElementById('interestRate').value / 100 / 12; // Monthly interest rate
+  var loanTerm = document.getElementById('loanTerm').value;
+
+  // EMI calculation formula
+  var emi = loanAmount * interestRate * Math.pow((1 + interestRate), loanTerm) / (Math.pow((1 + interestRate), loanTerm) - 1);
+
+  var resultElement = document.getElementById('total-emi');
+  if(loanAmount && interestRate && loanTerm) {
+    resultElement.textContent = '' + emi.toFixed(2) + ' per month';
+  }
+
+}
+
+function updateClock() {
+  var now = new Date();
+  var hours = now.getHours();
+  var minutes = now.getMinutes();
+  var seconds = now.getSeconds();
+  var meridiem = hours >= 12 ? 'PM' : 'AM';
+
+  // Convert to 12-hour format
+  hours = hours % 12 || 12;
+
+  // Add leading zero if needed
+  hours = hours < 10 ? '0' + hours : hours;
+  minutes = minutes < 10 ? '0' + minutes : minutes;
+  seconds = seconds < 10 ? '0' + seconds : seconds;
+
+  var timeString = hours + ':' + minutes + ':' + seconds + ' ' + meridiem;
+
+  document.getElementById('clock').innerText = timeString;
+}
+
+// Update the clock every second
+setInterval(updateClock, 1000);
+
+// Initial call to display the clock immediately
+// updateClock();
+
+document.getElementById('toggle-btn').addEventListener('click', function () { 
+  var sidebar = document.getElementById('sidebar');
+  if(sidebar.style.left != '0px') {
+      sidebar.style.left = '0px';
+  } else {
+    sidebar.style.left = '-500px';
+  }
+    
+
+});
+
+function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+// Example usage:
