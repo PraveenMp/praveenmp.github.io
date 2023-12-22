@@ -121,6 +121,7 @@ function unitChanged(id, error) {
           document.getElementById("ac").classList.remove("active");
           document.getElementById("sc").classList.remove("active");
           document.getElementById("em").classList.remove("active");
+          break;
           case 'em': 
           document.getElementById("emi-calculator").classList.add("active");
           document.getElementById("emi-calculator").classList.remove("hide");
