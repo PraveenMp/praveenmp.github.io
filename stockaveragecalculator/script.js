@@ -66,6 +66,8 @@ function unitChanged(id, error) {
     document.getElementById("Price1").value = '';
     document.getElementById("units2").value = '';
     document.getElementById("Price2").value = '';
+    document.getElementById("slider1").value = 0;
+    document.getElementById("slider2").value = 0;
     document.getElementById("result").innerHTML = '';
     document.getElementById("investedamount1").innerHTML = '';
     document.getElementById("investedamount2").innerHTML = '';
