@@ -1,68 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sidebar Toggle</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
 
-    #sidebar {
-      height: 100vh;
-      width: 250px;
-      position: fixed;
-      left: -250px;
-      top: 0;
-      background-color: #333;
-      padding-top: 20px;
-      transition: 0.5s;
-    }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
 
-    #content {
-      transition: margin-left 0.5s;
-      padding: 16px;
-    }
+        input[type="number"], input[type="range"] {
+            margin-top: 5px;
+        }
 
-    #toggle-btn {
-      font-size: 20px;
-      position: fixed;
-      left: 10px;
-      top: 10px;
-      cursor: pointer;
-      color: #fff;
-    }
-  </style>
+        #result {
+            margin-top: 20px;
+        }
+        /********** Range Input Styles **********/
+/*Range Reset*/
+input[type="range"] {
+   -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 15rem;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/***** Chrome, Safari, Opera and Edge Chromium styles *****/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+   background-color: #e9e9eb;
+   border-radius: 0.5rem;
+   height: 0.2rem;  
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+   appearance: none;
+   margin-top: -6px; /* Centers thumb on the track */
+
+   /*custom styles*/
+   background-color: #00b386;
+   height: 1rem;
+   width: 1rem;
+   border-radius: 25px;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {   
+  border: 1px solid #053a5f;
+  outline: 3px solid #053a5f;
+  outline-offset: 0.125rem; 
+}
+
+/******** Firefox styles ********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+   background-color: #053a5f;
+   border-radius: 0.5rem;
+   height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+   border: none; /*Removes extra border that FF applies*/
+   border-radius: 0; /*Removes default border-radius that FF applies*/
+
+   /*custom styles*/
+   background-color: #5cd5eb;
+   height: 2rem;
+   width: 1rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+  border: 1px solid #053a5f;
+  outline: 3px solid #053a5f;
+  outline-offset: 0.125rem; 
+}
+
+    </style>
 </head>
 <body>
+    <h2>Average Calculator</h2>
 
-  <div id="sidebar">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
+    <label for="input1">Enter value 1:</label>
+    <input type="number" id="input1" placeholder="Enter value 1" required>
+    <input type="range" id="slider1" min="0" max="100" value="50" oninput="updateInput('input1', 'slider1')">
+    <br>
 
-  <div id="content">
-    <span id="toggle-btn">&#9776; Toggle Sidebar</span>
-    <h2>Main Content</h2>
-    <p>This is the main content of the page.</p>
-  </div>
+    <label for="input2">Enter value 2:</label>
+    <input type="number" id="input2" placeholder="Enter value 2" required>
+    <input type="range" id="slider2" min="0" max="100" value="50" oninput="updateInput('input2', 'slider2')">
+    <br>
 
-  <script>
-    document.getElementById('toggle-btn').addEventListener('click', function () {
-      var sidebar = document.getElementById('sidebar');
-      var content = document.getElementById('content');
+    <button onclick="calculateAverage()">Calculate Average</button>
+    
+    <p id="result"></p>
 
-      if (sidebar.style.left === '-250px') {
-        sidebar.style.left = '0';
-        content.style.marginLeft = '250px';
-      } else {
-        sidebar.style.left = '-250px';
-        content.style.marginLeft = '0';
-      }
-    });
-  </script>
+    <script>
+        function calculateAverage() {
+            // Get input values
+            var input1 = parseFloat(document.getElementById("input1").value);
+            var input2 = parseFloat(document.getElementById("input2").value);
+            document.getElementById("slider1").value = input1;
+
+            // Check if inputs are valid numbers
+            if (isNaN(input1) || isNaN(input2)) {
+                alert("Please enter valid numbers.");
+                return;
+            }
+
+            // Calculate average
+            var average = (input1 + input2) / 2;
+
+            // Display result
+            document.getElementById("result").innerHTML = "The average is: " + average;
+        }
+
+        function updateInput(inputId, sliderId) {
+            // Update input value when slider is moved
+            var sliderValue = document.getElementById(sliderId).value;
+            document.getElementById(inputId).value = sliderValue;
+        }
+    </script>
 </body>
 </html>

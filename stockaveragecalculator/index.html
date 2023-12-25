@@ -62,12 +62,13 @@
             <li id="em" title="EMI Calculator" class="" onclick="activeSection('em')">
               <i class="fas fa-wallet"></i> EMI Calculator
             </li>
+            <!-- <li id="dyc" title="Dividend Calculator" class="" onclick="activeSection('dyc')">
+              <i class="fas fa-hand-holding-usd"></i> Dividend Yield Calculator
+            </li> -->
             <!-- <li id="pc" title="Percentage Calculator" class="" onclick="activeSection('bc')">
               <i class="fas fa-receipt"></i> Brokerage Calculator
             </li>
-            <li id="pc" title="Percentage Calculator" class="" onclick="activeSection('dyc')">
-              <i class="fas fa-hand-holding-usd"></i> Dividend Yield Calculator
-            </li>
+          
             <li id="pc" title="Percentage Calculator" class="" onclick="activeSection('cc')">
               <i class="fas fa-sort-amount-up-alt"></i> CAGR Calculator
             </li>
@@ -99,6 +100,7 @@
                   <label style="float:left;margin-right:10px;">Units</label>
                   <input class="form-control" type="number" id="units1" autocomplete="off"
                     onchange="unitChanged('units1','error1')" />
+                  <input type="range" id="slider1" min="0" max="1000" value="1" oninput="updateInput('units1', 'slider1')" onchange="unitChanged('units1','error1')">
                   <span id='error1'></span>
                 </div>
                 <div style="margin-top:15px">
@@ -115,6 +117,7 @@
                   <label style="float:left;margin-right:10px;">Units</label>
                   <input class="form-control" type="number" id="units2" autocomplete="off"
                     onchange="unitChanged('units2','error3')" />
+                    <input type="range" id="slider2" min="0" max="1000" value="1" oninput="updateInput('units2', 'slider2')" onchange="unitChanged('units2','error3')">
                   <span id='error3'></span>
                 </div>
                 <div style="margin-top:15px">
