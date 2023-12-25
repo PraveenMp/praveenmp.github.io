@@ -54,6 +54,13 @@ function unitChanged(id, error) {
       + "<br/><br/><span>Total Amount</span> &nbsp;&nbsp;&nbsp;<bold>"
       + totalAmount.toLocaleString(intlLanguage) + "</bold>";
   }
+
+  function updateInput(inputId, sliderId) {
+    // Update input value when slider is moved
+    var sliderValue = document.getElementById(sliderId).value;
+    document.getElementById(inputId).value = sliderValue;
+}
+
   function clearFields() {
     document.getElementById("units1").value = '';
     document.getElementById("Price1").value = '';
@@ -193,6 +200,8 @@ function clearFields1() {
 	result.innerHTML = percent + " Percentage(%) of " + num + " is = " + finalNum.toFixed(2);
 }
 
+
+
 function calculateEMI() {
   var loanAmount = document.getElementById('loanAmount').value;
   var interestRate = document.getElementById('interestRate').value / 100 / 12; // Monthly interest rate
@@ -203,7 +212,7 @@ function calculateEMI() {
 
   var resultElement = document.getElementById('total-emi');
   if(loanAmount && interestRate && loanTerm) {
-    resultElement.textContent = '' + emi.toFixed(2) + ' per month';
+    resultElement.textContent = '' + Number(emi.toFixed(2)).toLocaleString(intlLanguage) + ' per month';
   }
 
 }
