@@ -83,214 +83,413 @@
       </div>
       <div class="col-md-10">
         <div id="clock"></div>
-        <div id="average-calculator" class="content-body-wrapper">
-          <div class="row">
-            <div class="col-md-12">
-              <header>
-                <h2 class="headers">Stock market average calculator</h2>
-              </header>
-              <hr />
+        <div id="average-calculator">
+          <div class="content-body-wrapper">
+            <div class="row">
+              <div class="col-md-12">
+                <header>
+                  <h2 class="headers">Stock market average calculator</h2>
+                </header>
+                <hr />
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 st">
-              <h4>First Purchase</h3>
-                <hr>
-                <div>
-                  <label style="float:left;margin-right:10px;">Units</label>
-                  <input class="form-control" type="number" id="units1" autocomplete="off"
-                    onchange="unitChanged('units1','error1')" />
-                  <!-- <input type="range" id="slider1" min="0" max="5000" value="1" oninput="updateInput('units1', 'slider1')" onchange="unitChanged('units1','error1')" tabindex="-1">
+            <div class="row">
+              <div class="col-md-3 st">
+                <h4>First Purchase</h3>
+                  <hr>
+                  <div>
+                    <label style="float:left;margin-right:10px;">Units</label>
+                    <input class="form-control" type="number" id="units1" autocomplete="off"
+                      onchange="unitChanged('units1','error1')" />
+                    <!-- <input type="range" id="slider1" min="0" max="5000" value="1" oninput="updateInput('units1', 'slider1')" onchange="unitChanged('units1','error1')" tabindex="-1">
                   <span id='error1'></span> -->
-                </div>
-                <div style="margin-top:15px">
-                  <label style="float:left;margin-right:10px;">Price per share</label>
-                  <input class="form-control" type="number" id="Price1" autocomplete="off"
-                    onchange="unitChanged('Price1','error2')"/>
-                  <span id='error2'></span>
-                </div>
-            </div>
-            <div class="col-md-3 st">
-              <h4>Second Purchase</h3>
-                <hr>
-                <div>
-                  <label style="float:left;margin-right:10px;">Units</label>
-                  <input class="form-control" type="number" id="units2" autocomplete="off"
-                    onchange="unitChanged('units2','error3')" />
+                  </div>
+                  <div style="margin-top:15px">
+                    <label style="float:left;margin-right:10px;">Price per share</label>
+                    <input class="form-control" type="number" id="Price1" autocomplete="off"
+                      onchange="unitChanged('Price1','error2')" />
+                    <span id='error2'></span>
+                  </div>
+              </div>
+              <div class="col-md-3 st">
+                <h4>Second Purchase</h3>
+                  <hr>
+                  <div>
+                    <label style="float:left;margin-right:10px;">Units</label>
+                    <input class="form-control" type="number" id="units2" autocomplete="off"
+                      onchange="unitChanged('units2','error3')" />
                     <!-- <input type="range" id="slider2" min="0" max="5000" value="1" oninput="updateInput('units2', 'slider2')" onchange="unitChanged('units2','error3')" tabindex="-1">
                   <span id='error3'></span> -->
+                  </div>
+                  <div style="margin-top:15px">
+                    <label style="float:left;margin-right:10px;">Price per share</label>
+                    <input class="form-control" type="number" id="Price2" autocomplete="off"
+                      onchange="unitChanged('Price2','error4');getAverage()">
+                    <span id='error4'></span>
+                  </div>
+              </div>
+              <div class="col-md-1 st">
+              </div>
+              <div class="col-md-4 st banner-ad-desktop">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <h5 id="investedamount1"></h5>
+              </div>
+              <div class="col-md-3">
+                <h5 id="investedamount2"></h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 st">
+                <h5 id="result"></h5>
+              </div>
+              <div class="col-md-12 st">
+                <button class="btn btn-success" onclick="getAverage()"> Calculate Average</button>
+                <button class="btn btn-warning" onclick="clearFields()">Clear Fields</button>
+              </div>
+              <div class="col-md-12 d-block d-md-none display-mobile-ad">
+                <div id="buttonInstall">
+                  <image title="Download" src="/stockaveragecalculator/images/download.jpg" height="40px"
+                    width="40px" />
+                  Install App
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-body-wrapper mt-4">
+            <h4>Stock Average Calculator</h4>
+
+            <p>
+              The Stock Average Calculator is a valuable tool for investors looking to manage their portfolio
+              effectively. It aids in calculating the average share price, providing insights into optimizing investment
+              strategies.
+            </p>
+
+            <h4>Why Stock Average Calculator?</h4>
+            <p>
+              As an investor, you may encounter situations where a stock's price moves contrary to your expectations.
+              For instance, you bought Reliance stocks with the anticipation of an upward trend. However, the market
+              moves downward. Despite this, your faith in the stock persists. The Stock Average Calculator becomes
+              essential in such scenarios, allowing you to strategically add more stocks to lower the average price.
+            </p>
+
+            <h4>How Does Stock Average Calculator Work?</h4>
+            <p>
+              Let's delve into the mechanics of the Stock Average Calculator. Consider a scenario where you purchased 10
+              stocks of Tata Motors at a price of 200 each. Subsequently, the stock's value decreases to 150. With
+              confidence in Tata Motors' future prospects, you aim to reduce the average stock price by acquiring more
+              shares. The calculator assists by determining how many additional stocks you need to purchase to bring the
+              average closer to the current price. This tool, such as the Share Average Calculator by FinanceX, offers a
+              user-friendly interface where you input your purchase details, and it provides you with the recalculated
+              average price.
+            </p>
+
+            <h4>Steps to Use Stock Average Calculator:</h4>
+            <ol>
+              <li><strong>Input Purchase Prices:</strong> Enter the purchase price for each instance of buying the
+                stock.</li>
+              <li><strong>Calculating Average Price:</strong> The calculator processes the inputted purchase prices to
+                compute the average stock price.</li>
+              <li><strong>Decision Making:</strong> Use the calculated average to make informed decisions about buying
+                more stocks. This is typically done when the current stock price is lower than the calculated average.
+              </li>
+              <li><strong>Reducing Average Price:</strong> The goal is to strategically buy more shares at lower prices,
+                aiming to bring down the average cost per share.</li>
+              <li><strong>Tool Output:</strong> The Stock Average Calculator provides the user with the recalculated
+                average stock price based on new purchases.</li>
+            </ol>
+
+            <p>
+              This tool empowers investors to make informed decisions and manage their portfolio actively. It's crucial
+              to exercise caution and stay well-informed, as market conditions can be unpredictable.
+            </p>
+
+          </div>
+        </div>
+
+        <div id="sip-calculator" class="hide">
+          <div class="content-body-wrapper">
+            <div class="row">
+              <div class="col-md-12">
+                <header>
+                  <h2 class="headers">SIP(Systematic Investment Plan) calculator</h2>
+                </header>
+                <hr />
+              </div>
+            </div>
+            <div class="row">
+              <div id="sip-result-wrapper" class="col-md-4">
+                <div>
+                  <label style="float:left;margin-right:10px;">Monthly Investment Amount</label>
+                  <input class="form-control" type="number" id="investment" autocomplete="off"
+                    onchange="sipCalculator()" />
+                  <span id='error1'></span>
                 </div>
                 <div style="margin-top:15px">
-                  <label style="float:left;margin-right:10px;">Price per share</label>
-                  <input class="form-control" type="number" id="Price2" autocomplete="off"
-                    onchange="unitChanged('Price2','error4');getAverage()">
-                  <span id='error4'></span>
+                  <label style="float:left;margin-right:10px;">Investment Period in years</label>
+                  <input class="form-control" type="number" id="years" autocomplete="off" onchange="sipCalculator()" />
+                  <span id='error2'></span>
                 </div>
-            </div>
-            <div class="col-md-1 st">
-            </div>
-            <div class="col-md-4 st banner-ad-desktop">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3">
-              <h5 id="investedamount1"></h5>
-            </div>
-            <div class="col-md-3">
-              <h5 id="investedamount2"></h5>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 st">
-              <h5 id="result"></h5>
-            </div>
-            <div class="col-md-12 st">
-              <button class="btn btn-success" onclick="getAverage()"> Calculate Average</button>
-              <button class="btn btn-warning" onclick="clearFields()">Clear Fields</button>
-            </div>
-            <div class="col-md-12 d-block d-md-none display-mobile-ad">
-              <div id="buttonInstall">
-                <image title="Download" src="/stockaveragecalculator/images/download.jpg" height="40px" width="40px" />
-                Install App
+                <div style="margin-top:15px">
+                  <label style="float:left;margin-right:10px;">Expected Annual Returns(%)</label>
+                  <input class="form-control" type="number" id="rateOfInterest" autocomplete="off"
+                    onchange="sipCalculator()" />
+                  <span id='error2'></span>
+                </div>
+              </div>
+              <div class="col-md-2">
+              </div>
+              <div class="col-md-4 banner-ad-desktop">
               </div>
             </div>
-          </div>
-        </div>
-        <div id="sip-calculator" class="hide content-body-wrapper">
-          <div class="row">
-            <div class="col-md-12">
-              <header>
-                <h2 class="headers">SIP(Systematic Investment Plan) calculator</h2>
-              </header>
-              <hr />
-            </div>
-          </div>
-          <div class="row">
-            <div id="sip-result-wrapper" class="col-md-4">
-              <div>
-                <label style="float:left;margin-right:10px;">Monthly Investment Amount</label>
-                <input class="form-control" type="number" id="investment" autocomplete="off"
-                  onchange="sipCalculator()" />
-                <span id='error1'></span>
-              </div>
-              <div style="margin-top:15px">
-                <label style="float:left;margin-right:10px;">Investment Period in years</label>
-                <input class="form-control" type="number" id="years" autocomplete="off" onchange="sipCalculator()" />
-                <span id='error2'></span>
-              </div>
-              <div style="margin-top:15px">
-                <label style="float:left;margin-right:10px;">Expected Annual Returns(%)</label>
-                <input class="form-control" type="number" id="rateOfInterest" autocomplete="off"
-                  onchange="sipCalculator()" />
-                <span id='error2'></span>
-              </div>
-            </div>
-            <div class="col-md-2">
-            </div>
-            <div class="col-md-4 banner-ad-desktop">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="r-sip">
-                <div class="results">Expected Amount : <span id="tm">0</span> </div>
-                <hr />
-                <div class="results"> Amount Invested : <span id="im">0</span></div>
-                <hr>
-                <div class="results">Total Gain : <span id="gm">0</span> </div>
-              </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="r-sip">
+                  <div class="results">Expected Amount : <span id="tm">0</span> </div>
+                  <hr />
+                  <div class="results"> Amount Invested : <span id="im">0</span></div>
+                  <hr>
+                  <div class="results">Total Gain : <span id="gm">0</span> </div>
+                </div>
 
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 st">
-              <button class="btn btn-success" onclick="sipCalculator()"> Calculate</button>
-              <button class="btn btn-warning" onclick="clearFields1()">Clear Fields</button>
-            </div>
-            <div class="col-md-12 d-block d-md-none display-mobile-ad">
+            <div class="row">
+              <div class="col-md-12 st">
+                <button class="btn btn-success" onclick="sipCalculator()"> Calculate</button>
+                <button class="btn btn-warning" onclick="clearFields1()">Clear Fields</button>
+              </div>
+              <div class="col-md-12 d-block d-md-none display-mobile-ad">
 
+              </div>
             </div>
+          </div>
+          <div class="content-body-wrapper mt-4">
+            <h4>What is SIP (Systematic Investment Plan)?</h4>
+
+            <p>
+              <strong>Systematic Investment Plan (SIP):</strong> An investment scheme provided by mutual fund companies.
+            </p>
+
+            <p>
+              <strong>Investment Methodology:</strong> Allows individuals to invest a small amount at regular intervals
+              (weekly, monthly, quarterly) in a chosen mutual fund.
+            </p>
+
+            <p>
+              <strong>Objective:</strong> A disciplined and passive approach for retail investors to create long-term
+              wealth, leveraging the power of compounding.
+            </p>
+
+            <p>
+              <strong>Volatility Management:</strong> Reduces the impact of market volatility since investments are made
+              at regular intervals.
+            </p>
+
+            <h4>SIP Calculator Functionality:</h4>
+
+            <ul>
+              <li><strong>Wealth Gain Estimation:</strong> Calculates the potential wealth gain and expected returns for
+                a monthly SIP investment.</li>
+              <li><strong>Estimation Basis:</strong> Provides a rough estimate of the maturity amount based on a
+                projected annual return rate.</li>
+              <li><strong>Comparative Tool:</strong> If the investor holds Fixed Deposits (FD) in their portfolio, a
+                fixed deposit calculator is available to approximate the maturity value.</li>
+            </ul>
+
+            <h4>Benefits of SIP compared to Lumpsum Investment:</h4>
+
+            <ol>
+              <li>
+                <strong>Market Speculation Avoidance:</strong>
+                <p>Eliminates the need to speculate or time the market for generating returns over the long term.</p>
+              </li>
+              <li>
+                <strong>Impact of Market Volatility:</strong>
+                <p>
+                <ul>
+                  <li>Investments made on a monthly basis result in little to no impact from market volatility.</li>
+                  <li>Utilizes the concept of unit cost averaging to mitigate risks associated with market fluctuations.
+                  </li>
+                </ul>
+                </p>
+              </li>
+              <li>
+                <strong>Passive and Automated Approach:</strong>
+                <p>
+                <ul>
+                  <li>Passive Investment: Encourages a passive and automated investment approach.</li>
+                  <li>Monthly Installments: Payments are deducted automatically, promoting a disciplined and committed
+                    savings/investment strategy.</li>
+                </ul>
+                </p>
+              </li>
+              <li>
+                <strong>Flexibility:</strong>
+                <p>
+                <ul>
+                  <li>Investment Amount: SIPs are flexible, allowing investors to start with amounts as low as Rs. 1000
+                    per month.</li>
+                  <li>Easy Management: Investors have the flexibility to create, update, or cancel SIPs at any time.
+                  </li>
+                </ul>
+                </p>
+              </li>
+            </ol>
+
+            <h4>Conclusion:</h4>
+
+            <p>
+              - SIP serves as a strategic investment tool for those seeking a disciplined, low-risk, and automated
+              approach to wealth creation.
+            </p>
+
+            <p>
+              - The flexibility and ease of management make SIP an accessible option for a wide range of investors.
+            </p>
+
+            <p>
+              - The use of calculators enhances the investor's ability to plan and project their investment outcomes
+              effectively.
+            </p>
+
           </div>
         </div>
-        <div id="percentage-calculator" class="hide content-body-wrapper">
-          <div class="row">
-            <div class="col-md-12">
-              <header>
-                <h2 class="headers">Percentage(%) calculator</h2>
-              </header>
-              <hr />
-            </div>
-          </div>
-          <div class="row">
-            <div id="percentage-result-wrapper" class="col-md-6">
-              <div class="percentage-wrapper">
-                <label>What is </label>
-                <input class="form-control percentage-input" type="number" id="percentage" autocomplete="off"
-                  onchange="checkPercentage()" />
-              </div>
-              <div class="percentage-wrapper">
-                <label>% (Percentage) of </label>
-                <input class="form-control percentage-input" type="number" id="percentageNumber" autocomplete="off"
-                  onchange="checkPercentage()" />
-                <label>?</label>
-              </div>
-            </div>
-            <div class="col-md-8">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 col-xs-12">
-              <div class="r-sip">
-                <div class="results">Result : <span id="percentageResult">0</span> </div>
-              </div>
-            </div>
-            <div class="col-md-2 ans-btn-wrapper">
-              <button class="btn btn-success ans-btn"> Answer</button>
-            </div>
-            <div class="col-md-4 banner-ad-desktop">
-            </div>
-            <div class="col-xs-12 d-block d-md-none display-mobile-ad">
-            </div>
-          </div>
-        </div>
-        <div id="emi-calculator" class="hide content-body-wrapper">
-          <div class="row">
-            <div class="col-md-12">
-              <header>
-                <h2 class="headers">EMI calculator</h2>
-              </header>
-              <hr />
-            </div>
-          </div>
-          <div class="row">
-            <div id="sip-result-wrapper" class="col-md-4">
-              <div>
-                <label style="float:left;margin-right:10px;">Loan Amount</label>
-                <input class="form-control" type="number" id="loanAmount" placeholder="Enter loan amount"
-                  autocomplete="off" onchange="calculateEMI()" required>
-                <span id='error1'></span>
-              </div>
-              <div style="margin-top:15px">
-                <label style="float:left;margin-right:10px;" for="interestRate">Annual Interest Rate (%):</label>
-                <input class="form-control" type="number" id="interestRate" placeholder="Enter annual interest rate"
-                  autocomplete="off" onchange="calculateEMI()" required>
-                <span id='error2'></span>
-              </div>
-              <div style="margin-top:15px">
-                <label style="float:left;margin-right:10px;" for="loanTerm">Loan Term (Months):</label>
-                <input class="form-control" type="number" id="loanTerm" placeholder="Enter loan term in months"
-                  autocomplete="off" onchange="calculateEMI()" required>
-                <span id='error2'></span>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="r-sip">
-                <div class="results">EMI : <span id="total-emi">0</span> </div>
+        <div id="percentage-calculator" class="hide">
+          <div class="content-body-wrapper">
+            <div class="row">
+              <div class="col-md-12">
+                <header>
+                  <h2 class="headers">Percentage(%) calculator</h2>
+                </header>
                 <hr />
               </div>
             </div>
+            <div class="row">
+              <div id="percentage-result-wrapper" class="col-md-6">
+                <div class="percentage-wrapper">
+                  <label>What is </label>
+                  <input class="form-control percentage-input" type="number" id="percentage" autocomplete="off"
+                    onchange="checkPercentage()" />
+                </div>
+                <div class="percentage-wrapper">
+                  <label>% (Percentage) of </label>
+                  <input class="form-control percentage-input" type="number" id="percentageNumber" autocomplete="off"
+                    onchange="checkPercentage()" />
+                  <label>?</label>
+                </div>
+              </div>
+              <div class="col-md-8">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-xs-12">
+                <div class="r-sip">
+                  <div class="results">Result : <span id="percentageResult">0</span> </div>
+                </div>
+              </div>
+              <div class="col-md-2 ans-btn-wrapper">
+                <button class="btn btn-success ans-btn"> Answer</button>
+              </div>
+              <div class="col-md-4 banner-ad-desktop">
+              </div>
+              <div class="col-xs-12 d-block d-md-none display-mobile-ad">
+              </div>
+            </div>
+          </div>
+          <div class="content-body-wrapper mt-4">
+            <h4>Key Features:</h4>
+
+            <ul>
+              <li><strong>Percentage of a Number:</strong> Calculates the percentage of a given number.</li>
+              <li><strong>Percentage Change:</strong> Computes the percentage change between two values.</li>
+              <li><strong>Percentage Increase/Decrease:</strong> Determines the percentage increase or decrease from one
+                value to another.</li>
+              <li><strong>Percent to Fraction and Decimal Conversion:</strong> Converts percentages to fractions and
+                decimals.</li>
+              <li><strong>Discount and Mark-up Calculations:</strong> Computes the discounted price or mark-up
+                percentage.</li>
+              <li><strong>Tips and Commissions:</strong> Helps in calculating tips or commissions based on a percentage
+                of the total amount.</li>
+              <li><strong>Loan Interest Rates:</strong> Calculates interest rates on loans given a principal amount and
+                the total interest accrued.</li>
+            </ul>
+
+            <h4>How to Use a Percentage Calculator:</h4>
+
+            <ol>
+              <li><strong>Entering Values:</strong> Users input the necessary values into the calculator depending on
+                the type of percentage calculation they need.</li>
+              <li><strong>Choosing Calculation Type:</strong> Select the specific type of percentage calculation desired
+                (e.g., percentage increase, percentage decrease, etc.).</li>
+              <li><strong>Result Display:</strong> The calculator provides the calculated percentage or related result
+                based on the input values and chosen calculation type.</li>
+            </ol>
+
+            <h4>Benefits of a Percentage Calculator:</h4>
+
+            <ul>
+              <li><strong>Accuracy and Efficiency:</strong> Reduces manual calculation errors, ensuring accurate
+                results. Saves time by automating complex percentage calculations.</li>
+              <li><strong>Versatility:</strong> Useful in various scenarios such as finance, business, education, and
+                everyday calculations.</li>
+              <li><strong>Ease of Use:</strong> Designed to be user-friendly, making percentage-related computations
+                accessible to a wide audience.</li>
+              <li><strong>Educational Tool:</strong> Helps users understand and learn the concept of percentages through
+                practical applications.</li>
+            </ul>
+
+            <h4>Conclusion:</h4>
+
+            <p>
+              The Percentage Calculator is a versatile tool that simplifies percentage-related calculations, providing
+              accurate results efficiently. It is a valuable resource in various fields, aiding users in making informed
+              decisions and solving mathematical problems involving percentages.
+            </p>
+
+          </div>
+        </div>
+        <div id="emi-calculator" class="hide">
+          <div class="content-body-wrapper">
+            <div class="row">
+              <div class="col-md-12">
+                <header>
+                  <h2 class="headers">EMI calculator</h2>
+                </header>
+                <hr />
+              </div>
+            </div>
+            <div class="row">
+              <div id="sip-result-wrapper" class="col-md-4">
+                <div>
+                  <label style="float:left;margin-right:10px;">Loan Amount</label>
+                  <input class="form-control" type="number" id="loanAmount" placeholder="Enter loan amount"
+                    autocomplete="off" onchange="calculateEMI()" required>
+                  <span id='error1'></span>
+                </div>
+                <div style="margin-top:15px">
+                  <label style="float:left;margin-right:10px;" for="interestRate">Annual Interest Rate (%):</label>
+                  <input class="form-control" type="number" id="interestRate" placeholder="Enter annual interest rate"
+                    autocomplete="off" onchange="calculateEMI()" required>
+                  <span id='error2'></span>
+                </div>
+                <div style="margin-top:15px">
+                  <label style="float:left;margin-right:10px;" for="loanTerm">Loan Term (Months):</label>
+                  <input class="form-control" type="number" id="loanTerm" placeholder="Enter loan term in months"
+                    autocomplete="off" onchange="calculateEMI()" required>
+                  <span id='error2'></span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="r-sip">
+                  <div class="results">EMI : <span id="total-emi">0</span> </div>
+                  <hr />
+                </div>
+              </div>
             </div>
             <div class="row">
               <div class="col-md-12 st">
@@ -302,9 +501,11 @@
               </div>
             </div>
           </div>
+          <div class="content-body-wrapper mt-4"></div>
         </div>
       </div>
     </div>
+  </div>
   </div>
   </div>
 
