@@ -2,9 +2,24 @@
 <html lang="en">
 
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JPBH15FMY4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-JPBH15FMY4');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stock Data</title>
+    <meta name="description"
+        content="Explore detailed information on Indian stock market dividend details for the year 2023. Get insights into dividend, interest, and bonus details for equity market companies." />
+    <meta name="keywords"
+        content="Indian stock market, stock market dividends, equity market, stock market data, 2023 dividends, dividend details, bonus details, interest details" />
+    <meta name="author" content="Your Name">
+    <title>Indian Stock Market Dividend Details 2023</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Add Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -22,46 +37,99 @@
 
         th {
             background-color: #f2f2f2;
+            min-width: 105px;
         }
 
         .filter-container {
             margin-bottom: 20px;
+        }
+
+        footer {
+            bottom: 0;
+            width: 100%;
+            height: 53px;
+            background-color: #f5f5f5;
+            text-align: center;
+            padding-top: 13px;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container-fluid">
-        <h3>Indian Stock Dividend/Interest/Bonus Details for Equity Market 2023 - Data updated Till 26th DEC 2023</h3>
+    <div class="container-fluid wrapper-body">
+        <div class="row">
+            <div id="mobile-header" class="hidden-on-desktop-tablet">
+                <div id="toggle-btn">
+                    <i class="fas fa-bars"></i> Menu
+                </div>
+                <div class="mobile-logo">
+                    <h2 class="mobile-app-logo"><i class="fas fa-calculator"></i> Stock-Calc</h2>
+                </div>
+            </div>
+            <div class="col-md-2 sidebar" id="sidebar">
+                <h2 class="app-logo"><i class="fas fa-calculator"></i> Stock-Calc</h2>
+                <div class="top-menu">
+                    <ul>
+                        <li id="ac" title="Stock Average Calculator"  onclick="activeSection('ac')">
+                            <i class="fas fa-tachometer-alt"></i> <a href="./index.html">Stock Average Calculator</a>
+                        </li>
+                        <li id="sc" title="SIP Calculator" class="" onclick="activeSection('sc')">
 
-        <!-- Filter input box -->
-        <div class="filter-container">
-            <label for="companyFilter" class="form-label">Filter by Company Name:</label>
-            <input type="text" class="form-control" id="companyFilter" placeholder="Type company name...">
+                            <i class="fas fa-coins"></i> <a href="./index.html"> SIP Calculator </a>
+                        </li>
+                        <li id="pc" title="Percentage Calculator" class="" onclick="activeSection('pc')">
+                            <i class="fas fa-percentage"></i>  <a href="./index.html">Percentage Calculator  </a>
+                        </li>
+                        <li id="em" title="EMI Calculator" class="" onclick="activeSection('em')">
+                            <i class="fas fa-wallet"></i> <a href="./index.html"> EMI Calculator </a>
+                        </li>
+                        <li id="DivDetails" title="Dividend Details" class="active">
+                            <i class="fas fa-wallet"></i> <a href="./indianstockmaretdividend2023.html">Dividend Details
+                                - 2023 <br /> Compony name </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <h3>Indian Stocks Dividends bonus and interest Details for Equity Market and Bonds 2023 - Data updated Till 26th
+                    DEC 2023
+                </h3>
+
+                <!-- Filter input box -->
+                <div class="filter-container">
+                    <label for="companyFilter" class="form-label">Filter by Company Name:</label>
+                    <input type="text" class="form-control" id="companyFilter" placeholder="Type company name...">
+                </div>
+
+                <div id="stockTablesContainer"></div>
+
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Number</th>
+                                <th>Symbol</th>
+                                <th>Company Name</th>
+                                <th>Series</th>
+                                <th>Purpose</th>
+                                <th>Dividend Type</th>
+                                <th>Dividend per share</th>
+                                <th>Face Value</th>
+                                <th>Ex-Date</th>
+                                <th>Record Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="stockTableBody"></tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-
-        <div id="stockTablesContainer"></div>
-     
-        <div class="table-responsive">
-            <table class="table table-bordered table-striped">
-                <thead>
-                    <tr>
-                        <th>Number</th>
-                        <th>Symbol</th>
-                        <th>Company Name</th>
-                        <th>Series</th>
-                        <th>Purpose</th>
-                        <th>Dividend Type</th>
-                        <th>Dividend per share</th>
-                        <th>Face Value</th>
-                        <th>Ex-Date</th>
-                        <th>Record Date</th>
-                    </tr>
-                </thead>
-                <tbody id="stockTableBody"></tbody>
-            </table>
     </div>
+    <footer>
+        <div class="container">
+            &copy; 2018 - 2099. Feedback:<a href="mailto:praveen_mp@live.com">praveen_mp@live.com</a></div>
+    </footer>
 
     <!-- Add Bootstrap JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -147,104 +215,107 @@
             }, {});
         }
 
-         // Fetch JSON data from external file
-         fetch('data.json')
-                .then(response => response.json())
-                .then(jsonData => {
-                    // Get the table body element
-                    var tableBody = document.getElementById('stockTableBody');
+        // Fetch JSON data from external file
+        fetch('data.json')
+            .then(response => response.json())
+            .then(jsonData => {
+                // Get the table body element
+                var tableBody = document.getElementById('stockTableBody');
 
-                    // Filter out rows with specific PURPOSE values or containing "Bonus" or "Rights"
-                    var filteredData = jsonData.filter(function(item) {
-                        var excludedPurposes = [
-                            "Annual General Meeting",
-                            "Buy Back",
-                            "Interest Payment",
-                            "Demerger",
-                            "Extra Ordinary General Meeting",
-                            "Extra-Ordinary General Meeting",
-                            "Extra Oridinary General Meeting",
-                            "Extra- Ordinary General Meeting"
-                        ];
+                // Filter out rows with specific PURPOSE values or containing "Bonus" or "Rights"
+                var filteredData = jsonData.filter(function (item) {
+                    var excludedPurposes = [
+                        "Annual General Meeting",
+                        "Buy Back",
+                        "Interest Payment",
+                        "Demerger",
+                        "Extra Ordinary General Meeting",
+                        "Extra-Ordinary General Meeting",
+                        "Extra Oridinary General Meeting",
+                        "Extra- Ordinary General Meeting"
+                    ];
 
-                        return !(
-                            excludedPurposes.includes(item.PURPOSE) ||
-                            item.PURPOSE.includes("Bonus") ||
-                            item.PURPOSE.includes("Rights") ||
-                            item.PURPOSE.includes("Face Value Split (Sub-Division)")
-                        );
+                    return !(
+                        excludedPurposes.includes(item.PURPOSE) ||
+                        item.PURPOSE.includes("Bonus") ||
+                        item.PURPOSE.includes("Rights") ||
+                        item.PURPOSE.includes("Face Value Split (Sub-Division)")
+                    );
+                });
+
+
+                // Sort data by "Ex-Date" field in ascending order (chronological order)
+                filteredData.sort((a, b) => new Date(a["EX-DATE"]) - new Date(b["EX-DATE"]));
+
+                // Loop through the sorted data and create table rows
+                filteredData.forEach(function (item, index) {
+                    // Create a new table row
+                    var row = document.createElement('tr');
+
+                    // Create and append table cells
+                    var numberCell = document.createElement('td');
+                    numberCell.textContent = index + 1; // Start numbering from 1
+                    row.appendChild(numberCell);
+
+                    Object.keys(item).forEach(function (key) {
+                        var cell = document.createElement('td');
+
+                        // Populate "Dividend Type" based on the content of "Purpose"
+                        if (key === 'PURPOSE') {
+                            // Add an additional column for "Purpose"
+                            var purposeCell = document.createElement('td');
+                            purposeCell.textContent = item[key];
+                            row.appendChild(purposeCell);
+
+                            // Add an additional column for "Dividend Type"
+                            var dividendTypeCell = document.createElement('td');
+                            dividendTypeCell.textContent = getDividendType(item[key]);
+                            row.appendChild(dividendTypeCell);
+
+                            // Add an additional column for "Dividend per share"
+                            var dividendPerShareCell = document.createElement('td');
+                            dividendPerShareCell.textContent = extractDividendPerShare(item[key]);
+                            row.appendChild(dividendPerShareCell);
+                        } else if (key !== 'DIVIDEND_TYPE') {
+                            // For other columns, just set the content
+                            cell.textContent = item[key];
+                            row.appendChild(cell);
+                        }
                     });
 
-                    // Loop through the filtered data and create table rows
-                    filteredData.forEach(function(item, index) {
-                        // Create a new table row
-                        var row = document.createElement('tr');
+                    // Append the row to the table body
+                    tableBody.appendChild(row);
+                });
+            })
+            .catch(error => console.error('Error fetching data:', error));
 
-                        // Create and append table cells
-                        var numberCell = document.createElement('td');
-                        numberCell.textContent = index + 1; // Start numbering from 1
-                        row.appendChild(numberCell);
-
-                        Object.keys(item).forEach(function(key) {
-                            var cell = document.createElement('td');
-
-                            // Populate "Dividend Type" based on the content of "Purpose"
-                            if (key === 'PURPOSE') {
-                                // Add an additional column for "Purpose"
-                                var purposeCell = document.createElement('td');
-                                purposeCell.textContent = item[key];
-                                row.appendChild(purposeCell);
-
-                                // Add an additional column for "Dividend Type"
-                                var dividendTypeCell = document.createElement('td');
-                                dividendTypeCell.textContent = getDividendType(item[key]);
-                                row.appendChild(dividendTypeCell);
-
-                                // Add an additional column for "Dividend per share"
-                                var dividendPerShareCell = document.createElement('td');
-                                dividendPerShareCell.textContent = extractDividendPerShare(item[key]);
-                                row.appendChild(dividendPerShareCell);
-                            } else if (key !== 'DIVIDEND_TYPE') {
-                                // For other columns, just set the content
-                                cell.textContent = item[key];
-                                row.appendChild(cell);
-                            }
-                        });
-
-                        // Append the row to the table body
-                        tableBody.appendChild(row);
-                    });
-                })
-                .catch(error => console.error('Error fetching data:', error));
-
-            // Function to determine "Dividend Type" based on "Purpose"
-            function getDividendType(purpose) {
-                if (purpose.includes("Special Interim Dividend")) {
-                    return "Special Interim";
-                } else if (purpose.includes("Special")) {
-                    return "Special Dividend";
-                } else if (purpose.includes("Interim Dividend")) {
-                    return "Special Dividend";
-                }  else if (purpose.includes("Interim")) {
-                    return "Special Dividend";
-                }  else if (purpose.includes("Special Dividend")) {
-                    return "Special Dividend";
-                }           
-                else {
-                    return "Other";
-                }
+        // Function to determine "Dividend Type" based on "Purpose"
+        function getDividendType(purpose) {
+            if (purpose.includes("Special Interim Dividend")) {
+                return "Special Interim";
+            } else if (purpose.includes("Special")) {
+                return "Special Dividend";
+            } else if (purpose.includes("Interim Dividend")) {
+                return "Special Dividend";
+            } else if (purpose.includes("Interim")) {
+                return "Special Dividend";
+            } else if (purpose.includes("Special Dividend")) {
+                return "Special Dividend";
+            } else {
+                return "Other";
             }
+        }
 
-            // Function to extract numeric and floating values from "Purpose" column
-            function extractDividendPerShare(purpose) {
-                // Regular expression to match numeric and floating values
-                var match = purpose.match(/(\d+(\.\d+)?)/);
+        // Function to extract numeric and floating values from "Purpose" column
+        function extractDividendPerShare(purpose) {
+            // Regular expression to match numeric and floating values
+            var match = purpose.match(/(\d+(\.\d+)?)/);
 
-                // If a match is found, return the matched value, otherwise return an empty string
-                return match ? match[0] : "";
-            }
+            // If a match is found, return the matched value, otherwise return an empty string
+            return match ? match[0] : "";
+        }
     </script>
-
+    <script src="./script.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
