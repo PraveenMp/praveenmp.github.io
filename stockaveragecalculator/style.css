@@ -135,14 +135,20 @@ footer {
 #average-calculator.active,
 #sip-calculator.active,
 #percentage-calculator.active,
-#emi-calculator.active {
+#emi-calculator.active,
+#cagr-calculator.active,
+#swp-calculator.active,
+#buy-me-a-coffee.active {
   display: block;
 }
 
 #average-calculator.hide,
 #sip-calculator.hide,
 #percentage-calculator.hide,
-#emi-calculator.hide {
+#emi-calculator.hide,
+#cagr-calculator.hide,
+#swp-calculator.hide,
+#buy-me-a-coffee.hide {
   display: none;
 }
 
