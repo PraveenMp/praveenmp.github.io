@@ -120,6 +120,8 @@ footer {
 
 .top-menu ul li.active a {
   color: #3b863b;
+  color: #FFF;
+  background: #038edc;
 }
 
 .top-menu ul li.active a:focus,
