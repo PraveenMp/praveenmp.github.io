@@ -255,7 +255,7 @@ function unitChanged(id, error) {
           document.getElementById("pc").classList.remove("active");
           document.getElementById("cagr").classList.remove("active");
           document.getElementById("buymeacoffee").classList.remove("active");
-          break
+          break;
           case 'buymeacoffee': 
           document.getElementById("buy-me-a-coffee").classList.add("active");
           document.getElementById("buy-me-a-coffee").classList.remove("hide");
