@@ -62,17 +62,29 @@
             <li id="em" title="EMI Calculator" class="" onclick="activeSection('em')">
               <i class="fas fa-wallet"></i> EMI Calculator
             </li>
-            <li id="DivDetails" title="Dividend Details" class="">
-              <i class="fas fa-cubes"></i> <a href="./indian-stock-market-dividend-details-2024.html">Dividend & Bonus Details - 2024 </a>
+            <li id="cagr" title="CAGR calculator" class="" onclick="activeSection('cagr')">
+              <i class="fas fa-mountain"></i> CAGR calculator
+            </li>
+            <li id="swp" title="SWP Calculator" class="" onclick="activeSection('swp')">
+              <i class="fas fa-hand-holding-water"></i> SWP Calculator
             </li>
             <li id="DivDetails" title="Dividend Details" class="">
-              <i class="fas fa-cubes"></i> <a href="./indianstockmaretdividend2023.html">Dividend & Bonus Details - 2023 </a>
+              <i class="fas fa-cubes"></i> <a href="./indian-stock-market-dividend-details-2024.html">Dividend & Bonus
+                Details - 2024 </a>
+            </li>
+            <li id="DivDetails" title="Dividend Details" class="">
+              <i class="fas fa-cubes"></i> <a href="./indianstockmaretdividend2023.html">Dividend & Bonus Details - 2023
+              </a>
             </li>
             <li id="DivDetails" title="Dividend Details" class="">
               <i class="fas fa-search-dollar"></i> <a href="./how-to-choose-right-mutual-funds.html">Mutual Funds </a>
             </li>
             <li id="DivDetails" title="Dividend Details" class="">
-              <i class="fas fa-coins"></i> <a href="./basic-stock-market-principles.html">Stock Market Basic Principles</a>
+              <i class="fas fa-coins"></i> <a href="./basic-stock-market-principles.html">Stock Market Basic
+                Principles</a>
+            </li>
+            <li id="buymeacoffee" title="Buy Me a Coffee" class="" onclick="activeSection('buymeacoffee')">
+              <i class="fas fa-mug-hot"></i> Buy Me a Coffee 
             </li>
 
 
@@ -515,18 +527,164 @@
               </div>
             </div>
           </div>
-          <div class="content-body-wrapper mt-4"></div>
+          <div class="content-body-wrapper mt-4">
+            <h3 class="mt-4 mb-4">EMI Calculator</h3>
+            <p>An EMI (Equated Monthly Installment) calculator is a financial tool used to calculate the fixed monthly payment amount towards a loan, with a specified interest rate and loan tenure. It helps borrowers understand their repayment obligations and plan their finances accordingly.</p>
+            <p>To use the EMI calculator, enter the loan amount, interest rate (annual percentage), and loan tenure (in months) in the form below and click "Calculate EMI". The calculator will then compute the EMI, total interest payable, and total payment (principal + interest) and display the results.</p>
+          </div>
+        </div>
+        <div id="cagr-calculator" class="hide">
+          <div class="content-body-wrapper">
+            <div class="row">
+              <div class="col-md-12">
+                <header>
+                  <h2 class="headers">CAGR calculator(Compound Annual Growth Rate Calculator)</h2>
+                </header>
+                <hr />
+              </div>
+            </div>
+            <div class="row">
+              <div id="cagr-result-wrapper" class="col-md-4">
+                <div>
+                  <label style="float:left;margin-right:10px;">Initial Value</label>
+                  <input class="form-control" type="number" id="initialValue" placeholder="Enter initial value"
+                    autocomplete="off" onchange="calculateCAGR()">
+                  <span id='error1'></span>
+                </div>
+                <div style="margin-top:15px">
+                  <label style="float:left;margin-right:10px;" for="finalValue">Final Value:</label>
+                  <input class="form-control" type="number" id="finalValue" placeholder="Enter final value"
+                    autocomplete="off" onchange="calculateCAGR()">
+                  <span id='error2'></span>
+                </div>
+                <div style="margin-top:15px">
+                  <label style="float:left;margin-right:10px;" for="cagryears">Years:</label>
+                  <input class="form-control" type="number" id="cagryears" placeholder="Enter years" autocomplete="off"
+                    onchange="calculateCAGR()">
+                  <span id='error2'></span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="r-sip">
+                  <div class="results">CAGR : <span id="cagr-result">0</span> </div>
+                  <hr />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 st">
+                <button class="btn btn-success" onclick="calculateCAGR()"> Calculate</button>
+                <button class="btn btn-warning" onclick="clearFields3()">Clear Fields</button>
+              </div>
+              <div class="col-md-12 d-block d-md-none display-mobile-ad">
+
+              </div>
+            </div>
+          </div>
+          <div class="content-body-wrapper mt-4">
+            <p>The Compound Annual Growth Rate (CAGR) calculator is a tool used to determine the average annual growth
+              rate of an investment over a specified period. It is particularly useful for assessing the performance of
+              long-term investments such as stocks, mutual funds, and retirement accounts.</p>
+            <p>The formula for calculating CAGR is:</p>
+            <pre>
+        CAGR = ((Final Value / Initial Value)^(1 / Number of Years)) - 1
+            </pre>
+            <p>Where:</p>
+            <ul>
+              <li><strong>Final Value:</strong> The ending balance or value of the investment.</li>
+              <li><strong>Initial Value:</strong> The starting balance or value of the investment.</li>
+              <li><strong>Number of Years:</strong> The total number of years over which the investment has grown.</li>
+            </ul>
+          </div 
+        </div>
+      </div>
+      <div id="swp-calculator" class="hide">
+        <div class="content-body-wrapper">
+          <div class="row">
+            <div class="col-md-12">
+              <header>
+                <h2 class="headers">SWP calculator(Systematic Withdrawal Plan)</h2>
+              </header>
+              <hr />
+            </div>
+          </div>
+          <div class="row">
+            <div id="swp-result-wrapper" class="col-md-4">
+              <div>
+                <label style="float:left;margin-right:10px;">Initial Investment Amount:</label>
+                <input class="form-control" type="number" id="swpInvestment" placeholder="Enter investment amount"
+                  autocomplete="off" onchange="calculateSWP()">
+                <span id='error1'></span>
+              </div>
+              <div style="margin-top:15px">
+                <label style="float:left;margin-right:10px;" for="monthlyWithdrawal">Monthly Withdrawal Amount</label>
+                <input class="form-control" type="number" id="monthlyWithdrawal" placeholder="Enter monthly withdrawal amount"
+                  autocomplete="off" onchange="calculateSWP()">
+                <span id='error2'></span>
+              </div>
+              <div style="margin-top:15px">
+                <label style="float:left;margin-right:10px;" for="annualInterestRate">Annual Interest Rate (%):</label>
+                <input class="form-control" type="number" id="annualInterestRate" placeholder="Enter annual interest rate"
+                  autocomplete="off" onchange="calculateSWP()">
+                <span id='error2'></span>
+              </div>
+              <div style="margin-top:15px">
+                <label style="float:left;margin-right:10px;" for="swpMonths">Number of Months</label>
+                <input class="form-control" type="number" id="swpMonths" placeholder="Enter number of months" autocomplete="off"
+                  onchange="calculateSWP()">
+                <span id='error2'></span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="r-sip">
+                <div class="results">SWP : <span id="swp-result">0</span> </div>
+                <hr />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 st">
+              <button class="btn btn-success" onclick="calculateSWP()"> Calculate</button>
+              <button class="btn btn-warning" onclick="clearFields4()">Clear Fields</button>
+            </div>
+            <div class="col-md-12 d-block d-md-none display-mobile-ad">
+
+            </div>
+          </div>
+          <div class="content-body-wrapper mt-4">
+            <h3 class="mt-4 mb-4">Simple Withdrawal Plan (SWP) Calculator</h3>
+            <p>A Simple Withdrawal Plan (SWP) calculator is a financial tool used to calculate the final value of an investment after a specified period and the total amount withdrawn through monthly withdrawals. It helps investors plan their withdrawals from an investment portfolio while ensuring that they maintain a desired income stream over time.</p>
+            <p>To use the SWP calculator, enter the initial investment amount, monthly withdrawal amount, annual interest rate, and number of months in the form below and click "Calculate". The calculator will then compute the final value after the specified number of months and the total amount withdrawn, and display the results.</p>
+            <form>
+            </div>
+        </div>
+      </div>
+      <div id="buy-me-a-coffee" class="hide">
+        <div class="content-body-wrapper mt-4">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="">
+                <h4 class="mt-4 mb-4">  <i class="fas fa-mug-hot"></i>  Buy Me a Coffee   <i class="fas fa-mug-hot"></i> </h4>
+                <p>Buy me a coffee is a way to support the developer of this application. If you find this application useful, you can buy me a coffee. Your support will help me to keep this application running and improve it further.</p>
+                <p>You can scan the QR code using any QR code scanner app on your smartphone.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+                <img src="./images/donate-qr.jpeg" alt="Buy me a coffee" height="700" width="500" class="img-fluid" />
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  </div>
-  </div>
 
-  <footer>
-    <div class="container">
-      &copy; 2018 - 2099. Feedback:<a href="mailto:praveen_mp@live.com">praveen_mp@live.com</a></div>
-  </footer>
+
+    <footer>
+      <div class="container">
+        &copy; 2018 - 2099. Feedback:<a href="mailto:praveen_mp@live.com">praveen_mp@live.com</a></div>
+    </footer>
 
   </div>
   <script src="./script.js" crossorigin="anonymous"></script>
