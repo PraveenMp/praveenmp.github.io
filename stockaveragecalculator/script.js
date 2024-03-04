@@ -236,7 +236,9 @@ function updateClock() {
 
   var timeString = hours + ':' + minutes + ':' + seconds + ' ' + meridiem;
 
-  document.getElementById('clock').innerText = timeString;
+  if(document.getElementById('clock')) {
+    document.getElementById('clock').innerText = timeString;
+  }
 }
 
 // Update the clock every second
