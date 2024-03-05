@@ -407,8 +407,8 @@ function calculateSWP() {
     totalWithdrawn += monthlyWithdrawal;
   }
 
-  document.getElementById('swp-result').innerHTML = 'Final Value After ' + months + ' Months: ₹' + finalValue.toFixed(2) + '<br/>' +
-                                                 '<p>Total Amount Withdrawn: ₹' + totalWithdrawn.toFixed(2) + '</p>';
+  document.getElementById('swp-result').innerHTML = 'Final value after ' + months + ' Months: ' + finalValue.toFixed(2) + '<br/>' +
+                                                 '<p>Total amount withdrawn: ' + totalWithdrawn.toFixed(2) + '</p>';
 }
 
 function updateClock() {
