@@ -193,8 +193,12 @@ footer {
 }
 
 .display-mobile-ad {
-  text-align: center;
+  text-align: left;
   margin: 10px auto;
+}
+
+.display-mobile-ad ul {
+  padding-left: 20px;
 }
 
 .ans-btn {
@@ -203,6 +207,7 @@ footer {
 .banner-ad-desktop a , .display-mobile-ad a {
   font-weight: 600;
   text-decoration: underline;
+  color: #2c608d;
 }
 
 .hidden-on-desktop-tablet {
@@ -319,6 +324,9 @@ footer {
       padding: 5px;
       border-radius: 5px;
       margin: 0 auto;
+    }
+    .display-mobile-ad a {
+      font-size: 13px;
     }
 }
 
