@@ -113,10 +113,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-10">
-                <h3>2023 Update: Dividends, Bonuses, and Interest Details for Indian Stocks in the Equity Market and Bonds
+            <div class="col-md-10 content-right-body-wrapper">
+                <h3 class="card-header-title">2023 Update: Insights into Dividends, Bonuses, and Interest Details in the Indian Equity Market and Bonds
                 </h3>
-
+                <div class="table-body-main-wrapper">
                 <!-- Filter input box -->
                 <div class="filter-container">
                     <label for="companyFilter" class="form-label">Filter by Company Name:</label>
@@ -127,39 +127,88 @@
                 <div id="stockTablesContainer"></div>
                 </div>
 
-                <div class="table-responsive">
-                    <table class="table table-bordered table-striped">
+                <div class="table-responsive tb-content">
+                    <table class="table table-bordered table-striped table-mobile-view">
                         <thead>
                             <tr>
-                                <th>Number</th>
-                                <th>Symbol</th>
+                                <th class="tbv">Number</th>
+                                <th class="tbv">Symbol</th>
                                 <th>Company Name</th>
-                                <th>Series</th>
+                                <th class="tbv">Series</th>
                                 <th>Purpose</th>
                                 <th>Dividend Type</th>
                                 <th>Dividend per share</th>
-                                <th>Face Value</th>
+                                <th class="tbv">Face Value</th>
                                 <th>Ex-Date</th>
                                 <th>Record Date</th>
                             </tr>
                         </thead>
-                        <tbody id="stockTableBody"></tbody>
+                        <tbody id="stockTableBody" class="table-mobile-view"></tbody>
                     </table>
                 </div>
+                </div>
+
+                <hr />
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="ad-banner-wrapper mb-4">
+                            <ul>
+                                <li> <a target="_blank"
+                                    href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=d7b58af7beaaa50e0bf135c06cda27dd&camp=3638&creative=24630&index=books&keywords=Best Stock Market Books, Get Rich">Top
+                                    Picks: Essential Stock Market Books for Every Investor</a></li>
+                                <li> <a target="_blank"
+                                    href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=93a73bc45fd282f0b311239075611abf&camp=3638&creative=24630&index=books&keywords=Self-Confidence, Influence People &amp; Wealth English books for Indian ">Mastering
+                                    Money Management: Must-Read Books for Financial Success</a></li>
+                                <li> <a target="_blank"
+                                    href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=c1a731d187981d90a78954327ff9f164&camp=3638&creative=24630&index=books&keywords=startup books">Launching
+                                    Your Startup: Essential Reads for Success</a></li>
+                              </ul>
+                        </div>
+
+                    </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Dividends</h5>
+                        <p class="card-text">Dividends are payments made by a company to its shareholders as a reward for holding their stock. In India, dividends can be in the form of cash or additional shares. They are usually distributed out of the company's profits and are typically declared by the company's board of directors.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Bonuses</h5>
+                        <p class="card-text">Bonus shares are additional shares given to existing shareholders free of charge, in proportion to their current holdings. This increases the total number of shares outstanding without affecting the value of the company. Bonus shares are issued as a way to reward shareholders without utilizing cash reserves.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Interest</h5>
+                        <p class="card-text">Interest in the context of Indian stocks typically refers to the interest earned on investments such as fixed deposits, bonds, or other debt instruments. It is a return earned by investors for lending their money to the issuer of the financial instrument. The interest rate is usually predetermined and varies depending on the type of investment and prevailing market conditions.</p>
+                      </div>
+                    </div>
+                  </div>
             </div>
+            </div>
+
         </div>
+        <div>
+
     </div>
     <footer>
         <div class="container">
-            &copy; 2018 - 2099. Feedback:<a href="mailto:praveen_mp@live.com">praveen_mp@live.com</a></div>
+            &copy; 2018 - 2047. Feedback:<a href="mailto:praveen_mp@live.com">praveen_mp@live.com</a></div>
     </footer>
 
     <!-- Add Bootstrap JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        // Fetch JSON data from external file
-        fetch('data.json')
+        // // Fetch JSON data from external file
+        fetch('dividend-2024.json')
             .then(response => response.json())
             .then(jsonData => {
                 // Group data by Company Name
@@ -239,7 +288,7 @@
         }
 
         // Fetch JSON data from external file
-        fetch('data.json')
+        fetch('dividend-2024.json')
             .then(response => response.json())
             .then(jsonData => {
                 // Get the table body element
@@ -259,7 +308,7 @@
                     ];
 
                     return !(
-                        excludedPurposes.includes(item.PURPOSE) ||
+                        excludedPurposes.includes(item.PURPOSE) ||                     
                         item.PURPOSE.includes("Rights") ||
                         item.PURPOSE.includes("Face Value Split (Sub-Division)")
                     );
@@ -277,10 +326,15 @@
                     // Create and append table cells
                     var numberCell = document.createElement('td');
                     numberCell.textContent = index + 1; // Start numbering from 1
+                    // append class to the cell
+                    numberCell.classList.add('tbv');
                     row.appendChild(numberCell);
 
                     Object.keys(item).forEach(function (key) {
                         var cell = document.createElement('td');
+                        if(key === 'SERIES' || key === 'FACE VALUE' || key === 'SYMBOL'){
+                            cell.classList.add('tbv');
+                        }
 
                         // Populate "Dividend Type" based on the content of "Purpose"
                         if (key === 'PURPOSE') {
