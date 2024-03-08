@@ -330,9 +330,11 @@ footer {
   .display-mobile-ad a {
     font-size: 13px;
   }
-  .table-mobile-view > thead > tr > th.tbv,
-  .table-mobile-view > tbody > tr > td.tbv {
-    display: none;
+  .table-mobile-view {
+    font-size: 8px;
+  }
+  .card-header-title {
+    font-size: 12px;
   }
 }
 
