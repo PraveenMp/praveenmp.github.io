@@ -1,6 +1,13 @@
+
 html {
   position: relative;
   min-height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .content-right-body-wrapper {
@@ -17,10 +24,11 @@ html {
 
 .app-logo {
   font-size: 18px;
-  border-bottom: 1px solid #ddd;
   padding: 16px;
   text-transform: uppercase;
   font-weight: 600;
+  display: block;
+  float: left;
 }
 
 .wrapper-body {
@@ -44,10 +52,6 @@ html {
 
 .form-control {
   border: 1px solid #b1b1b1 !important;
-}
-
-body {
-  font-family: "Open Sans", sans-serif !important;
 }
 
 .st {
@@ -105,34 +109,44 @@ footer {
 }
 .top-menu ul {
   padding: 0px;
-  margin-bottom: 20px;
+  margin: 0px 10px 20px 10px;
 }
 .top-menu ul li {
   display: inline-block;
   cursor: pointer;
-  padding: 10px 5px 10px 15px;
-  margin: 5px 0px 0px 0px;
+  padding: 10px;
   width: 100%;
+  margin: 2.5px 0px;
 }
-
+.top-menu ul li i {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  position: relative;
+  top:2px;
+}
 .top-menu ul li a {
   color: #000;
   text-decoration: none;
+  display: inline-block;
+  width: 85%;
 }
 
 .top-menu ul li:hover {
-  color: #5cb85c;
+  color: #000;
+  background-color: #eaebee;
+  border-radius: 15px 20px 20px 15px;
 }
 
 .top-menu ul li.active {
-  color: #fff;
-  background: #038edc;
+  color: #000;
+  background: #c2e7ff;
+  border-radius: 15px 20px 20px 15px;
 }
 
 .top-menu ul li.active a {
   color: #3b863b;
-  color: #fff;
-  background: #038edc;
+  color: #000;
 }
 
 .top-menu ul li.active a:focus,
@@ -336,6 +350,10 @@ footer {
   .card-header-title {
     font-size: 12px;
   }
+
+  .dark-mode .sidebar.col-md-2 {
+    color: #e6e6e6;
+  }
 }
 
 /******************************************************/
@@ -450,4 +468,63 @@ input[type="range"]:focus::-moz-range-thumb {
   border-radius: 10px;
   padding: 15px;
   background-color: #fff;
+}
+
+.custom-control {
+  float: right;
+  top:14px;
+}
+
+.title-wrapper {
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  display: block;
+    width: 100%;
+    height: 50px;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+  border-color: #fff !important;
+  background-color: #000000 !important;
+}
+
+body.dark-mode, 
+.dark-mode .headers,
+.dark-mode  .top-menu ul li a,
+.dark-mode  #clock{
+  color: #e6e6e6;
+}
+
+.dark-mode hr {
+  background-color: #505050;
+}
+
+.dark-mode .content-right-body-wrapper {
+  background-color: #000;
+}
+
+.dark-mode .banner-ad-desktop a, 
+.dark-mode .display-mobile-ad a {
+  color: #569cd6;
+}
+
+.dark-mode .banner-ad-desktop a:hover, 
+.dark-mode .display-mobile-ad a:hover {
+  color: #278cda;
+}
+
+.dark-mode .content-body-wrapper,
+.dark-mode .sidebar.col-md-2 {
+  border-color: #505050;
+}
+
+.dark-mode footer {
+  background-color: #2f2f2f;
+}
+
+
+.dark-mode .content-body-wrapper,
+.dark-mode .sidebar,
+body.dark-mode {
+  background-color: #2f2f2f;
 }

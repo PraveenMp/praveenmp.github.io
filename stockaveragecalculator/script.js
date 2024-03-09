@@ -455,3 +455,23 @@ function isMobile() {
 }
 
 // Example usage:
+
+  // Function to toggle dark mode
+  function toggleDarkMode() {
+    const body = document.querySelector('body');
+    body.classList.toggle('dark-mode');
+
+    // Save mode preference to local storage
+    const isDarkMode = body.classList.contains('dark-mode');
+    localStorage.setItem('darkMode', isDarkMode);
+}
+
+// Check if dark mode preference is saved in local storage
+const savedDarkMode = localStorage.getItem('darkMode');
+if (savedDarkMode === 'true') {
+    document.querySelector('body').classList.add('dark-mode');
+    document.getElementById('darkModeSwitch').checked = true;
+}
+
+// Event listener for dark mode switch
+document.getElementById('darkModeSwitch').addEventListener('change', toggleDarkMode);
