@@ -116,6 +116,7 @@ footer {
   cursor: pointer;
   width: 100%;
   margin: 2.5px 0px;
+  font-size: 14px;
 }
 .top-menu ul li i {
   display: block;

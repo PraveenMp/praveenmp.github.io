@@ -9,6 +9,8 @@
         gtag('js', new Date());
         gtag('config', 'G-JPBH15FMY4');
     </script>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="manifest" href="./manifest.webmanifest">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
@@ -16,7 +18,7 @@
     <meta name="keywords"
         content="Indian stock market, stock market dividends, equity market, stock market data, 2023 dividends, dividend details, bonus details, interest details" />
     <meta name="author" content="Your Name">
-    <title>Indian Stock Market Dividend and Bonus Details 2024</title>
+    <title>Insights into Bonus and Buyback Details in the Indian Equity Market and Bonds 2024</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link
@@ -94,19 +96,16 @@
                         <li id="swp" title="SWP Calculator" class="" onclick="activeSection('swp')">
                             <a href="./index.html"><i class="fas fa-hand-holding-water"></i> SWP Calculator </a>
                         </li>
-                        <li id="DivDetails" title="Dividend Details" class="active">
-                            <a href="./indian-stock-market-dividend-details-2024.html"> <i
-                                    class="fas fa-cubes"></i>Dividend & Bonus Details - 2024
-                            </a>
-                        </li>
-                        <li id="DivDetails" title="Dividend Details">
-                            <a href="./indianstockmaretdividend2023.html"> <i class="fas fa-cubes"></i> Dividend & Bonus
-                                Details - 2023 </a>
-                        </li>
                         <li id="DivDetails" title="Dividend Details" class="">
-                            <a href="./how-to-choose-right-mutual-funds.html"> <i class="fas fa-search-dollar"></i>
-                                Mutual Funds </a>
-                        </li>
+                            <a href="./indian-stock-market-dividend-details.html"> <i class="fas fa-cubes"></i>
+                              Dividend Details 2023 - 2024 </a>
+                          </li>
+                          <li id="DivDetails" title="Bonus Details" class="active">
+                            <a href="./indian-stock-market-bonus-and-buyback-details.html"><i class="fas fa-search-dollar"></i> Bonus & Buyback Details </a>
+                          </li>
+                          <li id="DivDetails" title="Face Value Split Details" class="">
+                            <a href="./indian-stock-market-face-value-and-demerger.html"><i class="fas fa-cut"></i> Face value split & Demerger </a>
+                          </li>
                         <li id="DivDetails" title="Dividend Details" class="">
                             <a href="./basic-stock-market-principles.html"> <i class="fas fa-coins"></i> Stock Market
                                 Basic Principles</a>
@@ -121,15 +120,14 @@
                 </div>
             </div>
             <div class="col-md-10 content-right-body-wrapper">
-                <h3 class="card-header-title">2024 Update: Insights into Dividends, Bonuses, and Interest Details in the
-                    Indian Equity Market and Bonds
+                <h3 class="card-header-title">Insights into Bonus and Buyback Details in the Indian Equity Market and Bonds.
                 </h3>
                 <div class="table-body-main-wrapper">
                     <!-- Filter input box -->
-                    <div class="filter-container">
+                    <!-- <div class="filter-container">
                         <label for="companyFilter" class="form-label">Filter by Company Name:</label>
                         <input type="text" class="form-control" id="companyFilter" placeholder="Type company name...">
-                    </div>
+                    </div> -->
 
                     <div class="table-responsive">
                         <div id="stockTablesContainer" class="table-mobile-view"></div>
@@ -144,9 +142,9 @@
                                     <th>Company Name</th>
                                     <th class="tbv">Series</th>
                                     <th>Purpose</th>
-                                    <th>Dividend Type</th>
-                                    <th>Dividend per share</th>
-                                    <th class="tbv">Face Value</th>
+                                    <!-- <th>Dividend Type</th>
+                                    <th>Dividend per share</th> -->
+                                    <th>Face Value</th>
                                     <th>Ex-Date</th>
                                     <th>Record Date</th>
                                 </tr>
@@ -226,88 +224,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
         <script>
-            // // Fetch JSON data from external file
-            fetch('dividend-2024.json')
-                .then(response => response.json())
-                .then(jsonData => {
-                    // Group data by Company Name
-                    var groupedData = groupBy(jsonData, 'COMPANY NAME');
-
-                    // Sort the keys alphabetically
-                    var sortedCompanies = Object.keys(groupedData).sort();
-
-                    // Get the container element
-                    var container = document.getElementById('stockTablesContainer');
-
-                    // Filter input box
-                    var filterInput = document.getElementById('companyFilter');
-
-                    // Event listener for filtering
-                    filterInput.addEventListener('input', function () {
-                        var filterValue = filterInput.value.toLowerCase();
-
-                        // Clear the container
-                        container.innerHTML = '';
-
-                        // Loop through sorted keys and create tables for each matching company
-                        sortedCompanies.forEach(function (company) {
-                            if (company.toLowerCase().includes(filterValue)) {
-                                // Create a new table for the current company
-                                var tableContainer = document.createElement('div');
-                                tableContainer.className = 'table-container';
-                                container.appendChild(tableContainer);
-
-                                var table = document.createElement('table');
-                                table.className = 'table table-bordered table-striped table-responsive';
-
-                                // Create table header
-                                var thead = document.createElement('thead');
-                                var headerRow = document.createElement('tr');
-                                Object.keys(jsonData[0]).forEach(function (key) {
-                                    var th = document.createElement('th');
-                                    th.textContent = key;
-                                    headerRow.appendChild(th);
-                                });
-                                thead.appendChild(headerRow);
-                                table.appendChild(thead);
-
-                                // Create table body
-                                var tbody = document.createElement('tbody');
-                                groupedData[company].forEach(function (item, index) {
-                                    var row = document.createElement('tr');
-                                    // Create and append table cells
-                                    Object.keys(item).forEach(function (key) {
-                                        var cell = document.createElement('td');
-                                        cell.textContent = item[key];
-                                        row.appendChild(cell);
-                                    });
-                                    tbody.appendChild(row);
-                                });
-                                table.appendChild(tbody);
-
-                                // Append the table to the container
-                                tableContainer.appendChild(table);
-                            }
-                        });
-                    });
-
-                })
-                .catch(error => console.error('Error fetching data:', error));
-
-            // Function to group data by a specified property
-            function groupBy(array, property) {
-                return array.reduce(function (acc, obj) {
-                    var key = obj[property];
-                    if (!acc[key]) {
-                        acc[key] = [];
-                    }
-                    acc[key].push(obj);
-                    return acc;
-                }, {});
-            }
 
             // Fetch JSON data from external file
-            fetch('dividend-2024.json')
+            fetch('all-data.json')
                 .then(response => response.json())
                 .then(jsonData => {
                     // Get the table body element
@@ -329,6 +248,8 @@
                         return !(
                             excludedPurposes.includes(item.PURPOSE) ||
                             item.PURPOSE.includes("Rights") ||
+                            item.PURPOSE.includes("Dividend") ||
+                            item.PURPOSE.includes("Distribution") ||
                             item.PURPOSE.includes("Face Value Split (Sub-Division)")
                         );
                     });
@@ -351,7 +272,7 @@
 
                         Object.keys(item).forEach(function (key) {
                             var cell = document.createElement('td');
-                            if (key === 'SERIES' || key === 'FACE VALUE' || key === 'SYMBOL') {
+                            if (key === 'SERIES' || key === 'SYMBOL') {
                                 cell.classList.add('tbv');
                             }
 
@@ -363,14 +284,14 @@
                                 row.appendChild(purposeCell);
 
                                 // Add an additional column for "Dividend Type"
-                                var dividendTypeCell = document.createElement('td');
-                                dividendTypeCell.textContent = getDividendType(item[key]);
-                                row.appendChild(dividendTypeCell);
+                                // var dividendTypeCell = document.createElement('td');
+                                // dividendTypeCell.textContent = getDividendType(item[key]);
+                                // row.appendChild(dividendTypeCell);
 
                                 // Add an additional column for "Dividend per share"
-                                var dividendPerShareCell = document.createElement('td');
-                                dividendPerShareCell.textContent = extractDividendPerShare(item[key]);
-                                row.appendChild(dividendPerShareCell);
+                                // var dividendPerShareCell = document.createElement('td');
+                                // dividendPerShareCell.textContent = extractDividendPerShare(item[key]);
+                                // row.appendChild(dividendPerShareCell);
                             } else if (key !== 'DIVIDEND_TYPE') {
                                 // For other columns, just set the content
                                 cell.textContent = item[key];
