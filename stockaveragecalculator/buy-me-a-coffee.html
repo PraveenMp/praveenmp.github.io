@@ -72,45 +72,48 @@
                 <h2 class="app-logo"><i class="fas fa-calculator"></i> Stock-Calc</h2>
                 <div class="top-menu">
                     <ul>
-                        <li id="ac" title="Stock Average Calculator"  onclick="activeSection('ac')">
-                            <i class="fas fa-tachometer-alt"></i> <a href="./index.html">Stock Average Calculator</a>
+                        <li id="ac" title="Stock Average Calculator" onclick="activeSection('ac')">
+                            <a href="./index.html"> <i class="fas fa-tachometer-alt"></i> Stock Average Calculator</a>
                         </li>
                         <li id="sc" title="SIP Calculator" class="" onclick="activeSection('sc')">
 
-                            <i class="fas fa-coins"></i> <a href="./index.html"> SIP Calculator </a>
+                            <a href="./index.html"> <i class="fas fa-coins"></i> SIP Calculator </a>
                         </li>
                         <li id="pc" title="Percentage Calculator" class="" onclick="activeSection('pc')">
-                            <i class="fas fa-percentage"></i>  <a href="./index.html">Percentage Calculator  </a>
+                            <a href="./index.html"> <i class="fas fa-percentage"></i> Percentage Calculator </a>
                         </li>
                         <li id="em" title="EMI Calculator" class="" onclick="activeSection('em')">
-                            <i class="fas fa-wallet"></i> <a href="./index.html"> EMI Calculator </a>
+                            <a href="./index.html"> <i class="fas fa-wallet"></i> EMI Calculator </a>
                         </li>
                         <li id="cagr" title="CAGR calculator" class="" onclick="activeSection('cagr')">
-                            <i class="fas fa-mountain"></i> <a href="./index.html">  CAGR calculator </a>
-                          </li>
-                          <li id="swp" title="SWP Calculator" class="" onclick="activeSection('swp')">
-                            <i class="fas fa-hand-holding-water"></i> <a href="./index.html"> SWP Calculator </a>
-                          </li>
-                        <li id="DivDetails" title="Dividend Details" class="">
-                            <i class="fas fa-cubes"></i> <a href="./indian-stock-market-dividend-details-2024.html">Dividend & Bonus Details - 2024 </a>
-                          </li>
-                        <li id="DivDetails" title="Dividend Details" class="">
-                            <i class="fas fa-cubes"></i> <a href="./indianstockmaretdividend2023.html">Dividend & Bonus Details - 2023 </a>
+                            <a href="./index.html"> <i class="fas fa-mountain"></i> CAGR calculator </a>
+                        </li>
+                        <li id="swp" title="SWP Calculator" class="" onclick="activeSection('swp')">
+                            <a href="./index.html"><i class="fas fa-hand-holding-water"></i> SWP Calculator </a>
                         </li>
                         <li id="DivDetails" title="Dividend Details" class="">
-                            <i class="fas fa-search-dollar"></i> <a href="./how-to-choose-right-mutual-funds.html">Mutual Funds </a>
-                          </li>
-                          <li id="DivDetails" title="Dividend Details" class="">
-                            <i class="fas fa-coins"></i> <a href="./basic-stock-market-principles.html">Stock Market Basic Principles</a>
-                          </li>
-                          <li id="buymeacoffee" title="Buy Me a Coffee" class="active">
-                            <i class="fas fa-mug-hot"></i> <a href="./buy-me-a-coffee.html">Buy Me a Coffee  </a>
-                          </li>
-                          <li id="aboutus" title="About Us" class="">
-                            <i class="fas fa-user-friends"></i> <a href="./about-us.html">About Us</a>
-                          </li>
-              
-              
+                            <a href="./indian-stock-market-dividend-details-2024.html"> <i
+                                    class="fas fa-cubes"></i>Dividend & Bonus Details - 2024
+                            </a>
+                        </li>
+                        <li id="DivDetails" title="Dividend Details" class="">
+                            <a href="./indianstockmaretdividend2023.html"> <i class="fas fa-cubes"></i> Dividend & Bonus
+                                Details - 2023 </a>
+                        </li>
+                        <li id="DivDetails" title="Dividend Details" class="">
+                            <a href="./how-to-choose-right-mutual-funds.html"> <i class="fas fa-search-dollar"></i>
+                                Mutual Funds </a>
+                        </li>
+                        <li id="DivDetails" title="Dividend Details" class="">
+                            <a href="./basic-stock-market-principles.html"> <i class="fas fa-coins"></i> Stock Market
+                                Basic Principles</a>
+                        </li>
+                        <li id="buymeacoffee" title="Buy Me a Coffee" class="active">
+                            <a href="./buy-me-a-coffee.html"> <i class="fas fa-mug-hot"></i> Buy Me a Coffee </a>
+                        </li>
+                        <li id="aboutus" title="About Us" class="">
+                            <a href="./about-us.html"> <i class="fas fa-user-friends"></i> About Us</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -124,6 +127,12 @@
                           <p>You can scan the QR code using any QR code scanner app on your smartphone.</p>
                         </div>
                       </div>
+                      <div class="col-md-2 pay-icons-wrapper">
+                        <h4>UPI Here</h4>
+                        <button onclick="openPhonePe()"><img class="pay-icons" src="./images/phone-pay.png" /> </button>
+                        <button onclick="openGooglePay()"><img class="pay-icons" src="./images/google-pay.png" /></button>
+                        <hr class="mt-4" />
+                    </div>
                       <div class="col-md-4">
                           <img src="./images/donate-qr.jpeg" alt="Buy me a coffee" height="700" width="500" class="img-fluid" />
                     </div>
