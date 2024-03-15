@@ -497,7 +497,7 @@ function openPhonePe() {
   window.location.href = 'phonepe://pay?pa=9008182348@ybl';
 }
 
-function openGooglePay() {
-  // Deep link to open Google Pay (Tez) app
-  window.location.href = 'upi://pay?pa=1rn10mca31@okhdfcbank&cu=INR';
-}
+// function openGooglePay() {
+//   // Deep link to open Google Pay (Tez) app
+//   window.location.href = 'upi://pay?pa=1rn10mca31@okhdfcbank&cu=INR';
+// }
