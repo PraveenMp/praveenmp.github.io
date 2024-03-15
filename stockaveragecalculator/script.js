@@ -73,8 +73,23 @@ function unitChanged(id, error) {
     document.getElementById("investedamount2").innerHTML = '';
   }
 
+   // Get all anchor elements with class 'link'
+   var links = document.querySelectorAll('.link');
+
+   // Loop through each link and attach event listener
+   links.forEach(function(link) {
+     link.addEventListener('click', function(event) {
+       // Prevent the default action (routing to the href)
+       event.preventDefault();
+
+       // Your custom logic here
+       console.log('Anchor link clicked, but default routing prevented.');
+     });
+   });
+
 
   function activeSection(value) {
+
       switch(value) {
           case 'ac':
               document.getElementById("average-calculator").classList.remove("hide"); 
@@ -475,3 +490,13 @@ if (savedDarkMode === 'true') {
 
 // Event listener for dark mode switch
 document.getElementById('darkModeSwitch').addEventListener('change', toggleDarkMode);
+
+function openPhonePe() {
+  // Deep link to open PhonePe app
+  window.location.href = 'phonepe://pay?pa=9008182348@ybl';
+}
+
+function openGooglePay() {
+  // Deep link to open Google Pay (Tez) app
+  window.location.href = 'upi://pay?pa=9008182348@ybl';
+}
