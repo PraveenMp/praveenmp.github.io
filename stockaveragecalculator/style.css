@@ -536,9 +536,13 @@ body.dark-mode {
 
 .pay-icons { 
   width: 52px;
-  height: 36px;
+  height: 40px;
   cursor: pointer;
 }
 .pay-icons-wrapper {
 display: none;
+}
+.pay-icons-wrapper > button {
+  border: none;
+    background: transparent;
 }

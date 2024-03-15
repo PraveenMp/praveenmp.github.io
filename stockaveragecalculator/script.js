@@ -488,8 +488,9 @@ if (savedDarkMode === 'true') {
     document.getElementById('darkModeSwitch').checked = true;
 }
 
-// Event listener for dark mode switch
+if(document.getElementById('darkModeSwitch')) {
 document.getElementById('darkModeSwitch').addEventListener('change', toggleDarkMode);
+}
 
 function openPhonePe() {
   // Deep link to open PhonePe app
@@ -498,5 +499,5 @@ function openPhonePe() {
 
 function openGooglePay() {
   // Deep link to open Google Pay (Tez) app
-  window.location.href = 'upi://pay?pa=9008182348@ybl';
+  window.location.href = 'upi://pay?pa=1rn10mca31@okhdfcbank&cu=INR';
 }
