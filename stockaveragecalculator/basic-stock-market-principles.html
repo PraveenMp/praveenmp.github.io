@@ -73,7 +73,13 @@
                 </div>
             </div>
             <div class="col-md-2 sidebar" id="sidebar">
-                <h2 class="app-logo"><i class="fas fa-calculator"></i> Stock-Calc</h2>
+                <div class="title-wrapper">
+                    <h2 class="app-logo"><i class="fas fa-calculator"></i> Stock-Calc</h2>
+                    <div class="custom-control custom-switch mb-3">
+                      <input type="checkbox" class="custom-control-input" id="darkModeSwitch" data-toggle="toggle">
+                      <label class="custom-control-label" for="darkModeSwitch"></label>
+                  </div>
+                  </div>
                 <div class="top-menu">
                     <ul>
                         <li id="ac" title="Stock Average Calculator" onclick="activeSection('ac')">
