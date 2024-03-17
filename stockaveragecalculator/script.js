@@ -314,13 +314,28 @@ function unitChanged(id, error) {
       var investment = parseInt(document.getElementById("investment").value); 
       var rateOfInterest = parseInt(document.getElementById("rateOfInterest").value);
       var years = parseInt(document.getElementById("years").value);
+      var rateIncrease = parseInt(document.getElementById("rateIncrease").value);
+
       var monthlyRate = rateOfInterest/12/100;	
-      var months= years*12;
-      var totalGain = (investment *(Math.pow((1 + monthlyRate), months) - 1)/monthlyRate *(1+monthlyRate));	
+      var totalMonths= years*12;
+      var futureValue = 0;
+      var totalInvestment = 0;
+      var currentAmount = investment;
+      rateIncrease = rateIncrease ? rateIncrease : 0;
+
+      for (var i = 0; i < totalMonths; i++) {
+          futureValue += currentAmount;
+          totalInvestment += currentAmount;
+          futureValue *= (1 + monthlyRate);
+          if ((i + 1) % 12 == 0) {
+              currentAmount *= (1 + (rateIncrease / 100));
+          }
+      }
+      var totalProfit = futureValue - totalInvestment;
       if(investment && rateOfInterest && years) {
-          document.getElementById("im").innerHTML = Number((investment * months).toFixed(2)).toLocaleString(intlLanguage);	
-          document.getElementById("tm").innerHTML = Number(totalGain.toFixed(2)).toLocaleString(intlLanguage);
-          document.getElementById("gm").innerHTML = Number((totalGain - (investment * months)).toFixed(2)).toLocaleString(intlLanguage) ;
+          document.getElementById("im").innerHTML = Number((totalInvestment).toFixed(2)).toLocaleString(intlLanguage);	
+          document.getElementById("tm").innerHTML = Number(futureValue.toFixed(2)).toLocaleString(intlLanguage);
+          document.getElementById("gm").innerHTML = Number(totalProfit.toFixed(2)).toLocaleString(intlLanguage) ;
       }
       }
 

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIP Calculator</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+    }
+    .container {
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #fff;
+    }
+    input[type="number"] {
+        width: 100px;
+        padding: 8px;
+        margin: 5px;
+        text-align: center;
+    }
+    button {
+        padding: 10px 20px;
+        margin: 10px;
+        cursor: pointer;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>SIP Calculator</h2>
+    <label for="amount">Enter Monthly Investment Amount:</label>
+    <input type="number" id="amount" min="1" step="1" value="1000"><br><br>
+    <label for="rate">Enter Expected Annual Return (%):</label>
+    <input type="number" id="rate" min="0" step="0.01" value="10"><br><br>
+    <label for="period">Enter Investment Period (Years):</label>
+    <input type="number" id="period" min="1" step="1" value="5"><br><br>
+    <label for="increase">Yearly Increase in Monthly Investment (%) :</label>
+    <input type="number" id="increase" min="0" step="0.01" value="0"><br><br>
+    <button onclick="calculateSIP()">Calculate</button><br><br>
+    <div id="result"></div>
+</div>
+
+<script>
+    function calculateSIP() {
+        var initialAmount = parseFloat(document.getElementById('amount').value);
+        var rate = parseFloat(document.getElementById('rate').value);
+        var period = parseInt(document.getElementById('period').value);
+        var increaseRate = parseFloat(document.getElementById('increase').value);
+
+        var monthlyRate = rate / 12 / 100;
+        var totalMonths = period * 12;
+
+        var futureValue = 0;
+        var totalInvestment = 0;
+        var currentAmount = initialAmount;
+
+        for (var i = 0; i < totalMonths; i++) {
+            futureValue += currentAmount;
+            totalInvestment += currentAmount;
+            futureValue *= (1 + monthlyRate);
+            if ((i + 1) % 12 == 0) {
+                currentAmount *= (1 + (increaseRate / 100));
+            }
+        }
+
+       
+        var totalProfit = futureValue - totalInvestment;
+
+        document.getElementById('result').innerHTML = "Total Investment: $" + totalInvestment.toFixed(2) +
+            "<br>Total Value: $" + futureValue.toFixed(2) +
+            "<br>Total Profit: $" + totalProfit.toFixed(2);
+    }
+</script>
+
+</body>
+</html>
