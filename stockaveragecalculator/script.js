@@ -512,6 +512,18 @@ function openPhonePe() {
   window.location.href = 'phonepe://pay?pa=9008182348@ybl';
 }
 
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text)
+    .then(() => {
+      console.log('Text copied to clipboard: ' + text);
+      // You can also show a success message here if needed
+    })
+    .catch(err => {
+      console.error('Unable to copy text to clipboard: ', err);
+      // Handle errors, such as browser not supporting clipboard API
+    });
+}
+
 // function openGooglePay() {
 //   // Deep link to open Google Pay (Tez) app
 //   window.location.href = 'upi://pay?pa=1rn10mca31@okhdfcbank&cu=INR';
