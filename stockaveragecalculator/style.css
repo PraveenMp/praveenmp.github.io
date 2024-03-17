@@ -634,3 +634,8 @@ display: none;
   font-weight: bold;
   color: #000;
 }
+
+input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+}
