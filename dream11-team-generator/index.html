@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Dream 11 Team Generator</title>
+  
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Dream 11 Team Generator, Generate random teams with captains and vice-captains.">
+    <meta name="keywords" content="team generator, random teams, captain, vice-captain">
+    <meta name="author" content="Your Name">
+    
+    <!-- Open Graph Protocol for Social Media -->
+    <meta property="og:title" content="Team Generator">
+    <meta property="og:description" content="Generate random teams with captains and vice-captains.">
+    <meta property="og:url" content="https://example.com/team-generator">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://example.com/og-image.jpg">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h3 class="">  Matches: DC vs PBKS (Lineups waiting) </h3>
+
+
+        <hr />
+        <h2 class="mb-4">Dream 11 Cricket Team Generator</h2>
+        <div class="form-group">
+            <label for="team1">Team 1 Players:</label>
+            <textarea class="form-control" id="team1" rows="5" placeholder="Enter team 1 players separated by commas Add 11 Players">Shikhar Dhawan, Jonny Bairstow, Sam Curran, Liam Livingstone, Jitesh Sharma, Harpreet Brar, Harshal Patel, Kagiso Rabada, Rahul Chahar, Arshdeep Singh, Shashank Singh. 
+            </textarea>
+        </div>
+        <div class="form-group">
+            <label for="team2">Team 2 Players:</label>
+            <textarea class="form-control" id="team2" rows="5" placeholder="Enter team 2 players separated by commas"> Mitchell Marsh, David Warner, Shai Hope, Rishabh Pant, Ricky Bhui, Tristan Stubbs, Axar Patel, Sumit Kumar, Kuldeep Yadav, Khaleel Ahmed, Ishant Sharma.
+            </textarea>
+        </div>
+        <div class="form-group">
+            <label for="numOfTeams">Number of Teams:</label>
+            <input type="number" class="form-control" id="numOfTeams" value="10" placeholder="Enter number of teams">
+        </div>
+        <button type="button" class="btn btn-primary" onclick="generateTeams()">Generate Teams</button>
+        <button type="button" class="btn btn-secondary" id="clearResults">Clear Results</button>
+        <div id="teamsTable" class="mt-4 row"></div>
+        <div class="share-icons mt-3">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fexample.com%2Fteam-generator" target="_blank" class="btn btn-primary"><i class="fab fa-facebook-f"></i> Share on Facebook</a>
+            <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fexample.com%2Fteam-generator&text=Check%20out%20this%20Team%20Generator%20application!" target="_blank" class="btn btn-info"><i class="fab fa-twitter"></i> Share on Twitter</a>
+            <a href="whatsapp://send?text=Check%20out%20this%20Team%20Generator%20application%20https%3A%2F%2Fexample.com%2Fteam-generator" class="btn btn-success"><i class="fab fa-whatsapp"></i> Share on WhatsApp</a>
+          </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function generateTeams() {
+            const team1Players = document.getElementById('team1').value.split(',').map(player => player.trim());
+            const team2Players = document.getElementById('team2').value.split(',').map(player => player.trim());
+            const numOfTeams = parseInt(document.getElementById('numOfTeams').value);
+
+            const teamsTable = document.getElementById('teamsTable');
+            teamsTable.innerHTML = ''; // Clear previous content
+
+            for (let i = 0; i < numOfTeams; i++) {
+
+                const teams = generateRandomArrays(team1Players, team2Players);
+                const table = document.createElement('table');
+                table.className = 'col-md-2 table table-bordered';
+                const header = document.createElement('thead');
+                header.innerHTML = `<tr><th colspan="2">Team ${i + 1}</th></tr>`;
+                const body = document.createElement('tbody');
+                for (let j = 0; j < teams.length; j++) {
+                    const row = document.createElement('tr');
+                    const playerCell = document.createElement('td');
+                    playerCell.textContent = teams[j];
+                    row.appendChild(playerCell);
+                    body.appendChild(row);
+                }
+                table.appendChild(header);
+                table.appendChild(body);
+                teamsTable.appendChild(table);
+            }
+        }
+
+        function generateRandomArrays(team1, team2) {
+            let array = [];
+
+            // Generate random captain and vice-captain players
+            let captain = team1[Math.floor(Math.random() * team1.length)];
+            let viceCaptain = team2[Math.floor(Math.random() * team2.length)];
+            while (viceCaptain === captain) {
+                viceCaptain = team2[Math.floor(Math.random() * team2.length)];
+            }
+
+            // Fill array with players from both teams
+            array = array.concat(team1.filter(player => player !== captain));
+            array = array.concat(team2.filter(player => player !== viceCaptain));
+
+            // Shuffle the array
+            array.sort(() => Math.random() - 0.5);
+
+            // Pick 10 players from the shuffled array
+            array = array.slice(0, 10);
+
+            // Insert captain and vice-captain in appropriate positions
+            array.splice(Math.floor(Math.random() * 10), 0, captain + " (C)");
+            array.splice(Math.floor(Math.random() * 11), 0, viceCaptain + " (VC)");
+
+            return array;
+        }
+
+        document.getElementById('clearResults').addEventListener('click', function() {
+      document.getElementById('teamsTable').innerHTML = '';
+    });
+    </script>
+</body>
+</html>
