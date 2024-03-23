@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IPL Dream 11 Team Generator</title>
-  
+
     <!-- Meta Tags for SEO -->
     <meta name="description" content="Dream 11 Team Generator, Generate random teams with captains and vice-captains.">
     <meta name="keywords" content="team generator, random teams, captain, vice-captain">
     <meta name="author" content="Your Name">
-    
+
     <!-- Open Graph Protocol for Social Media -->
     <meta property="og:title" content="Team Generator">
     <meta property="og:description" content="Generate random teams with captains and vice-captains.">
@@ -19,18 +20,28 @@
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-43F84YLPV3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
+        gtag('config', 'G-43F84YLPV3');
+    </script>
 </head>
+
 <body>
     <div class="container mt-5">
-        <h3 class="">  Matches: DC vs PBKS (Lineups waiting) </h3>
+        <h3 class=""> Matches: DC vs PBKS (Lineups waiting) </h3>
 
 
         <hr />
         <h2 class="mb-4">Dream 11 Cricket Team Generator</h2>
         <div class="form-group">
             <label for="team1">Team 1 Players:</label>
-            <textarea class="form-control" id="team1" rows="5" placeholder="Enter team 1 players separated by commas Add 11 Players">Shikhar Dhawan, Jonny Bairstow, Sam Curran, Liam Livingstone, Jitesh Sharma, Harpreet Brar, Harshal Patel, Kagiso Rabada, Rahul Chahar, Arshdeep Singh, Shashank Singh. 
+            <textarea class="form-control" id="team1" rows="5"
+                placeholder="Enter team 1 players separated by commas Add 11 Players">Shikhar Dhawan, Jonny Bairstow, Sam Curran, Liam Livingstone, Jitesh Sharma, Harpreet Brar, Harshal Patel, Kagiso Rabada, Rahul Chahar, Arshdeep Singh, Shashank Singh. 
             </textarea>
         </div>
         <div class="form-group">
@@ -46,10 +57,13 @@
         <button type="button" class="btn btn-secondary" id="clearResults">Clear Results</button>
         <div id="teamsTable" class="mt-4 row"></div>
         <div class="share-icons mt-3">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fexample.com%2Fteam-generator" target="_blank" class="btn btn-primary"><i class="fab fa-facebook-f"></i> Share on Facebook</a>
-            <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fexample.com%2Fteam-generator&text=Check%20out%20this%20Team%20Generator%20application!" target="_blank" class="btn btn-info"><i class="fab fa-twitter"></i> Share on Twitter</a>
-            <a href="whatsapp://send?text=Check%20out%20this%20Team%20Generator%20application%20https%3A%2F%2Fexample.com%2Fteam-generator" class="btn btn-success"><i class="fab fa-whatsapp"></i> Share on WhatsApp</a>
-          </div>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://praveenmp.github.io/dream11-team-generator/"
+                target="_blank" class="btn btn-primary"><i class="fab fa-facebook-f"></i> Share on Facebook</a>
+            <a href="https://twitter.com/intent/tweet?url=https://praveenmp.github.io/dream11-team-generator/&text=Check%20out%20this%20Team%20Generator%20application!"
+                target="_blank" class="btn btn-info"><i class="fab fa-twitter"></i> Share on Twitter</a>
+            <a href="whatsapp://send?text=Check%20out%20this%20Team%20Generator%20application%20https://praveenmp.github.io/dream11-team-generator/"
+                class="btn btn-success"><i class="fab fa-whatsapp"></i> Share on WhatsApp</a>
+        </div>
     </div>
 
     <!-- Bootstrap JS and jQuery -->
@@ -114,9 +128,10 @@
             return array;
         }
 
-        document.getElementById('clearResults').addEventListener('click', function() {
-      document.getElementById('teamsTable').innerHTML = '';
-    });
+        document.getElementById('clearResults').addEventListener('click', function () {
+            document.getElementById('teamsTable').innerHTML = '';
+        });
     </script>
 </body>
+
 </html>
