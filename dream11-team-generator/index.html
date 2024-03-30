@@ -20,6 +20,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-43F84YLPV3"></script>
     <script>
@@ -37,7 +38,42 @@
 
 
         <hr />
-        <h2 class="mb-4">Dream 11 Cricket Team Generator</h2>
+        <h2 class="mb-4">Dream 11 Cricket Team Generator - 2024 </h2>
+        <div class="choose-team">
+            <h4>Choose Today's Match </h4>
+            <ul id="team-list">
+                <li data-team="Mumbai Indians">
+                    <img src="./images/mi-logo.png" alt="MI">
+                </li>
+                <li data-team="Chennai Super Kings">
+                    <img src="./images/csk-logo.png" alt="CSK">
+                </li>
+                <li data-team="Delhi Capitals">
+                    <img src="./images/dc-logo.png" alt="DC">
+                </li>
+                <li data-team="Kolkata Knight Riders">
+                    <img src="./images/kkr-logo.png" alt="KKR">
+                </li>
+                <li data-team="Royal Challengers Bangalore">
+                    <img src="./images/rcb-logo.png" alt="RCB">
+                </li>
+                <li data-team="Punjab Kings">
+                    <img src="./images/punjub-kings-logo.png" alt="Punjab Kings">
+                </li>
+                <li data-team="Rajasthan Royals">
+                    <img src="./images/rajasth-royals-logo.png" alt="Rajasthan Royals">
+                </li>
+                <li data-team="Sunrisers Hyderabad">
+                    <img src="./images/srh-logo.png" alt="SRH">
+                </li>
+                <li data-team="Gujarat Titans">
+                    <img src="./images/gt-logo.png" alt="GT">
+                </li>
+                <li data-team="Lucknow Super Giants">
+                    <img src="./images/lkn-logo.png" alt="Lucknow Super Giants">
+                </li>
+            </ul>
+        </div>
         <div class="form-group">
             <label for="team1">Team 1 Players:</label>
             <textarea class="form-control" id="team1" rows="5"
@@ -72,6 +108,87 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script>
+        const teamList = document.getElementById('team-list');
+        const team1Input = document.getElementById('team1');
+        const team2Input = document.getElementById('team2');
+        let selectedTeams = [];
+        let count = 0;
+        teamList.addEventListener('click', function (event) {
+            const clickedListItem = event.target.closest('li');
+            if (!clickedListItem) return;
+
+            const teamName = clickedListItem.getAttribute('data-team');
+
+            // If selected teams are already 2, deselect the previously selected team
+            if (selectedTeams.length === 2 && !selectedTeams.includes(teamName)) {
+                const deselectedTeam = selectedTeams.shift();
+                const deselectedTeamInput = deselectedTeam === team1Input.value ? team1Input : team2Input;
+                deselectedTeamInput.value = '';
+                const deselectedListItem = teamList.querySelector(`li[data-team="${deselectedTeam}"]`);
+                deselectedListItem.classList.remove('selected');
+            }
+
+            // Update selected teams array
+            if (!selectedTeams.includes(teamName)) {
+                selectedTeams.push(teamName);
+            }
+
+            // Insert 11 random players into the corresponding input box
+            console.log(selectedTeams.length);
+            count = count + 1; 
+             
+            let selectedTeamInput = selectedTeams.length === 1 ? team1Input : team2Input;
+            if (selectedTeams.length === 2 && count > 2) {
+                team1Input.value = getRandomPlayers(selectedTeams[0]);
+                team2Input.value = getRandomPlayers(selectedTeams[1]);
+            }
+            selectedTeamInput.value = getRandomPlayers(teamName);
+
+            // Highlight selected team
+            clickedListItem.classList.add('selected');
+
+            const team1Label = document.querySelector('label[for="team1"]');
+            const team2Label = document.querySelector('label[for="team2"]');
+            team1Label.textContent = `Team 1 Players (${selectedTeams[0]})`;
+            team2Label.textContent = `Team 2 Players (${selectedTeams[1]})`;
+        });
+
+        // Function to get random players (placeholder)
+        function getRandomPlayers(teamName) {
+
+            switch(teamName) {
+                case 'Mumbai Indians':
+                    return "Rohit Sharma, Ishan Kishan, Tilak Varma, Naman Dhir, Hardik Pandya, Tim David, Shams Mulani, Piyush Chawla, Gerald Coetzee, Jasprit Bumrah, Luke Wood";
+                    break;
+                case 'Chennai Super Kings':
+                    return "Ruturaj Gaikwad, Rachin Ravindra, Ajinkya Rahane, Daryl Mitchell, Ravindra Jadeja, Sameer Rizvi, MS Dhoni, Deepak Chahar, Maheesh Theekshana, Mustafizur Rahman, Tushar Deshpande";
+                    break;
+                case 'Delhi Capitals':
+                    return "David Warner, Mitchell Marsh, Shai Hope, Rishabh Pant, Ricky Bhui, Tristan Stubbs, Axar Patel, Sumit Kumar, Kuldeep Yadav, Khaleel Ahmed, Ishant Sharma";
+                    break;
+                case 'Kolkata Knight Riders':
+                    return " Philip Salt, Venkatesh Iyer, Shreyas Iyer, Nitish Rana, Rinku Singh, Ramandeep Singh, Andre Russell, Sunil Narine, Mitchell Starc, Harshit Rana, Varun Chakaravarthy";
+                    break;
+                case 'Royal Challengers Bangalore':
+                    return " Faf du Plessis, Virat Kohli, Rajat Patidar, Glenn Maxwell, Cameron Green, Dinesh Karthik, Anuj Rawat, Karn Sharma, Alzarri Joseph, Mayank Dagar, Mohammed Siraj";
+                    break;
+                case 'Punjab Kings':
+                    return "Shikhar Dhawan, Jonny Bairstow, Sam Curran, Liam Livingstone, Jitesh Sharma, Shashank Singh, Harpreet Brar, Harshal Patel, Kagiso Rabada, Rahul Chahar, Arshdeep Singh";  
+                    break;
+                case 'Rajasthan Royals':
+                    return "Yashasvi Jaiswal, Jos Buttler, Sanju Samson(w/c), Riyan Parag, Shimron Hetmyer, Dhruv Jurel, Ravichandran Ashwin, Sandeep Sharma, Avesh Khan, Trent Boult, Yuzvendra Chahal";
+                    break;
+                case 'Sunrisers Hyderabad':
+                    return "Mayank Agarwal, Rahul Tripathi, Aiden Markram, Heinrich Klaasen, Abdul Samad, Shahbaz Ahmed, Marco Jansen, Pat Cummins, Bhuvneshwar Kumar, Mayank Markande, T Natarajan ";
+                    break;
+                case 'Gujarat Titans':
+                    return "Shubman Gill, Nitish Rana, Rahul Tripathi, Eoin Morgan, Dinesh Karthik, Andre Russell, Sunil Narine, Pat Cummins, Varun Chakravarthy, Prasidh Krishna, Shivam Mavi";
+                    break;
+                case 'Lucknow Super Giants':
+                    return "KL Rahul, Quinton de Kock, Devdutt Padikkal, Ayush Badoni, Marcus Stoinis, Nicholas Pooran, Krunal Pandya, Ravi Bishnoi, Mohsin Khan, Naveen-ul-Haq, Yash Thakur";
+                    break;      
+            }
+        }
         function generateTeams() {
             const team1Players = document.getElementById('team1').value.split(',').map(player => player.trim());
             const team2Players = document.getElementById('team2').value.split(',').map(player => player.trim());

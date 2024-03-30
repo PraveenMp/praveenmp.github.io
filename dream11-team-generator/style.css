@@ -1,0 +1,20 @@
+.choose-team ul  {
+    padding: 0px;
+}
+.choose-team ul li {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.choose-team ul li img {
+    width: 50px;
+    height: 50px;
+}
+
+.choose-team ul li.selected 
+{
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
