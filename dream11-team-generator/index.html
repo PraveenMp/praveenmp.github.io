@@ -34,7 +34,13 @@
 
 <body>
     <div class="container mt-5">
-        <h3 class=""> Matches: DC vs PBKS (Lineups waiting) </h3>
+
+
+            <div id="matches-container">
+                <!-- Matches will be displayed here -->
+            </div>
+
+
 
 
         <hr />
@@ -135,8 +141,8 @@
 
             // Insert 11 random players into the corresponding input box
             console.log(selectedTeams.length);
-            count = count + 1; 
-             
+            count = count + 1;
+
             let selectedTeamInput = selectedTeams.length === 1 ? team1Input : team2Input;
             if (selectedTeams.length === 2 && count > 2) {
                 team1Input.value = getRandomPlayers(selectedTeams[0]);
@@ -156,7 +162,7 @@
         // Function to get random players (placeholder)
         function getRandomPlayers(teamName) {
 
-            switch(teamName) {
+            switch (teamName) {
                 case 'Mumbai Indians':
                     return "Rohit Sharma, Ishan Kishan, Tilak Varma, Naman Dhir, Hardik Pandya, Tim David, Shams Mulani, Piyush Chawla, Gerald Coetzee, Jasprit Bumrah, Luke Wood";
                     break;
@@ -173,7 +179,7 @@
                     return " Faf du Plessis, Virat Kohli, Rajat Patidar, Glenn Maxwell, Cameron Green, Dinesh Karthik, Anuj Rawat, Karn Sharma, Alzarri Joseph, Mayank Dagar, Mohammed Siraj";
                     break;
                 case 'Punjab Kings':
-                    return "Shikhar Dhawan, Jonny Bairstow, Sam Curran, Liam Livingstone, Jitesh Sharma, Shashank Singh, Harpreet Brar, Harshal Patel, Kagiso Rabada, Rahul Chahar, Arshdeep Singh";  
+                    return "Shikhar Dhawan, Jonny Bairstow, Sam Curran, Liam Livingstone, Jitesh Sharma, Shashank Singh, Harpreet Brar, Harshal Patel, Kagiso Rabada, Rahul Chahar, Arshdeep Singh";
                     break;
                 case 'Rajasthan Royals':
                     return "Yashasvi Jaiswal, Jos Buttler, Sanju Samson(w/c), Riyan Parag, Shimron Hetmyer, Dhruv Jurel, Ravichandran Ashwin, Sandeep Sharma, Avesh Khan, Trent Boult, Yuzvendra Chahal";
@@ -186,7 +192,7 @@
                     break;
                 case 'Lucknow Super Giants':
                     return "KL Rahul, Quinton de Kock, Devdutt Padikkal, Ayush Badoni, Marcus Stoinis, Nicholas Pooran, Krunal Pandya, Ravi Bishnoi, Mohsin Khan, Naveen-ul-Haq, Yash Thakur";
-                    break;      
+                    break;
             }
         }
         function generateTeams() {
@@ -248,6 +254,400 @@
         document.getElementById('clearResults').addEventListener('click', function () {
             document.getElementById('teamsTable').innerHTML = '';
         });
+
+        var matches = {
+            "matches": [
+                {
+                    "match_no": "Match 1",
+                    "fixture": "CSK vs RCB",
+                    "date": "22nd March 2024",
+                    "venue": "MA Chidambaram Stadium, Chennai",
+                    "time": "Friday | 8:00 pm (IST)"
+                },
+                {
+                    "match_no": "Match 2",
+                    "fixture": "PBKS vs DC",
+                    "date": "23rd Mar 2024",
+                    "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, Chandigarh",
+                    "time": "Saturday | 3:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 3",
+                    "fixture": "KKR vs SRH",
+                    "date": "23rd Mar 2024",
+                    "venue": "Eden Gardens, Kolkata",
+                    "time": "Saturday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 4",
+                    "fixture": "RR vs LSG",
+                    "date": "24th Mar 2024",
+                    "venue": "Sawai Mansingh Stadium, Jaipur",
+                    "time": "Sunday | 3:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 5",
+                    "fixture": "GT vs MI",
+                    "date": "24th Mar 2024",
+                    "venue": "Narendra Modi Stadium, Ahmedabad",
+                    "time": "Sunday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 6",
+                    "fixture": "RCB vs PBKS",
+                    "date": "25th Mar 2024",
+                    "venue": "M.Chinnaswamy Stadium, Bengaluru",
+                    "time": "Monday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 7",
+                    "fixture": "CSK vs GT",
+                    "date": "26th Mar 2024",
+                    "venue": "MA Chidambaram Stadium, Chennai",
+                    "time": "Tuesday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 8",
+                    "fixture": "SRH vs MI",
+                    "date": "27th Mar 2024",
+                    "venue": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
+                    "time": "Wednesday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 9",
+                    "fixture": "RR vs DC",
+                    "date": "28th Mar 2024",
+                    "venue": "Sawai Mansingh Stadium, Jaipur",
+                    "time": "Thursday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 10",
+                    "fixture": "RCB vs KKR",
+                    "date": "29th Mar 2024",
+                    "venue": "M.Chinnaswamy Stadium, Bengaluru",
+                    "time": "Friday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 11",
+                    "fixture": "LSG vs PBKS",
+                    "date": "30th Mar 2024",
+                    "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+                    "time": "Saturday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 12",
+                    "fixture": "GT vs SRH",
+                    "date": "31st Mar 2024",
+                    "venue": "Narendra Modi Stadium, Ahmedabad",
+                    "time": "Sunday | 3:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 13",
+                    "fixture": "DC vs CSK",
+                    "date": "31st Mar 2024",
+                    "venue": "Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam",
+                    "time": "Sunday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 14",
+                    "fixture": "MI vs RR",
+                    "date": "1st Apr 2024",
+                    "venue": "Wankhede Stadium, Mumbai",
+                    "time": "Monday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 15",
+                    "fixture": "RCB vs LSG",
+                    "date": "2nd Apr 2024",
+                    "venue": "M.Chinnaswamy Stadium, Bengaluru",
+                    "time": "Tuesday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 16",
+                    "fixture": "DC vs KKR",
+                    "date": "3rd Apr 2024",
+                    "venue": "Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam",
+                    "time": "Wednesday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 17",
+                    "fixture": "GT vs PBKS",
+                    "date": "4th Apr 2024",
+                    "venue": "Narendra Modi Stadium, Ahmedabad",
+                    "time": "Thursday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 18",
+                    "fixture": "SRH vs CSK",
+                    "date": "5th Apr 2024",
+                    "venue": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
+                    "time": "Friday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 19",
+                    "fixture": "RR vs RCB",
+                    "date": "6th Apr 2024",
+                    "venue": "Sawai Mansingh Stadium, Jaipur",
+                    "time": "Saturday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 20",
+                    "fixture": "MI vs DC",
+                    "date": "7th Apr 2024",
+                    "venue": "Wankhede Stadium, Mumbai",
+                    "time": "Sunday | 3:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 21",
+                    "fixture": "LSG vs GT",
+                    "date": "7th Apr 2024",
+                    "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+                    "time": "Sunday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 22",
+                    "fixture": "CSK vs KKR",
+                    "date": "8th Apr 2024",
+                    "venue": "MA Chidambaram Stadium, Chennai",
+                    "time": "Monday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 23",
+                    "fixture": "PBKS vs SRH",
+                    "date": "9th Apr 2024",
+                    "venue": "Punjab Cricket Association IS Bindra Stadium, Mohali, Chandigarh",
+                    "time": "Tuesday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 24",
+                    "fixture": "RR vs GT",
+                    "date": "10th Apr 2024",
+                    "venue": "Sawai Mansingh Stadium, Jaipur",
+                    "time": "Wednesday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 25",
+                    "fixture": "MI vs RCB",
+                    "date": "11th Apr 2024",
+                    "venue": "Wankhede Stadium, Mumbai",
+                    "time": "Thursday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 26",
+                    "fixture": "LSG vs DC",
+                    "date": "12th Apr 2024",
+                    "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+                    "time": "Friday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 27",
+                    "fixture": "PBKS vs RR",
+                    "date": "13th Apr 2024",
+                    "venue": "Punjab Cricket Association IS Bindra Stadium, Mohali, Chandigarh",
+                    "time": "Saturday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 28",
+                    "fixture": "KKR vs LSG",
+                    "date": "14th Apr 2024",
+                    "venue": "Eden Gardens, Kolkata",
+                    "time": "Sunday | 3:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 29",
+                    "fixture": "MI vs CSK",
+                    "date": "14th Apr 2024",
+                    "venue": "Wankhede Stadium, Mumbai",
+                    "time": "Sunday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 30",
+                    "fixture": "RCB vs SRH",
+                    "date": "15th Apr 2024",
+                    "venue": "M.Chinnaswamy Stadium, Bengaluru",
+                    "time": "Monday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 31",
+                    "fixture": "GT vs DC",
+                    "date": "16th Apr 2024",
+                    "venue": "Narendra Modi Stadium, Ahmedabad",
+                    "time": "Tuesday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 32",
+                    "fixture": "KKR vs RR",
+                    "date": "17th Apr 2024",
+                    "venue": "Eden Gardens, Kolkata",
+                    "time": "Wednesday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 33",
+                    "fixture": "PBKS vs MI",
+                    "date": "18th Apr 2024",
+                    "venue": "Punjab Cricket Association IS Bindra Stadium, Mohali, Chandigarh",
+                    "time": "Thursday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 34",
+                    "fixture": "LSG vs CSK",
+                    "date": "19th Apr 2024",
+                    "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+                    "time": "Friday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 35",
+                    "fixture": "DC vs SRH",
+                    "date": "20th Apr 2024",
+                    "venue": "Arun Jaitley Stadium, Delhi",
+                    "time": "Saturday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 36",
+                    "fixture": "KKR vs RCB",
+                    "date": "21st Apr 2024",
+                    "venue": "Eden Gardens, Kolkata",
+                    "time": "Sunday | 3:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 37",
+                    "fixture": "PBKS vs GT",
+                    "date": "21st Apr 2024",
+                    "venue": "Punjab Cricket Association IS Bindra Stadium, Mohali, Chandigarh",
+                    "time": "Sunday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 38",
+                    "fixture": "RR vs MI",
+                    "date": "22nd Apr 2024",
+                    "venue": "Sawai Mansingh Stadium, Jaipur",
+                    "time": "Monday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 39",
+                    "fixture": "CSK vs LSG",
+                    "date": "23rd Apr 2024",
+                    "venue": "MA Chidambaram Stadium, Chennai",
+                    "time": "Tuesday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 40",
+                    "fixture": "DC vs GT",
+                    "date": "24th Apr 2024",
+                    "venue": "Arun Jaitley Stadium, Delhi",
+                    "time": "Wednesday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 41",
+                    "fixture": "SRH vs RCB",
+                    "date": "25th Apr 2024",
+                    "venue": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
+                    "time": "Thursday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 42",
+                    "fixture": "KKR vs PBKS",
+                    "date": "26th Apr 2024",
+                    "venue": "Eden Gardens, Kolkata",
+                    "time": "Friday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 43",
+                    "fixture": "DC vs MI",
+                    "date": "27th Apr 2024",
+                    "venue": "Arun Jaitley Stadium, Delhi",
+                    "time": "Saturday | 3:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 44",
+                    "fixture": "LSG vs RR",
+                    "date": "27th Apr 2024",
+                    "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+                    "time": "Saturday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 45",
+                    "fixture": "GT vs RCB",
+                    "date": "28th Apr 2024",
+                    "venue": "Narendra Modi Stadium, Ahmedabad",
+                    "time": "Sunday | 3:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 46",
+                    "fixture": "PBKS vs CSK",
+                    "date": "28th Apr 2024",
+                    "venue": "Punjab Cricket Association IS Bindra Stadium, Mohali, Chandigarh",
+                    "time": "Sunday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 47",
+                    "fixture": "SRH vs KKR",
+                    "date": "29th Apr 2024",
+                    "venue": "Rajiv Gandhi International Stadium, Uppal, Hyderabad",
+                    "time": "Monday | 7:30 pm (IST)"
+                },
+                {
+                    "match_no": "Match 48",
+                    "fixture": "MI vs LSG",
+                    "date": "30th Apr 2024",
+                    "venue": "Wankhede Stadium, Mumbai",
+                    "time": "Tuesday | 7:30 pm (IST)"
+                }
+            ]
+        }
+// Function to check if a date string is today's date
+function isToday(dateString) {
+  var today = new Date();
+  var matchDateParts = dateString.split(' '); // Splitting the date string by space
+  var day = parseInt(matchDateParts[0]); // Extracting the day part
+  var month = matchDateParts[1]; // Extracting the month part
+  var year = parseInt(matchDateParts[2]); // Extracting the year part
+
+
+  if(month === "Apr") {
+    month = 4;
+  } else if(month === "Mar") {
+    month = 3;
+  }
+  // Creating a new date object without the ordinal indicator in the day part
+  var matchDate = new Date(year, month - 1, day);
+
+  console.log(today, day,month,year,matchDate);
+
+  // Removing time information for proper comparison
+  today.setHours(0, 0, 0, 0);
+  matchDate.setHours(0, 0, 0, 0);
+
+  return matchDate.getTime() === today.getTime();
+}
+
+  // Function to display matches happening today
+  function displayTodayMatches() {
+    var todayMatches = matches.matches.filter(function(match) {
+      return isToday(match.date);
+    });
+
+    var matchesContainer = document.getElementById('matches-container');
+
+    if (todayMatches.length === 0) {
+      matchesContainer.innerHTML = '<p>No matches today.</p>';
+    } else {
+      todayMatches.forEach(function(match) {
+        var matchHtml = '<div>';
+        matchHtml += '<p><strong>Match Number:</strong> ' + match.match_no + '</p>';
+        matchHtml += '<p><strong>Fixture:</strong> ' + match.fixture + '</p>';
+        matchHtml += '<p><strong>Venue:</strong> ' + match.venue + '</p>';
+        matchHtml += '<p><strong>Time:</strong> ' + match.time + '</p>';
+        matchHtml += '</div>';
+        matchesContainer.innerHTML += matchHtml;
+      });
+    }
+  }
+
+  // Call the function to display today's matches when the page loads
+  displayTodayMatches();
+
+
     </script>
 </body>
 
