@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose Today's Match</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+z8r4vdtBoy0+KLaR1i+bCy/lO2PT4Uy4yI5U2n" crossorigin="anonymous">
+  <style>
+    /* Custom CSS */
+    .choose-team {
+      text-align: center;
+      margin-top: 50px;
+    }
+    .choose-team h4 {
+      margin-bottom: 20px;
+    }
+    .choose-team ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .choose-team li {
+      margin: 0 10px;
+      cursor: pointer;
+    }
+    .choose-team img {
+      width: 50px;
+      height: 50px;
+    }
+    .choose-team li.selected {
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 5px;
+    }
+    .team-selection {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="choose-team">
+      <h4>Choose Today's Match</h4>
+      <ul id="team-list">
+        <li data-team="Mumbai Indians">
+          <img src="./images/mi-logo.png" alt="MI">
+        </li>
+        <li data-team="Chennai Super Kings">
+          <img src="./images/csk-logo.png" alt="CSK">
+        </li>
+        <li data-team="Delhi Capitals">
+          <img src="./images/dc-logo.png" alt="DC">
+        </li>
+        <li data-team="Kolkata Knight Riders">
+          <img src="./images/kkr-logo.png" alt="KKR">
+        </li>
+        <li data-team="Royal Challengers Bangalore">
+          <img src="./images/rcb-logo.png" alt="RCB">
+        </li>
+        <li data-team="Punjab Kings">
+          <img src="./images/punjub-kings-logo.png" alt="Punjab Kings">
+        </li>
+        <li data-team="Rajasthan Royals">
+          <img src="./images/rajasth-royals-logo.png" alt="Rajasthan Royals">
+        </li>
+        <li data-team="Sunrisers Hyderabad">
+          <img src="./images/srh-logo.png" alt="SRH">
+        </li>
+        <li data-team="Gujarat Titans">
+          <img src="./images/gt-logo.png" alt="GT">
+        </li>
+        <li data-team="Lucknow Super Giants">
+          <img src="./images/lkn-logo.png" alt="Lucknow Super Giants">
+        </li>
+      </ul>
+    </div>
+    <div class="row team-selection">
+      <div class="col-md-6">
+        <label for="team1">Select Team 1:</label>
+        <input type="text" id="team1" name="team1" class="form-control" placeholder="Select Team 1">
+      </div>
+      <div class="col-md-6">
+        <label for="team2">Select Team 2:</label>
+        <input type="text" id="team2" name="team2" class="form-control" placeholder="Select Team 2">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const teamList = document.getElementById('team-list');
+    const team1Input = document.getElementById('team1');
+    const team2Input = document.getElementById('team2');
+    let selectedTeams = [];
+
+    teamList.addEventListener('click', function(event) {
+      const clickedListItem = event.target.closest('li');
+      if (!clickedListItem) return;
+
+      const teamName = clickedListItem.getAttribute('data-team');
+
+      // If selected teams are already 2, deselect the previously selected team
+      if (selectedTeams.length === 2 && !selectedTeams.includes(teamName)) {
+        const deselectedTeam = selectedTeams.shift();
+        const deselectedTeamInput = deselectedTeam === team1Input.value ? team1Input : team2Input;
+        deselectedTeamInput.value = '';
+        const deselectedListItem = teamList.querySelector(`li[data-team="${deselectedTeam}"]`);
+        deselectedListItem.classList.remove('selected');
+      }
+
+      // Update selected teams array
+      if (!selectedTeams.includes(teamName)) {
+        selectedTeams.push(teamName);
+      }
+
+      // Insert 11 random players into the corresponding input box
+      const selectedTeamInput = selectedTeams.length === 1 ? team1Input : team2Input;
+      selectedTeamInput.value = getRandomPlayers();
+      
+      // Highlight selected team
+      clickedListItem.classList.add('selected');
+    });
+
+    // Function to get random players (placeholder)
+    function getRandomPlayers() {
+      // Here you can replace this with your actual logic to get random players
+      return "Player1, Player2, Player3, Player4, Player5, Player6, Player7, Player8, Player9, Player10, Player11";
+    }
+  </script>
+</body>
+</html>
