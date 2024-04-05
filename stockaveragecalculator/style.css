@@ -131,6 +131,11 @@ footer {
   display: inline-block;
   padding: 10px;
   width: 100%;
+  position: relative;
+}
+.top-menu ul li a img {
+  position: absolute;
+  top:2px;
 }
 
 .top-menu ul li:hover {
