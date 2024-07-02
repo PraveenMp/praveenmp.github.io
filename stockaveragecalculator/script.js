@@ -74,236 +74,21 @@ function unitChanged(id, error) {
   }
 
    // Get all anchor elements with class 'link'
-   var links = document.querySelectorAll('.link');
+  //  var links = document.querySelectorAll('.link');
 
-   // Loop through each link and attach event listener
-   links.forEach(function(link) {
-     link.addEventListener('click', function(event) {
-       // Prevent the default action (routing to the href)
-       event.preventDefault();
+  //  // Loop through each link and attach event listener
+  //  links.forEach(function(link) {
+  //    link.addEventListener('click', function(event) {
+  //      // Prevent the default action (routing to the href)
+  //      event.preventDefault();
 
-       // Your custom logic here
-       console.log('Anchor link clicked, but default routing prevented.');
-     });
-   });
+  //      // Your custom logic here
+  //      console.log('Anchor link clicked, but default routing prevented.');
+  //    });
+  //  });
 
 
   function activeSection(value) {
-
-      switch(value) {
-          case 'ac':
-              document.getElementById("average-calculator").classList.remove("hide"); 
-              document.getElementById("average-calculator").classList.add("active");
-
-              document.getElementById("sip-calculator").classList.remove("active");
-              document.getElementById("sip-calculator").classList.add("hide");
-
-              document.getElementById("percentage-calculator").classList.remove("active");
-              document.getElementById("percentage-calculator").classList.add("hide");
-
-              document.getElementById("emi-calculator").classList.remove("active");
-              document.getElementById("emi-calculator").classList.add("hide");
-
-              document.getElementById("cagr-calculator").classList.remove("active");
-              document.getElementById("cagr-calculator").classList.add("hide");
-
-              document.getElementById("swp-calculator").classList.remove("active");
-              document.getElementById("swp-calculator").classList.add("hide");
-
-              document.getElementById("buy-me-a-coffee").classList.remove("active");
-              document.getElementById("buy-me-a-coffee").classList.add("hide");
-
-              document.getElementById("ac").classList.add("active");
-              document.getElementById("sc").classList.remove("active");
-              document.getElementById("pc").classList.remove("active");
-              document.getElementById("em").classList.remove("active");
-              document.getElementById("cagr").classList.remove("active");
-              document.getElementById("swp").classList.remove("active");
-              document.getElementById("buymeacoffee").classList.remove("active");
-          break;
-          case 'sc': 
-              document.getElementById("sip-calculator").classList.remove("hide");
-              document.getElementById("sip-calculator").classList.add("active");
-
-              document.getElementById("average-calculator").classList.remove("active");
-              document.getElementById("average-calculator").classList.add("hide");
-
-              document.getElementById("percentage-calculator").classList.remove("active");
-              document.getElementById("percentage-calculator").classList.add("hide");
-
-              document.getElementById("emi-calculator").classList.remove("active");
-              document.getElementById("emi-calculator").classList.add("hide");
-
-              document.getElementById("cagr-calculator").classList.remove("active");
-              document.getElementById("cagr-calculator").classList.add("hide");
-
-              document.getElementById("swp-calculator").classList.remove("active");
-              document.getElementById("swp-calculator").classList.add("hide");
-
-              document.getElementById("buy-me-a-coffee").classList.remove("active");
-              document.getElementById("buy-me-a-coffee").classList.add("hide");
-
-              document.getElementById("sc").classList.add("active");
-              document.getElementById("ac").classList.remove("active");
-              document.getElementById("pc").classList.remove("active");
-              document.getElementById("em").classList.remove("active");
-              document.getElementById("cagr").classList.remove("active");
-              document.getElementById("swp").classList.remove("active");
-              document.getElementById("buymeacoffee").classList.remove("active");
-          break;
-          case 'pc': 
-          document.getElementById("percentage-calculator").classList.add("active");
-          document.getElementById("percentage-calculator").classList.remove("hide");
-
-          document.getElementById("sip-calculator").classList.remove("active");
-          document.getElementById("sip-calculator").classList.add("hide");
-
-          document.getElementById("average-calculator").classList.remove("active");
-          document.getElementById("average-calculator").classList.add("hide");
-
-          document.getElementById("emi-calculator").classList.remove("active");
-          document.getElementById("emi-calculator").classList.add("hide");
-
-          document.getElementById("cagr-calculator").classList.remove("active");
-          document.getElementById("cagr-calculator").classList.add("hide");
-
-          document.getElementById("swp-calculator").classList.remove("active");
-          document.getElementById("swp-calculator").classList.add("hide");
-
-          document.getElementById("buy-me-a-coffee").classList.remove("active");
-          document.getElementById("buy-me-a-coffee").classList.add("hide");
-
-          document.getElementById("pc").classList.add("active");
-          document.getElementById("ac").classList.remove("active");
-          document.getElementById("sc").classList.remove("active");
-          document.getElementById("em").classList.remove("active");
-          document.getElementById("cagr").classList.remove("active");
-          document.getElementById("swp").classList.remove("active");
-          document.getElementById("buymeacoffee").classList.remove("active");
-          break;
-          case 'em': 
-          document.getElementById("emi-calculator").classList.add("active");
-          document.getElementById("emi-calculator").classList.remove("hide");
-
-          document.getElementById("sip-calculator").classList.remove("active");
-          document.getElementById("sip-calculator").classList.add("hide");
-
-          document.getElementById("average-calculator").classList.remove("active");
-          document.getElementById("average-calculator").classList.add("hide");
-
-          document.getElementById("percentage-calculator").classList.remove("active");
-          document.getElementById("percentage-calculator").classList.add("hide");
-
-          document.getElementById("cagr-calculator").classList.remove("active");
-          document.getElementById("cagr-calculator").classList.add("hide");
-
-          document.getElementById("swp-calculator").classList.remove("active");
-          document.getElementById("swp-calculator").classList.add("hide");
-
-          document.getElementById("buy-me-a-coffee").classList.remove("active");
-          document.getElementById("buy-me-a-coffee").classList.add("hide");
-
-          document.getElementById("em").classList.add("active");
-          document.getElementById("ac").classList.remove("active");
-          document.getElementById("sc").classList.remove("active");
-          document.getElementById("pc").classList.remove("active");
-          document.getElementById("cagr").classList.remove("active");
-          document.getElementById("swp").classList.remove("active");
-          document.getElementById("buymeacoffee").classList.remove("active");
-          break;
-          case 'cagr': 
-          document.getElementById("cagr-calculator").classList.add("active");
-          document.getElementById("cagr-calculator").classList.remove("hide");
-
-          document.getElementById("sip-calculator").classList.remove("active");
-          document.getElementById("sip-calculator").classList.add("hide");
-
-          document.getElementById("average-calculator").classList.remove("active");
-          document.getElementById("average-calculator").classList.add("hide");
-
-          document.getElementById("percentage-calculator").classList.remove("active");
-          document.getElementById("percentage-calculator").classList.add("hide");
-
-          document.getElementById("emi-calculator").classList.remove("active");
-          document.getElementById("emi-calculator").classList.add("hide");
-
-          document.getElementById("swp-calculator").classList.remove("active");
-          document.getElementById("swp-calculator").classList.add("hide");
-
-          document.getElementById("buy-me-a-coffee").classList.remove("active");
-          document.getElementById("buy-me-a-coffee").classList.add("hide");
-
-          document.getElementById("cagr").classList.add("active");
-          document.getElementById("em").classList.remove("active");
-          document.getElementById("ac").classList.remove("active");
-          document.getElementById("sc").classList.remove("active");
-          document.getElementById("pc").classList.remove("active");
-          document.getElementById("swp").classList.remove("active");
-          document.getElementById("buymeacoffee").classList.remove("active");
-          break;
-          case 'swp': 
-          document.getElementById("swp-calculator").classList.add("active");
-          document.getElementById("swp-calculator").classList.remove("hide");
-
-          document.getElementById("sip-calculator").classList.remove("active");
-          document.getElementById("sip-calculator").classList.add("hide");
-
-          document.getElementById("average-calculator").classList.remove("active");
-          document.getElementById("average-calculator").classList.add("hide");
-
-          document.getElementById("percentage-calculator").classList.remove("active");
-          document.getElementById("percentage-calculator").classList.add("hide");
-
-          document.getElementById("emi-calculator").classList.remove("active");
-          document.getElementById("emi-calculator").classList.add("hide");
-
-          document.getElementById("cagr-calculator").classList.remove("active");
-          document.getElementById("cagr-calculator").classList.add("hide");
-
-          document.getElementById("buy-me-a-coffee").classList.remove("active");
-          document.getElementById("buy-me-a-coffee").classList.add("hide");
-
-          document.getElementById("swp").classList.add("active");
-          document.getElementById("em").classList.remove("active");
-          document.getElementById("ac").classList.remove("active");
-          document.getElementById("sc").classList.remove("active");
-          document.getElementById("pc").classList.remove("active");
-          document.getElementById("cagr").classList.remove("active");
-          document.getElementById("buymeacoffee").classList.remove("active");
-          break;
-          case 'buymeacoffee': 
-          document.getElementById("buy-me-a-coffee").classList.add("active");
-          document.getElementById("buy-me-a-coffee").classList.remove("hide");
-
-          document.getElementById("sip-calculator").classList.remove("active");
-          document.getElementById("sip-calculator").classList.add("hide");
-
-          document.getElementById("average-calculator").classList.remove("active");
-          document.getElementById("average-calculator").classList.add("hide");
-
-          document.getElementById("percentage-calculator").classList.remove("active");
-          document.getElementById("percentage-calculator").classList.add("hide");
-
-          document.getElementById("emi-calculator").classList.remove("active");
-          document.getElementById("emi-calculator").classList.add("hide");
-
-          document.getElementById("cagr-calculator").classList.remove("active");
-          document.getElementById("cagr-calculator").classList.add("hide");
-
-          document.getElementById("swp-calculator").classList.remove("active");
-          document.getElementById("swp-calculator").classList.add("hide");
-
-          document.getElementById("buymeacoffee").classList.add("active");
-          document.getElementById("em").classList.remove("active");
-          document.getElementById("ac").classList.remove("active");
-          document.getElementById("sc").classList.remove("active");
-          document.getElementById("pc").classList.remove("active");
-          document.getElementById("cagr").classList.remove("active");
-          document.getElementById("swp").classList.remove("active");
-      break;
-          default: break;
-      }
-
       if (isMobile() || window.innerWidth < 768) {
         var sidebar = document.getElementById('sidebar');
         sidebar.style.left = '-500px';
@@ -342,6 +127,7 @@ function unitChanged(id, error) {
 function clearFields1() {
     document.getElementById("investment").value = '';
     document.getElementById("rateOfInterest").value = '';
+    document.getElementById("rateIncrease").value = '';
     document.getElementById("years").value = '';
     document.getElementById("tm").innerHTML = '0';
     document.getElementById("im").innerHTML = '0';

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JPBH15FMY4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-JPBH15FMY4');
+    </script>
+    <title>Stock market Average Calculator</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="This application allows to calculate stock average on entering first and second buy details. A stock average calculator is a tool used to calculate the average value of a list of stock prices." />
+    <meta name="keywords"
+        content="Indian Stock market average Calculator, USA Stock Market average calculator, US stock market average calculator, Japan stock market average-calculator, Australia stock market average calculator. average calculator, stock calculator, percentage calculator,  cash and carry calculator, Stock prices, Average, Calculation, Performance, Investors, Time period, Investment decisions, Spreadsheet, Software program, Stock charting, Technical analysis, Analyzing, Comparison, Investment performance, Stock market.">
+    <meta name="author" content="Praveen MP">
+    <meta property="og:title" content="Stock market Average Calculator" />
+    <meta property="og:url" content="https://praveenmp.github.io/stockaveragecalculator/" />
+    <meta property="og:description"
+        content="This application allows to calculate stock average on entering first and second buy details. A stock average calculator is a tool used to calculate the average value of a list of stock prices.">
+    <meta property="og:image"
+        content="https://praveenmp.github.io/stockaveragecalculator/images/android-chrome-512x512.png">
+    <meta property="og:type" content="website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="twitter:card" content="Stock market Average Calculator">
+    <meta name="twitter:title" content="Stock market Average Calculator">
+    <meta name="twitter:description"
+        content="Indian Stock market average Calculator, USA Stock Market average calculator, US stock market average calculator, Japan stock market average-calculator, Australia stock market average calculator. average calculator, stock calculator, percentage calculator,  cash and carry calculator, Stock prices, Average, Calculation, Performance, Investors, Time period, Investment decisions, Spreadsheet, Software program, Stock charting, Technical analysis, Analyzing, Comparison, Investment performance, Stock market.">
+    <meta name="twitter:image"
+        content="https://praveenmp.github.io/stockaveragecalculator/images/android-chrome-512x512.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid wrapper-body">
+        <div class="row">
+            <div id="mobile-header" class="hidden-on-desktop-tablet">
+                <div id="toggle-btn">
+                    <i class="fas fa-bars"></i> Menu
+                </div>
+                <div class="mobile-logo">
+                    <h2 class="mobile-app-logo"><i class="fas fa-calculator"></i> Stock-Calc</h2>
+                </div>
+            </div>
+            <div class="col-md-2 sidebar" id="sidebar">
+                <div class="title-wrapper">
+                    <h2 class="app-logo"><i class="fas fa-calculator"></i> Stock-Calc</h2>
+                    <div class="custom-control custom-switch mb-3">
+                        <input type="checkbox" class="custom-control-input" id="darkModeSwitch" data-toggle="toggle">
+                        <label class="custom-control-label" for="darkModeSwitch"></label>
+                    </div>
+                </div>
+
+                <div class="top-menu">
+                    <ul>
+                        <li title="Stock Average Calculator">
+                            <a href="./index.html" class="link">
+                                <i class="fas fa-tachometer-alt"></i>
+                                Stock Average Calculator
+                            </a>
+                        </li>
+                        <li id="sc" title="SIP Calculator">
+                            <a href="./systematic-Investment-plan-calculator.html" class="link">
+                                <i class="fas fa-coins"></i>
+                                SIP Calculator
+                            </a>
+                        </li>
+                        <li title="Percentage Calculator">
+                            <a href="./percentage-calculator.html" class="link">
+                                <i class="fas fa-percentage"></i>
+                                Percentage Calculator
+                            </a>
+                        </li>
+                        <li title="EMI Calculator">
+                            <a href="./emi-calculator.html" class="link">
+                                <i class="fas fa-wallet"></i>
+                                EMI Calculator
+                            </a>
+                        </li>
+                        <li title="CAGR calculator" class="active">
+                            <a href="./compound-annual-growth-rate-calculator.html" class="link">
+                                <i class="fas fa-mountain"></i>
+                                CAGR calculator
+                            </a>
+                        </li>
+                        <li title="SWP Calculator">
+                            <a href="./systematic-withdrawal-plan-calculator.html" class="link">
+                                <i class="fas fa-hand-holding-water"></i>
+                                SWP Calculator
+                            </a>
+                        </li>
+                        <li title="Dividend Details">
+                            <a href="./indian-stock-market-dividend-details.html">
+                                <i class="fas fa-cubes"></i>
+                                Dividend Details 2023 - 2024 <img src="./images/new-icon.gif" height="35" width="35" />
+                            </a>
+                        </li>
+                        <li title="Bonus Details" class="">
+                            <a href="./indian-stock-market-bonus-and-buyback-details.html">
+                                <i class="fas fa-search-dollar"></i>
+                                Bonus & Buyback Details
+                            </a>
+                        </li>
+                        <li title="Face Value Split Details" class="">
+                            <a href="./indian-stock-market-face-value-and-demerger.html">
+                                <i class="fas fa-cut"></i>
+                                Face value split & Demerger
+                            </a>
+                        </li>
+                        <li title="Best books on investment, trading, stock market" class="">
+                            <a href="./top-books-on-investment-trading-stock-market.html">
+                                <i class="fas fa-book"></i>
+                                Best books on investment, trading, stock market
+                            </a>
+                        </li>
+                        </li>
+                        <li id="buymeacoffee" title="Buy Me a Coffee" class="">
+                            <a href="./buy-me-a-coffee.html">
+                                <i class="fas fa-mug-hot"></i>
+                                Buy Me a Coffee
+                            </a>
+                        </li>
+                        <li id="aboutus" title="About Us" class="">
+                            <a href="./about-us.html"><i class="fas fa-user-friends"></i>
+                                About Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10 content-right-body-wrapper">
+                <div id="clock"></div>
+
+                <div id="cagr-calculator">
+                    <div class="content-body-wrapper">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <header>
+                                    <h2 class="headers">CAGR calculator(Compound Annual Growth Rate Calculator)</h2>
+                                </header>
+                                <hr />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="cagr-result-wrapper" class="col-md-4">
+                                <div>
+                                    <label style="float:left;margin-right:10px;">Initial Value</label>
+                                    <input class="form-control" type="number" id="initialValue"
+                                        placeholder="Enter initial value" autocomplete="off" onchange="calculateCAGR()">
+                                    <span id='error1'></span>
+                                </div>
+                                <div style="margin-top:15px">
+                                    <label style="float:left;margin-right:10px;" for="finalValue">Final Value:</label>
+                                    <input class="form-control" type="number" id="finalValue"
+                                        placeholder="Enter final value" autocomplete="off" onchange="calculateCAGR()">
+                                    <span id='error2'></span>
+                                </div>
+                                <div style="margin-top:15px">
+                                    <label style="float:left;margin-right:10px;" for="cagryears">Years:</label>
+                                    <input class="form-control" type="number" id="cagryears" placeholder="Enter years"
+                                        autocomplete="off" onchange="calculateCAGR()">
+                                    <span id='error2'></span>
+                                </div>
+                            </div>
+                            <div class="col-md-2"></div>
+                            <div class="col-md-4 st banner-ad-desktop">
+                                <ul>
+                                    <li> <a target="_blank" tabindex="-1"
+                                            href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=d7b58af7beaaa50e0bf135c06cda27dd&camp=3638&creative=24630&index=books&keywords=Best Stock Market Books, Get Rich">Top
+                                            Picks: Essential Stock Market Books for Every Investor</a></li>
+                                    <li> <a target="_blank" tabindex="-1"
+                                            href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=93a73bc45fd282f0b311239075611abf&camp=3638&creative=24630&index=books&keywords=Self-Confidence, Influence People &amp; Wealth English books for Indian ">Mastering
+                                            Money Management: Must-Read Books for Financial Success</a></li>
+                                    <li> <a target="_blank" tabindex="-1"
+                                            href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=c1a731d187981d90a78954327ff9f164&camp=3638&creative=24630&index=books&keywords=startup books">Launching
+                                            Your Startup: Essential Reads for Success</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="r-sip">
+                                    <div class="results">CAGR : <span id="cagr-result">0</span> </div>
+                                    <hr />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 st">
+                                <button class="btn btn-success" onclick="calculateCAGR()"> Calculate</button>
+                                <button class="btn btn-warning" onclick="clearFields3()">Clear Fields</button>
+                            </div>
+                            <div class="col-md-12 d-block d-md-none display-mobile-ad">
+                                <ul>
+                                    <li> <a target="_blank" tabindex="-1"
+                                            href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=d7b58af7beaaa50e0bf135c06cda27dd&camp=3638&creative=24630&index=books&keywords=Best Stock Market Books, Get Rich">Top
+                                            Picks: Essential Stock Market Books for Every Investor</a></li>
+                                    <li> <a target="_blank" tabindex="-1"
+                                            href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=93a73bc45fd282f0b311239075611abf&camp=3638&creative=24630&index=books&keywords=Self-Confidence, Influence People &amp; Wealth English books for Indian ">Mastering
+                                            Money Management: Must-Read Books for Financial Success</a></li>
+                                    <li> <a target="_blank" tabindex="-1"
+                                            href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=c1a731d187981d90a78954327ff9f164&camp=3638&creative=24630&index=books&keywords=startup books">Launching
+                                            Your Startup: Essential Reads for Success</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-body-wrapper mt-4">
+                        <p>The Compound Annual Growth Rate (CAGR) calculator is a tool used to determine the average
+                            annual growth
+                            rate of an investment over a specified period. It is particularly useful for assessing the
+                            performance of
+                            long-term investments such as stocks, mutual funds, and retirement accounts.</p>
+                        <p>The formula for calculating CAGR is:</p>
+                        <pre>
+        CAGR = ((Final Value / Initial Value)^(1 / Number of Years)) - 1
+            </pre>
+                        <p>Where:</p>
+                        <ul>
+                            <li><strong>Final Value:</strong> The ending balance or value of the investment.</li>
+                            <li><strong>Initial Value:</strong> The starting balance or value of the investment.</li>
+                            <li><strong>Number of Years:</strong> The total number of years over which the investment
+                                has grown.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="mb-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4 text-center mb-2">
+                        &copy; 2018 - 2028. Feedback:<a href="mailto:praveen_mp@live.com">praveen_mp@live.com</a>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="social-share-icons">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                                class="btn btn-primary btn-sm"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                                class="btn btn-info btn-sm"><i class="fab fa-twitter"></i></a>
+                            <a href="whatsapp://send?text=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                                class="btn btn-success btn-sm"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/?url=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                                class="btn btn-danger btn-sm"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="./script.min.js" crossorigin="anonymous"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/stockaveragecalculator/service-worker.js');
+            });
+        }
+        // Initialize deferredPrompt for use later to show browser install prompt.
+        let deferredPrompt;
+        let buttonInstall = document.getElementById("buttonInstall");
+        buttonInstall.style.display = 'none';
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            // Prevent the mini-infobar from appearing on mobile
+            e.preventDefault();
+            // Stash the event so it can be triggered later.
+            deferredPrompt = e;
+            // Update UI notify the user they can install the PWA
+            buttonInstall.style.display = 'block';
+            buttonInstall.addEventListener('click', async () => {
+                // Hide the app provided install promotion
+                // buttonInstall.style.display = 'none';
+                // Show the install prompt
+                deferredPrompt.prompt();
+                // Wait for the user to respond to the prompt
+                const { outcome } = await deferredPrompt.userChoice;
+                // Optionally, send analytics event with outcome of user choice
+                console.log(`User response to the install prompt: ${outcome}`);
+                // We've used the prompt, and can't use it again, throw it away
+                deferredPrompt = null;
+            });
+            // Optionally, send analytics event that PWA install promo was shown.
+            console.log(`'beforeinstallprompt' event was fired.`);
+        });
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -116,7 +116,7 @@ footer {
   cursor: pointer;
   width: 100%;
   margin: 2.5px 0px;
-  font-size: 14px;
+  font-size: 0.8rem;
 }
 .top-menu ul li i {
   display: block;
@@ -135,7 +135,8 @@ footer {
 }
 .top-menu ul li a img {
   position: absolute;
-  top:2px;
+  top: 2px;
+  right: 0px;
 }
 
 .top-menu ul li:hover {
@@ -262,7 +263,8 @@ footer {
 @media only screen and (max-width: 768px) {
 
   .top-menu ul li a img {
-    top:22px
+    top:0px;
+    right: auto;
   }
   #average-calculator h4 {
     font-size: 16px;
