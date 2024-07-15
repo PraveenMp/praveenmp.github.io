@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-
 const TodoApp = () => {
   const [tasks, setTasks] = useState([]);
 
@@ -12,11 +11,12 @@ const TodoApp = () => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
 
-  const addTask = (taskText) => {
+  const addTask = (taskText, taskCategory) => {
     const newTask = {
       id: Date.now(),
       text: taskText,
       date: new Date().toISOString(),
+      category: taskCategory,
       new: true,
       inProgress: false,
       completed: false,
@@ -51,8 +51,10 @@ const TodoApp = () => {
 
   return (
     <div className="container mt-5">
-      <h4>Praveen To-Do List</h4>
-      <TodoForm addTask={addTask} />
+      <h4 className="text-center mb-4">Praveen To-Do List</h4>
+      <div className="form-body mb-4">
+        <TodoForm addTask={addTask} />
+      </div>
       <TodoList
         tasks={tasks}
         onCheckboxChange={handleCheckboxChange}
@@ -64,21 +66,19 @@ const TodoApp = () => {
 
 const TodoForm = ({ addTask }) => {
   const [taskText, setTaskText] = useState("");
+  const [taskCategory, setTaskCategory] = useState("Personal");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!taskText.trim()) return;
-    addTask(taskText);
+    addTask(taskText, taskCategory);
     setTaskText("");
+    setTaskCategory("Personal");
   };
 
-
-
-
-
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="input-group mb-3">
+    <form onSubmit={handleSubmit} className="table-body-wrapper">
+      <div className="input-group">
         <input
           type="text"
           className="form-control"
@@ -86,6 +86,16 @@ const TodoForm = ({ addTask }) => {
           value={taskText}
           onChange={(e) => setTaskText(e.target.value)}
         />
+        <select
+          className="form-select"
+          value={taskCategory}
+          onChange={(e) => setTaskCategory(e.target.value)}
+        >
+          <option value="Personal">Personal</option>
+          <option value="Office">Office</option>
+          <option value="Home">Home</option>
+          <option value="Others">Others</option>
+        </select>
         <button className="btn btn-primary" type="submit">
           Add Task
         </button>
@@ -94,44 +104,56 @@ const TodoForm = ({ addTask }) => {
   );
 };
 
-const TodoList = ({ tasks, onCheckboxChange, onDelete  }) => {
+const TodoList = ({ tasks, onCheckboxChange, onDelete }) => {
+  const categories = ["Personal", "Office", "Home", "Others"];
+
   return (
-    <table className="table">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Task</th>
-          <th scope="col">Date</th>
-          <th scope="col">Status</th>
-          <th scope="col">Actions</th>
-        </tr>
-      </thead>
-      <tbody>
-        {tasks.map((task, index) => (
-          <tr key={task.id}>
-            <th scope="row">{index + 1}</th>
-            <td>{task.text}</td>
-            <td>{new Date(task.date).toLocaleString()}</td>
-            <td>
-              <input
-                type="checkbox"
-                checked={task.completed}
-                onChange={() => onCheckboxChange(task.id)}
-              />
-              {task.completed ? "Completed" : "In Progress"}
-            </td>
-            <td>
-              <button
-                className="btn btn-danger"
-                onClick={() => onDelete(task.id)}
-              >
-                Delete
-              </button>
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
+    <div>
+      {categories.map((category) => (
+        <div key={category} className="mb-4 table-body-wrapper">
+          <h5>{category}</h5>
+          <hr />
+          <table className="table">
+            <thead className="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Task</th>
+                <th scope="col">Date</th>
+                <th scope="col">Status</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {tasks
+                .filter((task) => task.category === category)
+                .map((task, index) => (
+                  <tr key={task.id}>
+                    <th scope="row">{index + 1}</th>
+                    <td>{task.text}</td>
+                    <td>{new Date(task.date).toLocaleString()}</td>
+                    <td>
+                      <input
+                        type="checkbox"
+                        checked={task.completed}
+                        onChange={() => onCheckboxChange(task.id)}
+                      />
+                      {task.completed ? "Completed" : "In Progress"}
+                    </td>
+                    <td>
+                      <button
+                        className="btn btn-danger btn-sm"
+                        onClick={() => onDelete(task.id)}
+                      >
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+            </tbody>
+          </table>
+        </div>
+      ))}
+    </div>
   );
 };
 
