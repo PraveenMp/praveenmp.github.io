@@ -9,15 +9,6 @@
     "RECORD DATE": "1-Jan-24"
   },
   {
-    "SYMBOL": "REGENCERAM",
-    "COMPANY NAME": "Regency Ceramics Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Extra Ordinary General Meeting",
-    "FACE VALUE": 10,
-    "EX-DATE": "2-Jan-24",
-    "RECORD DATE": "-"
-  },
-  {
     "SYMBOL": "ALLCARGO",
     "COMPANY NAME": "Allcargo Logistics Limited",
     "SERIES": "EQ",
@@ -27,12 +18,12 @@
     "RECORD DATE": "2-Jan-24"
   },
   {
-    "SYMBOL": "SPICEJET",
-    "COMPANY NAME": "SPICEJET LTD",
+    "SYMBOL": "REGENCERAM",
+    "COMPANY NAME": "Regency Ceramics Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Annual General Meeting",
+    "PURPOSE": "Extra Ordinary General Meeting",
     "FACE VALUE": 10,
-    "EX-DATE": "3-Jan-24",
+    "EX-DATE": "2-Jan-24",
     "RECORD DATE": "-"
   },
   {
@@ -45,6 +36,15 @@
     "RECORD DATE": "-"
   },
   {
+    "SYMBOL": "SPICEJET",
+    "COMPANY NAME": "SPICEJET LTD",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 10,
+    "EX-DATE": "3-Jan-24",
+    "RECORD DATE": "-"
+  },
+  {
     "SYMBOL": "AKSHAR",
     "COMPANY NAME": "Akshar Spintex Limited",
     "SERIES": "EQ",
@@ -52,15 +52,6 @@
     "FACE VALUE": 1,
     "EX-DATE": "4-Jan-24",
     "RECORD DATE": "4-Jan-24"
-  },
-  {
-    "SYMBOL": "PGIL",
-    "COMPANY NAME": "Pearl Global Industries Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Face Value Split (Sub-Division) - From Rs10/- Per Share To Rs 5/- Per Share",
-    "FACE VALUE": 5,
-    "EX-DATE": "5-Jan-24",
-    "RECORD DATE": "5-Jan-24"
   },
   {
     "SYMBOL": "KANANIIND",
@@ -77,6 +68,15 @@
     "SERIES": "EQ",
     "PURPOSE": "Face Value Split (Sub-Division) - From Rs10/- Per Share To Re 1/- Per Share",
     "FACE VALUE": 1,
+    "EX-DATE": "5-Jan-24",
+    "RECORD DATE": "5-Jan-24"
+  },
+  {
+    "SYMBOL": "PGIL",
+    "COMPANY NAME": "Pearl Global Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs10/- Per Share To Rs 5/- Per Share",
+    "FACE VALUE": 5,
     "EX-DATE": "5-Jan-24",
     "RECORD DATE": "5-Jan-24"
   },
@@ -153,15 +153,6 @@
     "RECORD DATE": "18-Jan-24"
   },
   {
-    "SYMBOL": "SBC",
-    "COMPANY NAME": "SBC Exports Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Bonus 1:2",
-    "FACE VALUE": 1,
-    "EX-DATE": "19-Jan-24",
-    "RECORD DATE": "19-Jan-24"
-  },
-  {
     "SYMBOL": "HCLTECH",
     "COMPANY NAME": "HCL Technologies Limited",
     "SERIES": "EQ",
@@ -171,10 +162,10 @@
     "RECORD DATE": "20-Jan-24"
   },
   {
-    "SYMBOL": "TCS",
-    "COMPANY NAME": "Tata Consultancy Services Limited",
+    "SYMBOL": "SBC",
+    "COMPANY NAME": "SBC Exports Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 9 Per Share Special Dividend - Rs 18 Per Share",
+    "PURPOSE": "Bonus 1:2",
     "FACE VALUE": 1,
     "EX-DATE": "19-Jan-24",
     "RECORD DATE": "19-Jan-24"
@@ -185,6 +176,15 @@
     "SERIES": "EQ",
     "PURPOSE": "Rights 3:2 @ Premium Rs 5/-",
     "FACE VALUE": 10,
+    "EX-DATE": "19-Jan-24",
+    "RECORD DATE": "19-Jan-24"
+  },
+  {
+    "SYMBOL": "TCS",
+    "COMPANY NAME": "Tata Consultancy Services Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 9 Per Share Special Dividend - Rs 18 Per Share",
+    "FACE VALUE": 1,
     "EX-DATE": "19-Jan-24",
     "RECORD DATE": "19-Jan-24"
   },
@@ -207,15 +207,6 @@
     "RECORD DATE": "23-Jan-24"
   },
   {
-    "SYMBOL": "AKSHAR",
-    "COMPANY NAME": "Akshar Spintex Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Extra Ordinary General Meeting",
-    "FACE VALUE": 1,
-    "EX-DATE": "24-Jan-24",
-    "RECORD DATE": "-"
-  },
-  {
     "SYMBOL": "WIPRO",
     "COMPANY NAME": "Wipro Limited",
     "SERIES": "EQ",
@@ -225,6 +216,15 @@
     "RECORD DATE": "24-Jan-24"
   },
   {
+    "SYMBOL": "AKSHAR",
+    "COMPANY NAME": "Akshar Spintex Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Extra Ordinary General Meeting",
+    "FACE VALUE": 1,
+    "EX-DATE": "24-Jan-24",
+    "RECORD DATE": "-"
+  },
+  {
     "SYMBOL": "MAGNUM",
     "COMPANY NAME": "Magnum Ventures Limited",
     "SERIES": "EQ",
@@ -232,15 +232,6 @@
     "FACE VALUE": 10,
     "EX-DATE": "25-Jan-24",
     "RECORD DATE": "25-Jan-24"
-  },
-  {
-    "SYMBOL": "KDDL",
-    "COMPANY NAME": "KDDL Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 58 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "25-Jan-24",
-    "RECORD DATE": "26-Jan-24"
   },
   {
     "SYMBOL": "RHL",
@@ -270,10 +261,19 @@
     "RECORD DATE": "-"
   },
   {
-    "SYMBOL": "KSOLVES",
-    "COMPANY NAME": "Ksolves India Limited",
+    "SYMBOL": "IIFL",
+    "COMPANY NAME": "IIFL Finance Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 7.50 Per Share",
+    "PURPOSE": "Interim Dividend - Rs 4 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "25-Jan-24",
+    "RECORD DATE": "25-Jan-24"
+  },
+  {
+    "SYMBOL": "KDDL",
+    "COMPANY NAME": "KDDL Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 58 Per Share",
     "FACE VALUE": 10,
     "EX-DATE": "25-Jan-24",
     "RECORD DATE": "26-Jan-24"
@@ -288,31 +288,13 @@
     "RECORD DATE": "27-Jan-24"
   },
   {
-    "SYMBOL": "IIFL",
-    "COMPANY NAME": "IIFL Finance Limited",
+    "SYMBOL": "KSOLVES",
+    "COMPANY NAME": "Ksolves India Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 4 Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "25-Jan-24",
-    "RECORD DATE": "25-Jan-24"
-  },
-  {
-    "SYMBOL": "ACCELYA",
-    "COMPANY NAME": "Accelya Solutions India Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 25 Per Share",
+    "PURPOSE": "Interim Dividend - Rs 7.50 Per Share",
     "FACE VALUE": 10,
-    "EX-DATE": "29-Jan-24",
-    "RECORD DATE": "29-Jan-24"
-  },
-  {
-    "SYMBOL": "360ONE",
-    "COMPANY NAME": "360 ONE WAM LIMITED",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 4.50 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "29-Jan-24",
-    "RECORD DATE": "29-Jan-24"
+    "EX-DATE": "25-Jan-24",
+    "RECORD DATE": "26-Jan-24"
   },
   {
     "SYMBOL": "GOACARBON",
@@ -333,11 +315,38 @@
     "RECORD DATE": "29-Jan-24"
   },
   {
-    "SYMBOL": "PERSISTENT",
-    "COMPANY NAME": "Persistent Systems Limited",
+    "SYMBOL": "ACCELYA",
+    "COMPANY NAME": "Accelya Solutions India Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 32 Per Share",
-    "FACE VALUE": 5,
+    "PURPOSE": "Interim Dividend - Rs 25 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "29-Jan-24",
+    "RECORD DATE": "29-Jan-24"
+  },
+  {
+    "SYMBOL": "360ONE",
+    "COMPANY NAME": "360 ONE WAM LIMITED",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 4.50 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "29-Jan-24",
+    "RECORD DATE": "29-Jan-24"
+  },
+  {
+    "SYMBOL": "SIEMENS",
+    "COMPANY NAME": "Siemens Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 10 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "30-Jan-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "KANANIIND",
+    "COMPANY NAME": "Kanani Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 1:1",
+    "FACE VALUE": 1,
     "EX-DATE": "30-Jan-24",
     "RECORD DATE": "30-Jan-24"
   },
@@ -351,22 +360,13 @@
     "RECORD DATE": "30-Jan-24"
   },
   {
-    "SYMBOL": "KANANIIND",
-    "COMPANY NAME": "Kanani Industries Limited",
+    "SYMBOL": "PERSISTENT",
+    "COMPANY NAME": "Persistent Systems Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Bonus 1:1",
-    "FACE VALUE": 1,
+    "PURPOSE": "Interim Dividend - Rs 32 Per Share",
+    "FACE VALUE": 5,
     "EX-DATE": "30-Jan-24",
     "RECORD DATE": "30-Jan-24"
-  },
-  {
-    "SYMBOL": "SIEMENS",
-    "COMPANY NAME": "Siemens Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 10 Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "30-Jan-24",
-    "RECORD DATE": "-"
   },
   {
     "SYMBOL": "INDIGRID",
@@ -374,6 +374,24 @@
     "SERIES": "IV",
     "PURPOSE": "Distribution - Rs 3.55 Per Unit Consisting Interest - Rs 2.9510 Per Unit/ Capital Repayment - Re 0.5621 Per Unit/ Other Income - Re 0.0369 Per Unit",
     "FACE VALUE": 100,
+    "EX-DATE": "31-Jan-24",
+    "RECORD DATE": "31-Jan-24"
+  },
+  {
+    "SYMBOL": "AURIONPRO",
+    "COMPANY NAME": "Aurionpro Solutions Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Extra Ordinary General Meeting",
+    "FACE VALUE": 10,
+    "EX-DATE": "31-Jan-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "POONAWALLA",
+    "COMPANY NAME": "Poonawalla Fincorp Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 2 Per Share",
+    "FACE VALUE": 2,
     "EX-DATE": "31-Jan-24",
     "RECORD DATE": "31-Jan-24"
   },
@@ -387,15 +405,6 @@
     "RECORD DATE": "31-Jan-24"
   },
   {
-    "SYMBOL": "POONAWALLA",
-    "COMPANY NAME": "Poonawalla Fincorp Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 2 Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "31-Jan-24",
-    "RECORD DATE": "31-Jan-24"
-  },
-  {
     "SYMBOL": "SHREMINVIT",
     "COMPANY NAME": "Shrem Invit",
     "SERIES": "IV",
@@ -405,13 +414,13 @@
     "RECORD DATE": "31-Jan-24"
   },
   {
-    "SYMBOL": "AURIONPRO",
-    "COMPANY NAME": "Aurionpro Solutions Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Extra Ordinary General Meeting",
-    "FACE VALUE": 10,
-    "EX-DATE": "31-Jan-24",
-    "RECORD DATE": "-"
+    "SYMBOL": "IRBIT",
+    "COMPANY NAME": "IRB INFRASTRUCTURE TRUST",
+    "SERIES": "IV",
+    "PURPOSE": "Distribution - Rs 2.82 Per Unit Comprising Of Return Of Capital - Rs 2.82 Per Unit",
+    "FACE VALUE": 100,
+    "EX-DATE": "1-Feb-24",
+    "RECORD DATE": "1-Feb-24"
   },
   {
     "SYMBOL": "BIGBLOC",
@@ -441,20 +450,20 @@
     "RECORD DATE": "1-Feb-24"
   },
   {
-    "SYMBOL": "IBULHSGFIN",
-    "COMPANY NAME": "Indiabulls Housing Finance Limited",
+    "SYMBOL": "WENDT",
+    "COMPANY NAME": "Wendt (India) Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Rights 1:2 @ Premium Rs 148/-",
-    "FACE VALUE": 2,
+    "PURPOSE": "Interim Dividend - Rs 30 Per Share",
+    "FACE VALUE": 10,
     "EX-DATE": "1-Feb-24",
     "RECORD DATE": "1-Feb-24"
   },
   {
-    "SYMBOL": "IRBIT",
-    "COMPANY NAME": "IRB INFRASTRUCTURE TRUST",
-    "SERIES": "IV",
-    "PURPOSE": "Distribution - Rs 2.82 Per Unit Comprising Of Return Of Capital - Rs 2.82 Per Unit",
-    "FACE VALUE": 100,
+    "SYMBOL": "PURVA",
+    "COMPANY NAME": "Puravankara Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 6.30 Per Share",
+    "FACE VALUE": 5,
     "EX-DATE": "1-Feb-24",
     "RECORD DATE": "1-Feb-24"
   },
@@ -486,20 +495,11 @@
     "RECORD DATE": "1-Feb-24"
   },
   {
-    "SYMBOL": "WENDT",
-    "COMPANY NAME": "Wendt (India) Limited",
+    "SYMBOL": "IBULHSGFIN",
+    "COMPANY NAME": "Indiabulls Housing Finance Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 30 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "1-Feb-24",
-    "RECORD DATE": "1-Feb-24"
-  },
-  {
-    "SYMBOL": "PURVA",
-    "COMPANY NAME": "Puravankara Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 6.30 Per Share",
-    "FACE VALUE": 5,
+    "PURPOSE": "Rights 1:2 @ Premium Rs 148/-",
+    "FACE VALUE": 2,
     "EX-DATE": "1-Feb-24",
     "RECORD DATE": "1-Feb-24"
   },
@@ -522,51 +522,6 @@
     "RECORD DATE": "2-Feb-24"
   },
   {
-    "SYMBOL": "KKCL",
-    "COMPANY NAME": "Kewal Kiran Clothing Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 2 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "2-Feb-24",
-    "RECORD DATE": "2-Feb-24"
-  },
-  {
-    "SYMBOL": "MRPL",
-    "COMPANY NAME": "Mangalore Refinery and Petrochemicals Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Re 1 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "2-Feb-24",
-    "RECORD DATE": "2-Feb-24"
-  },
-  {
-    "SYMBOL": "OBEROIRLTY",
-    "COMPANY NAME": "Oberoi Realty Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 2 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "2-Feb-24",
-    "RECORD DATE": "2-Feb-24"
-  },
-  {
-    "SYMBOL": "IEX",
-    "COMPANY NAME": "Indian Energy Exchange Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Re 1 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "2-Feb-24",
-    "RECORD DATE": "3-Feb-24"
-  },
-  {
-    "SYMBOL": "ZENSARTECH",
-    "COMPANY NAME": "Zensar Technologies Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 2 Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "2-Feb-24",
-    "RECORD DATE": "2-Feb-24"
-  },
-  {
     "SYMBOL": "BALKRISIND",
     "COMPANY NAME": "Balkrishna Industries Limited",
     "SERIES": "EQ",
@@ -585,6 +540,24 @@
     "RECORD DATE": "2-Feb-24"
   },
   {
+    "SYMBOL": "OBEROIRLTY",
+    "COMPANY NAME": "Oberoi Realty Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 2 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "2-Feb-24",
+    "RECORD DATE": "2-Feb-24"
+  },
+  {
+    "SYMBOL": "ZENSARTECH",
+    "COMPANY NAME": "Zensar Technologies Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 2 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "2-Feb-24",
+    "RECORD DATE": "2-Feb-24"
+  },
+  {
     "SYMBOL": "GLOBAL",
     "COMPANY NAME": "Global Education Limited",
     "SERIES": "EQ",
@@ -594,6 +567,33 @@
     "RECORD DATE": "3-Feb-24"
   },
   {
+    "SYMBOL": "IEX",
+    "COMPANY NAME": "Indian Energy Exchange Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 1 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "2-Feb-24",
+    "RECORD DATE": "3-Feb-24"
+  },
+  {
+    "SYMBOL": "KKCL",
+    "COMPANY NAME": "Kewal Kiran Clothing Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 2 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "2-Feb-24",
+    "RECORD DATE": "2-Feb-24"
+  },
+  {
+    "SYMBOL": "MRPL",
+    "COMPANY NAME": "Mangalore Refinery and Petrochemicals Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 1 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "2-Feb-24",
+    "RECORD DATE": "2-Feb-24"
+  },
+  {
     "SYMBOL": "SHAREINDIA",
     "COMPANY NAME": "Share India Securities Limited",
     "SERIES": "EQ",
@@ -601,33 +601,6 @@
     "FACE VALUE": 2,
     "EX-DATE": "2-Feb-24",
     "RECORD DATE": "2-Feb-24"
-  },
-  {
-    "SYMBOL": "SONACOMS",
-    "COMPANY NAME": "Sona BLW Precision Forgings Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 1.53 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "5-Feb-24",
-    "RECORD DATE": "5-Feb-24"
-  },
-  {
-    "SYMBOL": "CGPOWER",
-    "COMPANY NAME": "CG Power and Industrial Solutions Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 1.30 Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "5-Feb-24",
-    "RECORD DATE": "5-Feb-24"
-  },
-  {
-    "SYMBOL": "APCOTEXIND",
-    "COMPANY NAME": "Apcotex Industries Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 2 Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "5-Feb-24",
-    "RECORD DATE": "5-Feb-24"
   },
   {
     "SYMBOL": "IRBINVIT",
@@ -657,6 +630,15 @@
     "RECORD DATE": "5-Feb-24"
   },
   {
+    "SYMBOL": "SONACOMS",
+    "COMPANY NAME": "Sona BLW Precision Forgings Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 1.53 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "5-Feb-24",
+    "RECORD DATE": "5-Feb-24"
+  },
+  {
     "SYMBOL": "COFORGE",
     "COMPANY NAME": "Coforge Limited",
     "SERIES": "EQ",
@@ -666,20 +648,29 @@
     "RECORD DATE": "5-Feb-24"
   },
   {
-    "SYMBOL": "KIRLPNU",
-    "COMPANY NAME": "Kirloskar Pneumatic Company Limited",
+    "SYMBOL": "CGPOWER",
+    "COMPANY NAME": "CG Power and Industrial Solutions Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 2.50 Per Share",
+    "PURPOSE": "Interim Dividend - Rs 1.30 Per Share",
     "FACE VALUE": 2,
-    "EX-DATE": "6-Feb-24",
-    "RECORD DATE": "6-Feb-24"
+    "EX-DATE": "5-Feb-24",
+    "RECORD DATE": "5-Feb-24"
   },
   {
-    "SYMBOL": "MINDSPACE",
-    "COMPANY NAME": "Mindspace Business Parks REIT",
-    "SERIES": "RR",
-    "PURPOSE": "Distribution - Rs 4.80 Per Unit Consisting Of Dividend - Rs 4.29 Per Unit/ Interest - Re 0.50 Per Unit/ Other Income - Re 0.01 Per Unit",
-    "FACE VALUE": 275,
+    "SYMBOL": "APCOTEXIND",
+    "COMPANY NAME": "Apcotex Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 2 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "5-Feb-24",
+    "RECORD DATE": "5-Feb-24"
+  },
+  {
+    "SYMBOL": "NHIT",
+    "COMPANY NAME": "National Highways Infra Trust",
+    "SERIES": "IV",
+    "PURPOSE": "Distribution - Rs 1.697 Per Unit Consisting Rs 1.693 Per As Interest & Re 0.004 Per Unit As Other Income On Surplus Funds",
+    "FACE VALUE": 101,
     "EX-DATE": "6-Feb-24",
     "RECORD DATE": "6-Feb-24"
   },
@@ -693,20 +684,38 @@
     "RECORD DATE": "6-Feb-24"
   },
   {
-    "SYMBOL": "GAIL",
-    "COMPANY NAME": "GAIL (India) Limited",
+    "SYMBOL": "KIRLPNU",
+    "COMPANY NAME": "Kirloskar Pneumatic Company Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 5.50 Per Share",
+    "PURPOSE": "Interim Dividend - Rs 2.50 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "6-Feb-24",
+    "RECORD DATE": "6-Feb-24"
+  },
+  {
+    "SYMBOL": "AARTIDRUGS",
+    "COMPANY NAME": "Aarti Drugs Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 1 Per Share",
     "FACE VALUE": 10,
     "EX-DATE": "6-Feb-24",
     "RECORD DATE": "6-Feb-24"
   },
   {
-    "SYMBOL": "NHIT",
-    "COMPANY NAME": "National Highways Infra Trust",
-    "SERIES": "IV",
-    "PURPOSE": "Distribution - Rs 1.697 Per Unit Consisting Rs 1.693 Per As Interest & Re 0.004 Per Unit As Other Income On Surplus Funds",
-    "FACE VALUE": 101,
+    "SYMBOL": "MINDSPACE",
+    "COMPANY NAME": "Mindspace Business Parks REIT",
+    "SERIES": "RR",
+    "PURPOSE": "Distribution - Rs 4.80 Per Unit Consisting Of Dividend - Rs 4.29 Per Unit/ Interest - Re 0.50 Per Unit/ Other Income - Re 0.01 Per Unit",
+    "FACE VALUE": 275,
+    "EX-DATE": "6-Feb-24",
+    "RECORD DATE": "6-Feb-24"
+  },
+  {
+    "SYMBOL": "MOTILALOFS",
+    "COMPANY NAME": "Motilal Oswal Financial Services Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 14 Per Share",
+    "FACE VALUE": 1,
     "EX-DATE": "6-Feb-24",
     "RECORD DATE": "6-Feb-24"
   },
@@ -729,58 +738,22 @@
     "RECORD DATE": "6-Feb-24"
   },
   {
-    "SYMBOL": "AARTIDRUGS",
-    "COMPANY NAME": "Aarti Drugs Limited",
+    "SYMBOL": "GAIL",
+    "COMPANY NAME": "GAIL (India) Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Re 1 Per Share",
+    "PURPOSE": "Interim Dividend - Rs 5.50 Per Share",
     "FACE VALUE": 10,
     "EX-DATE": "6-Feb-24",
     "RECORD DATE": "6-Feb-24"
   },
   {
-    "SYMBOL": "MOTILALOFS",
-    "COMPANY NAME": "Motilal Oswal Financial Services Limited",
+    "SYMBOL": "TIJARIA",
+    "COMPANY NAME": "Tijaria Polypipes Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 14 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "6-Feb-24",
-    "RECORD DATE": "6-Feb-24"
-  },
-  {
-    "SYMBOL": "SRF",
-    "COMPANY NAME": "SRF Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 3.60 Per Share",
+    "PURPOSE": "Extra Ordinary General Meeting",
     "FACE VALUE": 10,
     "EX-DATE": "7-Feb-24",
-    "RECORD DATE": "7-Feb-24"
-  },
-  {
-    "SYMBOL": "BEPL",
-    "COMPANY NAME": "Bhansali Engineering Polymers Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Re 1 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "7-Feb-24",
-    "RECORD DATE": "7-Feb-24"
-  },
-  {
-    "SYMBOL": "CHOLAFIN",
-    "COMPANY NAME": "Cholamandalam Investment and Finance Company Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 1.30 Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "7-Feb-24",
-    "RECORD DATE": "7-Feb-24"
-  },
-  {
-    "SYMBOL": "CONCOR",
-    "COMPANY NAME": "Container Corporation of India Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 4 Per Share",
-    "FACE VALUE": 5,
-    "EX-DATE": "7-Feb-24",
-    "RECORD DATE": "7-Feb-24"
+    "RECORD DATE": "-"
   },
   {
     "SYMBOL": "SYMPHONY",
@@ -801,13 +774,22 @@
     "RECORD DATE": "7-Feb-24"
   },
   {
-    "SYMBOL": "TIJARIA",
-    "COMPANY NAME": "Tijaria Polypipes Limited",
+    "SYMBOL": "SRF",
+    "COMPANY NAME": "SRF Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Extra Ordinary General Meeting",
+    "PURPOSE": "Interim Dividend - Rs 3.60 Per Share",
     "FACE VALUE": 10,
     "EX-DATE": "7-Feb-24",
-    "RECORD DATE": "-"
+    "RECORD DATE": "7-Feb-24"
+  },
+  {
+    "SYMBOL": "CHOLAFIN",
+    "COMPANY NAME": "Cholamandalam Investment and Finance Company Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 1.30 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "7-Feb-24",
+    "RECORD DATE": "7-Feb-24"
   },
   {
     "SYMBOL": "HINDPETRO",
@@ -819,10 +801,46 @@
     "RECORD DATE": "7-Feb-24"
   },
   {
-    "SYMBOL": "SHREECEM",
-    "COMPANY NAME": "SHREE CEMENT LIMITED",
+    "SYMBOL": "CONCOR",
+    "COMPANY NAME": "Container Corporation of India Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 50 Per Share",
+    "PURPOSE": "Interim Dividend - Rs 4 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "7-Feb-24",
+    "RECORD DATE": "7-Feb-24"
+  },
+  {
+    "SYMBOL": "BEPL",
+    "COMPANY NAME": "Bhansali Engineering Polymers Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 1 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "7-Feb-24",
+    "RECORD DATE": "7-Feb-24"
+  },
+  {
+    "SYMBOL": "GILLETTE",
+    "COMPANY NAME": "Gillette India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 45 Per Share & Special Dividend - Rs 40 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "8-Feb-24",
+    "RECORD DATE": "8-Feb-24"
+  },
+  {
+    "SYMBOL": "AJANTPHARM",
+    "COMPANY NAME": "Ajanta Pharma Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 26 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "8-Feb-24",
+    "RECORD DATE": "8-Feb-24"
+  },
+  {
+    "SYMBOL": "IMPAL",
+    "COMPANY NAME": "India Motor Parts and Accessories Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 9 Per Share",
     "FACE VALUE": 10,
     "EX-DATE": "8-Feb-24",
     "RECORD DATE": "8-Feb-24"
@@ -837,15 +855,6 @@
     "RECORD DATE": "8-Feb-24"
   },
   {
-    "SYMBOL": "AJANTPHARM",
-    "COMPANY NAME": "Ajanta Pharma Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 26 Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "8-Feb-24",
-    "RECORD DATE": "8-Feb-24"
-  },
-  {
     "SYMBOL": "ITC",
     "COMPANY NAME": "ITC Limited",
     "SERIES": "EQ",
@@ -855,10 +864,10 @@
     "RECORD DATE": "8-Feb-24"
   },
   {
-    "SYMBOL": "GILLETTE",
-    "COMPANY NAME": "Gillette India Limited",
+    "SYMBOL": "SHREECEM",
+    "COMPANY NAME": "SHREE CEMENT LIMITED",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 45 Per Share & Special Dividend - Rs 40 Per Share",
+    "PURPOSE": "Interim Dividend - Rs 50 Per Share",
     "FACE VALUE": 10,
     "EX-DATE": "8-Feb-24",
     "RECORD DATE": "8-Feb-24"
@@ -873,28 +882,10 @@
     "RECORD DATE": "8-Feb-24"
   },
   {
-    "SYMBOL": "IMPAL",
-    "COMPANY NAME": "India Motor Parts and Accessories Limited",
+    "SYMBOL": "SUNPHARMA",
+    "COMPANY NAME": "Sun Pharmaceutical Industries Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 9 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "8-Feb-24",
-    "RECORD DATE": "8-Feb-24"
-  },
-  {
-    "SYMBOL": "BEL",
-    "COMPANY NAME": "Bharat Electronics Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Re 0.70 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "9-Feb-24",
-    "RECORD DATE": "10-Feb-24"
-  },
-  {
-    "SYMBOL": "TRIVENI",
-    "COMPANY NAME": "Triveni Engineering & Industries Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 2.25 Per Share & Special Dividend Rs 2.25 Per Share",
+    "PURPOSE": "Interim Dividend - Rs 8.50 Per Share",
     "FACE VALUE": 1,
     "EX-DATE": "9-Feb-24",
     "RECORD DATE": "9-Feb-24"
@@ -905,24 +896,6 @@
     "SERIES": "EQ",
     "PURPOSE": "Interim Dividend - Rs 5 Per Share",
     "FACE VALUE": 10,
-    "EX-DATE": "9-Feb-24",
-    "RECORD DATE": "9-Feb-24"
-  },
-  {
-    "SYMBOL": "TCI",
-    "COMPANY NAME": "Transport Corporation of India Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 2.50 Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "9-Feb-24",
-    "RECORD DATE": "10-Feb-24"
-  },
-  {
-    "SYMBOL": "75GS2034",
-    "COMPANY NAME": "GOVERNMENT OF INDIA",
-    "SERIES": "GS",
-    "PURPOSE": "Interest Payment",
-    "FACE VALUE": 100,
     "EX-DATE": "9-Feb-24",
     "RECORD DATE": "9-Feb-24"
   },
@@ -972,6 +945,24 @@
     "RECORD DATE": "9-Feb-24"
   },
   {
+    "SYMBOL": "75GS2034",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "9-Feb-24",
+    "RECORD DATE": "9-Feb-24"
+  },
+  {
+    "SYMBOL": "TCI",
+    "COMPANY NAME": "Transport Corporation of India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 2.50 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "9-Feb-24",
+    "RECORD DATE": "10-Feb-24"
+  },
+  {
     "SYMBOL": "JUBLINGREA",
     "COMPANY NAME": "Jubilant Ingrevia Limited",
     "SERIES": "EQ",
@@ -1017,13 +1008,13 @@
     "RECORD DATE": "9-Feb-24"
   },
   {
-    "SYMBOL": "SUNPHARMA",
-    "COMPANY NAME": "Sun Pharmaceutical Industries Limited",
+    "SYMBOL": "BEL",
+    "COMPANY NAME": "Bharat Electronics Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 8.50 Per Share",
+    "PURPOSE": "Interim Dividend - Re 0.70 Per Share",
     "FACE VALUE": 1,
     "EX-DATE": "9-Feb-24",
-    "RECORD DATE": "9-Feb-24"
+    "RECORD DATE": "10-Feb-24"
   },
   {
     "SYMBOL": "MOIL",
@@ -1035,65 +1026,20 @@
     "RECORD DATE": "10-Feb-24"
   },
   {
+    "SYMBOL": "TRIVENI",
+    "COMPANY NAME": "Triveni Engineering & Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 2.25 Per Share & Special Dividend Rs 2.25 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "9-Feb-24",
+    "RECORD DATE": "9-Feb-24"
+  },
+  {
     "SYMBOL": "EMBASSY",
     "COMPANY NAME": "Embassy Office Parks REIT",
     "SERIES": "RR",
     "PURPOSE": "Distribution - Rs 5.20 Per Unit Consists Of Interst Amount - Rs 1.28 Per Unit/Dividend - Rs 1.54 Per Unit/ Repayment Of Spv Level Debt - Rs 2.38 Per Unit",
     "FACE VALUE": 300,
-    "EX-DATE": "12-Feb-24",
-    "RECORD DATE": "12-Feb-24"
-  },
-  {
-    "SYMBOL": "CARBORUNIV",
-    "COMPANY NAME": "Carborundum Universal Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 1.50 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "12-Feb-24",
-    "RECORD DATE": "12-Feb-24"
-  },
-  {
-    "SYMBOL": "CLEAN",
-    "COMPANY NAME": "Clean Science and Technology Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 2 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "12-Feb-24",
-    "RECORD DATE": "12-Feb-24"
-  },
-  {
-    "SYMBOL": "COCHINSHIP",
-    "COMPANY NAME": "Cochin Shipyard Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 3.50 Per Share",
-    "FACE VALUE": 5,
-    "EX-DATE": "12-Feb-24",
-    "RECORD DATE": "12-Feb-24"
-  },
-  {
-    "SYMBOL": "ENGINERSIN",
-    "COMPANY NAME": "Engineers India Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 2 Per Share",
-    "FACE VALUE": 5,
-    "EX-DATE": "12-Feb-24",
-    "RECORD DATE": "12-Feb-24"
-  },
-  {
-    "SYMBOL": "GESHIP",
-    "COMPANY NAME": "The Great Eastern Shipping Company Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 6.30 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "12-Feb-24",
-    "RECORD DATE": "12-Feb-24"
-  },
-  {
-    "SYMBOL": "QUESS",
-    "COMPANY NAME": "Quess Corp Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 4 Per Share",
-    "FACE VALUE": 10,
     "EX-DATE": "12-Feb-24",
     "RECORD DATE": "12-Feb-24"
   },
@@ -1134,76 +1080,58 @@
     "RECORD DATE": "12-Feb-24"
   },
   {
-    "SYMBOL": "ORIENTELEC",
-    "COMPANY NAME": "Orient Electric Limited",
+    "SYMBOL": "QUESS",
+    "COMPANY NAME": "Quess Corp Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Re 0.75 Per Share",
+    "PURPOSE": "Interim Dividend - Rs 4 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Feb-24",
+    "RECORD DATE": "12-Feb-24"
+  },
+  {
+    "SYMBOL": "CLEAN",
+    "COMPANY NAME": "Clean Science and Technology Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 2 Per Share",
     "FACE VALUE": 1,
-    "EX-DATE": "13-Feb-24",
-    "RECORD DATE": "13-Feb-24"
+    "EX-DATE": "12-Feb-24",
+    "RECORD DATE": "12-Feb-24"
   },
   {
-    "SYMBOL": "INDOTHAI",
-    "COMPANY NAME": "Indo Thai Securities Limited",
+    "SYMBOL": "COCHINSHIP",
+    "COMPANY NAME": "Cochin Shipyard Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Re 1 Per Share",
+    "PURPOSE": "Interim Dividend - Rs 3.50 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "12-Feb-24",
+    "RECORD DATE": "12-Feb-24"
+  },
+  {
+    "SYMBOL": "ENGINERSIN",
+    "COMPANY NAME": "Engineers India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 2 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "12-Feb-24",
+    "RECORD DATE": "12-Feb-24"
+  },
+  {
+    "SYMBOL": "GESHIP",
+    "COMPANY NAME": "The Great Eastern Shipping Company Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 6.30 Per Share",
     "FACE VALUE": 10,
-    "EX-DATE": "13-Feb-24",
-    "RECORD DATE": "13-Feb-24"
+    "EX-DATE": "12-Feb-24",
+    "RECORD DATE": "12-Feb-24"
   },
   {
-    "SYMBOL": "KPRMILL",
-    "COMPANY NAME": "K.P.R. Mill Limited",
+    "SYMBOL": "CARBORUNIV",
+    "COMPANY NAME": "Carborundum Universal Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 2.50 Per Share",
+    "PURPOSE": "Interim Dividend - Rs 1.50 Per Share",
     "FACE VALUE": 1,
-    "EX-DATE": "13-Feb-24",
-    "RECORD DATE": "13-Feb-24"
-  },
-  {
-    "SYMBOL": "LALPATHLAB",
-    "COMPANY NAME": "Dr. Lal Path Labs Ltd.",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 12 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "13-Feb-24",
-    "RECORD DATE": "13-Feb-24"
-  },
-  {
-    "SYMBOL": "ORBTEXP",
-    "COMPANY NAME": "Orbit Exports Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Buy Back",
-    "FACE VALUE": 10,
-    "EX-DATE": "13-Feb-24",
-    "RECORD DATE": "13-Feb-24"
-  },
-  {
-    "SYMBOL": "GULFOILLUB",
-    "COMPANY NAME": "Gulf Oil Lubricants India Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 16 Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "13-Feb-24",
-    "RECORD DATE": "13-Feb-24"
-  },
-  {
-    "SYMBOL": "CUBEINVIT",
-    "COMPANY NAME": "Cube Highways Trust",
-    "SERIES": "IV",
-    "PURPOSE": "Distribution - Rs 2 Per Unit Consisting Of Interest Rs 1.99 Per Unit/ Treasury Income Re 0.01 Per Unit",
-    "FACE VALUE": 100,
-    "EX-DATE": "13-Feb-24",
-    "RECORD DATE": "13-Feb-24"
-  },
-  {
-    "SYMBOL": "TNPL",
-    "COMPANY NAME": "Tamil Nadu Newsprint & Papers Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 3 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "13-Feb-24",
-    "RECORD DATE": "13-Feb-24"
+    "EX-DATE": "12-Feb-24",
+    "RECORD DATE": "12-Feb-24"
   },
   {
     "SYMBOL": "SMCGLOBAL",
@@ -1233,11 +1161,65 @@
     "RECORD DATE": "13-Feb-24"
   },
   {
-    "SYMBOL": "718GS2033",
-    "COMPANY NAME": "Government of India",
-    "SERIES": "GS",
-    "PURPOSE": "Interest Payment",
+    "SYMBOL": "GULFOILLUB",
+    "COMPANY NAME": "Gulf Oil Lubricants India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 16 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "13-Feb-24",
+    "RECORD DATE": "13-Feb-24"
+  },
+  {
+    "SYMBOL": "CUBEINVIT",
+    "COMPANY NAME": "Cube Highways Trust",
+    "SERIES": "IV",
+    "PURPOSE": "Distribution - Rs 2 Per Unit Consisting Of Interest Rs 1.99 Per Unit/ Treasury Income Re 0.01 Per Unit",
     "FACE VALUE": 100,
+    "EX-DATE": "13-Feb-24",
+    "RECORD DATE": "13-Feb-24"
+  },
+  {
+    "SYMBOL": "INDOTHAI",
+    "COMPANY NAME": "Indo Thai Securities Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 1 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "13-Feb-24",
+    "RECORD DATE": "13-Feb-24"
+  },
+  {
+    "SYMBOL": "TNPL",
+    "COMPANY NAME": "Tamil Nadu Newsprint & Papers Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 3 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "13-Feb-24",
+    "RECORD DATE": "13-Feb-24"
+  },
+  {
+    "SYMBOL": "LALPATHLAB",
+    "COMPANY NAME": "Dr. Lal Path Labs Ltd.",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 12 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "13-Feb-24",
+    "RECORD DATE": "13-Feb-24"
+  },
+  {
+    "SYMBOL": "ORBTEXP",
+    "COMPANY NAME": "Orbit Exports Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Buy Back",
+    "FACE VALUE": 10,
+    "EX-DATE": "13-Feb-24",
+    "RECORD DATE": "13-Feb-24"
+  },
+  {
+    "SYMBOL": "ORIENTELEC",
+    "COMPANY NAME": "Orient Electric Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 0.75 Per Share",
+    "FACE VALUE": 1,
     "EX-DATE": "13-Feb-24",
     "RECORD DATE": "13-Feb-24"
   },
@@ -1249,6 +1231,33 @@
     "FACE VALUE": 1,
     "EX-DATE": "13-Feb-24",
     "RECORD DATE": "13-Feb-24"
+  },
+  {
+    "SYMBOL": "718GS2033",
+    "COMPANY NAME": "Government of India",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "13-Feb-24",
+    "RECORD DATE": "13-Feb-24"
+  },
+  {
+    "SYMBOL": "KPRMILL",
+    "COMPANY NAME": "K.P.R. Mill Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 2.50 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "13-Feb-24",
+    "RECORD DATE": "13-Feb-24"
+  },
+  {
+    "SYMBOL": "OSEINTRUST",
+    "COMPANY NAME": "Oriental InfraTrust",
+    "SERIES": "IV",
+    "PURPOSE": "Distribution - Rs 2.5706 Per Unit Consists Of Rs 0.8533 Interest Per Unit & Rs 0.6895 Dividend Per Unit/ Rs 1.0278 Per Unit As Return Of Capital",
+    "FACE VALUE": 100,
+    "EX-DATE": "14-Feb-24",
+    "RECORD DATE": "14-Feb-24"
   },
   {
     "SYMBOL": "824GS2027",
@@ -1287,11 +1296,11 @@
     "RECORD DATE": "14-Feb-24"
   },
   {
-    "SYMBOL": "OSEINTRUST",
-    "COMPANY NAME": "Oriental InfraTrust",
-    "SERIES": "IV",
-    "PURPOSE": "Distribution - Rs 2.5706 Per Unit Consists Of Rs 0.8533 Interest Per Unit & Rs 0.6895 Dividend Per Unit/ Rs 1.0278 Per Unit As Return Of Capital",
-    "FACE VALUE": 100,
+    "SYMBOL": "GOODLUCK",
+    "COMPANY NAME": "Goodluck India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 3 Per Share",
+    "FACE VALUE": 2,
     "EX-DATE": "14-Feb-24",
     "RECORD DATE": "14-Feb-24"
   },
@@ -1328,15 +1337,6 @@
     "SERIES": "EQ",
     "PURPOSE": "Special Interim Dividend - Rs 5 Per Share",
     "FACE VALUE": 10,
-    "EX-DATE": "14-Feb-24",
-    "RECORD DATE": "14-Feb-24"
-  },
-  {
-    "SYMBOL": "GOODLUCK",
-    "COMPANY NAME": "Goodluck India Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 3 Per Share",
-    "FACE VALUE": 2,
     "EX-DATE": "14-Feb-24",
     "RECORD DATE": "14-Feb-24"
   },
@@ -1404,6 +1404,15 @@
     "RECORD DATE": "15-Feb-24"
   },
   {
+    "SYMBOL": "ANZEN",
+    "COMPANY NAME": "Anzen India Energy Yield Plus Trust",
+    "SERIES": "IV",
+    "PURPOSE": "Distribution - Rs 2.45 Per Unit Consisting Of Interest Rs 2.41 Per Unit & Other Income Re 0.04 Per Unit",
+    "FACE VALUE": 100,
+    "EX-DATE": "16-Feb-24",
+    "RECORD DATE": "17-Feb-24"
+  },
+  {
     "SYMBOL": "VIDHIING",
     "COMPANY NAME": "Vidhi Specialty Food Ingredients Limited",
     "SERIES": "EQ",
@@ -1413,13 +1422,76 @@
     "RECORD DATE": "16-Feb-24"
   },
   {
-    "SYMBOL": "ANZEN",
-    "COMPANY NAME": "Anzen India Energy Yield Plus Trust",
-    "SERIES": "IV",
-    "PURPOSE": "Distribution - Rs 2.45 Per Unit Consisting Of Interest Rs 2.41 Per Unit & Other Income Re 0.04 Per Unit",
-    "FACE VALUE": 100,
+    "SYMBOL": "MANAPPURAM",
+    "COMPANY NAME": "Manappuram Finance Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 0.90 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "16-Feb-24",
+    "RECORD DATE": "19-Feb-24"
+  },
+  {
+    "SYMBOL": "ONGC",
+    "COMPANY NAME": "Oil & Natural Gas Corporation Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 4 Per Share",
+    "FACE VALUE": 5,
     "EX-DATE": "16-Feb-24",
     "RECORD DATE": "17-Feb-24"
+  },
+  {
+    "SYMBOL": "SIYSIL",
+    "COMPANY NAME": "Siyaram Silk Mills Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 3 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "16-Feb-24",
+    "RECORD DATE": "19-Feb-24"
+  },
+  {
+    "SYMBOL": "AARTIPHARM",
+    "COMPANY NAME": "Aarti Pharmalabs Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 2 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "16-Feb-24",
+    "RECORD DATE": "19-Feb-24"
+  },
+  {
+    "SYMBOL": "ALKEM",
+    "COMPANY NAME": "Alkem Laboratories Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 35 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "16-Feb-24",
+    "RECORD DATE": "17-Feb-24"
+  },
+  {
+    "SYMBOL": "BAJAJCON",
+    "COMPANY NAME": "Bajaj Consumer Care Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 3 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "16-Feb-24",
+    "RECORD DATE": "17-Feb-24"
+  },
+  {
+    "SYMBOL": "EMAMILTD",
+    "COMPANY NAME": "Emami Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 4 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "16-Feb-24",
+    "RECORD DATE": "19-Feb-24"
+  },
+  {
+    "SYMBOL": "AKZOINDIA",
+    "COMPANY NAME": "Akzo Nobel India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "16-Feb-24",
+    "RECORD DATE": "16-Feb-24"
   },
   {
     "SYMBOL": "BANCOINDIA",
@@ -1593,76 +1665,31 @@
     "RECORD DATE": "19-Feb-24"
   },
   {
-    "SYMBOL": "MANAPPURAM",
-    "COMPANY NAME": "Manappuram Finance Limited",
+    "SYMBOL": "CHOICEIN",
+    "COMPANY NAME": "Choice International Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Re 0.90 Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "16-Feb-24",
-    "RECORD DATE": "19-Feb-24"
-  },
-  {
-    "SYMBOL": "ONGC",
-    "COMPANY NAME": "Oil & Natural Gas Corporation Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 4 Per Share",
-    "FACE VALUE": 5,
-    "EX-DATE": "16-Feb-24",
-    "RECORD DATE": "17-Feb-24"
-  },
-  {
-    "SYMBOL": "SIYSIL",
-    "COMPANY NAME": "Siyaram Silk Mills Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 3 Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "16-Feb-24",
-    "RECORD DATE": "19-Feb-24"
-  },
-  {
-    "SYMBOL": "AARTIPHARM",
-    "COMPANY NAME": "Aarti Pharmalabs Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 2 Per Share",
-    "FACE VALUE": 5,
-    "EX-DATE": "16-Feb-24",
-    "RECORD DATE": "19-Feb-24"
-  },
-  {
-    "SYMBOL": "ALKEM",
-    "COMPANY NAME": "Alkem Laboratories Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 35 Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "16-Feb-24",
-    "RECORD DATE": "17-Feb-24"
-  },
-  {
-    "SYMBOL": "BAJAJCON",
-    "COMPANY NAME": "Bajaj Consumer Care Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 3 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "16-Feb-24",
-    "RECORD DATE": "17-Feb-24"
-  },
-  {
-    "SYMBOL": "EMAMILTD",
-    "COMPANY NAME": "Emami Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 4 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "16-Feb-24",
-    "RECORD DATE": "19-Feb-24"
-  },
-  {
-    "SYMBOL": "AKZOINDIA",
-    "COMPANY NAME": "Akzo Nobel India Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 50 Per Share",
+    "PURPOSE": "Bonus 1:1",
     "FACE VALUE": 10,
-    "EX-DATE": "16-Feb-24",
-    "RECORD DATE": "16-Feb-24"
+    "EX-DATE": "20-Feb-24",
+    "RECORD DATE": "20-Feb-24"
+  },
+  {
+    "SYMBOL": "MSTCLTD",
+    "COMPANY NAME": "Mstc Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs  5 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "20-Feb-24",
+    "RECORD DATE": "20-Feb-24"
+  },
+  {
+    "SYMBOL": "PRECWIRE",
+    "COMPANY NAME": "Precision Wires India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 0.30 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "20-Feb-24",
+    "RECORD DATE": "20-Feb-24"
   },
   {
     "SYMBOL": "REFEX",
@@ -1674,11 +1701,29 @@
     "RECORD DATE": "20-Feb-24"
   },
   {
-    "SYMBOL": "HAL",
-    "COMPANY NAME": "Hindustan Aeronautics Limited",
+    "SYMBOL": "SAIL",
+    "COMPANY NAME": "Steel Authority of India Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 22 Per Share",
-    "FACE VALUE": 5,
+    "PURPOSE": "Interim Dividend - Re 1 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "20-Feb-24",
+    "RECORD DATE": "20-Feb-24"
+  },
+  {
+    "SYMBOL": "TCIEXP",
+    "COMPANY NAME": "TCI Express Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs  3 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "20-Feb-24",
+    "RECORD DATE": "20-Feb-24"
+  },
+  {
+    "SYMBOL": "AMRUTANJAN",
+    "COMPANY NAME": "Amrutanjan Health Care Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 1 Per Share",
+    "FACE VALUE": 1,
     "EX-DATE": "20-Feb-24",
     "RECORD DATE": "20-Feb-24"
   },
@@ -1728,24 +1773,6 @@
     "RECORD DATE": "20-Feb-24"
   },
   {
-    "SYMBOL": "AMRUTANJAN",
-    "COMPANY NAME": "Amrutanjan Health Care Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Re 1 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "20-Feb-24",
-    "RECORD DATE": "20-Feb-24"
-  },
-  {
-    "SYMBOL": "MSTCLTD",
-    "COMPANY NAME": "Mstc Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs  5 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "20-Feb-24",
-    "RECORD DATE": "20-Feb-24"
-  },
-  {
     "SYMBOL": "PFC",
     "COMPANY NAME": "Power Finance Corporation Limited",
     "SERIES": "EQ",
@@ -1773,49 +1800,13 @@
     "RECORD DATE": "20-Feb-24"
   },
   {
-    "SYMBOL": "PRECWIRE",
-    "COMPANY NAME": "Precision Wires India Limited",
+    "SYMBOL": "HAL",
+    "COMPANY NAME": "Hindustan Aeronautics Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 0.30 Per Share",
-    "FACE VALUE": 1,
+    "PURPOSE": "Interim Dividend - Rs 22 Per Share",
+    "FACE VALUE": 5,
     "EX-DATE": "20-Feb-24",
     "RECORD DATE": "20-Feb-24"
-  },
-  {
-    "SYMBOL": "TCIEXP",
-    "COMPANY NAME": "TCI Express Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs  3 Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "20-Feb-24",
-    "RECORD DATE": "20-Feb-24"
-  },
-  {
-    "SYMBOL": "CHOICEIN",
-    "COMPANY NAME": "Choice International Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Bonus 1:1",
-    "FACE VALUE": 10,
-    "EX-DATE": "20-Feb-24",
-    "RECORD DATE": "20-Feb-24"
-  },
-  {
-    "SYMBOL": "SAIL",
-    "COMPANY NAME": "Steel Authority of India Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Re 1 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "20-Feb-24",
-    "RECORD DATE": "20-Feb-24"
-  },
-  {
-    "SYMBOL": "SJVN",
-    "COMPANY NAME": "SJVN Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 1.15 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "21-Feb-24",
-    "RECORD DATE": "21-Feb-24"
   },
   {
     "SYMBOL": "SAREGAMA",
@@ -1827,19 +1818,46 @@
     "RECORD DATE": "21-Feb-24"
   },
   {
-    "SYMBOL": "BECTORFOOD",
-    "COMPANY NAME": "Mrs. Bectors Food Specialities Limited",
+    "SYMBOL": "SJVN",
+    "COMPANY NAME": "SJVN Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 1.25 Per Share",
+    "PURPOSE": "Interim Dividend - Rs 1.15 Per Share",
     "FACE VALUE": 10,
     "EX-DATE": "21-Feb-24",
     "RECORD DATE": "21-Feb-24"
   },
   {
-    "SYMBOL": "CUMMINSIND",
-    "COMPANY NAME": "Cummins India Limited",
+    "SYMBOL": "SULA",
+    "COMPANY NAME": "Sula Vineyards Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 18 Per Share",
+    "PURPOSE": "Interim Dividend - Rs 4 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "21-Feb-24",
+    "RECORD DATE": "21-Feb-24"
+  },
+  {
+    "SYMBOL": "UNIPARTS",
+    "COMPANY NAME": "Uniparts India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 6 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "21-Feb-24",
+    "RECORD DATE": "21-Feb-24"
+  },
+  {
+    "SYMBOL": "NCLIND",
+    "COMPANY NAME": "NCL Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 1.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "21-Feb-24",
+    "RECORD DATE": "21-Feb-24"
+  },
+  {
+    "SYMBOL": "HEROMOTOCO",
+    "COMPANY NAME": "Hero MotoCorp Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 75 Per Share/ Special Dividend - Rs 25 Per Share",
     "FACE VALUE": 2,
     "EX-DATE": "21-Feb-24",
     "RECORD DATE": "21-Feb-24"
@@ -1863,11 +1881,20 @@
     "RECORD DATE": "21-Feb-24"
   },
   {
-    "SYMBOL": "NCLIND",
-    "COMPANY NAME": "NCL Industries Limited",
+    "SYMBOL": "CUMMINSIND",
+    "COMPANY NAME": "Cummins India Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 1.50 Per Share",
-    "FACE VALUE": 10,
+    "PURPOSE": "Interim Dividend - Rs 18 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "21-Feb-24",
+    "RECORD DATE": "21-Feb-24"
+  },
+  {
+    "SYMBOL": "ELECTCAST",
+    "COMPANY NAME": "Electrosteel Castings Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 0.50 Per Share",
+    "FACE VALUE": 1,
     "EX-DATE": "21-Feb-24",
     "RECORD DATE": "21-Feb-24"
   },
@@ -1890,49 +1917,13 @@
     "RECORD DATE": "21-Feb-24"
   },
   {
-    "SYMBOL": "SULA",
-    "COMPANY NAME": "Sula Vineyards Limited",
+    "SYMBOL": "BECTORFOOD",
+    "COMPANY NAME": "Mrs. Bectors Food Specialities Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 4 Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "21-Feb-24",
-    "RECORD DATE": "21-Feb-24"
-  },
-  {
-    "SYMBOL": "HEROMOTOCO",
-    "COMPANY NAME": "Hero MotoCorp Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 75 Per Share/ Special Dividend - Rs 25 Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "21-Feb-24",
-    "RECORD DATE": "21-Feb-24"
-  },
-  {
-    "SYMBOL": "UNIPARTS",
-    "COMPANY NAME": "Uniparts India Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 6 Per Share",
+    "PURPOSE": "Interim Dividend - Rs 1.25 Per Share",
     "FACE VALUE": 10,
     "EX-DATE": "21-Feb-24",
     "RECORD DATE": "21-Feb-24"
-  },
-  {
-    "SYMBOL": "ELECTCAST",
-    "COMPANY NAME": "Electrosteel Castings Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Re 0.50 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "21-Feb-24",
-    "RECORD DATE": "21-Feb-24"
-  },
-  {
-    "SYMBOL": "AVTNPL",
-    "COMPANY NAME": "AVT Natural Products Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Re 0.30 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "22-Feb-24",
-    "RECORD DATE": "22-Feb-24"
   },
   {
     "SYMBOL": "MASFIN",
@@ -1940,6 +1931,24 @@
     "SERIES": "EQ",
     "PURPOSE": "Bonus 2:1",
     "FACE VALUE": 10,
+    "EX-DATE": "22-Feb-24",
+    "RECORD DATE": "22-Feb-24"
+  },
+  {
+    "SYMBOL": "NHPC",
+    "COMPANY NAME": "NHPC Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 1.40 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "22-Feb-24",
+    "RECORD DATE": "22-Feb-24"
+  },
+  {
+    "SYMBOL": "AVTNPL",
+    "COMPANY NAME": "AVT Natural Products Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 0.30 Per Share",
+    "FACE VALUE": 1,
     "EX-DATE": "22-Feb-24",
     "RECORD DATE": "22-Feb-24"
   },
@@ -1962,20 +1971,92 @@
     "RECORD DATE": "22-Feb-24"
   },
   {
-    "SYMBOL": "NHPC",
-    "COMPANY NAME": "NHPC Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 1.40 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "22-Feb-24",
-    "RECORD DATE": "22-Feb-24"
-  },
-  {
     "SYMBOL": "KSCL",
     "COMPANY NAME": "Kaveri Seed Company Limited",
     "SERIES": "EQ",
     "PURPOSE": "Buy Back",
     "FACE VALUE": 2,
+    "EX-DATE": "23-Feb-24",
+    "RECORD DATE": "23-Feb-24"
+  },
+  {
+    "SYMBOL": "GLOBE",
+    "COMPANY NAME": "Globe Textiles (India) Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Rights 1:1 @ Premium Rs 1/-",
+    "FACE VALUE": 2,
+    "EX-DATE": "23-Feb-24",
+    "RECORD DATE": "23-Feb-24"
+  },
+  {
+    "SYMBOL": "GRSE",
+    "COMPANY NAME": "Garden Reach Shipbuilders & Engineers Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 7.92 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "23-Feb-24",
+    "RECORD DATE": "23-Feb-24"
+  },
+  {
+    "SYMBOL": "INDNIPPON",
+    "COMPANY NAME": "India Nippon Electricals Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs  10.25 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "23-Feb-24",
+    "RECORD DATE": "23-Feb-24"
+  },
+  {
+    "SYMBOL": "KIRLOSENG",
+    "COMPANY NAME": "Kirloskar Oil Engines Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 2.50 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "23-Feb-24",
+    "RECORD DATE": "23-Feb-24"
+  },
+  {
+    "SYMBOL": "MODISONLTD",
+    "COMPANY NAME": "MODISON LIMITED",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 0.50 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "23-Feb-24",
+    "RECORD DATE": "23-Feb-24"
+  },
+  {
+    "SYMBOL": "NATIONALUM",
+    "COMPANY NAME": "National Aluminium Company Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs  2 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "23-Feb-24",
+    "RECORD DATE": "23-Feb-24"
+  },
+  {
+    "SYMBOL": "SANDESH",
+    "COMPANY NAME": "The Sandesh Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 5 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "23-Feb-24",
+    "RECORD DATE": "23-Feb-24"
+  },
+  {
+    "SYMBOL": "SUNTV",
+    "COMPANY NAME": "Sun TV Network Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 2.50 Per Sh",
+    "FACE VALUE": 5,
+    "EX-DATE": "23-Feb-24",
+    "RECORD DATE": "23-Feb-24"
+  },
+  {
+    "SYMBOL": "UNIDT",
+    "COMPANY NAME": "United Drilling Tools Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 0.60 Per Share",
+    "FACE VALUE": 10,
     "EX-DATE": "23-Feb-24",
     "RECORD DATE": "23-Feb-24"
   },
@@ -2043,42 +2124,6 @@
     "RECORD DATE": "23-Feb-24"
   },
   {
-    "SYMBOL": "DYNAMATECH",
-    "COMPANY NAME": "Dynamatic Technologies Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs  5 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "23-Feb-24",
-    "RECORD DATE": "23-Feb-24"
-  },
-  {
-    "SYMBOL": "GRSE",
-    "COMPANY NAME": "Garden Reach Shipbuilders & Engineers Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 7.92 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "23-Feb-24",
-    "RECORD DATE": "23-Feb-24"
-  },
-  {
-    "SYMBOL": "INDNIPPON",
-    "COMPANY NAME": "India Nippon Electricals Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs  10.25 Per Share",
-    "FACE VALUE": 5,
-    "EX-DATE": "23-Feb-24",
-    "RECORD DATE": "23-Feb-24"
-  },
-  {
-    "SYMBOL": "KIRLOSENG",
-    "COMPANY NAME": "Kirloskar Oil Engines Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 2.50 Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "23-Feb-24",
-    "RECORD DATE": "23-Feb-24"
-  },
-  {
     "SYMBOL": "ZYDUSLIFE",
     "COMPANY NAME": "Zydus Lifesciences Limited",
     "SERIES": "EQ",
@@ -2088,56 +2133,11 @@
     "RECORD DATE": "23-Feb-24"
   },
   {
-    "SYMBOL": "MODISONLTD",
-    "COMPANY NAME": "MODISON LIMITED",
+    "SYMBOL": "DYNAMATECH",
+    "COMPANY NAME": "Dynamatic Technologies Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 0.50 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "23-Feb-24",
-    "RECORD DATE": "23-Feb-24"
-  },
-  {
-    "SYMBOL": "NATIONALUM",
-    "COMPANY NAME": "National Aluminium Company Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs  2 Per Share",
-    "FACE VALUE": 5,
-    "EX-DATE": "23-Feb-24",
-    "RECORD DATE": "23-Feb-24"
-  },
-  {
-    "SYMBOL": "SANDESH",
-    "COMPANY NAME": "The Sandesh Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 5 Per Share",
+    "PURPOSE": "Interim Dividend - Rs  5 Per Share",
     "FACE VALUE": 10,
-    "EX-DATE": "23-Feb-24",
-    "RECORD DATE": "23-Feb-24"
-  },
-  {
-    "SYMBOL": "SUNTV",
-    "COMPANY NAME": "Sun TV Network Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 2.50 Per Sh",
-    "FACE VALUE": 5,
-    "EX-DATE": "23-Feb-24",
-    "RECORD DATE": "23-Feb-24"
-  },
-  {
-    "SYMBOL": "UNIDT",
-    "COMPANY NAME": "United Drilling Tools Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 0.60 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "23-Feb-24",
-    "RECORD DATE": "23-Feb-24"
-  },
-  {
-    "SYMBOL": "GLOBE",
-    "COMPANY NAME": "Globe Textiles (India) Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Rights 1:1 @ Premium Rs 1/-",
-    "FACE VALUE": 2,
     "EX-DATE": "23-Feb-24",
     "RECORD DATE": "23-Feb-24"
   },
@@ -2196,15 +2196,6 @@
     "RECORD DATE": "27-Feb-24"
   },
   {
-    "SYMBOL": "DRCSYSTEMS",
-    "COMPANY NAME": "DRC Systems India Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Bonus 2:1",
-    "FACE VALUE": 1,
-    "EX-DATE": "27-Feb-24",
-    "RECORD DATE": "27-Feb-24"
-  },
-  {
     "SYMBOL": "SOUTHBANK",
     "COMPANY NAME": "The South Indian Bank Limited",
     "SERIES": "EQ",
@@ -2214,10 +2205,19 @@
     "RECORD DATE": "27-Feb-24"
   },
   {
-    "SYMBOL": "FIEMIND",
-    "COMPANY NAME": "Fiem Industries Limited",
+    "SYMBOL": "DRCSYSTEMS",
+    "COMPANY NAME": "DRC Systems India Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Bonus 1:1",
+    "PURPOSE": "Bonus 2:1",
+    "FACE VALUE": 1,
+    "EX-DATE": "27-Feb-24",
+    "RECORD DATE": "27-Feb-24"
+  },
+  {
+    "SYMBOL": "SOUTHWEST",
+    "COMPANY NAME": "South West Pinnacle Exploration Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 0.25 Per Share",
     "FACE VALUE": 10,
     "EX-DATE": "28-Feb-24",
     "RECORD DATE": "28-Feb-24"
@@ -2232,6 +2232,15 @@
     "RECORD DATE": "28-Feb-24"
   },
   {
+    "SYMBOL": "FIEMIND",
+    "COMPANY NAME": "Fiem Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 1:1",
+    "FACE VALUE": 10,
+    "EX-DATE": "28-Feb-24",
+    "RECORD DATE": "28-Feb-24"
+  },
+  {
     "SYMBOL": "UNITEDTEA",
     "COMPANY NAME": "The United Nilgiri Tea Estates Company Limited",
     "SERIES": "EQ",
@@ -2241,13 +2250,13 @@
     "RECORD DATE": "28-Feb-24"
   },
   {
-    "SYMBOL": "SOUTHWEST",
-    "COMPANY NAME": "South West Pinnacle Exploration Limited",
+    "SYMBOL": "BTML",
+    "COMPANY NAME": "Bodhi Tree Multimedia Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 0.25 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "28-Feb-24",
-    "RECORD DATE": "28-Feb-24"
+    "PURPOSE": "Interim Dividend - Rs 0.50 Per Sh",
+    "FACE VALUE": 1,
+    "EX-DATE": "29-Feb-24",
+    "RECORD DATE": "29-Feb-24"
   },
   {
     "SYMBOL": "BAJAJ-AUTO",
@@ -2255,15 +2264,6 @@
     "SERIES": "EQ",
     "PURPOSE": "Buy Back",
     "FACE VALUE": 10,
-    "EX-DATE": "29-Feb-24",
-    "RECORD DATE": "29-Feb-24"
-  },
-  {
-    "SYMBOL": "BTML",
-    "COMPANY NAME": "Bodhi Tree Multimedia Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 0.50 Per Sh",
-    "FACE VALUE": 1,
     "EX-DATE": "29-Feb-24",
     "RECORD DATE": "29-Feb-24"
   },
@@ -2307,6 +2307,15 @@
     "SYMBOL": "CGCL",
     "COMPANY NAME": "Capri Global Capital Limited",
     "SERIES": "EQ",
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "5-Mar-24",
+    "RECORD DATE": "5-Mar-24"
+  },
+  {
+    "SYMBOL": "CGCL",
+    "COMPANY NAME": "Capri Global Capital Limited",
+    "SERIES": "EQ",
     "PURPOSE": "Bonus 1:1",
     "FACE VALUE": 1,
     "EX-DATE": "5-Mar-24",
@@ -2318,15 +2327,6 @@
     "SERIES": "GS",
     "PURPOSE": "Interest Payment",
     "FACE VALUE": 100,
-    "EX-DATE": "5-Mar-24",
-    "RECORD DATE": "5-Mar-24"
-  },
-  {
-    "SYMBOL": "CGCL",
-    "COMPANY NAME": "Capri Global Capital Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share",
-    "FACE VALUE": 1,
     "EX-DATE": "5-Mar-24",
     "RECORD DATE": "5-Mar-24"
   },
@@ -2349,25 +2349,7 @@
     "RECORD DATE": "6-Mar-24"
   },
   {
-    "SYMBOL": "MANORAMA",
-    "COMPANY NAME": "Manorama Industries Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "7-Mar-24",
-    "RECORD DATE": "8-Mar-24"
-  },
-  {
     "SYMBOL": "1018GS2026",
-    "COMPANY NAME": "GOVERNMENT OF INDIA",
-    "SERIES": "GS",
-    "PURPOSE": "Interest Payment",
-    "FACE VALUE": 100,
-    "EX-DATE": "7-Mar-24",
-    "RECORD DATE": "7-Mar-24"
-  },
-  {
-    "SYMBOL": "74GS2035",
     "COMPANY NAME": "GOVERNMENT OF INDIA",
     "SERIES": "GS",
     "PURPOSE": "Interest Payment",
@@ -2385,15 +2367,6 @@
     "RECORD DATE": "7-Mar-24"
   },
   {
-    "SYMBOL": "NATHBIOGEN",
-    "COMPANY NAME": "Nath Bio-Genes (India) Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Extra- Ordinary General Meeting",
-    "FACE VALUE": 10,
-    "EX-DATE": "7-Mar-24",
-    "RECORD DATE": "-"
-  },
-  {
     "SYMBOL": "NHIT",
     "COMPANY NAME": "National Highways Infra Trust",
     "SERIES": "IV",
@@ -2403,6 +2376,15 @@
     "RECORD DATE": "7-Mar-24"
   },
   {
+    "SYMBOL": "MANORAMA",
+    "COMPANY NAME": "Manorama Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "7-Mar-24",
+    "RECORD DATE": "8-Mar-24"
+  },
+  {
     "SYMBOL": "SHREERAMA",
     "COMPANY NAME": "Shree Rama Multi-Tech Limited",
     "SERIES": "EQ",
@@ -2410,6 +2392,24 @@
     "FACE VALUE": 5,
     "EX-DATE": "7-Mar-24",
     "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "NATHBIOGEN",
+    "COMPANY NAME": "Nath Bio-Genes (India) Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Extra- Ordinary General Meeting",
+    "FACE VALUE": 10,
+    "EX-DATE": "7-Mar-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "74GS2035",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "7-Mar-24",
+    "RECORD DATE": "7-Mar-24"
   },
   {
     "SYMBOL": "BLAL",
@@ -2439,13 +2439,31 @@
     "RECORD DATE": "14-Mar-24"
   },
   {
-    "SYMBOL": "HCC",
-    "COMPANY NAME": "Hindustan Construction Company Limited",
+    "SYMBOL": "GAEL",
+    "COMPANY NAME": "Gujarat Ambuja Exports Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Rights 13:118 @ Premium Rs 20/-",
+    "PURPOSE": "Bonus 1:1",
     "FACE VALUE": 1,
     "EX-DATE": "15-Mar-24",
     "RECORD DATE": "16-Mar-24"
+  },
+  {
+    "SYMBOL": "IIFLSEC",
+    "COMPANY NAME": "IIFL Securities Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 3 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "15-Mar-24",
+    "RECORD DATE": "15-Mar-24"
+  },
+  {
+    "SYMBOL": "BALKRISHNA",
+    "COMPANY NAME": "Balkrishna Paper Mills Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Rights 2:1 @ Premium Rs 11/-",
+    "FACE VALUE": 10,
+    "EX-DATE": "15-Mar-24",
+    "RECORD DATE": "15-Mar-24"
   },
   {
     "SYMBOL": "ISMTLTD",
@@ -2475,6 +2493,15 @@
     "RECORD DATE": "-"
   },
   {
+    "SYMBOL": "HCC",
+    "COMPANY NAME": "Hindustan Construction Company Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Rights 13:118 @ Premium Rs 20/-",
+    "FACE VALUE": 1,
+    "EX-DATE": "15-Mar-24",
+    "RECORD DATE": "16-Mar-24"
+  },
+  {
     "SYMBOL": "668GS2031",
     "COMPANY NAME": "GOVERNMENT OF INDIA",
     "SERIES": "GS",
@@ -2484,24 +2511,6 @@
     "RECORD DATE": "16-Mar-24"
   },
   {
-    "SYMBOL": "GAEL",
-    "COMPANY NAME": "Gujarat Ambuja Exports Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Bonus 1:1",
-    "FACE VALUE": 1,
-    "EX-DATE": "15-Mar-24",
-    "RECORD DATE": "16-Mar-24"
-  },
-  {
-    "SYMBOL": "BALKRISHNA",
-    "COMPANY NAME": "Balkrishna Paper Mills Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Rights 2:1 @ Premium Rs 11/-",
-    "FACE VALUE": 10,
-    "EX-DATE": "15-Mar-24",
-    "RECORD DATE": "15-Mar-24"
-  },
-  {
     "SYMBOL": "SBILIFE",
     "COMPANY NAME": "SBI Life Insurance Company Limited",
     "SERIES": "EQ",
@@ -2509,15 +2518,6 @@
     "FACE VALUE": 10,
     "EX-DATE": "15-Mar-24",
     "RECORD DATE": "16-Mar-24"
-  },
-  {
-    "SYMBOL": "IIFLSEC",
-    "COMPANY NAME": "IIFL Securities Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 3 Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "15-Mar-24",
-    "RECORD DATE": "15-Mar-24"
   },
   {
     "SYMBOL": "788GS2030",
@@ -2538,11 +2538,29 @@
     "RECORD DATE": "18-Mar-24"
   },
   {
+    "SYMBOL": "RAMASTEEL",
+    "COMPANY NAME": "Rama Steel Tubes Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 2:1",
+    "FACE VALUE": 1,
+    "EX-DATE": "19-Mar-24",
+    "RECORD DATE": "19-Mar-24"
+  },
+  {
     "SYMBOL": "SUDARSCHEM",
     "COMPANY NAME": "Sudarshan Chemical Industries Limited",
     "SERIES": "EQ",
     "PURPOSE": "Interim Dividend - Rs 3.60 Per Share",
     "FACE VALUE": 2,
+    "EX-DATE": "19-Mar-24",
+    "RECORD DATE": "19-Mar-24"
+  },
+  {
+    "SYMBOL": "759GS2029",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
     "EX-DATE": "19-Mar-24",
     "RECORD DATE": "19-Mar-24"
   },
@@ -2565,33 +2583,6 @@
     "RECORD DATE": "19-Mar-24"
   },
   {
-    "SYMBOL": "759GS2029",
-    "COMPANY NAME": "GOVERNMENT OF INDIA",
-    "SERIES": "GS",
-    "PURPOSE": "Interest Payment",
-    "FACE VALUE": 100,
-    "EX-DATE": "19-Mar-24",
-    "RECORD DATE": "19-Mar-24"
-  },
-  {
-    "SYMBOL": "RAMASTEEL",
-    "COMPANY NAME": "Rama Steel Tubes Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Bonus 2:1",
-    "FACE VALUE": 1,
-    "EX-DATE": "19-Mar-24",
-    "RECORD DATE": "19-Mar-24"
-  },
-  {
-    "SYMBOL": "ADVANIHOTR",
-    "COMPANY NAME": "Advani Hotels & Resorts (India) Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Bonus 1:1",
-    "FACE VALUE": 2,
-    "EX-DATE": "20-Mar-24",
-    "RECORD DATE": "20-Mar-24"
-  },
-  {
     "SYMBOL": "828GS2027",
     "COMPANY NAME": "GOVERNMENT OF INDIA",
     "SERIES": "GS",
@@ -2601,11 +2592,11 @@
     "RECORD DATE": "20-Mar-24"
   },
   {
-    "SYMBOL": "PAISALO",
-    "COMPANY NAME": "Paisalo Digital Limited",
+    "SYMBOL": "NRL",
+    "COMPANY NAME": "Nupur Recyclers Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Bonus 1:1",
-    "FACE VALUE": 1,
+    "PURPOSE": "Bonus 1:2",
+    "FACE VALUE": 10,
     "EX-DATE": "20-Mar-24",
     "RECORD DATE": "20-Mar-24"
   },
@@ -2614,15 +2605,6 @@
     "COMPANY NAME": "Kakatiya Cement Sugar & Industries Limited",
     "SERIES": "EQ",
     "PURPOSE": "Extra Ordinary General Meeting",
-    "FACE VALUE": 10,
-    "EX-DATE": "20-Mar-24",
-    "RECORD DATE": "20-Mar-24"
-  },
-  {
-    "SYMBOL": "NRL",
-    "COMPANY NAME": "Nupur Recyclers Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Bonus 1:2",
     "FACE VALUE": 10,
     "EX-DATE": "20-Mar-24",
     "RECORD DATE": "20-Mar-24"
@@ -2637,10 +2619,28 @@
     "RECORD DATE": "20-Mar-24"
   },
   {
+    "SYMBOL": "ADVANIHOTR",
+    "COMPANY NAME": "Advani Hotels & Resorts (India) Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 1:1",
+    "FACE VALUE": 2,
+    "EX-DATE": "20-Mar-24",
+    "RECORD DATE": "20-Mar-24"
+  },
+  {
     "SYMBOL": "DWARKESH",
     "COMPANY NAME": "Dwarikesh Sugar Industries Limited",
     "SERIES": "EQ",
     "PURPOSE": "Buy Back",
+    "FACE VALUE": 1,
+    "EX-DATE": "20-Mar-24",
+    "RECORD DATE": "20-Mar-24"
+  },
+  {
+    "SYMBOL": "PAISALO",
+    "COMPANY NAME": "Paisalo Digital Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 1:1",
     "FACE VALUE": 1,
     "EX-DATE": "20-Mar-24",
     "RECORD DATE": "20-Mar-24"
@@ -2655,11 +2655,38 @@
     "RECORD DATE": "20-Mar-24"
   },
   {
-    "SYMBOL": "PATANJALI",
-    "COMPANY NAME": "Patanjali Foods Limited",
+    "SYMBOL": "JYOTISTRUC",
+    "COMPANY NAME": "Jyoti Structures Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 6 Per Share",
+    "PURPOSE": "Rights 6:37 @ Premium Rs 13/-",
     "FACE VALUE": 2,
+    "EX-DATE": "21-Mar-24",
+    "RECORD DATE": "21-Mar-24"
+  },
+  {
+    "SYMBOL": "VIPULLTD",
+    "COMPANY NAME": "Vipul Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Extra Ordinary General Meeting",
+    "FACE VALUE": 1,
+    "EX-DATE": "21-Mar-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "ACL",
+    "COMPANY NAME": "Andhra Cements Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Extra Ordinary General Meeting",
+    "FACE VALUE": 10,
+    "EX-DATE": "21-Mar-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "CASTROLIND",
+    "COMPANY NAME": "Castrol India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 4.50 Per Share",
+    "FACE VALUE": 5,
     "EX-DATE": "21-Mar-24",
     "RECORD DATE": "21-Mar-24"
   },
@@ -2673,42 +2700,6 @@
     "RECORD DATE": "21-Mar-24"
   },
   {
-    "SYMBOL": "CASTROLIND",
-    "COMPANY NAME": "Castrol India Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 4.50 Per Share",
-    "FACE VALUE": 5,
-    "EX-DATE": "21-Mar-24",
-    "RECORD DATE": "21-Mar-24"
-  },
-  {
-    "SYMBOL": "ACL",
-    "COMPANY NAME": "Andhra Cements Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Extra Ordinary General Meeting",
-    "FACE VALUE": 10,
-    "EX-DATE": "21-Mar-24",
-    "RECORD DATE": "-"
-  },
-  {
-    "SYMBOL": "VIPULLTD",
-    "COMPANY NAME": "Vipul Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Extra Ordinary General Meeting",
-    "FACE VALUE": 1,
-    "EX-DATE": "21-Mar-24",
-    "RECORD DATE": "-"
-  },
-  {
-    "SYMBOL": "JYOTISTRUC",
-    "COMPANY NAME": "Jyoti Structures Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Rights 6:37 @ Premium Rs 13/-",
-    "FACE VALUE": 2,
-    "EX-DATE": "21-Mar-24",
-    "RECORD DATE": "21-Mar-24"
-  },
-  {
     "SYMBOL": "INDINFR",
     "COMPANY NAME": "IndInfravit Trust",
     "SERIES": "IV",
@@ -2718,16 +2709,52 @@
     "RECORD DATE": "21-Mar-24"
   },
   {
-    "SYMBOL": "601GS2028",
-    "COMPANY NAME": "GOVERNMENT OF INDIA",
-    "SERIES": "GS",
-    "PURPOSE": "Interest Payment",
-    "FACE VALUE": 100,
+    "SYMBOL": "PATANJALI",
+    "COMPANY NAME": "Patanjali Foods Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 6 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "21-Mar-24",
+    "RECORD DATE": "21-Mar-24"
+  },
+  {
+    "SYMBOL": "PFC",
+    "COMPANY NAME": "Power Finance Corporation Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 3 Per Share",
+    "FACE VALUE": 10,
     "EX-DATE": "22-Mar-24",
     "RECORD DATE": "22-Mar-24"
   },
   {
-    "SYMBOL": "597GS2025",
+    "SYMBOL": "REFEX",
+    "COMPANY NAME": "Refex Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "22-Mar-24",
+    "RECORD DATE": "22-Mar-24"
+  },
+  {
+    "SYMBOL": "BEL",
+    "COMPANY NAME": "Bharat Electronics Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 0.70 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "22-Mar-24",
+    "RECORD DATE": "23-Mar-24"
+  },
+  {
+    "SYMBOL": "TIL",
+    "COMPANY NAME": "TIL Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Rights 28:10 @ Premium Rs 0/-",
+    "FACE VALUE": 10,
+    "EX-DATE": "22-Mar-24",
+    "RECORD DATE": "22-Mar-24"
+  },
+  {
+    "SYMBOL": "82GS2025",
     "COMPANY NAME": "GOVERNMENT OF INDIA",
     "SERIES": "GS",
     "PURPOSE": "Interest Payment",
@@ -2745,49 +2772,31 @@
     "RECORD DATE": "22-Mar-24"
   },
   {
-    "SYMBOL": "REFEX",
-    "COMPANY NAME": "Refex Industries Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "22-Mar-24",
-    "RECORD DATE": "22-Mar-24"
-  },
-  {
-    "SYMBOL": "TIL",
-    "COMPANY NAME": "TIL Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Rights 28:10 @ Premium Rs 0/-",
-    "FACE VALUE": 10,
-    "EX-DATE": "22-Mar-24",
-    "RECORD DATE": "22-Mar-24"
-  },
-  {
-    "SYMBOL": "BEL",
-    "COMPANY NAME": "Bharat Electronics Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Re 0.70 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "22-Mar-24",
-    "RECORD DATE": "23-Mar-24"
-  },
-  {
-    "SYMBOL": "PFC",
-    "COMPANY NAME": "Power Finance Corporation Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 3 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "22-Mar-24",
-    "RECORD DATE": "22-Mar-24"
-  },
-  {
-    "SYMBOL": "82GS2025",
+    "SYMBOL": "597GS2025",
     "COMPANY NAME": "GOVERNMENT OF INDIA",
     "SERIES": "GS",
     "PURPOSE": "Interest Payment",
     "FACE VALUE": 100,
     "EX-DATE": "22-Mar-24",
     "RECORD DATE": "22-Mar-24"
+  },
+  {
+    "SYMBOL": "601GS2028",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "22-Mar-24",
+    "RECORD DATE": "22-Mar-24"
+  },
+  {
+    "SYMBOL": "GARFIBRES",
+    "COMPANY NAME": "Garware Technical Fibres Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Buy Back",
+    "FACE VALUE": 10,
+    "EX-DATE": "26-Mar-24",
+    "RECORD DATE": "26-Mar-24"
   },
   {
     "SYMBOL": "VBL",
@@ -2799,13 +2808,31 @@
     "RECORD DATE": "-"
   },
   {
-    "SYMBOL": "GARFIBRES",
-    "COMPANY NAME": "Garware Technical Fibres Limited",
+    "SYMBOL": "SBICARD",
+    "COMPANY NAME": "SBI Cards and Payment Services Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Buy Back",
+    "PURPOSE": "Interim Dividend - Rs 2.50 Per Share",
     "FACE VALUE": 10,
-    "EX-DATE": "26-Mar-24",
-    "RECORD DATE": "26-Mar-24"
+    "EX-DATE": "28-Mar-24",
+    "RECORD DATE": "28-Mar-24"
+  },
+  {
+    "SYMBOL": "RSYSTEMS",
+    "COMPANY NAME": "R Systems International Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 6 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "28-Mar-24",
+    "RECORD DATE": "28-Mar-24"
+  },
+  {
+    "SYMBOL": "RECLTD",
+    "COMPANY NAME": "REC Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 4.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "28-Mar-24",
+    "RECORD DATE": "28-Mar-24"
   },
   {
     "SYMBOL": "PERSISTENT",
@@ -2853,22 +2880,13 @@
     "RECORD DATE": "28-Mar-24"
   },
   {
-    "SYMBOL": "SBICARD",
-    "COMPANY NAME": "SBI Cards and Payment Services Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 2.50 Per Share",
-    "FACE VALUE": 10,
+    "SYMBOL": "92GS2030",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
     "EX-DATE": "28-Mar-24",
-    "RECORD DATE": "28-Mar-24"
-  },
-  {
-    "SYMBOL": "RECLTD",
-    "COMPANY NAME": "REC Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 4.50 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "28-Mar-24",
-    "RECORD DATE": "28-Mar-24"
+    "RECORD DATE": "30-Mar-24"
   },
   {
     "SYMBOL": "HUDCO",
@@ -2880,24 +2898,6 @@
     "RECORD DATE": "29-Mar-24"
   },
   {
-    "SYMBOL": "92GS2030",
-    "COMPANY NAME": "GOVERNMENT OF INDIA",
-    "SERIES": "GS",
-    "PURPOSE": "Interest Payment",
-    "FACE VALUE": 100,
-    "EX-DATE": "28-Mar-24",
-    "RECORD DATE": "30-Mar-24"
-  },
-  {
-    "SYMBOL": "RSYSTEMS",
-    "COMPANY NAME": "R Systems International Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 6 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "28-Mar-24",
-    "RECORD DATE": "28-Mar-24"
-  },
-  {
     "SYMBOL": "GPTHEALTH",
     "COMPANY NAME": "GPT Healthcare Limited",
     "SERIES": "EQ",
@@ -2907,19 +2907,19 @@
     "RECORD DATE": "2-Apr-24"
   },
   {
-    "SYMBOL": "BDL",
-    "COMPANY NAME": "Bharat Dynamics Limited",
+    "SYMBOL": "TVSHLTD",
+    "COMPANY NAME": "TVS Holdings Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 8.85 Per Share",
+    "PURPOSE": "Interim Dividend - Rs  94 Per Share",
     "FACE VALUE": 5,
     "EX-DATE": "2-Apr-24",
     "RECORD DATE": "2-Apr-24"
   },
   {
-    "SYMBOL": "TVSHLTD",
-    "COMPANY NAME": "TVS Holdings Limited",
+    "SYMBOL": "BDL",
+    "COMPANY NAME": "Bharat Dynamics Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs  94 Per Share",
+    "PURPOSE": "Interim Dividend - Rs 8.85 Per Share",
     "FACE VALUE": 5,
     "EX-DATE": "2-Apr-24",
     "RECORD DATE": "2-Apr-24"
@@ -2952,15 +2952,6 @@
     "RECORD DATE": "4-Apr-24"
   },
   {
-    "SYMBOL": "VBL",
-    "COMPANY NAME": "Varun Beverages Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 1.25 Per Share",
-    "FACE VALUE": 5,
-    "EX-DATE": "4-Apr-24",
-    "RECORD DATE": "4-Apr-24"
-  },
-  {
     "SYMBOL": "SUNCLAY",
     "COMPANY NAME": "Sundaram Clayton Limited",
     "SERIES": "EQ",
@@ -2970,13 +2961,13 @@
     "RECORD DATE": "4-Apr-24"
   },
   {
-    "SYMBOL": "ESABINDIA",
-    "COMPANY NAME": "Esab India Limited",
+    "SYMBOL": "VBL",
+    "COMPANY NAME": "Varun Beverages Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 24 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "5-Apr-24",
-    "RECORD DATE": "5-Apr-24"
+    "PURPOSE": "Dividend - Rs 1.25 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "4-Apr-24",
+    "RECORD DATE": "4-Apr-24"
   },
   {
     "SYMBOL": "BTML",
@@ -2984,6 +2975,15 @@
     "SERIES": "EQ",
     "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share",
     "FACE VALUE": 1,
+    "EX-DATE": "5-Apr-24",
+    "RECORD DATE": "5-Apr-24"
+  },
+  {
+    "SYMBOL": "ESABINDIA",
+    "COMPANY NAME": "Esab India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 24 Per Share",
+    "FACE VALUE": 10,
     "EX-DATE": "5-Apr-24",
     "RECORD DATE": "5-Apr-24"
   },
@@ -3024,29 +3024,11 @@
     "RECORD DATE": "11-Apr-24"
   },
   {
-    "SYMBOL": "SHK",
-    "COMPANY NAME": "S H Kelkar and Company Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Re 0.75 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "12-Apr-24",
-    "RECORD DATE": "12-Apr-24"
-  },
-  {
     "SYMBOL": "MOLDTKPAC",
     "COMPANY NAME": "Mold-Tek Packaging Limited",
     "SERIES": "EQ",
     "PURPOSE": "Interim Dividend - Rs 2 Per Share",
     "FACE VALUE": 5,
-    "EX-DATE": "12-Apr-24",
-    "RECORD DATE": "12-Apr-24"
-  },
-  {
-    "SYMBOL": "MOLDTECH",
-    "COMPANY NAME": "Mold-Tek Technologies Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 2 Per Share",
-    "FACE VALUE": 2,
     "EX-DATE": "12-Apr-24",
     "RECORD DATE": "12-Apr-24"
   },
@@ -3060,13 +3042,22 @@
     "RECORD DATE": "12-Apr-24"
   },
   {
-    "SYMBOL": "SHRADHA",
-    "COMPANY NAME": "Shradha Infraprojects Limited",
+    "SYMBOL": "MOLDTECH",
+    "COMPANY NAME": "Mold-Tek Technologies Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Extra Ordinary General Meeting",
-    "FACE VALUE": 5,
-    "EX-DATE": "15-Apr-24",
-    "RECORD DATE": "-"
+    "PURPOSE": "Interim Dividend - Rs 2 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "12-Apr-24",
+    "RECORD DATE": "12-Apr-24"
+  },
+  {
+    "SYMBOL": "SHK",
+    "COMPANY NAME": "S H Kelkar and Company Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 0.75 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Apr-24",
+    "RECORD DATE": "12-Apr-24"
   },
   {
     "SYMBOL": "SAKUMA",
@@ -3078,12 +3069,30 @@
     "RECORD DATE": "15-Apr-24"
   },
   {
+    "SYMBOL": "SHRADHA",
+    "COMPANY NAME": "Shradha Infraprojects Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Extra Ordinary General Meeting",
+    "FACE VALUE": 5,
+    "EX-DATE": "15-Apr-24",
+    "RECORD DATE": "-"
+  },
+  {
     "SYMBOL": "EIFFL",
     "COMPANY NAME": "Euro India Fresh Foods Limited",
     "SERIES": "EQ",
     "PURPOSE": "Extra Ordinary General Meeting",
     "FACE VALUE": 10,
     "EX-DATE": "16-Apr-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "SPMLINFRA",
+    "COMPANY NAME": "SPML Infra Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Extra Ordinary General Meeting",
+    "FACE VALUE": 2,
+    "EX-DATE": "18-Apr-24",
     "RECORD DATE": "-"
   },
   {
@@ -3094,15 +3103,6 @@
     "FACE VALUE": 1,
     "EX-DATE": "18-Apr-24",
     "RECORD DATE": "18-Apr-24"
-  },
-  {
-    "SYMBOL": "SPMLINFRA",
-    "COMPANY NAME": "SPML Infra Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Extra Ordinary General Meeting",
-    "FACE VALUE": 2,
-    "EX-DATE": "18-Apr-24",
-    "RECORD DATE": "-"
   },
   {
     "SYMBOL": "SCHAEFFLER",
@@ -3150,20 +3150,20 @@
     "RECORD DATE": "23-Apr-24"
   },
   {
-    "SYMBOL": "IIFL",
-    "COMPANY NAME": "IIFL Finance Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Rights 1:9 @ Premium Rs 298/-",
-    "FACE VALUE": 2,
-    "EX-DATE": "23-Apr-24",
-    "RECORD DATE": "23-Apr-24"
-  },
-  {
     "SYMBOL": "ASTERDM",
     "COMPANY NAME": "Aster DM Healthcare Limited",
     "SERIES": "EQ",
     "PURPOSE": "Special Dividend - Rs 118 Per Share",
     "FACE VALUE": 10,
+    "EX-DATE": "23-Apr-24",
+    "RECORD DATE": "23-Apr-24"
+  },
+  {
+    "SYMBOL": "IIFL",
+    "COMPANY NAME": "IIFL Finance Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Rights 1:9 @ Premium Rs 298/-",
+    "FACE VALUE": 2,
     "EX-DATE": "23-Apr-24",
     "RECORD DATE": "23-Apr-24"
   },
@@ -3204,15 +3204,6 @@
     "RECORD DATE": "26-Apr-24"
   },
   {
-    "SYMBOL": "360ONE",
-    "COMPANY NAME": "360 ONE WAM LIMITED",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 3.5 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "2-May-24",
-    "RECORD DATE": "2-May-24"
-  },
-  {
     "SYMBOL": "BHAGCHEM",
     "COMPANY NAME": "Bhagiradha Chemicals & Industries Limited",
     "SERIES": "EQ",
@@ -3222,31 +3213,13 @@
     "RECORD DATE": "2-May-24"
   },
   {
-    "SYMBOL": "SANOFI",
-    "COMPANY NAME": "Sanofi India Limited",
+    "SYMBOL": "360ONE",
+    "COMPANY NAME": "360 ONE WAM LIMITED",
     "SERIES": "EQ",
-    "PURPOSE": "Annual General Meeting",
-    "FACE VALUE": 10,
-    "EX-DATE": "3-May-24",
-    "RECORD DATE": "-"
-  },
-  {
-    "SYMBOL": "746GS2073",
-    "COMPANY NAME": "Government of India",
-    "SERIES": "GS",
-    "PURPOSE": "Interest Payment",
-    "FACE VALUE": 100,
-    "EX-DATE": "3-May-24",
-    "RECORD DATE": "4-May-24"
-  },
-  {
-    "SYMBOL": "SANOFI",
-    "COMPANY NAME": "Sanofi India Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 117 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "3-May-24",
-    "RECORD DATE": "3-May-24"
+    "PURPOSE": "Interim Dividend - Rs 3.5 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "2-May-24",
+    "RECORD DATE": "2-May-24"
   },
   {
     "SYMBOL": "ABB",
@@ -3265,6 +3238,33 @@
     "FACE VALUE": 1,
     "EX-DATE": "3-May-24",
     "RECORD DATE": "3-May-24"
+  },
+  {
+    "SYMBOL": "SANOFI",
+    "COMPANY NAME": "Sanofi India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 10,
+    "EX-DATE": "3-May-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "SANOFI",
+    "COMPANY NAME": "Sanofi India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 117 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "3-May-24",
+    "RECORD DATE": "3-May-24"
+  },
+  {
+    "SYMBOL": "746GS2073",
+    "COMPANY NAME": "Government of India",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "3-May-24",
+    "RECORD DATE": "4-May-24"
   },
   {
     "SYMBOL": "SEMAC",
@@ -3312,20 +3312,20 @@
     "RECORD DATE": "7-May-24"
   },
   {
-    "SYMBOL": "SANGINITA",
-    "COMPANY NAME": "Sanginita Chemicals Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Rights 1:2 @ Premium Rs 8/-",
-    "FACE VALUE": 10,
-    "EX-DATE": "7-May-24",
-    "RECORD DATE": "7-May-24"
-  },
-  {
     "SYMBOL": "IRBINVIT",
     "COMPANY NAME": "IRB InvIT Fund",
     "SERIES": "IV",
     "PURPOSE": "Distribution - Rs 2 Per Unit Consisting Of Interest Rs 1.70 Per Unit/ Exempt Dividend Re 0.30 Per Unit",
     "FACE VALUE": 102,
+    "EX-DATE": "7-May-24",
+    "RECORD DATE": "7-May-24"
+  },
+  {
+    "SYMBOL": "SANGINITA",
+    "COMPANY NAME": "Sanginita Chemicals Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Rights 1:2 @ Premium Rs 8/-",
+    "FACE VALUE": 10,
     "EX-DATE": "7-May-24",
     "RECORD DATE": "7-May-24"
   },
@@ -3357,6 +3357,15 @@
     "RECORD DATE": "-"
   },
   {
+    "SYMBOL": "824GS2033",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "9-May-24",
+    "RECORD DATE": "9-May-24"
+  },
+  {
     "SYMBOL": "MINDSPACE",
     "COMPANY NAME": "Mindspace Business Parks REIT",
     "SERIES": "RR",
@@ -3373,24 +3382,6 @@
     "FACE VALUE": 100,
     "EX-DATE": "9-May-24",
     "RECORD DATE": "9-May-24"
-  },
-  {
-    "SYMBOL": "824GS2033",
-    "COMPANY NAME": "GOVERNMENT OF INDIA",
-    "SERIES": "GS",
-    "PURPOSE": "Interest Payment",
-    "FACE VALUE": 100,
-    "EX-DATE": "9-May-24",
-    "RECORD DATE": "9-May-24"
-  },
-  {
-    "SYMBOL": "SONAMLTD",
-    "COMPANY NAME": "SONAM LIMITED",
-    "SERIES": "EQ",
-    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share",
-    "FACE VALUE": 5,
-    "EX-DATE": "10-May-24",
-    "RECORD DATE": "10-May-24"
   },
   {
     "SYMBOL": "MAHABANK",
@@ -3420,38 +3411,11 @@
     "RECORD DATE": "-"
   },
   {
-    "SYMBOL": "725GR2028",
-    "COMPANY NAME": "Government of India",
-    "SERIES": "GS",
-    "PURPOSE": "Interest Payment",
-    "FACE VALUE": 100,
-    "EX-DATE": "10-May-24",
-    "RECORD DATE": "10-May-24"
-  },
-  {
-    "SYMBOL": "UCOBANK",
-    "COMPANY NAME": "UCO Bank",
+    "SYMBOL": "SONAMLTD",
+    "COMPANY NAME": "SONAM LIMITED",
     "SERIES": "EQ",
-    "PURPOSE": "Dividend - Re 0.28 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "10-May-24",
-    "RECORD DATE": "10-May-24"
-  },
-  {
-    "SYMBOL": "APTECHT",
-    "COMPANY NAME": "Aptech Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 4.50 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "10-May-24",
-    "RECORD DATE": "10-May-24"
-  },
-  {
-    "SYMBOL": "DCBBANK",
-    "COMPANY NAME": "DCB Bank Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 1.25 Per Share",
-    "FACE VALUE": 10,
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share",
+    "FACE VALUE": 5,
     "EX-DATE": "10-May-24",
     "RECORD DATE": "10-May-24"
   },
@@ -3474,11 +3438,47 @@
     "RECORD DATE": "10-May-24"
   },
   {
+    "SYMBOL": "UCOBANK",
+    "COMPANY NAME": "UCO Bank",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 0.28 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "10-May-24",
+    "RECORD DATE": "10-May-24"
+  },
+  {
+    "SYMBOL": "DCBBANK",
+    "COMPANY NAME": "DCB Bank Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 1.25 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "10-May-24",
+    "RECORD DATE": "10-May-24"
+  },
+  {
+    "SYMBOL": "725GR2028",
+    "COMPANY NAME": "Government of India",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "10-May-24",
+    "RECORD DATE": "10-May-24"
+  },
+  {
     "SYMBOL": "732GS2030",
     "COMPANY NAME": "Government of India",
     "SERIES": "GS",
     "PURPOSE": "Interest Payment",
     "FACE VALUE": 100,
+    "EX-DATE": "10-May-24",
+    "RECORD DATE": "10-May-24"
+  },
+  {
+    "SYMBOL": "APTECHT",
+    "COMPANY NAME": "Aptech Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 4.50 Per Share",
+    "FACE VALUE": 10,
     "EX-DATE": "10-May-24",
     "RECORD DATE": "10-May-24"
   },
@@ -3490,24 +3490,6 @@
     "FACE VALUE": 100,
     "EX-DATE": "13-May-24",
     "RECORD DATE": "13-May-24"
-  },
-  {
-    "SYMBOL": "679GS2027",
-    "COMPANY NAME": "GOVERNMENT OF INDIA",
-    "SERIES": "GS",
-    "PURPOSE": "Interest Payment",
-    "FACE VALUE": 100,
-    "EX-DATE": "14-May-24",
-    "RECORD DATE": "14-May-24"
-  },
-  {
-    "SYMBOL": "GODREJCP",
-    "COMPANY NAME": "Godrej Consumer Products Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 10 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "14-May-24",
-    "RECORD DATE": "14-May-24"
   },
   {
     "SYMBOL": "OMAXAUTO",
@@ -3537,31 +3519,22 @@
     "RECORD DATE": "14-May-24"
   },
   {
-    "SYMBOL": "APTUS",
-    "COMPANY NAME": "Aptus Value Housing Finance India Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 2.50 Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "15-May-24",
-    "RECORD DATE": "15-May-24"
-  },
-  {
-    "SYMBOL": "COFORGE",
-    "COMPANY NAME": "Coforge Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 19 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "15-May-24",
-    "RECORD DATE": "15-May-24"
-  },
-  {
-    "SYMBOL": "HINDZINC",
-    "COMPANY NAME": "Hindustan Zinc Limited",
+    "SYMBOL": "GODREJCP",
+    "COMPANY NAME": "Godrej Consumer Products Limited",
     "SERIES": "EQ",
     "PURPOSE": "Interim Dividend - Rs 10 Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "15-May-24",
-    "RECORD DATE": "15-May-24"
+    "FACE VALUE": 1,
+    "EX-DATE": "14-May-24",
+    "RECORD DATE": "14-May-24"
+  },
+  {
+    "SYMBOL": "679GS2027",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "14-May-24",
+    "RECORD DATE": "14-May-24"
   },
   {
     "SYMBOL": "CANBK",
@@ -3591,11 +3564,11 @@
     "RECORD DATE": "15-May-24"
   },
   {
-    "SYMBOL": "VIJIFIN",
-    "COMPANY NAME": "Viji Finance Limited",
+    "SYMBOL": "HINDZINC",
+    "COMPANY NAME": "Hindustan Zinc Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Rights 8:11 @ Premium Re 0.50/-",
-    "FACE VALUE": 1,
+    "PURPOSE": "Interim Dividend - Rs 10 Per Share",
+    "FACE VALUE": 2,
     "EX-DATE": "15-May-24",
     "RECORD DATE": "15-May-24"
   },
@@ -3609,13 +3582,31 @@
     "RECORD DATE": "15-May-24"
   },
   {
-    "SYMBOL": "TCS",
-    "COMPANY NAME": "Tata Consultancy Services Limited",
+    "SYMBOL": "APTUS",
+    "COMPANY NAME": "Aptus Value Housing Finance India Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 28 Per Share",
+    "PURPOSE": "Interim Dividend - Rs 2.50 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "15-May-24",
+    "RECORD DATE": "15-May-24"
+  },
+  {
+    "SYMBOL": "COFORGE",
+    "COMPANY NAME": "Coforge Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 19 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "15-May-24",
+    "RECORD DATE": "15-May-24"
+  },
+  {
+    "SYMBOL": "VIJIFIN",
+    "COMPANY NAME": "Viji Finance Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Rights 8:11 @ Premium Re 0.50/-",
     "FACE VALUE": 1,
-    "EX-DATE": "16-May-24",
-    "RECORD DATE": "16-May-24"
+    "EX-DATE": "15-May-24",
+    "RECORD DATE": "15-May-24"
   },
   {
     "SYMBOL": "SHREMINVIT",
@@ -3625,6 +3616,24 @@
     "FACE VALUE": 100,
     "EX-DATE": "16-May-24",
     "RECORD DATE": "16-May-24"
+  },
+  {
+    "SYMBOL": "TCS",
+    "COMPANY NAME": "Tata Consultancy Services Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 28 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "16-May-24",
+    "RECORD DATE": "16-May-24"
+  },
+  {
+    "SYMBOL": "CELESTIAL",
+    "COMPANY NAME": "Celestial Biolabs Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 10,
+    "EX-DATE": "17-May-24",
+    "RECORD DATE": "-"
   },
   {
     "SYMBOL": "VARDMNPOLY",
@@ -3645,15 +3654,6 @@
     "RECORD DATE": "18-May-24"
   },
   {
-    "SYMBOL": "CELESTIAL",
-    "COMPANY NAME": "Celestial Biolabs Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Annual General Meeting",
-    "FACE VALUE": 10,
-    "EX-DATE": "17-May-24",
-    "RECORD DATE": "-"
-  },
-  {
     "SYMBOL": "CRAFTSMAN",
     "COMPANY NAME": "Craftsman Automation Limited",
     "SERIES": "EQ",
@@ -3661,15 +3661,6 @@
     "FACE VALUE": 5,
     "EX-DATE": "17-May-24",
     "RECORD DATE": "-"
-  },
-  {
-    "SYMBOL": "UEL",
-    "COMPANY NAME": "Ujaas Energy Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Demerger",
-    "FACE VALUE": 1,
-    "EX-DATE": "22-May-24",
-    "RECORD DATE": "22-May-24"
   },
   {
     "SYMBOL": "SESHAPAPER",
@@ -3681,29 +3672,11 @@
     "RECORD DATE": "-"
   },
   {
-    "SYMBOL": "OBEROIRLTY",
-    "COMPANY NAME": "Oberoi Realty Limited",
+    "SYMBOL": "COLPAL",
+    "COMPANY NAME": "Colgate Palmolive (India) Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 2 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "22-May-24",
-    "RECORD DATE": "23-May-24"
-  },
-  {
-    "SYMBOL": "TRENT",
-    "COMPANY NAME": "Trent Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 3.20 Per Share",
+    "PURPOSE": "Special Dividend Rs -10 Per Share/Interim Dividend Rs - 26 Per Share",
     "FACE VALUE": 1,
-    "EX-DATE": "22-May-24",
-    "RECORD DATE": "22-May-24"
-  },
-  {
-    "SYMBOL": "GESHIP",
-    "COMPANY NAME": "The Great Eastern Shipping Company Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 10.80 Per Share",
-    "FACE VALUE": 10,
     "EX-DATE": "22-May-24",
     "RECORD DATE": "23-May-24"
   },
@@ -3726,13 +3699,13 @@
     "RECORD DATE": "22-May-24"
   },
   {
-    "SYMBOL": "COLPAL",
-    "COMPANY NAME": "Colgate Palmolive (India) Limited",
+    "SYMBOL": "UEL",
+    "COMPANY NAME": "Ujaas Energy Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Special Dividend Rs -10 Per Share/Interim Dividend Rs - 26 Per Share",
+    "PURPOSE": "Demerger",
     "FACE VALUE": 1,
     "EX-DATE": "22-May-24",
-    "RECORD DATE": "23-May-24"
+    "RECORD DATE": "22-May-24"
   },
   {
     "SYMBOL": "815GS2026",
@@ -3740,6 +3713,33 @@
     "SERIES": "GS",
     "PURPOSE": "Interest Payment",
     "FACE VALUE": 100,
+    "EX-DATE": "22-May-24",
+    "RECORD DATE": "22-May-24"
+  },
+  {
+    "SYMBOL": "GESHIP",
+    "COMPANY NAME": "The Great Eastern Shipping Company Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 10.80 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "22-May-24",
+    "RECORD DATE": "23-May-24"
+  },
+  {
+    "SYMBOL": "OBEROIRLTY",
+    "COMPANY NAME": "Oberoi Realty Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 2 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "22-May-24",
+    "RECORD DATE": "23-May-24"
+  },
+  {
+    "SYMBOL": "TRENT",
+    "COMPANY NAME": "Trent Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 3.20 Per Share",
+    "FACE VALUE": 1,
     "EX-DATE": "22-May-24",
     "RECORD DATE": "22-May-24"
   },
@@ -3753,10 +3753,55 @@
     "RECORD DATE": "22-May-24"
   },
   {
+    "SYMBOL": "BDL",
+    "COMPANY NAME": "Bharat Dynamics Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "24-May-24",
+    "RECORD DATE": "24-May-24"
+  },
+  {
+    "SYMBOL": "MGEL",
+    "COMPANY NAME": "Mangalam Global Enterprise Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Rights 1:7 @ Premium Rs 18/-",
+    "FACE VALUE": 2,
+    "EX-DATE": "24-May-24",
+    "RECORD DATE": "24-May-24"
+  },
+  {
+    "SYMBOL": "TATACONSUM",
+    "COMPANY NAME": "TATA CONSUMER PRODUCTS LIMITED",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 7.75 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "24-May-24",
+    "RECORD DATE": "24-May-24"
+  },
+  {
     "SYMBOL": "INOXWIND",
     "COMPANY NAME": "Inox Wind Limited",
     "SERIES": "EQ",
     "PURPOSE": "Bonus 3:1",
+    "FACE VALUE": 10,
+    "EX-DATE": "24-May-24",
+    "RECORD DATE": "25-May-24"
+  },
+  {
+    "SYMBOL": "CUBEINVIT",
+    "COMPANY NAME": "Cube Highways Trust",
+    "SERIES": "IV",
+    "PURPOSE": "Distribution - Rs 3.94 Per Unit Consisting Of Interest - Rs 1.79 Per Unit/ Dividend - Re 0.20 Per Unit/ Treasury Income - Re 0.01 Per Unit/ Repayment Of Spv Loan Rs 1.94 Per Unit",
+    "FACE VALUE": 100,
+    "EX-DATE": "24-May-24",
+    "RECORD DATE": "24-May-24"
+  },
+  {
+    "SYMBOL": "GMBREW",
+    "COMPANY NAME": "GM Breweries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 1:4",
     "FACE VALUE": 10,
     "EX-DATE": "24-May-24",
     "RECORD DATE": "25-May-24"
@@ -3798,56 +3843,11 @@
     "RECORD DATE": "25-May-24"
   },
   {
-    "SYMBOL": "TATACONSUM",
-    "COMPANY NAME": "TATA CONSUMER PRODUCTS LIMITED",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 7.75 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "24-May-24",
-    "RECORD DATE": "24-May-24"
-  },
-  {
-    "SYMBOL": "CUBEINVIT",
-    "COMPANY NAME": "Cube Highways Trust",
-    "SERIES": "IV",
-    "PURPOSE": "Distribution - Rs 3.94 Per Unit Consisting Of Interest - Rs 1.79 Per Unit/ Dividend - Re 0.20 Per Unit/ Treasury Income - Re 0.01 Per Unit/ Repayment Of Spv Loan Rs 1.94 Per Unit",
-    "FACE VALUE": 100,
-    "EX-DATE": "24-May-24",
-    "RECORD DATE": "24-May-24"
-  },
-  {
     "SYMBOL": "HIGHWAYS",
     "COMPANY NAME": "Highways Infrastructure Trust",
     "SERIES": "IV",
     "PURPOSE": "Distribution - Rs 9.3792 Per Unit Consisting Of Interest - Rs 1.0209 Per Unit/ Dividend - Rs 8.0575 Per Unit/ Return Of Capital - Re 0.2535 Per Unit/ Other Income - Re 0.0473 Per Unit",
     "FACE VALUE": 100,
-    "EX-DATE": "24-May-24",
-    "RECORD DATE": "24-May-24"
-  },
-  {
-    "SYMBOL": "GMBREW",
-    "COMPANY NAME": "GM Breweries Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Bonus 1:4",
-    "FACE VALUE": 10,
-    "EX-DATE": "24-May-24",
-    "RECORD DATE": "25-May-24"
-  },
-  {
-    "SYMBOL": "MGEL",
-    "COMPANY NAME": "Mangalam Global Enterprise Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Rights 1:7 @ Premium Rs 18/-",
-    "FACE VALUE": 2,
-    "EX-DATE": "24-May-24",
-    "RECORD DATE": "24-May-24"
-  },
-  {
-    "SYMBOL": "BDL",
-    "COMPANY NAME": "Bharat Dynamics Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share",
-    "FACE VALUE": 5,
     "EX-DATE": "24-May-24",
     "RECORD DATE": "24-May-24"
   },
@@ -3870,6 +3870,15 @@
     "RECORD DATE": "28-May-24"
   },
   {
+    "SYMBOL": "NDRINVIT",
+    "COMPANY NAME": "NDR INVIT Trust",
+    "SERIES": "IV",
+    "PURPOSE": "Distribution - Re 1 Per Unit Consisting Of Interest Re 0.37 Per Unit And Return Of Capital Re 0.63 Per Unit",
+    "FACE VALUE": 100,
+    "EX-DATE": "28-May-24",
+    "RECORD DATE": "28-May-24"
+  },
+  {
     "SYMBOL": "TRIDENT",
     "COMPANY NAME": "Trident Limited",
     "SERIES": "EQ",
@@ -3884,15 +3893,6 @@
     "SERIES": "EQ",
     "PURPOSE": "Dividend - Rs 3.25 Per Share",
     "FACE VALUE": 10,
-    "EX-DATE": "28-May-24",
-    "RECORD DATE": "28-May-24"
-  },
-  {
-    "SYMBOL": "NDRINVIT",
-    "COMPANY NAME": "NDR INVIT Trust",
-    "SERIES": "IV",
-    "PURPOSE": "Distribution - Re 1 Per Unit Consisting Of Interest Re 0.37 Per Unit And Return Of Capital Re 0.63 Per Unit",
-    "FACE VALUE": 100,
     "EX-DATE": "28-May-24",
     "RECORD DATE": "28-May-24"
   },
@@ -3942,29 +3942,11 @@
     "RECORD DATE": "30-May-24"
   },
   {
-    "SYMBOL": "INDIGRID",
-    "COMPANY NAME": "India Grid Trust",
-    "SERIES": "IV",
-    "PURPOSE": "Distribution - Rs 3.55 Per Unit Consisting Of Interest Rs 2.7361 Per Unit/ Dividend Re 0.8139 Per Unit",
-    "FACE VALUE": 100,
-    "EX-DATE": "30-May-24",
-    "RECORD DATE": "30-May-24"
-  },
-  {
     "SYMBOL": "LTFOODS",
     "COMPANY NAME": "LT Foods Limited",
     "SERIES": "EQ",
     "PURPOSE": "Interim Dividend - Rs 0.50 Per Share",
     "FACE VALUE": 1,
-    "EX-DATE": "30-May-24",
-    "RECORD DATE": "30-May-24"
-  },
-  {
-    "SYMBOL": "GPTINFRA",
-    "COMPANY NAME": "GPT Infraprojects Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Re 1 Per Share",
-    "FACE VALUE": 10,
     "EX-DATE": "30-May-24",
     "RECORD DATE": "30-May-24"
   },
@@ -3978,22 +3960,22 @@
     "RECORD DATE": "30-May-24"
   },
   {
-    "SYMBOL": "86GS2028",
-    "COMPANY NAME": "GOVERNMENT OF INDIA",
-    "SERIES": "GS",
-    "PURPOSE": "Interest Payment",
-    "FACE VALUE": 100,
-    "EX-DATE": "31-May-24",
-    "RECORD DATE": "1-Jun-24"
+    "SYMBOL": "GPTINFRA",
+    "COMPANY NAME": "GPT Infraprojects Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 1 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "30-May-24",
+    "RECORD DATE": "30-May-24"
   },
   {
-    "SYMBOL": "ADVANIHOTR",
-    "COMPANY NAME": "Advani Hotels & Resorts (India) Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Re 0.80 Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "31-May-24",
-    "RECORD DATE": "1-Jun-24"
+    "SYMBOL": "INDIGRID",
+    "COMPANY NAME": "India Grid Trust",
+    "SERIES": "IV",
+    "PURPOSE": "Distribution - Rs 3.55 Per Unit Consisting Of Interest Rs 2.7361 Per Unit/ Dividend Re 0.8139 Per Unit",
+    "FACE VALUE": 100,
+    "EX-DATE": "30-May-24",
+    "RECORD DATE": "30-May-24"
   },
   {
     "SYMBOL": "ALICON",
@@ -4005,11 +3987,20 @@
     "RECORD DATE": "31-May-24"
   },
   {
-    "SYMBOL": "CAPLIPOINT",
-    "COMPANY NAME": "Caplin Point Laboratories Limited",
+    "SYMBOL": "JSWENERGY",
+    "COMPANY NAME": "JSW Energy Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 2.50 Per Share",
-    "FACE VALUE": 2,
+    "PURPOSE": "Dividend - Rs 2 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "31-May-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "DAVANGERE",
+    "COMPANY NAME": "Davangere Sugar Company Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share",
+    "FACE VALUE": 1,
     "EX-DATE": "31-May-24",
     "RECORD DATE": "31-May-24"
   },
@@ -4032,29 +4023,47 @@
     "RECORD DATE": "1-Jun-24"
   },
   {
-    "SYMBOL": "JSWENERGY",
-    "COMPANY NAME": "JSW Energy Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 2 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "31-May-24",
-    "RECORD DATE": "-"
-  },
-  {
-    "SYMBOL": "HAVELLS",
-    "COMPANY NAME": "Havells India Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Annual General Meeting/Dividend - Rs 6 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "31-May-24",
-    "RECORD DATE": "-"
-  },
-  {
     "SYMBOL": "817GS2044",
     "COMPANY NAME": "GOVERNMENT OF INDIA",
     "SERIES": "GS",
     "PURPOSE": "Interest Payment",
     "FACE VALUE": 100,
+    "EX-DATE": "31-May-24",
+    "RECORD DATE": "31-May-24"
+  },
+  {
+    "SYMBOL": "86GS2028",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "31-May-24",
+    "RECORD DATE": "1-Jun-24"
+  },
+  {
+    "SYMBOL": "ADVANIHOTR",
+    "COMPANY NAME": "Advani Hotels & Resorts (India) Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 0.80 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "31-May-24",
+    "RECORD DATE": "1-Jun-24"
+  },
+  {
+    "SYMBOL": "MUTHOOTFIN",
+    "COMPANY NAME": "Muthoot Finance Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 24 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "31-May-24",
+    "RECORD DATE": "1-Jun-24"
+  },
+  {
+    "SYMBOL": "PAGEIND",
+    "COMPANY NAME": "Page Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 120 Per Share",
+    "FACE VALUE": 10,
     "EX-DATE": "31-May-24",
     "RECORD DATE": "31-May-24"
   },
@@ -4068,22 +4077,22 @@
     "RECORD DATE": "31-May-24"
   },
   {
-    "SYMBOL": "PAGEIND",
-    "COMPANY NAME": "Page Industries Limited",
+    "SYMBOL": "INFY",
+    "COMPANY NAME": "Infosys Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 120 Per Share",
-    "FACE VALUE": 10,
+    "PURPOSE": "Annual General Meeting/Special Dividend - Rs 8 Per Share /Dividend - Rs 20 Per Share",
+    "FACE VALUE": 5,
     "EX-DATE": "31-May-24",
     "RECORD DATE": "31-May-24"
   },
   {
-    "SYMBOL": "MUTHOOTFIN",
-    "COMPANY NAME": "Muthoot Finance Limited",
+    "SYMBOL": "GLAXO",
+    "COMPANY NAME": "GlaxoSmithKline Pharmaceuticals Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 24 Per Share",
+    "PURPOSE": "Dividend - Rs 32 Per Share",
     "FACE VALUE": 10,
     "EX-DATE": "31-May-24",
-    "RECORD DATE": "1-Jun-24"
+    "RECORD DATE": "31-May-24"
   },
   {
     "SYMBOL": "IEX",
@@ -4104,55 +4113,28 @@
     "RECORD DATE": "1-Jun-24"
   },
   {
-    "SYMBOL": "GLAXO",
-    "COMPANY NAME": "GlaxoSmithKline Pharmaceuticals Limited",
+    "SYMBOL": "HAVELLS",
+    "COMPANY NAME": "Havells India Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 32 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "31-May-24",
-    "RECORD DATE": "31-May-24"
-  },
-  {
-    "SYMBOL": "DAVANGERE",
-    "COMPANY NAME": "Davangere Sugar Company Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 6 Per Share",
     "FACE VALUE": 1,
     "EX-DATE": "31-May-24",
-    "RECORD DATE": "31-May-24"
+    "RECORD DATE": "-"
   },
   {
-    "SYMBOL": "INFY",
-    "COMPANY NAME": "Infosys Limited",
+    "SYMBOL": "CAPLIPOINT",
+    "COMPANY NAME": "Caplin Point Laboratories Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Annual General Meeting/Special Dividend - Rs 8 Per Share /Dividend - Rs 20 Per Share",
-    "FACE VALUE": 5,
+    "PURPOSE": "Interim Dividend - Rs 2.50 Per Share",
+    "FACE VALUE": 2,
     "EX-DATE": "31-May-24",
     "RECORD DATE": "31-May-24"
-  },
-  {
-    "SYMBOL": "RALLIS",
-    "COMPANY NAME": "Rallis India Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 2.50 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "3-Jun-24",
-    "RECORD DATE": "3-Jun-24"
   },
   {
     "SYMBOL": "ANANDRATHI",
     "COMPANY NAME": "Anand Rathi Wealth Limited",
     "SERIES": "EQ",
     "PURPOSE": "Dividend - Rs 9 Per Share",
-    "FACE VALUE": 5,
-    "EX-DATE": "3-Jun-24",
-    "RECORD DATE": "3-Jun-24"
-  },
-  {
-    "SYMBOL": "ANANDRATHI",
-    "COMPANY NAME": "Anand Rathi Wealth Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Buyback",
     "FACE VALUE": 5,
     "EX-DATE": "3-Jun-24",
     "RECORD DATE": "3-Jun-24"
@@ -4176,6 +4158,24 @@
     "RECORD DATE": "3-Jun-24"
   },
   {
+    "SYMBOL": "ANANDRATHI",
+    "COMPANY NAME": "Anand Rathi Wealth Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Buyback",
+    "FACE VALUE": 5,
+    "EX-DATE": "3-Jun-24",
+    "RECORD DATE": "3-Jun-24"
+  },
+  {
+    "SYMBOL": "RALLIS",
+    "COMPANY NAME": "Rallis India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 2.50 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "3-Jun-24",
+    "RECORD DATE": "3-Jun-24"
+  },
+  {
     "SYMBOL": "SUNDRMFAST",
     "COMPANY NAME": "Sundram Fasteners Limited",
     "SERIES": "EQ",
@@ -4194,13 +4194,13 @@
     "RECORD DATE": "4-Jun-24"
   },
   {
-    "SYMBOL": "ITC",
-    "COMPANY NAME": "ITC Limited",
+    "SYMBOL": "FOSECOIND",
+    "COMPANY NAME": "Foseco India Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 7.50 Per Share",
-    "FACE VALUE": 1,
+    "PURPOSE": "Dividend - Rs 25 Per Share",
+    "FACE VALUE": 10,
     "EX-DATE": "4-Jun-24",
-    "RECORD DATE": "4-Jun-24"
+    "RECORD DATE": "-"
   },
   {
     "SYMBOL": "657GS2033",
@@ -4212,22 +4212,13 @@
     "RECORD DATE": "4-Jun-24"
   },
   {
-    "SYMBOL": "FOSECOIND",
-    "COMPANY NAME": "Foseco India Limited",
+    "SYMBOL": "ITC",
+    "COMPANY NAME": "ITC Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 25 Per Share",
-    "FACE VALUE": 10,
+    "PURPOSE": "Dividend - Rs 7.50 Per Share",
+    "FACE VALUE": 1,
     "EX-DATE": "4-Jun-24",
-    "RECORD DATE": "-"
-  },
-  {
-    "SYMBOL": "RIIL",
-    "COMPANY NAME": "Reliance Industrial Infrastructure Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 3.50 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "5-Jun-24",
-    "RECORD DATE": "5-Jun-24"
+    "RECORD DATE": "4-Jun-24"
   },
   {
     "SYMBOL": "MANAPPURAM",
@@ -4235,6 +4226,15 @@
     "SERIES": "EQ",
     "PURPOSE": "Interim Dividend - Re 1 Per Share",
     "FACE VALUE": 2,
+    "EX-DATE": "5-Jun-24",
+    "RECORD DATE": "5-Jun-24"
+  },
+  {
+    "SYMBOL": "RIIL",
+    "COMPANY NAME": "Reliance Industrial Infrastructure Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 3.50 Per Share",
+    "FACE VALUE": 10,
     "EX-DATE": "5-Jun-24",
     "RECORD DATE": "5-Jun-24"
   },
@@ -4257,11 +4257,11 @@
     "RECORD DATE": "6-Jun-24"
   },
   {
-    "SYMBOL": "ICICIGI",
-    "COMPANY NAME": "ICICI Lombard General Insurance Company Limited",
+    "SYMBOL": "HOMEFIRST",
+    "COMPANY NAME": "Home First Finance Company India Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 6 Per Share",
-    "FACE VALUE": 10,
+    "PURPOSE": "Dividend - Rs 3.40 Per Share",
+    "FACE VALUE": 2,
     "EX-DATE": "7-Jun-24",
     "RECORD DATE": "7-Jun-24"
   },
@@ -4284,11 +4284,56 @@
     "RECORD DATE": "7-Jun-24"
   },
   {
-    "SYMBOL": "HOMEFIRST",
-    "COMPANY NAME": "Home First Finance Company India Limited",
+    "SYMBOL": "INDIANB",
+    "COMPANY NAME": "Indian Bank",
     "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 3.40 Per Share",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 10,
+    "EX-DATE": "7-Jun-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "JMFINANCIL",
+    "COMPANY NAME": "JM Financial Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 2 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "7-Jun-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "SMCGLOBAL",
+    "COMPANY NAME": "SMC Global Securities Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 1.2 Per Share",
     "FACE VALUE": 2,
+    "EX-DATE": "7-Jun-24",
+    "RECORD DATE": "7-Jun-24"
+  },
+  {
+    "SYMBOL": "UNOMINDA",
+    "COMPANY NAME": "UNO Minda Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 1.35 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "7-Jun-24",
+    "RECORD DATE": "7-Jun-24"
+  },
+  {
+    "SYMBOL": "HSCL",
+    "COMPANY NAME": "Himadri Speciality Chemical Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Re 0.50 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "7-Jun-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "ICICIGI",
+    "COMPANY NAME": "ICICI Lombard General Insurance Company Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 6 Per Share",
+    "FACE VALUE": 10,
     "EX-DATE": "7-Jun-24",
     "RECORD DATE": "7-Jun-24"
   },
@@ -4311,15 +4356,6 @@
     "RECORD DATE": "7-Jun-24"
   },
   {
-    "SYMBOL": "HSCL",
-    "COMPANY NAME": "Himadri Speciality Chemical Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Annual General Meeting/Dividend - Re 0.50 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "7-Jun-24",
-    "RECORD DATE": "-"
-  },
-  {
     "SYMBOL": "SMCGLOBAL",
     "COMPANY NAME": "SMC Global Securities Limited",
     "SERIES": "EQ",
@@ -4327,60 +4363,6 @@
     "FACE VALUE": 2,
     "EX-DATE": "7-Jun-24",
     "RECORD DATE": "-"
-  },
-  {
-    "SYMBOL": "JMFINANCIL",
-    "COMPANY NAME": "JM Financial Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 2 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "7-Jun-24",
-    "RECORD DATE": "-"
-  },
-  {
-    "SYMBOL": "INDIANB",
-    "COMPANY NAME": "Indian Bank",
-    "SERIES": "EQ",
-    "PURPOSE": "Annual General Meeting",
-    "FACE VALUE": 10,
-    "EX-DATE": "7-Jun-24",
-    "RECORD DATE": "-"
-  },
-  {
-    "SYMBOL": "UNOMINDA",
-    "COMPANY NAME": "UNO Minda Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 1.35 Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "7-Jun-24",
-    "RECORD DATE": "7-Jun-24"
-  },
-  {
-    "SYMBOL": "SMCGLOBAL",
-    "COMPANY NAME": "SMC Global Securities Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 1.2 Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "7-Jun-24",
-    "RECORD DATE": "7-Jun-24"
-  },
-  {
-    "SYMBOL": "NELCO",
-    "COMPANY NAME": "NELCO Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 2.20 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "10-Jun-24",
-    "RECORD DATE": "-"
-  },
-  {
-    "SYMBOL": "MOTILALOFS",
-    "COMPANY NAME": "Motilal Oswal Financial Services Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Bonus 3:1",
-    "FACE VALUE": 1,
-    "EX-DATE": "10-Jun-24",
-    "RECORD DATE": "10-Jun-24"
   },
   {
     "SYMBOL": "LALPATHLAB",
@@ -4392,6 +4374,15 @@
     "RECORD DATE": "10-Jun-24"
   },
   {
+    "SYMBOL": "NELCO",
+    "COMPANY NAME": "NELCO Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 2.20 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "10-Jun-24",
+    "RECORD DATE": "-"
+  },
+  {
     "SYMBOL": "724GR2033",
     "COMPANY NAME": "Government of India",
     "SERIES": "GS",
@@ -4401,22 +4392,13 @@
     "RECORD DATE": "10-Jun-24"
   },
   {
-    "SYMBOL": "KRITINUT",
-    "COMPANY NAME": "Kriti Nutrients Limited",
+    "SYMBOL": "MOTILALOFS",
+    "COMPANY NAME": "Motilal Oswal Financial Services Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Annual General Meeting/Dividend - Re 0.30 Per Share",
+    "PURPOSE": "Bonus 3:1",
     "FACE VALUE": 1,
-    "EX-DATE": "11-Jun-24",
-    "RECORD DATE": "-"
-  },
-  {
-    "SYMBOL": "KRITI",
-    "COMPANY NAME": "Kriti Industries (India) Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Annual General Meeting/Dividend - Re 0.20 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "11-Jun-24",
-    "RECORD DATE": "-"
+    "EX-DATE": "10-Jun-24",
+    "RECORD DATE": "10-Jun-24"
   },
   {
     "SYMBOL": "JINDALSAW",
@@ -4437,15 +4419,6 @@
     "RECORD DATE": "11-Jun-24"
   },
   {
-    "SYMBOL": "ASIANPAINT",
-    "COMPANY NAME": "Asian Paints Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 28.15 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "11-Jun-24",
-    "RECORD DATE": "11-Jun-24"
-  },
-  {
     "SYMBOL": "TATAMTRDVR",
     "COMPANY NAME": "Tata Motors Limited",
     "SERIES": "EQ",
@@ -4462,6 +4435,33 @@
     "FACE VALUE": 2,
     "EX-DATE": "11-Jun-24",
     "RECORD DATE": "11-Jun-24"
+  },
+  {
+    "SYMBOL": "ASIANPAINT",
+    "COMPANY NAME": "Asian Paints Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 28.15 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "11-Jun-24",
+    "RECORD DATE": "11-Jun-24"
+  },
+  {
+    "SYMBOL": "KRITINUT",
+    "COMPANY NAME": "Kriti Nutrients Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Re 0.30 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "11-Jun-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "KRITI",
+    "COMPANY NAME": "Kriti Industries (India) Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Re 0.20 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "11-Jun-24",
+    "RECORD DATE": "-"
   },
   {
     "SYMBOL": "JSFB",
@@ -4486,33 +4486,6 @@
     "COMPANY NAME": "ICICI Prudential Life Insurance Company Limited",
     "SERIES": "EQ",
     "PURPOSE": "Dividend - Re 0.60 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "13-Jun-24",
-    "RECORD DATE": "-"
-  },
-  {
-    "SYMBOL": "TATATECH",
-    "COMPANY NAME": "Tata Technologies Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 8.40 Per Share & Special Dividend Rs 1.65 Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "13-Jun-24",
-    "RECORD DATE": "13-Jun-24"
-  },
-  {
-    "SYMBOL": "CIEINDIA",
-    "COMPANY NAME": "CIE Automotive India Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Annual General Meeting/Dividend - Rs 5 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "13-Jun-24",
-    "RECORD DATE": "-"
-  },
-  {
-    "SYMBOL": "KSB",
-    "COMPANY NAME": "Ksb Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Annual General Meeting/Dividend - Rs 17.50 Per Share",
     "FACE VALUE": 10,
     "EX-DATE": "13-Jun-24",
     "RECORD DATE": "-"
@@ -4545,20 +4518,47 @@
     "RECORD DATE": "-"
   },
   {
+    "SYMBOL": "KSB",
+    "COMPANY NAME": "Ksb Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 17.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "13-Jun-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "CIEINDIA",
+    "COMPANY NAME": "CIE Automotive India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 5 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "13-Jun-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "TATATECH",
+    "COMPANY NAME": "Tata Technologies Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 8.40 Per Share & Special Dividend Rs 1.65 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "13-Jun-24",
+    "RECORD DATE": "13-Jun-24"
+  },
+  {
+    "SYMBOL": "VSTIND",
+    "COMPANY NAME": "VST Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 150 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "14-Jun-24",
+    "RECORD DATE": "-"
+  },
+  {
     "SYMBOL": "MMFL",
     "COMPANY NAME": "MM Forgings Limited",
     "SERIES": "EQ",
     "PURPOSE": "Interim Dividend - Rs 8 Per Share",
     "FACE VALUE": 10,
-    "EX-DATE": "14-Jun-24",
-    "RECORD DATE": "14-Jun-24"
-  },
-  {
-    "SYMBOL": "LTTS",
-    "COMPANY NAME": "L&T Technology Services Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 33 Per Share",
-    "FACE VALUE": 2,
     "EX-DATE": "14-Jun-24",
     "RECORD DATE": "14-Jun-24"
   },
@@ -4617,47 +4617,29 @@
     "RECORD DATE": "14-Jun-24"
   },
   {
+    "SYMBOL": "BIKAJI",
+    "COMPANY NAME": "Bikaji Foods International Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 1 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "14-Jun-24",
+    "RECORD DATE": "14-Jun-24"
+  },
+  {
+    "SYMBOL": "LTTS",
+    "COMPANY NAME": "L&T Technology Services Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 33 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "14-Jun-24",
+    "RECORD DATE": "14-Jun-24"
+  },
+  {
     "SYMBOL": "KAMOPAINTS",
     "COMPANY NAME": "Kamdhenu Ventures Limited",
     "SERIES": "EQ",
     "PURPOSE": "Face Value Split (Sub-Division) - From Rs 5/- Per Share To Re 1/- Per Share",
     "FACE VALUE": 1,
-    "EX-DATE": "14-Jun-24",
-    "RECORD DATE": "14-Jun-24"
-  },
-  {
-    "SYMBOL": "ACC",
-    "COMPANY NAME": "ACC Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 7.50 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "14-Jun-24",
-    "RECORD DATE": "14-Jun-24"
-  },
-  {
-    "SYMBOL": "ADANIENT",
-    "COMPANY NAME": "Adani Enterprises Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 1.30 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "14-Jun-24",
-    "RECORD DATE": "14-Jun-24"
-  },
-  {
-    "SYMBOL": "ADANIPORTS",
-    "COMPANY NAME": "Adani Ports and Special Economic Zone Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 6 Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "14-Jun-24",
-    "RECORD DATE": "14-Jun-24"
-  },
-  {
-    "SYMBOL": "AMBUJACEM",
-    "COMPANY NAME": "Ambuja Cements Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 2 Per Share",
-    "FACE VALUE": 2,
     "EX-DATE": "14-Jun-24",
     "RECORD DATE": "14-Jun-24"
   },
@@ -4698,6 +4680,42 @@
     "RECORD DATE": "14-Jun-24"
   },
   {
+    "SYMBOL": "ACC",
+    "COMPANY NAME": "ACC Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 7.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "14-Jun-24",
+    "RECORD DATE": "14-Jun-24"
+  },
+  {
+    "SYMBOL": "ADANIENT",
+    "COMPANY NAME": "Adani Enterprises Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 1.30 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "14-Jun-24",
+    "RECORD DATE": "14-Jun-24"
+  },
+  {
+    "SYMBOL": "ADANIPORTS",
+    "COMPANY NAME": "Adani Ports and Special Economic Zone Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 6 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "14-Jun-24",
+    "RECORD DATE": "14-Jun-24"
+  },
+  {
+    "SYMBOL": "AMBUJACEM",
+    "COMPANY NAME": "Ambuja Cements Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 2 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "14-Jun-24",
+    "RECORD DATE": "14-Jun-24"
+  },
+  {
     "SYMBOL": "SONACOMS",
     "COMPANY NAME": "Sona BLW Precision Forgings Limited",
     "SERIES": "EQ",
@@ -4711,15 +4729,6 @@
     "COMPANY NAME": "Torrent Power Limited",
     "SERIES": "EQ",
     "PURPOSE": "Dividend - Rs 4 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "14-Jun-24",
-    "RECORD DATE": "14-Jun-24"
-  },
-  {
-    "SYMBOL": "XCHANGING",
-    "COMPANY NAME": "Xchanging Solutions Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 2 Per Share & Special Dividend - Rs 2 Per Share",
     "FACE VALUE": 10,
     "EX-DATE": "14-Jun-24",
     "RECORD DATE": "14-Jun-24"
@@ -4743,6 +4752,15 @@
     "RECORD DATE": "-"
   },
   {
+    "SYMBOL": "XCHANGING",
+    "COMPANY NAME": "Xchanging Solutions Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 2 Per Share & Special Dividend - Rs 2 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "14-Jun-24",
+    "RECORD DATE": "14-Jun-24"
+  },
+  {
     "SYMBOL": "HINDUNILVR",
     "COMPANY NAME": "Hindustan Unilever Limited",
     "SERIES": "EQ",
@@ -4761,22 +4779,13 @@
     "RECORD DATE": "-"
   },
   {
-    "SYMBOL": "BIKAJI",
-    "COMPANY NAME": "Bikaji Foods International Limited",
+    "SYMBOL": "LTF",
+    "COMPANY NAME": "L&T Finance Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Dividend - Re 1 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "14-Jun-24",
-    "RECORD DATE": "14-Jun-24"
-  },
-  {
-    "SYMBOL": "VSTIND",
-    "COMPANY NAME": "VST Industries Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 150 Per Share",
+    "PURPOSE": "Dividend - Rs 2.50 Per Share",
     "FACE VALUE": 10,
-    "EX-DATE": "14-Jun-24",
-    "RECORD DATE": "-"
+    "EX-DATE": "18-Jun-24",
+    "RECORD DATE": "18-Jun-24"
   },
   {
     "SYMBOL": "773GS2034",
@@ -4797,33 +4806,6 @@
     "RECORD DATE": "-"
   },
   {
-    "SYMBOL": "KSHITIJPOL",
-    "COMPANY NAME": "Kshitij Polyline Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Rights 4:5 @ Premium Rs 4.40/-",
-    "FACE VALUE": 2,
-    "EX-DATE": "18-Jun-24",
-    "RECORD DATE": "18-Jun-24"
-  },
-  {
-    "SYMBOL": "LTF",
-    "COMPANY NAME": "L&T Finance Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 2.50 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "18-Jun-24",
-    "RECORD DATE": "18-Jun-24"
-  },
-  {
-    "SYMBOL": "BANKINDIA",
-    "COMPANY NAME": "Bank of India",
-    "SERIES": "EQ",
-    "PURPOSE": "Annual General Meeting/Dividend - Rs 2.80 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "18-Jun-24",
-    "RECORD DATE": "18-Jun-24"
-  },
-  {
     "SYMBOL": "TATAINVEST",
     "COMPANY NAME": "Tata Investment Corporation Limited",
     "SERIES": "EQ",
@@ -4842,22 +4824,22 @@
     "RECORD DATE": "18-Jun-24"
   },
   {
-    "SYMBOL": "LTIM",
-    "COMPANY NAME": "LTIMindtree Limited",
+    "SYMBOL": "BANKINDIA",
+    "COMPANY NAME": "Bank of India",
     "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 45 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "19-Jun-24",
-    "RECORD DATE": "19-Jun-24"
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 2.80 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "18-Jun-24",
+    "RECORD DATE": "18-Jun-24"
   },
   {
-    "SYMBOL": "DALBHARAT",
-    "COMPANY NAME": "Dalmia Bharat Limited",
+    "SYMBOL": "KSHITIJPOL",
+    "COMPANY NAME": "Kshitij Polyline Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 5 Per Share",
+    "PURPOSE": "Rights 4:5 @ Premium Rs 4.40/-",
     "FACE VALUE": 2,
-    "EX-DATE": "19-Jun-24",
-    "RECORD DATE": "19-Jun-24"
+    "EX-DATE": "18-Jun-24",
+    "RECORD DATE": "18-Jun-24"
   },
   {
     "SYMBOL": "SAGCEM",
@@ -4869,13 +4851,13 @@
     "RECORD DATE": "-"
   },
   {
-    "SYMBOL": "INTELLECT",
-    "COMPANY NAME": "Intellect Design Arena Limited",
+    "SYMBOL": "DALBHARAT",
+    "COMPANY NAME": "Dalmia Bharat Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Annual General Meeting/Dividend - Rs 3.50 Per Share",
-    "FACE VALUE": 5,
+    "PURPOSE": "Dividend - Rs 5 Per Share",
+    "FACE VALUE": 2,
     "EX-DATE": "19-Jun-24",
-    "RECORD DATE": "-"
+    "RECORD DATE": "19-Jun-24"
   },
   {
     "SYMBOL": "SOBHA",
@@ -4896,13 +4878,22 @@
     "RECORD DATE": "-"
   },
   {
-    "SYMBOL": "CYIENTDLM",
-    "COMPANY NAME": "Cyient DLM Limited",
+    "SYMBOL": "INTELLECT",
+    "COMPANY NAME": "Intellect Design Arena Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Annual General Meeting",
-    "FACE VALUE": 10,
-    "EX-DATE": "20-Jun-24",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 3.50 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "19-Jun-24",
     "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "LTIM",
+    "COMPANY NAME": "LTIMindtree Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 45 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "19-Jun-24",
+    "RECORD DATE": "19-Jun-24"
   },
   {
     "SYMBOL": "BAJAJHIND",
@@ -4910,6 +4901,15 @@
     "SERIES": "EQ",
     "PURPOSE": "Annual General Meeting",
     "FACE VALUE": 1,
+    "EX-DATE": "20-Jun-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "EMUDHRA",
+    "COMPANY NAME": "eMudhra Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 1.25 Per Share",
+    "FACE VALUE": 5,
     "EX-DATE": "20-Jun-24",
     "RECORD DATE": "-"
   },
@@ -4932,29 +4932,11 @@
     "RECORD DATE": "20-Jun-24"
   },
   {
-    "SYMBOL": "ZIMLAB",
-    "COMPANY NAME": "Zim Laboratories Limited",
+    "SYMBOL": "CYIENTDLM",
+    "COMPANY NAME": "Cyient DLM Limited",
     "SERIES": "EQ",
     "PURPOSE": "Annual General Meeting",
     "FACE VALUE": 10,
-    "EX-DATE": "20-Jun-24",
-    "RECORD DATE": "-"
-  },
-  {
-    "SYMBOL": "MITCON",
-    "COMPANY NAME": "MITCON Consultancy & Engineering Services Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Rights 6:19 @ Premium Rs 66/-",
-    "FACE VALUE": 10,
-    "EX-DATE": "20-Jun-24",
-    "RECORD DATE": "20-Jun-24"
-  },
-  {
-    "SYMBOL": "PILITA",
-    "COMPANY NAME": "PIL ITALICA LIFESTYLE LIMITED",
-    "SERIES": "EQ",
-    "PURPOSE": "Annual General Meeting",
-    "FACE VALUE": 1,
     "EX-DATE": "20-Jun-24",
     "RECORD DATE": "-"
   },
@@ -4977,148 +4959,31 @@
     "RECORD DATE": "-"
   },
   {
-    "SYMBOL": "EMUDHRA",
-    "COMPANY NAME": "eMudhra Limited",
+    "SYMBOL": "PILITA",
+    "COMPANY NAME": "PIL ITALICA LIFESTYLE LIMITED",
     "SERIES": "EQ",
-    "PURPOSE": "Annual General Meeting/Dividend - Rs 1.25 Per Share",
-    "FACE VALUE": 5,
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 1,
     "EX-DATE": "20-Jun-24",
     "RECORD DATE": "-"
   },
   {
-    "SYMBOL": "923GS2043",
-    "COMPANY NAME": "GOVERNMENT OF INDIA",
-    "SERIES": "GS",
-    "PURPOSE": "Interest Payment",
-    "FACE VALUE": 100,
-    "EX-DATE": "21-Jun-24",
-    "RECORD DATE": "21-Jun-24"
-  },
-  {
-    "SYMBOL": "HDFCLIFE",
-    "COMPANY NAME": "HDFC Life Insurance Company Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 2 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "21-Jun-24",
-    "RECORD DATE": "21-Jun-24"
-  },
-  {
-    "SYMBOL": "INSPIRISYS",
-    "COMPANY NAME": "Inspirisys Solutions Limited",
+    "SYMBOL": "ZIMLAB",
+    "COMPANY NAME": "Zim Laboratories Limited",
     "SERIES": "EQ",
     "PURPOSE": "Annual General Meeting",
     "FACE VALUE": 10,
-    "EX-DATE": "21-Jun-24",
+    "EX-DATE": "20-Jun-24",
     "RECORD DATE": "-"
   },
   {
-    "SYMBOL": "DWARKESH",
-    "COMPANY NAME": "Dwarikesh Sugar Industries Limited",
+    "SYMBOL": "MITCON",
+    "COMPANY NAME": "MITCON Consultancy & Engineering Services Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Annual General Meeting",
-    "FACE VALUE": 1,
-    "EX-DATE": "21-Jun-24",
-    "RECORD DATE": "-"
-  },
-  {
-    "SYMBOL": "GILLANDERS",
-    "COMPANY NAME": "Gillanders Arbuthnot & Company Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Annual General Meeting",
+    "PURPOSE": "Rights 6:19 @ Premium Rs 66/-",
     "FACE VALUE": 10,
-    "EX-DATE": "21-Jun-24",
-    "RECORD DATE": "-"
-  },
-  {
-    "SYMBOL": "GLOBAL",
-    "COMPANY NAME": "Global Education Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Annual General Meeting/Dividend - Re 1 Per Share",
-    "FACE VALUE": 5,
-    "EX-DATE": "21-Jun-24",
-    "RECORD DATE": "-"
-  },
-  {
-    "SYMBOL": "JIKIND",
-    "COMPANY NAME": "JIK Industries Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Extra Ordinary General Meeting",
-    "FACE VALUE": 10,
-    "EX-DATE": "21-Jun-24",
-    "RECORD DATE": "-"
-  },
-  {
-    "SYMBOL": "PNB",
-    "COMPANY NAME": "Punjab National Bank",
-    "SERIES": "EQ",
-    "PURPOSE": "Annual General Meeting",
-    "FACE VALUE": 2,
-    "EX-DATE": "21-Jun-24",
-    "RECORD DATE": "-"
-  },
-  {
-    "SYMBOL": "WOCKPHARMA",
-    "COMPANY NAME": "Wockhardt Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Annual General Meeting",
-    "FACE VALUE": 5,
-    "EX-DATE": "21-Jun-24",
-    "RECORD DATE": "21-Jun-24"
-  },
-  {
-    "SYMBOL": "BPCL",
-    "COMPANY NAME": "Bharat Petroleum Corporation Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Bonus 1:1",
-    "FACE VALUE": 10,
-    "EX-DATE": "21-Jun-24",
-    "RECORD DATE": "22-Jun-24"
-  },
-  {
-    "SYMBOL": "GREENLAM",
-    "COMPANY NAME": "Greenlam Industries Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 1.65 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "21-Jun-24",
-    "RECORD DATE": "21-Jun-24"
-  },
-  {
-    "SYMBOL": "HINDPETRO",
-    "COMPANY NAME": "Hindustan Petroleum Corporation Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Bonus 1:2",
-    "FACE VALUE": 10,
-    "EX-DATE": "21-Jun-24",
-    "RECORD DATE": "21-Jun-24"
-  },
-  {
-    "SYMBOL": "PREMEXPLN",
-    "COMPANY NAME": "Premier Explosives Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "21-Jun-24",
-    "RECORD DATE": "21-Jun-24"
-  },
-  {
-    "SYMBOL": "TATASTEEL",
-    "COMPANY NAME": "Tata Steel Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 3.60 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "21-Jun-24",
-    "RECORD DATE": "21-Jun-24"
-  },
-  {
-    "SYMBOL": "813GS2045",
-    "COMPANY NAME": "GOVERNMENT OF INDIA",
-    "SERIES": "GS",
-    "PURPOSE": "Interest Payment",
-    "FACE VALUE": 100,
-    "EX-DATE": "21-Jun-24",
-    "RECORD DATE": "21-Jun-24"
+    "EX-DATE": "20-Jun-24",
+    "RECORD DATE": "20-Jun-24"
   },
   {
     "SYMBOL": "ACI",
@@ -5130,13 +4995,13 @@
     "RECORD DATE": "21-Jun-24"
   },
   {
-    "SYMBOL": "BAJAJFINSV",
-    "COMPANY NAME": "Bajaj Finserv Limited",
+    "SYMBOL": "JIKIND",
+    "COMPANY NAME": "JIK Industries Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Dividend - Re 1 Per Share",
-    "FACE VALUE": 1,
+    "PURPOSE": "Extra Ordinary General Meeting",
+    "FACE VALUE": 10,
     "EX-DATE": "21-Jun-24",
-    "RECORD DATE": "21-Jun-24"
+    "RECORD DATE": "-"
   },
   {
     "SYMBOL": "BAJFINANCE",
@@ -5166,15 +5031,6 @@
     "RECORD DATE": "22-Jun-24"
   },
   {
-    "SYMBOL": "KANSAINER",
-    "COMPANY NAME": "Kansai Nerolac Paints Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Annual General Meeting/Special Dividend - Rs 1.25 Per Share/ Dividend - Rs 2.50 Per Share",
-    "FACE VALUE": 1,
-    "EX-DATE": "21-Jun-24",
-    "RECORD DATE": "-"
-  },
-  {
     "SYMBOL": "CYIENT",
     "COMPANY NAME": "Cyient Limited",
     "SERIES": "EQ",
@@ -5189,6 +5045,15 @@
     "SERIES": "EQ",
     "PURPOSE": "Annual General Meeting",
     "FACE VALUE": 5,
+    "EX-DATE": "21-Jun-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "KANSAINER",
+    "COMPANY NAME": "Kansai Nerolac Paints Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Special Dividend - Rs 1.25 Per Share/ Dividend - Rs 2.50 Per Share",
+    "FACE VALUE": 1,
     "EX-DATE": "21-Jun-24",
     "RECORD DATE": "-"
   },
@@ -5229,6 +5094,87 @@
     "RECORD DATE": "-"
   },
   {
+    "SYMBOL": "HDFCLIFE",
+    "COMPANY NAME": "HDFC Life Insurance Company Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 2 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "21-Jun-24",
+    "RECORD DATE": "21-Jun-24"
+  },
+  {
+    "SYMBOL": "BPCL",
+    "COMPANY NAME": "Bharat Petroleum Corporation Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 1:1",
+    "FACE VALUE": 10,
+    "EX-DATE": "21-Jun-24",
+    "RECORD DATE": "22-Jun-24"
+  },
+  {
+    "SYMBOL": "GREENLAM",
+    "COMPANY NAME": "Greenlam Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 1.65 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "21-Jun-24",
+    "RECORD DATE": "21-Jun-24"
+  },
+  {
+    "SYMBOL": "HINDPETRO",
+    "COMPANY NAME": "Hindustan Petroleum Corporation Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 1:2",
+    "FACE VALUE": 10,
+    "EX-DATE": "21-Jun-24",
+    "RECORD DATE": "21-Jun-24"
+  },
+  {
+    "SYMBOL": "TATASTEEL",
+    "COMPANY NAME": "Tata Steel Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 3.60 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "21-Jun-24",
+    "RECORD DATE": "21-Jun-24"
+  },
+  {
+    "SYMBOL": "PREMEXPLN",
+    "COMPANY NAME": "Premier Explosives Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "21-Jun-24",
+    "RECORD DATE": "21-Jun-24"
+  },
+  {
+    "SYMBOL": "DWARKESH",
+    "COMPANY NAME": "Dwarikesh Sugar Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 1,
+    "EX-DATE": "21-Jun-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "813GS2045",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "21-Jun-24",
+    "RECORD DATE": "21-Jun-24"
+  },
+  {
+    "SYMBOL": "923GS2043",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "21-Jun-24",
+    "RECORD DATE": "21-Jun-24"
+  },
+  {
     "SYMBOL": "BEPL",
     "COMPANY NAME": "Bhansali Engineering Polymers Limited",
     "SERIES": "EQ",
@@ -5236,6 +5182,60 @@
     "FACE VALUE": 1,
     "EX-DATE": "21-Jun-24",
     "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "GILLANDERS",
+    "COMPANY NAME": "Gillanders Arbuthnot & Company Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 10,
+    "EX-DATE": "21-Jun-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "GLOBAL",
+    "COMPANY NAME": "Global Education Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Re 1 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "21-Jun-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "PNB",
+    "COMPANY NAME": "Punjab National Bank",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 2,
+    "EX-DATE": "21-Jun-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "WOCKPHARMA",
+    "COMPANY NAME": "Wockhardt Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 5,
+    "EX-DATE": "21-Jun-24",
+    "RECORD DATE": "21-Jun-24"
+  },
+  {
+    "SYMBOL": "INSPIRISYS",
+    "COMPANY NAME": "Inspirisys Solutions Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 10,
+    "EX-DATE": "21-Jun-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "BAJAJFINSV",
+    "COMPANY NAME": "Bajaj Finserv Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 1 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "21-Jun-24",
+    "RECORD DATE": "21-Jun-24"
   },
   {
     "SYMBOL": "OBEROIRLTY",
@@ -5247,29 +5247,11 @@
     "RECORD DATE": "24-Jun-24"
   },
   {
-    "SYMBOL": "SEPC",
-    "COMPANY NAME": "SEPC Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Rights 6:55 @ Premium Rs 3",
-    "FACE VALUE": 10,
-    "EX-DATE": "25-Jun-24",
-    "RECORD DATE": "25-Jun-24"
-  },
-  {
     "SYMBOL": "SPYL",
     "COMPANY NAME": "Shekhawati Poly-Yarn Limited",
     "SERIES": "EQ",
     "PURPOSE": "Annual General Meeting",
     "FACE VALUE": 1,
-    "EX-DATE": "25-Jun-24",
-    "RECORD DATE": "-"
-  },
-  {
-    "SYMBOL": "ALKYLAMINE",
-    "COMPANY NAME": "Alkyl Amines Chemicals Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Annual General Meeting/Dividend - Rs 10 Per Share",
-    "FACE VALUE": 2,
     "EX-DATE": "25-Jun-24",
     "RECORD DATE": "-"
   },
@@ -5283,13 +5265,13 @@
     "RECORD DATE": "-"
   },
   {
-    "SYMBOL": "679GS2029",
-    "COMPANY NAME": "GOVERNMENT OF INDIA",
-    "SERIES": "GS",
-    "PURPOSE": "Interest Payment",
-    "FACE VALUE": 100,
+    "SYMBOL": "ALKYLAMINE",
+    "COMPANY NAME": "Alkyl Amines Chemicals Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 10 Per Share",
+    "FACE VALUE": 2,
     "EX-DATE": "25-Jun-24",
-    "RECORD DATE": "25-Jun-24"
+    "RECORD DATE": "-"
   },
   {
     "SYMBOL": "DODLA",
@@ -5299,6 +5281,15 @@
     "FACE VALUE": 10,
     "EX-DATE": "25-Jun-24",
     "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "SEPC",
+    "COMPANY NAME": "SEPC Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Rights 6:55 @ Premium Rs 3",
+    "FACE VALUE": 10,
+    "EX-DATE": "25-Jun-24",
+    "RECORD DATE": "25-Jun-24"
   },
   {
     "SYMBOL": "JSWHL",
@@ -5326,6 +5317,15 @@
     "FACE VALUE": 1,
     "EX-DATE": "25-Jun-24",
     "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "679GS2029",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "25-Jun-24",
+    "RECORD DATE": "25-Jun-24"
   },
   {
     "SYMBOL": "IOB",
@@ -5364,15 +5364,6 @@
     "RECORD DATE": "-"
   },
   {
-    "SYMBOL": "AURIONPRO",
-    "COMPANY NAME": "Aurionpro Solutions Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Bonus 1:1",
-    "FACE VALUE": 10,
-    "EX-DATE": "27-Jun-24",
-    "RECORD DATE": "27-Jun-24"
-  },
-  {
     "SYMBOL": "DEVYANI",
     "COMPANY NAME": "Devyani International Limited",
     "SERIES": "EQ",
@@ -5380,6 +5371,15 @@
     "FACE VALUE": 1,
     "EX-DATE": "27-Jun-24",
     "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "AURIONPRO",
+    "COMPANY NAME": "Aurionpro Solutions Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 1:1",
+    "FACE VALUE": 10,
+    "EX-DATE": "27-Jun-24",
+    "RECORD DATE": "27-Jun-24"
   },
   {
     "SYMBOL": "SHAREINDIA",
@@ -5418,29 +5418,20 @@
     "RECORD DATE": "-"
   },
   {
+    "SYMBOL": "83GS2042",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "28-Jun-24",
+    "RECORD DATE": "29-Jun-24"
+  },
+  {
     "SYMBOL": "AVONMORE",
     "COMPANY NAME": "Avonmore Capital & Management Services Limited",
     "SERIES": "EQ",
     "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 1/- Per Share",
     "FACE VALUE": 1,
-    "EX-DATE": "28-Jun-24",
-    "RECORD DATE": "28-Jun-24"
-  },
-  {
-    "SYMBOL": "MAWANASUG",
-    "COMPANY NAME": "Mawana Sugars Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 4 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "28-Jun-24",
-    "RECORD DATE": "29-Jun-24"
-  },
-  {
-    "SYMBOL": "GICHSGFIN",
-    "COMPANY NAME": "GIC Housing Finance Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 4.50 Per Share",
-    "FACE VALUE": 10,
     "EX-DATE": "28-Jun-24",
     "RECORD DATE": "28-Jun-24"
   },
@@ -5454,20 +5445,11 @@
     "RECORD DATE": "28-Jun-24"
   },
   {
-    "SYMBOL": "83GS2042",
-    "COMPANY NAME": "GOVERNMENT OF INDIA",
-    "SERIES": "GS",
-    "PURPOSE": "Interest Payment",
-    "FACE VALUE": 100,
-    "EX-DATE": "28-Jun-24",
-    "RECORD DATE": "29-Jun-24"
-  },
-  {
-    "SYMBOL": "BAJAJHLDNG",
-    "COMPANY NAME": "Bajaj Holdings & Investment Limited",
+    "SYMBOL": "RPGLIFE",
+    "COMPANY NAME": "RPG Life Sciences Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 21 Per Share",
-    "FACE VALUE": 10,
+    "PURPOSE": "Dividend - Rs 16 Per Share",
+    "FACE VALUE": 8,
     "EX-DATE": "28-Jun-24",
     "RECORD DATE": "28-Jun-24"
   },
@@ -5486,6 +5468,15 @@
     "SERIES": "EQ",
     "PURPOSE": "Dividend - Re 0.25 Per Share",
     "FACE VALUE": 2,
+    "EX-DATE": "28-Jun-24",
+    "RECORD DATE": "28-Jun-24"
+  },
+  {
+    "SYMBOL": "BAJAJHLDNG",
+    "COMPANY NAME": "Bajaj Holdings & Investment Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 21 Per Share",
+    "FACE VALUE": 10,
     "EX-DATE": "28-Jun-24",
     "RECORD DATE": "28-Jun-24"
   },
@@ -5598,13 +5589,58 @@
     "RECORD DATE": "28-Jun-24"
   },
   {
-    "SYMBOL": "RPGLIFE",
-    "COMPANY NAME": "RPG Life Sciences Limited",
+    "SYMBOL": "MAWANASUG",
+    "COMPANY NAME": "Mawana Sugars Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 16 Per Share",
-    "FACE VALUE": 8,
+    "PURPOSE": "Dividend - Rs 4 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "28-Jun-24",
+    "RECORD DATE": "29-Jun-24"
+  },
+  {
+    "SYMBOL": "GICHSGFIN",
+    "COMPANY NAME": "GIC Housing Finance Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 4.50 Per Share",
+    "FACE VALUE": 10,
     "EX-DATE": "28-Jun-24",
     "RECORD DATE": "28-Jun-24"
+  },
+  {
+    "SYMBOL": "83GS2040",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "1-Jul-24",
+    "RECORD DATE": "1-Jul-24"
+  },
+  {
+    "SYMBOL": "TATACOMM",
+    "COMPANY NAME": "Tata Communications Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 16.70 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "1-Jul-24",
+    "RECORD DATE": "1-Jul-24"
+  },
+  {
+    "SYMBOL": "TATACOMM",
+    "COMPANY NAME": "Tata Communications Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 10,
+    "EX-DATE": "1-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "OCCL",
+    "COMPANY NAME": "Oriental Carbon & Chemicals Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Demerger",
+    "FACE VALUE": 10,
+    "EX-DATE": "1-Jul-24",
+    "RECORD DATE": "1-Jul-24"
   },
   {
     "SYMBOL": "GHCL",
@@ -5625,15 +5661,6 @@
     "RECORD DATE": "1-Jul-24"
   },
   {
-    "SYMBOL": "OCCL",
-    "COMPANY NAME": "Oriental Carbon & Chemicals Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Demerger",
-    "FACE VALUE": 10,
-    "EX-DATE": "1-Jul-24",
-    "RECORD DATE": "1-Jul-24"
-  },
-  {
     "SYMBOL": "GEOJITFSL",
     "COMPANY NAME": "Geojit Financial Services Limited",
     "SERIES": "EQ",
@@ -5643,40 +5670,22 @@
     "RECORD DATE": "1-Jul-24"
   },
   {
-    "SYMBOL": "TATACOMM",
-    "COMPANY NAME": "Tata Communications Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Dividend - Rs 16.70 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "1-Jul-24",
-    "RECORD DATE": "1-Jul-24"
-  },
-  {
-    "SYMBOL": "83GS2040",
-    "COMPANY NAME": "GOVERNMENT OF INDIA",
-    "SERIES": "GS",
-    "PURPOSE": "Interest Payment",
-    "FACE VALUE": 100,
-    "EX-DATE": "1-Jul-24",
-    "RECORD DATE": "1-Jul-24"
-  },
-  {
-    "SYMBOL": "TATACOMM",
-    "COMPANY NAME": "Tata Communications Limited",
+    "SYMBOL": "KESORAMIND",
+    "COMPANY NAME": "Kesoram Industries Limited",
     "SERIES": "EQ",
     "PURPOSE": "Annual General Meeting",
     "FACE VALUE": 10,
-    "EX-DATE": "1-Jul-24",
+    "EX-DATE": "2-Jul-24",
     "RECORD DATE": "-"
   },
   {
-    "SYMBOL": "BAJAJCON",
-    "COMPANY NAME": "Bajaj Consumer Care Limited",
+    "SYMBOL": "ASAL",
+    "COMPANY NAME": "Automotive Stampings and Assemblies Limited",
     "SERIES": "EQ",
-    "PURPOSE": "Buy Back",
-    "FACE VALUE": 1,
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 10,
     "EX-DATE": "2-Jul-24",
-    "RECORD DATE": "2-Jul-24"
+    "RECORD DATE": "-"
   },
   {
     "SYMBOL": "OIL",
@@ -5697,21 +5706,1047 @@
     "RECORD DATE": "2-Jul-24"
   },
   {
-    "SYMBOL": "ASAL",
-    "COMPANY NAME": "Automotive Stampings and Assemblies Limited",
+    "SYMBOL": "BAJAJCON",
+    "COMPANY NAME": "Bajaj Consumer Care Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Buy Back",
+    "FACE VALUE": 1,
+    "EX-DATE": "2-Jul-24",
+    "RECORD DATE": "2-Jul-24"
+  },
+  {
+    "SYMBOL": "GPTINFRA",
+    "COMPANY NAME": "GPT Infraprojects Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 1:1",
+    "FACE VALUE": 10,
+    "EX-DATE": "3-Jul-24",
+    "RECORD DATE": "3-Jul-24"
+  },
+  {
+    "SYMBOL": "RSSOFTWARE",
+    "COMPANY NAME": "R. S. Software (India) Limited",
     "SERIES": "EQ",
     "PURPOSE": "Annual General Meeting",
-    "FACE VALUE": 10,
-    "EX-DATE": "2-Jul-24",
+    "FACE VALUE": 5,
+    "EX-DATE": "3-Jul-24",
     "RECORD DATE": "-"
   },
   {
-    "SYMBOL": "KESORAMIND",
-    "COMPANY NAME": "Kesoram Industries Limited",
+    "SYMBOL": "JYOTHYLAB",
+    "COMPANY NAME": "Jyothy Labs Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 3.50 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "3-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "DALMIASUG",
+    "COMPANY NAME": "Dalmia Bharat Sugar and Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 1.25 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "3-Jul-24",
+    "RECORD DATE": "3-Jul-24"
+  },
+  {
+    "SYMBOL": "BALAMINES",
+    "COMPANY NAME": "Balaji Amines Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 11 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "4-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "ECLERX",
+    "COMPANY NAME": "eClerx Services Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Buy Back",
+    "FACE VALUE": 10,
+    "EX-DATE": "4-Jul-24",
+    "RECORD DATE": "4-Jul-24"
+  },
+  {
+    "SYMBOL": "LAURUSLABS",
+    "COMPANY NAME": "Laurus Labs Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 2,
+    "EX-DATE": "4-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "TATAPOWER",
+    "COMPANY NAME": "Tata Power Company Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 2 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "4-Jul-24",
+    "RECORD DATE": "4-Jul-24"
+  },
+  {
+    "SYMBOL": "SKFINDIA",
+    "COMPANY NAME": "SKF India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 130 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "4-Jul-24",
+    "RECORD DATE": "4-Jul-24"
+  },
+  {
+    "SYMBOL": "VEDL",
+    "COMPANY NAME": "Vedanta Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 1,
+    "EX-DATE": "4-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "SOLARINDS",
+    "COMPANY NAME": "Solar Industries India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 8.50 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "4-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "JAIPURKURT",
+    "COMPANY NAME": "Nandani Creation Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Rights 100:224 @ Premium Rs 20/-",
+    "FACE VALUE": 10,
+    "EX-DATE": "4-Jul-24",
+    "RECORD DATE": "4-Jul-24"
+  },
+  {
+    "SYMBOL": "TIDEWATER",
+    "COMPANY NAME": "Tide Water Oil Company (India) Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 20 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "4-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "DJML",
+    "COMPANY NAME": "DJ Mediaprint & Logistics Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Re 0.20 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "5-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "REMSONSIND",
+    "COMPANY NAME": "Remsons Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "5-Jul-24",
+    "RECORD DATE": "5-Jul-24"
+  },
+  {
+    "SYMBOL": "ESCORTS",
+    "COMPANY NAME": "Escorts Kubota Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 18 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "5-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "SUNDARMHLD",
+    "COMPANY NAME": "Sundaram Finance Holdings Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 2.05 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "5-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "SAH",
+    "COMPANY NAME": "Sah Polymers Limited",
     "SERIES": "EQ",
     "PURPOSE": "Annual General Meeting",
     "FACE VALUE": 10,
-    "EX-DATE": "2-Jul-24",
+    "EX-DATE": "5-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "VERTOZ",
+    "COMPANY NAME": "Vertoz Advertising Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 1:1",
+    "FACE VALUE": 1,
+    "EX-DATE": "5-Jul-24",
+    "RECORD DATE": "5-Jul-24"
+  },
+  {
+    "SYMBOL": "WELENT",
+    "COMPANY NAME": "Welspun Enterprises Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 3 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "5-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "3MINDIA",
+    "COMPANY NAME": "3M India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Special Dividend - Rs 525 Per Share/ Dividend - Rs 160 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "5-Jul-24",
+    "RECORD DATE": "5-Jul-24"
+  },
+  {
+    "SYMBOL": "ALLSEC",
+    "COMPANY NAME": "Allsec Technologies Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 15 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "5-Jul-24",
+    "RECORD DATE": "5-Jul-24"
+  },
+  {
+    "SYMBOL": "APOLLOTYRE",
+    "COMPANY NAME": "Apollo Tyres Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 6 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "5-Jul-24",
+    "RECORD DATE": "5-Jul-24"
+  },
+  {
+    "SYMBOL": "ARTEMISMED",
+    "COMPANY NAME": "Artemis Medicare Services Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 0.45 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "5-Jul-24",
+    "RECORD DATE": "5-Jul-24"
+  },
+  {
+    "SYMBOL": "ASTRAZEN",
+    "COMPANY NAME": "AstraZeneca Pharma India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 24 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "5-Jul-24",
+    "RECORD DATE": "5-Jul-24"
+  },
+  {
+    "SYMBOL": "BALKRISIND",
+    "COMPANY NAME": "Balkrishna Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 4 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "5-Jul-24",
+    "RECORD DATE": "6-Jul-24"
+  },
+  {
+    "SYMBOL": "BHARATFORG",
+    "COMPANY NAME": "Bharat Forge Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 6.50 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "5-Jul-24",
+    "RECORD DATE": "5-Jul-24"
+  },
+  {
+    "SYMBOL": "BIOCON",
+    "COMPANY NAME": "Biocon Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 0.50 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "5-Jul-24",
+    "RECORD DATE": "5-Jul-24"
+  },
+  {
+    "SYMBOL": "INVENTURE",
+    "COMPANY NAME": "Inventure Growth & Securities Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Rights 1:4 @ Premium Rs 1.33/-",
+    "FACE VALUE": 1,
+    "EX-DATE": "5-Jul-24",
+    "RECORD DATE": "5-Jul-24"
+  },
+  {
+    "SYMBOL": "NAVINFLUOR",
+    "COMPANY NAME": "Navin Fluorine International Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 7 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "5-Jul-24",
+    "RECORD DATE": "5-Jul-24"
+  },
+  {
+    "SYMBOL": "NUCLEUS",
+    "COMPANY NAME": "Nucleus Software Exports Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 12.5 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "5-Jul-24",
+    "RECORD DATE": "5-Jul-24"
+  },
+  {
+    "SYMBOL": "PEL",
+    "COMPANY NAME": "Piramal Enterprises Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 10 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "5-Jul-24",
+    "RECORD DATE": "5-Jul-24"
+  },
+  {
+    "SYMBOL": "REDINGTON",
+    "COMPANY NAME": "Redington Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 6.20 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "5-Jul-24",
+    "RECORD DATE": "5-Jul-24"
+  },
+  {
+    "SYMBOL": "THERMAX",
+    "COMPANY NAME": "Thermax Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 12 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "5-Jul-24",
+    "RECORD DATE": "5-Jul-24"
+  },
+  {
+    "SYMBOL": "VERTOZ",
+    "COMPANY NAME": "Vertoz Advertising Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "5-Jul-24",
+    "RECORD DATE": "5-Jul-24"
+  },
+  {
+    "SYMBOL": "M&M",
+    "COMPANY NAME": "Mahindra & Mahindra Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 21.10 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "5-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "NUCLEUS",
+    "COMPANY NAME": "Nucleus Software Exports Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 10,
+    "EX-DATE": "8-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "CAMS",
+    "COMPANY NAME": "Computer Age Management Services Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 16.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "8-Jul-24",
+    "RECORD DATE": "8-Jul-24"
+  },
+  {
+    "SYMBOL": "POLYCAB",
+    "COMPANY NAME": "Polycab India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 30 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "9-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "DEEPINDS",
+    "COMPANY NAME": "Deep Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 5,
+    "EX-DATE": "9-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "JKCEMENT",
+    "COMPANY NAME": "JK Cement Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 15 Per Share/Special Dividend - Rs 5 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "9-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "JSWSTEEL",
+    "COMPANY NAME": "JSW Steel Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 7.30 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "9-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "LAGNAM",
+    "COMPANY NAME": "Lagnam Spintex Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 0.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "9-Jul-24",
+    "RECORD DATE": "9-Jul-24"
+  },
+  {
+    "SYMBOL": "CENTRALBK",
+    "COMPANY NAME": "Central Bank of India",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 10,
+    "EX-DATE": "9-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "LAGNAM",
+    "COMPANY NAME": "Lagnam Spintex Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 10,
+    "EX-DATE": "9-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "BAIDFIN",
+    "COMPANY NAME": "Baid Finserv Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 0.10 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "9-Jul-24",
+    "RECORD DATE": "9-Jul-24"
+  },
+  {
+    "SYMBOL": "BAIDFIN",
+    "COMPANY NAME": "Baid Finserv Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 2,
+    "EX-DATE": "9-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "DCMSHRIRAM",
+    "COMPANY NAME": "DCM Shriram Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 2.60 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "9-Jul-24",
+    "RECORD DATE": "9-Jul-24"
+  },
+  {
+    "SYMBOL": "DEEPINDS",
+    "COMPANY NAME": "Deep Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 2.44 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "9-Jul-24",
+    "RECORD DATE": "9-Jul-24"
+  },
+  {
+    "SYMBOL": "PERSISTENT",
+    "COMPANY NAME": "Persistent Systems Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 10 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "9-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "GRINDWELL",
+    "COMPANY NAME": "Grindwell Norton Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 17 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "9-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "INGERRAND",
+    "COMPANY NAME": "Ingersoll Rand (India) Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 20 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "9-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "INDINFR",
+    "COMPANY NAME": "IndInfravit Trust",
+    "SERIES": "IV",
+    "PURPOSE": "Distribution - Rs 1.92 Per Unit Consisting Of Interest Payment - Rs 1.30 Per Unit/ Return On Capital - Re 0.62 Per Unit",
+    "FACE VALUE": 100,
+    "EX-DATE": "9-Jul-24",
+    "RECORD DATE": "9-Jul-24"
+  },
+  {
+    "SYMBOL": "PGEL",
+    "COMPANY NAME": "PG Electroplast Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "10-Jul-24",
+    "RECORD DATE": "10-Jul-24"
+  },
+  {
+    "SYMBOL": "SHOPERSTOP",
+    "COMPANY NAME": "Shoppers Stop Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 5,
+    "EX-DATE": "10-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "MPHASIS",
+    "COMPANY NAME": "MphasiS Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 55 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "10-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "CROMPTON",
+    "COMPANY NAME": "Crompton Greaves Consumer Electricals Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 3 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "10-Jul-24",
+    "RECORD DATE": "10-Jul-24"
+  },
+  {
+    "SYMBOL": "CROMPTON",
+    "COMPANY NAME": "Crompton Greaves Consumer Electricals Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 2,
+    "EX-DATE": "10-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "WHEELS",
+    "COMPANY NAME": "Wheels India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 7.39 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "10-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "VIMTALABS",
+    "COMPANY NAME": "Vimta Labs Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 2 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "11-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "RAYMOND",
+    "COMPANY NAME": "Raymond Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Demerger",
+    "FACE VALUE": 10,
+    "EX-DATE": "11-Jul-24",
+    "RECORD DATE": "11-Jul-24"
+  },
+  {
+    "SYMBOL": "NURECA",
+    "COMPANY NAME": "Nureca Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 10,
+    "EX-DATE": "11-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "CENTURYTEX",
+    "COMPANY NAME": "Century Textiles & Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 5 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "11-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "ROUTE",
+    "COMPANY NAME": "ROUTE MOBILE LIMITED",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 2 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "11-Jul-24",
+    "RECORD DATE": "11-Jul-24"
+  },
+  {
+    "SYMBOL": "SINCLAIR",
+    "COMPANY NAME": "Sinclairs Hotels Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 1 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "11-Jul-24",
+    "RECORD DATE": "11-Jul-24"
+  },
+  {
+    "SYMBOL": "ORIENTHOT",
+    "COMPANY NAME": "Oriental Hotels Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 0.50 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "11-Jul-24",
+    "RECORD DATE": "11-Jul-24"
+  },
+  {
+    "SYMBOL": "NEULANDLAB",
+    "COMPANY NAME": "Neuland Laboratories Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 14 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "NILKAMAL",
+    "COMPANY NAME": "Nilkamal Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 20 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "ONWARDTEC",
+    "COMPANY NAME": "Onward Technologies Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 5 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "PRITIKAUTO",
+    "COMPANY NAME": "Pritika Auto Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 2,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "RITCO",
+    "COMPANY NAME": "Ritco Logistics Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Extra-Ordinary General Meeting",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "SAFARI",
+    "COMPANY NAME": "Safari Industries (India) Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 2,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "SAFARI",
+    "COMPANY NAME": "Safari Industries (India) Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 1.50 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "12-Jul-24"
+  },
+  {
+    "SYMBOL": "SATINDLTD",
+    "COMPANY NAME": "Sat Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 2,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "SHRADHA",
+    "COMPANY NAME": "Shradha Infraprojects Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 5,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "SHRADHA",
+    "COMPANY NAME": "Shradha Infraprojects Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 1 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "12-Jul-24"
+  },
+  {
+    "SYMBOL": "UJJIVANSFB",
+    "COMPANY NAME": "Ujjivan Small Finance Bank Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 1.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "12-Jul-24"
+  },
+  {
+    "SYMBOL": "UTKARSHBNK",
+    "COMPANY NAME": "Utkarsh Small Finance Bank Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 0.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "12-Jul-24"
+  },
+  {
+    "SYMBOL": "ANANTRAJ",
+    "COMPANY NAME": "Anant Raj Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Re 0.73 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "MAHLOG",
+    "COMPANY NAME": "Mahindra Logistics Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 2.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "SEJALLTD",
+    "COMPANY NAME": "Sejal Glass Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "AUBANK",
+    "COMPANY NAME": "AU Small Finance Bank Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 1 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "12-Jul-24"
+  },
+  {
+    "SYMBOL": "AXISBANK",
+    "COMPANY NAME": "Axis Bank Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 1 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "12-Jul-24"
+  },
+  {
+    "SYMBOL": "BSOFT",
+    "COMPANY NAME": "BIRLASOFT LIMITED",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 4 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "12-Jul-24"
+  },
+  {
+    "SYMBOL": "IOC",
+    "COMPANY NAME": "Indian Oil Corporation Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 7 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "12-Jul-24"
+  },
+  {
+    "SYMBOL": "IRMENERGY",
+    "COMPANY NAME": "IRM Energy Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 1.5 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "12-Jul-24"
+  },
+  {
+    "SYMBOL": "JUBLFOOD",
+    "COMPANY NAME": "Jubilant Foodworks Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 1.20 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "12-Jul-24"
+  },
+  {
+    "SYMBOL": "KIRLPNU",
+    "COMPANY NAME": "Kirloskar Pneumatic Company Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 4 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "MAHLIFE",
+    "COMPANY NAME": "Mahindra Lifespace Developers Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 2.65 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "PETRONET",
+    "COMPANY NAME": "Petronet LNG Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 3 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "12-Jul-24"
+  },
+  {
+    "SYMBOL": "PPLPHARMA",
+    "COMPANY NAME": "Piramal Pharma Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 0.11 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "12-Jul-24"
+  },
+  {
+    "SYMBOL": "PTL",
+    "COMPANY NAME": "PTL Enterprises Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 1.75 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "12-Jul-24"
+  },
+  {
+    "SYMBOL": "SATINDLTD",
+    "COMPANY NAME": "Sat Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 0.15 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "12-Jul-24"
+  },
+  {
+    "SYMBOL": "SUNPHARMA",
+    "COMPANY NAME": "Sun Pharmaceutical Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 5 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "12-Jul-24"
+  },
+  {
+    "SYMBOL": "THEMISMED",
+    "COMPANY NAME": "Themis Medicare Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 0.50 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "UNITDSPR",
+    "COMPANY NAME": "United Spirits Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 5 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "12-Jul-24"
+  },
+  {
+    "SYMBOL": "WENDT",
+    "COMPANY NAME": "Wendt (India) Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs  20 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "JAYAGROGN",
+    "COMPANY NAME": "Jayant Agro Organics Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 5 Per Share & Special Dividend - Rs 2.5 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "12-Jul-24"
+  },
+  {
+    "SYMBOL": "JAYAGROGN",
+    "COMPANY NAME": "Jayant Agro Organics Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 5,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "20MICRONS",
+    "COMPANY NAME": "20 Microns Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 5,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "20MICRONS",
+    "COMPANY NAME": "20 Microns Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 1.25 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "12-Jul-24"
+  },
+  {
+    "SYMBOL": "ATUL",
+    "COMPANY NAME": "Atul Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 20 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "BLUEDART",
+    "COMPANY NAME": "Blue Dart Express Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 25 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "DLINKINDIA",
+    "COMPANY NAME": "D-Link (India) Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 8 Per Share & Special Dividend Rs 5 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "KABRAEXTRU",
+    "COMPANY NAME": "Kabra Extrusion Technik Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 3.50 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "MAHEPC",
+    "COMPANY NAME": "Mahindra EPC Irrigation Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "SURANASOL",
+    "COMPANY NAME": "Surana Solar Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 5,
+    "EX-DATE": "15-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "JITFINFRA",
+    "COMPANY NAME": "JITF Infralogistics Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting",
+    "FACE VALUE": 2,
+    "EX-DATE": "15-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "KPRMILL",
+    "COMPANY NAME": "K.P.R. Mill Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 2.50 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "15-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "APLLTD",
+    "COMPANY NAME": "Alembic Pharmaceuticals Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 11 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "15-Jul-24",
+    "RECORD DATE": "15-Jul-24"
+  },
+  {
+    "SYMBOL": "ZFCVINDIA",
+    "COMPANY NAME": "ZF Commercial Vehicle Control Systems India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 17 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "15-Jul-24",
+    "RECORD DATE": "15-Jul-24"
+  },
+  {
+    "SYMBOL": "NDRAUTO",
+    "COMPANY NAME": "Ndr Auto Components Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 3.75 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "15-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "RBL",
+    "COMPANY NAME": "Rane Brake Lining Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 30 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "15-Jul-24",
+    "RECORD DATE": "15-Jul-24"
+  },
+  {
+    "SYMBOL": "SIYSIL",
+    "COMPANY NAME": "Siyaram Silk Mills Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs  Per Sh/",
+    "FACE VALUE": 2,
+    "EX-DATE": "15-Jul-24",
+    "RECORD DATE": "-"
+  },
+  {
+    "SYMBOL": "IMPAL",
+    "COMPANY NAME": "India Motor Parts and Accessories Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs 18 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "15-Jul-24",
     "RECORD DATE": "-"
   },
     {
