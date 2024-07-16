@@ -23,3 +23,34 @@ code {
 #root, .App, html {
   background: #fbfbfb;
 }
+
+input[type='checkbox'] {
+  margin-right: 5px;
+}
+.mt-5-custom {
+  margin-top: 2rem;
+}
+@media screen and (max-width: 767px) {
+  .mb-2-mobile {margin-bottom:10px;}
+  .mt-5-custom {
+    margin-top: 1rem !important;
+  }
+  
+  table {
+    font-size: 10px;
+  }
+  .btn-danger {
+    height: 22px;
+    width: 40px;
+    padding: 0px;
+    font-size: 10px;
+  }
+  .table-body-wrapper {
+    padding: 10px;
+  }
+
+  .table-body-wrapper h5 {
+    font-size: 15px;
+  }
+
+  }
