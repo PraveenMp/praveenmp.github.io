@@ -1,15 +1,25 @@
 import React, { useState, useEffect } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const TodoApp = () => {
   const [tasks, setTasks] = useState([]);
+  const [userName, setUserName] = useState("");
+  const [isEditingName, setIsEditingName] = useState(false);
 
   useEffect(() => {
     const savedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
-    setTasks((prevTasks) => [...prevTasks, ...savedTasks]);
-  }, []); // Empty dependency array ensures this effect runs only once, on mount
+    setTasks(savedTasks);
+    const savedUserName = sessionStorage.getItem("userName") || "My To-Do List";
+    setUserName(savedUserName);
+  }, []);
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
+
+  useEffect(() => {
+    sessionStorage.setItem("userName", userName);
+  }, [userName]);
 
   const addTask = (taskText, taskCategory) => {
     const newTask = {
@@ -34,14 +44,6 @@ const TodoApp = () => {
       return task;
     });
     setTasks(updatedTasks);
-    if (updatedTasks.some((task) => task.completed)) {
-      setTasks(
-        updatedTasks.sort((a, b) => {
-          if (a.completed) return 1;
-          return -1;
-        })
-      );
-    }
   };
 
   const handleDelete = (taskId) => {
@@ -49,9 +51,38 @@ const TodoApp = () => {
     setTasks(updatedTasks);
   };
 
+  const handleNameEdit = (e) => {
+    e.preventDefault();
+    setIsEditingName(false);
+  };
+
   return (
-    <div className="container mt-5">
-      <h4 className="text-center mb-4">Praveen To-Do List</h4>
+    <div className="container mt-5-custom">
+      <div className="d-flex justify-content-between align-items-center mb-4">
+        {isEditingName ? (
+          <form onSubmit={handleNameEdit} className="d-flex">
+            <input
+              type="text"
+              className="form-control"
+              value={userName}
+              onChange={(e) => setUserName(e.target.value)}
+            />
+            <button className="btn btn-primary ms-2" type="submit">
+              Save
+            </button>
+          </form>
+        ) : (
+          <>
+            <h4>{userName}</h4>
+            <button
+              className="btn btn-secondary"
+              onClick={() => setIsEditingName(true)}
+            >
+              Edit Name
+            </button>
+          </>
+        )}
+      </div>
       <div className="form-body mb-4">
         <TodoForm addTask={addTask} />
       </div>
@@ -60,6 +91,10 @@ const TodoApp = () => {
         onCheckboxChange={handleCheckboxChange}
         onDelete={handleDelete}
       />
+      <div className="alert alert-warning mt-4" role="alert">
+        All the data is stored in your browser and will be deleted if you clear your browser cache.
+      </div>
+      <p class="mt-4">Feel free to email @ <a href="mailto:praveen_mp@live.com">praveen_mp@live.com</a> if you have any questions or suggestions. Thank you for visiting!</p>
     </div>
   );
 };
@@ -78,7 +113,8 @@ const TodoForm = ({ addTask }) => {
 
   return (
     <form onSubmit={handleSubmit} className="table-body-wrapper">
-      <div className="input-group">
+      <div className="row">
+        <div className="col-md-6 mb-2-mobile">
         <input
           type="text"
           className="form-control"
@@ -86,6 +122,8 @@ const TodoForm = ({ addTask }) => {
           value={taskText}
           onChange={(e) => setTaskText(e.target.value)}
         />
+        </div>
+        <div className="col-md-4 mb-2-mobile">
         <select
           className="form-select"
           value={taskCategory}
@@ -94,18 +132,22 @@ const TodoForm = ({ addTask }) => {
           <option value="Personal">Personal</option>
           <option value="Office">Office</option>
           <option value="Home">Home</option>
+          <option value="Shopping">Shopping</option>
           <option value="Others">Others</option>
         </select>
+        </div>
+        <div className="col-md-2">
         <button className="btn btn-primary" type="submit">
           Add Task
         </button>
+        </div>
       </div>
     </form>
   );
 };
 
 const TodoList = ({ tasks, onCheckboxChange, onDelete }) => {
-  const categories = ["Personal", "Office", "Home", "Others"];
+  const categories = ["Personal", "Office", "Home", "Shopping", "Others"];
 
   return (
     <div>
@@ -113,6 +155,7 @@ const TodoList = ({ tasks, onCheckboxChange, onDelete }) => {
         <div key={category} className="mb-4 table-body-wrapper">
           <h5>{category}</h5>
           <hr />
+          <div class="table-responsive">
           <table className="table">
             <thead className="thead-dark">
               <tr>
@@ -151,6 +194,7 @@ const TodoList = ({ tasks, onCheckboxChange, onDelete }) => {
                 ))}
             </tbody>
           </table>
+          </div>
         </div>
       ))}
     </div>
