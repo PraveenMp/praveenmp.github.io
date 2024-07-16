@@ -42,8 +42,8 @@ input[type='checkbox'] {
   .btn-danger {
     height: 22px;
     width: 40px;
-    padding: 0px;
-    font-size: 10px;
+    padding: 0px !important;
+    font-size: 10px !important;
   }
   .table-body-wrapper {
     padding: 10px;
