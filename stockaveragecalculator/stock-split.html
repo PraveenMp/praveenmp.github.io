@@ -11,16 +11,16 @@
 
         gtag('config', 'G-JPBH15FMY4');
     </script>
-    <title>Stock market Average Calculator</title>
+    <title>Stock Split Calculator</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="manifest" href="./manifest.webmanifest">
     <meta charset="UTF-8">
     <meta name="description"
         content="This application allows to calculate stock average on entering first and second buy details. A stock average calculator is a tool used to calculate the average value of a list of stock prices." />
     <meta name="keywords"
-        content="Indian Stock market average Calculator, USA Stock Market average calculator, US stock market average calculator, Japan stock market average-calculator, Australia stock market average calculator. average calculator, stock calculator, percentage calculator,  cash and carry calculator, Stock prices, Average, Calculation, Performance, Investors, Time period, Investment decisions, Spreadsheet, Software program, Stock charting, Technical analysis, Analyzing, Comparison, Investment performance, Stock market.">
+        content="Indian Stock Split Calculator, USA Stock Split Calculator, US Stock Split Calculator, Japan stock market average-calculator, Australia Stock Split Calculator. average calculator, stock calculator, percentage calculator,  cash and carry calculator, Stock prices, Average, Calculation, Performance, Investors, Time period, Investment decisions, Spreadsheet, Software program, Stock charting, Technical analysis, Analyzing, Comparison, Investment performance, Stock market.">
     <meta name="author" content="Praveen MP">
-    <meta property="og:title" content="Stock market Average Calculator" />
+    <meta property="og:title" content="Stock Split Calculator" />
     <meta property="og:url" content="https://praveenmp.github.io/stockaveragecalculator/" />
     <meta property="og:description"
         content="This application allows to calculate stock average on entering first and second buy details. A stock average calculator is a tool used to calculate the average value of a list of stock prices.">
@@ -29,10 +29,10 @@
     <meta property="og:type" content="website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="twitter:card" content="Stock market Average Calculator">
-    <meta name="twitter:title" content="Stock market Average Calculator">
+    <meta name="twitter:card" content="Stock Split Calculator">
+    <meta name="twitter:title" content="Stock Split Calculator">
     <meta name="twitter:description"
-        content="Indian Stock market average Calculator, USA Stock Market average calculator, US stock market average calculator, Japan stock market average-calculator, Australia stock market average calculator. average calculator, stock calculator, percentage calculator,  cash and carry calculator, Stock prices, Average, Calculation, Performance, Investors, Time period, Investment decisions, Spreadsheet, Software program, Stock charting, Technical analysis, Analyzing, Comparison, Investment performance, Stock market.">
+        content="Indian Stock Split Calculator, USA Stock Split Calculator, US Stock Split Calculator, Japan stock market average-calculator, Australia Stock Split Calculator. average calculator, stock calculator, percentage calculator,  cash and carry calculator, Stock prices, Average, Calculation, Performance, Investors, Time period, Investment decisions, Spreadsheet, Software program, Stock charting, Technical analysis, Analyzing, Comparison, Investment performance, Stock market.">
     <meta name="twitter:image"
         content="https://praveenmp.github.io/stockaveragecalculator/images/android-chrome-512x512.png">
 
@@ -161,36 +161,40 @@
             </div>
             <div class="col-md-10 content-right-body-wrapper">
                 <div id="clock"></div>
-
-                <div id="cagr-calculator">
+                <div id="emi-calculator">
                     <div class="content-body-wrapper">
                         <div class="row">
                             <div class="col-md-12">
                                 <header>
-                                    <h2 class="headers">CAGR calculator(Compound Annual Growth Rate Calculator)</h2>
+                                    <h2 class="headers">Stock Split Calculator</h2>
                                 </header>
                                 <hr />
                             </div>
                         </div>
                         <div class="row">
-                            <div id="cagr-result-wrapper" class="col-md-4">
-                                <div>
-                                    <label style="float:left;margin-right:10px;">Initial Value</label>
-                                    <input class="form-control" type="number" id="initialValue"
-                                        placeholder="Enter initial value" autocomplete="off" onchange="calculateCAGR()">
-                                    <span id='error1'></span>
-                                </div>
-                                <div style="margin-top:15px">
-                                    <label style="float:left;margin-right:10px;" for="finalValue">Final Value:</label>
-                                    <input class="form-control" type="number" id="finalValue"
-                                        placeholder="Enter final value" autocomplete="off" onchange="calculateCAGR()">
-                                    <span id='error2'></span>
-                                </div>
-                                <div style="margin-top:15px">
-                                    <label style="float:left;margin-right:10px;" for="cagryears">Years:</label>
-                                    <input class="form-control" type="number" id="cagryears" placeholder="Enter years"
-                                        autocomplete="off" onchange="calculateCAGR()">
-                                    <span id='error2'></span>
+                            <div id="sip-result-wrapper" class="col-md-4">
+                                <form id="stockForm">
+                                    <div class="form-group">
+                                        <label for="currentPrice">Current Stock Price</label>
+                                        <input type="number" class="form-control" id="currentPrice" value="1500"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="splitRatio">Stock Split Ratio (New Shares:Old Shares):</label>
+                                        <input type="text" class="form-control" id="splitRatio" value="2:5" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="numberOfShares">Number of Shares Owned:</label>
+                                        <input type="number" class="form-control" id="numberOfShares" value="55"
+                                            required>
+                                    </div>
+                                    <button type="submit" class="btn btn-success btn-block">Calculate</button>
+                                </form>
+                                <div class="mt-4">
+                                    <h5 id="newPrice">New Stock Price: ₹0.00</h5>
+                                    <h5 id="newShares">Additional Shares: 0</h5>
+                                    <h5 id="totalShares">Total Shares: 0</h5>
+                                    <h5 id="refundAmount">Refund Amount: ₹0.00</h5>
                                 </div>
                             </div>
                             <div class="col-md-2"></div>
@@ -209,18 +213,6 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-4">
-                                <div class="r-sip">
-                                    <div class="results">CAGR : <span id="cagr-result">0</span> </div>
-                                    <hr />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 st">
-                                <button class="btn btn-success" onclick="calculateCAGR()"> Calculate</button>
-                                <button class="btn btn-warning" onclick="clearFields3()">Clear Fields</button>
-                            </div>
                             <div class="col-md-12 d-block d-md-none display-mobile-ad">
                                 <ul>
                                     <li> <a target="_blank" tabindex="-1"
@@ -237,92 +229,136 @@
                         </div>
                     </div>
                     <div class="content-body-wrapper mt-4">
-                        <p>The Compound Annual Growth Rate (CAGR) calculator is a tool used to determine the average
-                            annual growth
-                            rate of an investment over a specified period. It is particularly useful for assessing the
-                            performance of
-                            long-term investments such as stocks, mutual funds, and retirement accounts.</p>
-                        <p>The formula for calculating CAGR is:</p>
-                        <pre>
-        CAGR = ((Final Value / Initial Value)^(1 / Number of Years)) - 1
-            </pre>
-                        <p>Where:</p>
-                        <ul>
-                            <li><strong>Final Value:</strong> The ending balance or value of the investment.</li>
-                            <li><strong>Initial Value:</strong> The starting balance or value of the investment.</li>
-                            <li><strong>Number of Years:</strong> The total number of years over which the investment
-                                has grown.</li>
-                        </ul>
+                        <h3 class="mt-4 mb-4">Stock Split Calculator</h3>
+
+
+                        Use this calculator to determine the new stock price and the number of shares you will own after
+                        a stock split.
+                        <br/>
+
+                        A stock split increases the number of shares in a company by issuing more shares to
+                        current shareholders. In a 2:5 stock split, for every 5 shares owned, shareholders will receive
+                        2 additional shares.
+                        <br/>
+                        Inputs:
+                        <br/>
+                        Current Stock Price (₹): The current price per share of the stock.
+                        <br/>
+                        Stock Split Ratio (New Shares
+                        Shares): The ratio indicating how many new shares will be given for each old share.
+                        <br/>
+                        Number of Shares Owned: The number of shares you currently own.
+                        <br/>
+                        Outputs:
+                        <br/>
+
+                        New Stock Price: The adjusted price per share after the stock split.
+                        <br/>
+                        Total Shares After Split: The total number of shares you will own after the stock split,
+                        <br/>
+                        including any fractional shares.
+                        <br/>
+                        Whole Shares After Split: The number of whole shares you will own after the stock split.
+                        <br/>
+                        Refund Amount: The monetary value of any fractional shares after the stock split.
                     </div>
                 </div>
-            </div>
-        </div>
 
 
-        <footer class="mb-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                    </div>
-                    <div class="col-md-4 text-center mb-2">
-                        &copy; 2018 - 2028. Feedback:<a href="mailto:praveen_mp@live.com">praveen_mp@live.com</a>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <div class="social-share-icons">
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
-                                class="btn btn-primary btn-sm"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
-                                class="btn btn-info btn-sm"><i class="fab fa-twitter"></i></a>
-                            <a href="whatsapp://send?text=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
-                                class="btn btn-success btn-sm"><i class="fab fa-whatsapp"></i></a>
-                            <a href="https://www.instagram.com/?url=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
-                                class="btn btn-danger btn-sm"><i class="fab fa-instagram"></i></a>
+
+
+
+                <footer class="mb-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                            </div>
+                            <div class="col-md-4 text-center mb-2">
+                                &copy; 2018 - 2028. Feedback:<a
+                                    href="mailto:praveen_mp@live.com">praveen_mp@live.com</a>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <div class="social-share-icons">
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                                        class="btn btn-primary btn-sm"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                                        class="btn btn-info btn-sm"><i class="fab fa-twitter"></i></a>
+                                    <a href="whatsapp://send?text=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                                        class="btn btn-success btn-sm"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="https://www.instagram.com/?url=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                                        class="btn btn-danger btn-sm"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </footer>
+
             </div>
-        </footer>
+            <script src="./script.min.js" crossorigin="anonymous"></script>
+            <script>
+                document.getElementById('stockForm').addEventListener('submit', function (event) {
+                    event.preventDefault();
+                    let currentPrice = parseFloat(document.getElementById('currentPrice').value);
+                    let splitRatio = document.getElementById('splitRatio').value.split(':');
+                    let newShares = parseFloat(splitRatio[0]);
+                    let oldShares = parseFloat(splitRatio[1]);
+                    let numberOfShares = parseInt(document.getElementById('numberOfShares').value);
 
-    </div>
-    <script src="./script.min.js" crossorigin="anonymous"></script>
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function () {
-                navigator.serviceWorker.register('/stockaveragecalculator/service-worker.js');
-            });
-        }
-        // Initialize deferredPrompt for use later to show browser install prompt.
-        let deferredPrompt;
-        let buttonInstall = document.getElementById("buttonInstall");
-        buttonInstall.style.display = 'none';
+                    // Calculate new stock price
+                    let newPrice = (currentPrice * oldShares) / (newShares + oldShares);
+                    document.getElementById('newPrice').innerText = 'New Stock Price: ₹' + newPrice.toFixed(2);
 
-        window.addEventListener('beforeinstallprompt', (e) => {
-            // Prevent the mini-infobar from appearing on mobile
-            e.preventDefault();
-            // Stash the event so it can be triggered later.
-            deferredPrompt = e;
-            // Update UI notify the user they can install the PWA
-            buttonInstall.style.display = 'block';
-            buttonInstall.addEventListener('click', async () => {
-                // Hide the app provided install promotion
-                // buttonInstall.style.display = 'none';
-                // Show the install prompt
-                deferredPrompt.prompt();
-                // Wait for the user to respond to the prompt
-                const { outcome } = await deferredPrompt.userChoice;
-                // Optionally, send analytics event with outcome of user choice
-                console.log(`User response to the install prompt: ${outcome}`);
-                // We've used the prompt, and can't use it again, throw it away
-                deferredPrompt = null;
-            });
-            // Optionally, send analytics event that PWA install promo was shown.
-            console.log(`'beforeinstallprompt' event was fired.`);
-        });
+                    // Calculate shares after split
+                    let totalSharesAfterSplit = (newShares / oldShares) * numberOfShares;
+                    document.getElementById('newShares').innerText = 'Additional Shares: ' + Math.floor(totalSharesAfterSplit);
+
+                    // Calculate whole shares after split
+                    let totalShares = Math.floor(totalSharesAfterSplit) + numberOfShares;
+                    document.getElementById('totalShares').innerText = 'Total Shares: ' + totalShares;
+                    // Calculate refund amount if there's any fractional share
+                    let fractionalShare = totalSharesAfterSplit - Math.floor(totalSharesAfterSplit);
+                    let refundAmount = fractionalShare * newPrice;
+                    document.getElementById('refundAmount').innerText = 'Refund Amount: ₹' + refundAmount.toFixed(2);
+                });
+            </script>
+            <script>
+                if ('serviceWorker' in navigator) {
+                    window.addEventListener('load', function () {
+                        navigator.serviceWorker.register('/stockaveragecalculator/service-worker.js');
+                    });
+                }
+                // Initialize deferredPrompt for use later to show browser install prompt.
+                let deferredPrompt;
+                let buttonInstall = document.getElementById("buttonInstall");
+                buttonInstall.style.display = 'none';
+
+                window.addEventListener('beforeinstallprompt', (e) => {
+                    // Prevent the mini-infobar from appearing on mobile
+                    e.preventDefault();
+                    // Stash the event so it can be triggered later.
+                    deferredPrompt = e;
+                    // Update UI notify the user they can install the PWA
+                    buttonInstall.style.display = 'block';
+                    buttonInstall.addEventListener('click', async () => {
+                        // Hide the app provided install promotion
+                        // buttonInstall.style.display = 'none';
+                        // Show the install prompt
+                        deferredPrompt.prompt();
+                        // Wait for the user to respond to the prompt
+                        const { outcome } = await deferredPrompt.userChoice;
+                        // Optionally, send analytics event with outcome of user choice
+                        console.log(`User response to the install prompt: ${outcome}`);
+                        // We've used the prompt, and can't use it again, throw it away
+                        deferredPrompt = null;
+                    });
+                    // Optionally, send analytics event that PWA install promo was shown.
+                    console.log(`'beforeinstallprompt' event was fired.`);
+                });
 
 
 
 
-    </script>
+            </script>
 </body>
 
 </html>
