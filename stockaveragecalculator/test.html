@@ -1,102 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SIP Calculator</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #f4f4f4;
-    }
-    .container {
-        text-align: center;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        background-color: #fff;
-    }
-    input[type="number"] {
-        width: 100px;
-        padding: 8px;
-        margin: 5px;
-        text-align: center;
-    }
-    button {
-        padding: 10px 20px;
-        margin: 10px;
-        cursor: pointer;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-    }
-</style>
-<meta name="author" content="Praveen MP">
-<meta property="og:title" content="Stock market Average Calculator" />
-<meta property="og:url" content="https://praveenmp.github.io/stockaveragecalculator/" />
-<meta property="og:description" content="This application allows to calculate stock average on entering first and second buy details. A stock average calculator is a tool used to calculate the average value of a list of stock prices.">
-<meta property="og:image" content="https://praveenmp.github.io/stockaveragecalculator/images/android-chrome-512x512.png">
-<meta property="og:type" content="website">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta name="twitter:card" content="Stock market Average Calculator">
-<meta name="twitter:title" content="Stock market Average Calculator">
-<meta name="twitter:description" content="Indian Stock market average Calculator, USA Stock Market average calculator, US stock market average calculator, Japan stock market average-calculator, Australia stock market average calculator. average calculator, stock calculator, percentage calculator,  cash and carry calculator, Stock prices, Average, Calculation, Performance, Investors, Time period, Investment decisions, Spreadsheet, Software program, Stock charting, Technical analysis, Analyzing, Comparison, Investment performance, Stock market.">
-<meta name="twitter:image" content="https://praveenmp.github.io/stockaveragecalculator/images/android-chrome-512x512.png">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Split Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
-<div class="container">
-    <div class="social-share-icons">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator" class="btn btn-primary btn-sm"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator" class="btn btn-info btn-sm"><i class="fab fa-twitter"></i></a>
-        <a href="whatsapp://send?text=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator" class="btn btn-success btn-sm"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://www.instagram.com/?url=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator" class="btn btn-danger btn-sm"><i class="fab fa-instagram"></i></a>
-        <!-- Add more social media icons as needed -->
+    <div class="container mt-5">
+        <h1 class="text-center">Stock Split Calculator</h1>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="stockForm">
+                            <div class="form-group">
+                                <label for="currentPrice">Current Stock Price (₹):</label>
+                                <input type="number" class="form-control" id="currentPrice" value="1500" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="splitRatio">Stock Split Ratio (New Shares:Old Shares):</label>
+                                <input type="text" class="form-control" id="splitRatio" value="2:5" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="numberOfShares">Number of Shares Owned:</label>
+                                <input type="number" class="form-control" id="numberOfShares" value="55" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Calculate</button>
+                        </form>
+                        <div class="mt-4">
+                            <h3 class="text-center" id="newPrice">New Stock Price: ₹0.00</h3>
+                            <h3 class="text-center" id="newShares">Shares After Split: 0</h3>
+                            <h3 class="text-center" id="totalShares">Total Shares After Split: 0</h3>
+                            <h3 class="text-center" id="refundAmount">Refund Amount: ₹0.00</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    
-</div>
 
-<script>
-    function calculateSIP() {
-        var initialAmount = parseFloat(document.getElementById('amount').value);
-        var rate = parseFloat(document.getElementById('rate').value);
-        var period = parseInt(document.getElementById('period').value);
-        var increaseRate = parseFloat(document.getElementById('increase').value);
+    <script>
+        document.getElementById('stockForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let currentPrice = parseFloat(document.getElementById('currentPrice').value);
+            let splitRatio = document.getElementById('splitRatio').value.split(':');
+            let newShares = parseFloat(splitRatio[0]);
+            let oldShares = parseFloat(splitRatio[1]);
+            let numberOfShares = parseInt(document.getElementById('numberOfShares').value);
 
-        var monthlyRate = rate / 12 / 100;
-        var totalMonths = period * 12;
+            // Calculate new stock price
+            let newPrice = (currentPrice * oldShares) / (newShares + oldShares);
+            document.getElementById('newPrice').innerText = 'New Stock Price: ₹' + newPrice.toFixed(2);
 
-        var futureValue = 0;
-        var totalInvestment = 0;
-        var currentAmount = initialAmount;
+            // Calculate shares after split
+            let totalSharesAfterSplit = (newShares / oldShares) * numberOfShares;
+            document.getElementById('newShares').innerText = 'Shares After Split: ' + Math.floor(totalSharesAfterSplit);
 
-        for (var i = 0; i < totalMonths; i++) {
-            futureValue += currentAmount;
-            totalInvestment += currentAmount;
-            futureValue *= (1 + monthlyRate);
-            if ((i + 1) % 12 == 0) {
-                currentAmount *= (1 + (increaseRate / 100));
-            }
-        }
+              // Calculate whole shares after split
+            let totalShares = newShares + oldShares;
+            document.getElementById('totalShares').innerText = 'Total Shares After Split: ' + totalShares;
+            // Calculate refund amount if there's any fractional share
+            let fractionalShare = totalSharesAfterSplit - Math.floor(totalSharesAfterSplit);
+            let refundAmount = fractionalShare * newPrice;
+            document.getElementById('refundAmount').innerText = 'Refund Amount: ₹' + refundAmount.toFixed(2);
+        });
+    </script>
 
-       
-        var totalProfit = futureValue - totalInvestment;
-
-        document.getElementById('result').innerHTML = "Total Investment: $" + totalInvestment.toFixed(2) +
-            "<br>Total Value: $" + futureValue.toFixed(2) +
-            "<br>Total Profit: $" + totalProfit.toFixed(2);
-    }
-</script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
