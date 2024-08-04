@@ -121,7 +121,27 @@ function unitChanged(id, error) {
           document.getElementById("im").innerHTML = Number((totalInvestment).toFixed(2)).toLocaleString(intlLanguage);	
           document.getElementById("tm").innerHTML = Number(futureValue.toFixed(2)).toLocaleString(intlLanguage);
           document.getElementById("gm").innerHTML = Number(totalProfit.toFixed(2)).toLocaleString(intlLanguage) ;
+          if(sipChart) {
+            sipChart.destroy();
+          }
+          getSipChart(futureValue.toFixed(2), totalInvestment.toFixed(2), totalProfit.toFixed(2));
       }
+      }
+
+      function getSipChart(t, i, g) {
+        var ctx = document.getElementById('sipChart');
+        sipChart = new Chart(ctx, {
+          type: 'pie',
+          responsive: true,
+          data: {
+            labels: ['Expected Amount', 'Amount Invested', 'Total Gain'],
+            datasets: [{
+              label: 'SIP',
+              data: [t, i, g],
+              borderWidth: 1
+            }]
+          }
+        });
       }
 
 function clearFields1() {
@@ -132,6 +152,9 @@ function clearFields1() {
     document.getElementById("tm").innerHTML = '0';
     document.getElementById("im").innerHTML = '0';
     document.getElementById("gm").innerHTML = '0';
+    if(sipChart) {
+      sipChart.destroy();
+    }
   }
 
   function clearFields2() {
@@ -142,8 +165,8 @@ function clearFields1() {
     document.getElementById("total-principal").innerHTML = 0;
     document.getElementById("total-interest").innerHTML = 0;
     document.getElementById("total-amount").innerHTML = 0;
-    if(chartData) {
-      chartData.destroy();
+    if(emiChart) {
+      emiChart.destroy();
     }
 
   }
@@ -179,7 +202,7 @@ function clearFields1() {
 
 
 
-var chartData;
+var emiChart,sipChart;
 function calculateEMI() {
   let loanAmount = Number(document.getElementById('loanAmount').value);
   let interestRate = Number(document.getElementById('interestRate').value / 100 / 12); // Monthly interest rate
@@ -195,8 +218,8 @@ function calculateEMI() {
     document.getElementById('total-emi').textContent = '' + Number(emi.toFixed(0)).toLocaleString(intlLanguage);
     document.getElementById('total-amount').textContent = '' + Number(totalPayment.toFixed(0)).toLocaleString(intlLanguage);
     document.getElementById('total-interest').textContent = '' + Number(totalInterest.toFixed(0)).toLocaleString(intlLanguage);
-    if(chartData) {
-      chartData.destroy();
+    if(emiChart) {
+      emiChart.destroy();
     }
     getChart(loanAmount, totalInterest, totalPayment);
   }
@@ -205,7 +228,7 @@ function calculateEMI() {
 
 function getChart(p, i, t) {
   var ctx = document.getElementById('myChart');
-  chartData = new Chart(ctx, {
+  emiChart = new Chart(ctx, {
     type: 'pie',
     responsive: true,
     data: {

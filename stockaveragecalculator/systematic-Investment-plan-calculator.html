@@ -194,8 +194,17 @@
                                         placeholder="0" onchange="sipCalculator()" />
                                     <span id='error2'></span>
                                 </div>
+                                <div class="r-sip">
+                                    <div class="results">Expected Amount : <span id="tm">0</span> </div>
+                                    <hr />
+                                    <div class="results"> Amount Invested : <span id="im">0</span></div>
+                                    <hr>
+                                    <div class="results">Total Gain : <span id="gm">0</span> </div>
+                                </div>
+
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-3">
+                                <canvas id="sipChart"></canvas>
                             </div>
                             <div class="col-md-4 st banner-ad-desktop">
                                 <ul>
@@ -222,14 +231,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-4">
-                                <div class="r-sip">
-                                    <div class="results">Expected Amount : <span id="tm">0</span> </div>
-                                    <hr />
-                                    <div class="results"> Amount Invested : <span id="im">0</span></div>
-                                    <hr>
-                                    <div class="results">Total Gain : <span id="gm">0</span> </div>
-                                </div>
-
+                            
                             </div>
                         </div>
                         <div class="row">
@@ -397,6 +399,7 @@
     </footer>
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./script.min.js" crossorigin="anonymous"></script>
     <script>
         if ('serviceWorker' in navigator) {
