@@ -139,6 +139,13 @@ function clearFields1() {
     document.getElementById("interestRate").value = '';
     document.getElementById("loanTerm").value = '';
     document.getElementById("total-emi").innerHTML = '0';
+    document.getElementById("total-principal").innerHTML = 0;
+    document.getElementById("total-interest").innerHTML = 0;
+    document.getElementById("total-amount").innerHTML = 0;
+    if(chartData) {
+      chartData.destroy();
+    }
+
   }
 
   function clearFields3() {
@@ -172,20 +179,47 @@ function clearFields1() {
 
 
 
+var chartData;
 function calculateEMI() {
-  var loanAmount = document.getElementById('loanAmount').value;
-  var interestRate = document.getElementById('interestRate').value / 100 / 12; // Monthly interest rate
-  var loanTerm = document.getElementById('loanTerm').value;
+  let loanAmount = Number(document.getElementById('loanAmount').value);
+  let interestRate = Number(document.getElementById('interestRate').value / 100 / 12); // Monthly interest rate
+  let loanTerm = Number(document.getElementById('loanTerm').value);
 
   // EMI calculation formulacagr-calcultorclearFields3
-  var emi = loanAmount * interestRate * Math.pow((1 + interestRate), loanTerm) / (Math.pow((1 + interestRate), loanTerm) - 1);
+  let emi = loanAmount * interestRate * Math.pow((1 + interestRate), loanTerm) / (Math.pow((1 + interestRate), loanTerm) - 1);
+  let totalInterest = (emi*loanTerm) - loanAmount;
+  let totalPayment = totalInterest + loanAmount;
 
-  var resultElement = document.getElementById('total-emi');
   if(loanAmount && interestRate && loanTerm) {
-    resultElement.textContent = '' + Number(emi.toFixed(2)).toLocaleString(intlLanguage) + ' per month';
+    document.getElementById('total-principal').textContent = '' + Number(loanAmount.toFixed(0)).toLocaleString(intlLanguage);
+    document.getElementById('total-emi').textContent = '' + Number(emi.toFixed(0)).toLocaleString(intlLanguage);
+    document.getElementById('total-amount').textContent = '' + Number(totalPayment.toFixed(0)).toLocaleString(intlLanguage);
+    document.getElementById('total-interest').textContent = '' + Number(totalInterest.toFixed(0)).toLocaleString(intlLanguage);
+    if(chartData) {
+      chartData.destroy();
+    }
+    getChart(loanAmount, totalInterest, totalPayment);
   }
 
 }
+
+function getChart(p, i, t) {
+  var ctx = document.getElementById('myChart');
+  chartData = new Chart(ctx, {
+    type: 'pie',
+    responsive: true,
+    data: {
+      labels: ['Principal', 'Total Interest', 'Total Amount'],
+      datasets: [{
+        label: 'Loan breakup',
+        data: [p, i, t],
+        borderWidth: 1
+      }]
+    }
+  });
+}
+
+
 
 function calculateCAGR() {
   var initialValue = parseFloat(document.getElementById('initialValue').value);

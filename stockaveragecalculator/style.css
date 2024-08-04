@@ -77,6 +77,7 @@ input[type="number"] {
   text-align: right;
 }
 
+
 #investedamount1,
 #investedamount2 {
   display: -webkit-inline-box;
@@ -160,6 +161,19 @@ footer {
   color: #000;
 }
 
+.b-r-block {
+display: block;
+border-bottom: 1px solid #ddd;
+margin-bottom: 10px;
+margin-top: 10px;
+color: #ffa41c;
+font-weight: 600;
+}
+.cust-btn-success {
+  padding: 6px 22px !important;
+  font-weight: 500 !important;
+}
+
 .top-menu ul li.active a:focus,
 .top-menu ul li.active a:hover,
 .top-menu ul li a:focus,
@@ -234,7 +248,7 @@ footer {
 }
 .banner-ad-desktop a,
 .display-mobile-ad a {
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: underline;
   color: #2c608d;
 }
@@ -443,6 +457,11 @@ footer {
   color: white;
   background: black;
 }
+
+#myChart {
+  width: 0px;
+}
+
 
 /********** Range Input Styles **********/
 /*Range Reset*/
