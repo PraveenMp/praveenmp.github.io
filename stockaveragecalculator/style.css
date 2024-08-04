@@ -160,6 +160,9 @@ footer {
   color: #3b863b;
   color: #000;
 }
+.btn-warning {
+  margin-right: 15px;
+}
 
 .b-r-block {
 display: block;
@@ -458,7 +461,7 @@ font-weight: 600;
   background: black;
 }
 
-#myChart {
+#myChart, #sipChart {
   width: 0px;
 }
 
