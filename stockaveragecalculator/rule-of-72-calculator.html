@@ -11,16 +11,14 @@
 
         gtag('config', 'G-JPBH15FMY4');
     </script>
-    <title>Percentage calculator</title>
+    <title>Rule of 72 Calculator</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="manifest" href="./manifest.webmanifest">
     <meta charset="UTF-8">
-    <meta name="description"
-        content="This application allows to calculate stock average on entering first and second buy details. A stock average calculator is a tool used to calculate the average value of a list of stock prices." />
-    <meta name="keywords"
-        content="Indian Percentage calculator, USA Percentage calculator, US Percentage calculator, Japan stock market average-calculator, Australia Percentage calculator. average calculator, stock calculator, percentage calculator,  cash and carry calculator, Stock prices, Average, Calculation, Performance, Investors, Time period, Investment decisions, Spreadsheet, Software program, Stock charting, Technical analysis, Analyzing, Comparison, Investment performance, Stock market.">
+    <meta name="description" content="Use our Rule of 72 Calculator to quickly estimate how many years it will take for your investment to double based on the annual interest rate. Simple, accurate, and user-friendly tool for financial planning.">
+    <meta name="keywords" content="Rule of 72 calculator, investment calculator, time to double calculator, financial tool, interest rate calculator, investment doubling time, finance planning, ROI calculator, online financial calculator">
     <meta name="author" content="Praveen MP">
-    <meta property="og:title" content="Percentage calculator" />
+    <meta property="og:title" content="Systematic Withdrawal Plan" />
     <meta property="og:url" content="https://praveenmp.github.io/stockaveragecalculator/" />
     <meta property="og:description"
         content="This application allows to calculate stock average on entering first and second buy details. A stock average calculator is a tool used to calculate the average value of a list of stock prices.">
@@ -29,10 +27,10 @@
     <meta property="og:type" content="website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="twitter:card" content="Percentage calculator">
-    <meta name="twitter:title" content="Percentage calculator">
+    <meta name="twitter:card" content="Systematic Withdrawal Plan">
+    <meta name="twitter:title" content="Systematic Withdrawal Plan">
     <meta name="twitter:description"
-        content="Indian Percentage calculator, USA Percentage calculator, US Percentage calculator, Japan stock market average-calculator, Australia Percentage calculator. average calculator, stock calculator, percentage calculator,  cash and carry calculator, Stock prices, Average, Calculation, Performance, Investors, Time period, Investment decisions, Spreadsheet, Software program, Stock charting, Technical analysis, Analyzing, Comparison, Investment performance, Stock market.">
+        content="Indian Systematic Withdrawal Plan, USA Systematic Withdrawal Plan, US Systematic Withdrawal Plan, Japan stock market average-calculator, Australia Systematic Withdrawal Plan. average calculator, stock calculator, percentage calculator,  cash and carry calculator, Stock prices, Average, Calculation, Performance, Investors, Time period, Investment decisions, Spreadsheet, Software program, Stock charting, Technical analysis, Analyzing, Comparison, Investment performance, Stock market.">
     <meta name="twitter:image"
         content="https://praveenmp.github.io/stockaveragecalculator/images/android-chrome-512x512.png">
 
@@ -47,7 +45,26 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-
+        .calculator {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;           
+            text-align: center;
+            min-width: 200px;
+        }
+        .calculator input, .calculator button {
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .calculator button {
+            cursor: pointer;
+        }
+        .calculator button:hover {
+            background-color: #007200;
+        }
+        #result1 {
+            margin-top: 15px;
+        }
     </style>
 </head>
 
@@ -74,7 +91,7 @@
                 <div class="top-menu">
                     <ul>
                         <li title="Stock Average Calculator">
-                            <a href="./index.html" class="link" >
+                            <a href="./index.html" class="link">
                                 <i class="fas fa-tachometer-alt"></i>
                                 Stock Average Calculator
                             </a>
@@ -85,7 +102,7 @@
                                 SIP Calculator
                             </a>
                         </li>
-                        <li title="Percentage Calculator" class="active">
+                        <li title="Percentage Calculator">
                             <a href="./percentage-calculator.html" class="link">
                                 <i class="fas fa-percentage"></i>
                                 Percentage Calculator
@@ -110,103 +127,127 @@
                             </a>
                         </li>
                         <li title="Stock Split Calculator">
-                          <a href="./stock-split.html" class="link">
-                            <i class="fas fa-chart-pie"></i>
-                              Stock Split Calculator
-                          </a>
-                      </li>
-                      <li title="Rule of 72 Calculator">
-                        <a href="./rule-of-72-calculator.html" class="link">
-                            <i class="fas fa-angle-double-up"></i>
-                            Rule of 72 Calculator
-                        </a>
-                    </li>
+                            <a href="./stock-split.html" class="link">
+                                <i class="fas fa-chart-pie"></i>
+                                Stock Split Calculator
+                            </a>
+                        </li>
+                        <li title="Rule of 72 Calculator" class="active">
+                            <a href="./rule-of-72-calculator.html" class="link">
+                                <i class="fas fa-angle-double-up"></i>
+                                Rule of 72 Calculator
+                            </a>
+                        </li>
                         <li title="Dividend Details">
                             <a href="./indian-stock-market-dividend-details.html">
                                 <i class="fas fa-cubes"></i>
                                 Dividend Details 2023 - 2024 <img src="./images/new-icon.gif" height="35" width="35" />
                             </a>
                         </li>
-                        <li title="Bonus Details" >
+                        <li title="Bonus Details">
                             <a href="./indian-stock-market-bonus-and-buyback-details.html">
                                 <i class="fas fa-search-dollar"></i>
                                 Bonus & Buyback Details
                             </a>
                         </li>
-                        <li title="Face Value Split Details" >
+                        <li title="Face Value Split Details">
                             <a href="./indian-stock-market-face-value-and-demerger.html">
                                 <i class="fas fa-cut"></i>
                                 Face value split & Demerger
                             </a>
                         </li>
-                        <li title="Best books on investment, trading, stock market" >
+                        <li title="Best books on investment, trading, stock market">
                             <a href="./top-books-on-investment-trading-stock-market.html">
                                 <i class="fas fa-book"></i>
                                 Best books on investment, trading, stock market
                             </a>
                         </li>
                         </li>
-                        <li id="buymeacoffee" title="Buy Me a Coffee" >
+                        <li id="buymeacoffee" title="Buy Me a Coffee">
                             <a href="./buy-me-a-coffee.html">
                                 <i class="fas fa-mug-hot"></i>
                                 Buy Me a Coffee
                             </a>
                         </li>
-                        <li id="aboutus" title="About Us" >
+                        <li id="aboutus" title="About Us">
                             <a href="./about-us.html"><i class="fas fa-user-friends"></i>
                                 About Us
                             </a>
                         </li>
-                        <li id="to-do-list" title="To-do" >
-                          <a href="https://praveenmp.github.io/todo/" target="_blank"><i class="fas fa-th-list"></i>
-                              Your To-do List
-                          </a>
-                      </li>
+                        <li id="to-do-list" title="To-do">
+                            <a href="https://praveenmp.github.io/todo/" target="_blank"><i class="fas fa-th-list"></i>
+                                Your To-do List
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-10 content-right-body-wrapper">
                 <div id="clock"></div>
-                <div id="percentage-calculator">
+                <div id="swp-calculator">
                     <div class="content-body-wrapper">
                         <div class="row">
                             <div class="col-md-12">
                                 <header>
-                                    <h2 class="headers">Percentage(%) calculator</h2>
+                                    <h2 class="headers">Rule of 72 Calculator</h2>
                                 </header>
                                 <hr />
                             </div>
                         </div>
                         <div class="row">
-                            <div id="percentage-result-wrapper" class="col-md-6">
-                                <div class="percentage-wrapper">
-                                    <label>What is </label>
-                                    <input class="form-control percentage-input" type="number" id="percentage"
-                                        autocomplete="off" onchange="checkPercentage()" />
-                                </div>
-                                <div class="percentage-wrapper">
-                                    <label>% (Percentage) of </label>
-                                    <input class="form-control percentage-input" type="number" id="percentageNumber"
-                                        autocomplete="off" onchange="checkPercentage()" />
-                                    <label>?</label>
+                            <div id="swp-result-wrapper" class="col-md-4">
+                                <div class="calculator">
+                                    <label style="float:left;margin-right:10px;">Enter the expexted annual interest rate (%)</label>
+                                    <input class="form-control" type="number" id="interestRate" placeholder="Interest Rate (%)">
+                                    <button  onclick="calculateRuleOf72()" onkeyup="calculateRuleOf72()" class="btn btn-success">Calculate</button>
+                                    <div class="result1" id="result1">
+                                        <p class="r-sip">It will take approximately <strong>0 years </strong>  and <strong>0 months </strong>to double your investment.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-4 st banner-ad-desktop">
+                                <ul>
+                                    <li>
+                                        <a target="_blank" tabindex="-1" href="https://amzn.to/4c7FlSR">Top Picks: Best
+                                            Smartphones Under ₹10,000</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" tabindex="-1" href="https://amzn.to/3SBXMYS">Top Picks: Best
+                                            40-Inch 4K Ultra HD Smart TVs Stunning Clarity and Smart Features!</a>
+                                    </li>
+                                    <span class="b-r-block">Books Recommendation</span>
+                                    <li> <a target="_blank" tabindex="-1"
+                                            href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=d7b58af7beaaa50e0bf135c06cda27dd&camp=3638&creative=24630&index=books&keywords=Best Stock Market Books, Get Rich">Top
+                                            Picks: Essential Stock Market Books for Every Investor</a></li>
+                                    <li> <a target="_blank" tabindex="-1"
+                                            href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=93a73bc45fd282f0b311239075611abf&camp=3638&creative=24630&index=books&keywords=Self-Confidence, Influence People &amp; Wealth English books for Indian ">Mastering
+                                            Money Management: Must-Read Books for Financial Success</a></li>
+                                    <li> <a target="_blank" tabindex="-1"
+                                            href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=c1a731d187981d90a78954327ff9f164&camp=3638&creative=24630&index=books&keywords=startup books">Launching
+                                            Your Startup: Essential Reads for Success</a></li>
+                                </ul>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-4 col-xs-12">
-                                <div class="r-sip">
-                                    <div class="results">Result : <span id="percentageResult">0</span> </div>
-                                </div>
+                            <div class="col-md-4">
+
                             </div>
-                            <div class="col-md-2 ans-btn-wrapper">
-                                <button class="btn btn-success ans-btn"> Answer</button>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 st">
                             </div>
-                            <div class="col-md-4 st banner-ad-desktop">
-                            </div>
-                            <div class="col-xs-12 d-block d-md-none display-mobile-ad">
+                            <div class="col-md-12 d-block d-md-none display-mobile-ad">
                                 <ul>
+                                    <li>
+                                        <a target="_blank" tabindex="-1" href="https://amzn.to/4c7FlSR">Top Picks: Best
+                                            Smartphones Under ₹10,000</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" tabindex="-1" href="https://amzn.to/3SBXMYS">Top Picks: Best
+                                            40-Inch 4K Ultra HD Smart TVs Stunning Clarity and Smart Features!</a>
+                                    </li>
+                                    <span class="b-r-block">Books Recommendation</span>
                                     <li> <a target="_blank" tabindex="-1"
                                             href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=d7b58af7beaaa50e0bf135c06cda27dd&camp=3638&creative=24630&index=books&keywords=Best Stock Market Books, Get Rich">Top
                                             Picks: Essential Stock Market Books for Every Investor</a></li>
@@ -221,77 +262,19 @@
                         </div>
                     </div>
                     <div class="content-body-wrapper mt-4">
-                        <h4>Key Features:</h4>
-
-                        <ul>
-                            <li><strong>Percentage of a Number:</strong> Calculates the percentage of a given number.
-                            </li>
-                            <li><strong>Percentage Change:</strong> Computes the percentage change between two values.
-                            </li>
-                            <li><strong>Percentage Increase/Decrease:</strong> Determines the percentage increase or
-                                decrease from one
-                                value to another.</li>
-                            <li><strong>Percent to Fraction and Decimal Conversion:</strong> Converts percentages to
-                                fractions and
-                                decimals.</li>
-                            <li><strong>Discount and Mark-up Calculations:</strong> Computes the discounted price or
-                                mark-up
-                                percentage.</li>
-                            <li><strong>Tips and Commissions:</strong> Helps in calculating tips or commissions based on
-                                a percentage
-                                of the total amount.</li>
-                            <li><strong>Loan Interest Rates:</strong> Calculates interest rates on loans given a
-                                principal amount and
-                                the total interest accrued.</li>
-                        </ul>
-
-                        <h4>How to Use a Percentage Calculator:</h4>
-
-                        <ol>
-                            <li><strong>Entering Values:</strong> Users input the necessary values into the calculator
-                                depending on
-                                the type of percentage calculation they need.</li>
-                            <li><strong>Choosing Calculation Type:</strong> Select the specific type of percentage
-                                calculation desired
-                                (e.g., percentage increase, percentage decrease, etc.).</li>
-                            <li><strong>Result Display:</strong> The calculator provides the calculated percentage or
-                                related result
-                                based on the input values and chosen calculation type.</li>
-                        </ol>
-
-                        <h4>Benefits of a Percentage Calculator:</h4>
-
-                        <ul>
-                            <li><strong>Accuracy and Efficiency:</strong> Reduces manual calculation errors, ensuring
-                                accurate
-                                results. Saves time by automating complex percentage calculations.</li>
-                            <li><strong>Versatility:</strong> Useful in various scenarios such as finance, business,
-                                education, and
-                                everyday calculations.</li>
-                            <li><strong>Ease of Use:</strong> Designed to be user-friendly, making percentage-related
-                                computations
-                                accessible to a wide audience.</li>
-                            <li><strong>Educational Tool:</strong> Helps users understand and learn the concept of
-                                percentages through
-                                practical applications.</li>
-                        </ul>
-
-                        <h4>Conclusion:</h4>
-
-                        <p>
-                            The Percentage Calculator is a versatile tool that simplifies percentage-related
-                            calculations, providing
-                            accurate results efficiently. It is a valuable resource in various fields, aiding users in
-                            making informed
-                            decisions and solving mathematical problems involving percentages.
-                        </p>
-
+                        <h3 class="mt-4 mb-4">Rule of 72 Calculator</h3>
+                        <p>The Rule of 72 Calculator is a financial tool used to estimate the time it takes for an
+                             investment to double in value based on a fixed annual interest rate or return. This is 
+                             based on the "Rule of 72,"
+                             a simple mathematical formula widely used in finance and investing.</p>
+                             <p>This tool saves time and effort by automating the calculation, making it 
+                                accessible even to those without financial expertise. It's ideal for individuals making quick financial assessments or planning long-term investment strategies.</p>
+                        <form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <footer class="mb-2">
         <div class="container">
             <div class="row">
@@ -317,6 +300,25 @@
     </footer>
 
     </div>
+    <script>
+        function calculateRuleOf72() {
+            const interestRate = parseFloat(document.getElementById('interestRate').value);
+
+            if (isNaN(interestRate) || interestRate <= 0) {
+                document.getElementById('result').innerHTML = "Please enter a valid interest rate!";
+                return;
+            }
+
+            const totalYears = 72 / interestRate;
+
+            // Convert total years into whole years and months
+            const years = Math.floor(totalYears); // Get the whole number of years
+            const months = Math.round((totalYears - years) * 12); // Convert fractional years to months
+
+            document.getElementById('result1').innerHTML = 
+                `<p class="r-sip">It will take approximately <strong>${years} years </strong>  and <strong>${months} months </strong>to double your investment.</p>`;
+        }
+    </script>
     <script src="./script.min.js" crossorigin="anonymous"></script>
     <script>
         if ('serviceWorker' in navigator) {
@@ -351,11 +353,8 @@
             // Optionally, send analytics event that PWA install promo was shown.
             console.log(`'beforeinstallprompt' event was fired.`);
         });
-
-
-
-
     </script>
+
 </body>
 
 </html>
