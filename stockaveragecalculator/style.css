@@ -63,7 +63,8 @@ body {
 }
 
 .btn {
-  cursor: pointer;
+  cursor: pointer !important;
+  padding: 0.50rem .50rem !important;
 }
 
 span {
@@ -284,7 +285,6 @@ font-weight: 600;
 
   .top-menu ul li a img {
     top:0px;
-    right: auto;
   }
   #average-calculator h4 {
     font-size: 16px;
@@ -337,7 +337,7 @@ font-weight: 600;
     text-align: center;
   }
   .sidebar.col-md-2 {
-    height: 92vh;
+    height: 98vh;
     position: absolute;
     background: #eceff0;
     color: #000;
