@@ -371,3 +371,29 @@ function copyToClipboard(text) {
 //   // Deep link to open Google Pay (Tez) app
 //   window.location.href = 'upi://pay?pa=1rn10mca31@okhdfcbank&cu=INR';
 // }
+
+async function loadContentBasedOnCountry() {
+  try {
+
+      const userCountry = Intl.DateTimeFormat().resolvedOptions().timeZone; // e.g., "India", "Australia"
+
+
+      // Dynamically add a class based on the country
+      if (userCountry === 'Asia/Calcutta') {
+          const elms = document.querySelectorAll("[id='show-ads-world-content']");
+          for(var i = 0; i < elms.length; i++) {
+            elms[i].classList.add('hide-world-content');
+          }
+      } else if (userCountry != 'Asia/Calcutta') {
+        const elms = document.querySelectorAll("[id='show-ads-india-content']");
+        for(var i = 0; i < elms.length; i++) {
+          elms[i].classList.add('hide-india-content');
+        }
+      }
+  } catch (error) {
+      console.error('Error fetching location:', error);
+  }
+}
+
+// Call the function
+loadContentBasedOnCountry();

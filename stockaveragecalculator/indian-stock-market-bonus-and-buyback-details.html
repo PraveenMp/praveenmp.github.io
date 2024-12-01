@@ -216,17 +216,39 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="ad-banner-wrapper mb-4">
-                            <ul>
-                                <li> <a target="_blank"
+                            <ul id="show-ads-india-content">
+                                <li>
+                                    <a target="_blank" tabindex="-1" href="https://amzn.to/4c7FlSR">Top Picks: Best
+                                        Smartphones Under ₹10,000</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" tabindex="-1" href="https://amzn.to/3SBXMYS">Top Picks: Best
+                                        40-Inch 4K Ultra HD Smart TVs Stunning Clarity and Smart Features!</a>
+                                </li>
+                                <span class="b-r-block">Books Recommendation</span>
+                                <li> <a target="_blank" tabindex="-1"
                                         href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=d7b58af7beaaa50e0bf135c06cda27dd&camp=3638&creative=24630&index=books&keywords=Best Stock Market Books, Get Rich">Top
                                         Picks: Essential Stock Market Books for Every Investor</a></li>
-                                <li> <a target="_blank"
+                                <li> <a target="_blank" tabindex="-1"
                                         href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=93a73bc45fd282f0b311239075611abf&camp=3638&creative=24630&index=books&keywords=Self-Confidence, Influence People &amp; Wealth English books for Indian ">Mastering
                                         Money Management: Must-Read Books for Financial Success</a></li>
-                                <li> <a target="_blank"
+                                <li> <a target="_blank" tabindex="-1"
                                         href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=c1a731d187981d90a78954327ff9f164&camp=3638&creative=24630&index=books&keywords=startup books">Launching
                                         Your Startup: Essential Reads for Success</a></li>
                             </ul>
+                            <ul id="show-ads-world-content">
+                                <li>
+                                  <a target="_blank" tabindex="-1" href="https://amzn.to/41vD4zh">Top Picks: Christmas gifts for
+                                    coworkers</a>
+                                </li>
+                                <li>
+                                  <a target="_blank" tabindex="-1" href="https://amzn.to/4fSiWLJ">Top Picks: Must-Have Tech Gadgets
+                                    for 2024 </a>
+                                </li>
+                                <span class="b-r-block">Books Recommendation</span>
+                                <li> <a target="_blank" tabindex="-1" href="https://amzn.to/3B6Prqu">Mastering
+                                    Money Management: Must-Read Books for Financial Success</a></li>
+                              </ul>
                         </div>
 
                     </div>
@@ -314,10 +336,16 @@
                             "Extra Ordinary General Meeting",
                             "Extra-Ordinary General Meeting",
                             "Extra Oridinary General Meeting",
-                            "Extra- Ordinary General Meeting"
+                            "Extra- Ordinary General Meeting",
+                            "Capital Reduction",
+                            "Extra Annual General Meeting",
+                            "Annual General Meetingdividend - "
                         ];
 
+                        const excludeRegex = /^(?!.*Annual General Meetingdividend -).*/;
+
                         return !(
+                            !item.PURPOSE.match(excludeRegex) ||
                             excludedPurposes.includes(item.PURPOSE) ||
                             item.PURPOSE.includes("Rights") ||
                             item.PURPOSE.includes("Dividend") ||
