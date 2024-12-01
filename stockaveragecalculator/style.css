@@ -4,6 +4,11 @@ html {
   min-height: 100%;
 }
 
+.hide-india-content, .hide-world-content {
+  display: none;
+}
+
+
 label {
   font-weight: 500;
 }

@@ -117,10 +117,10 @@
             </li>
             <li title="Rule of 72 Calculator">
               <a href="./rule-of-72-calculator.html" class="link">
-                  <i class="fas fa-angle-double-up"></i>
-                  Rule of 72 Calculator
+                <i class="fas fa-angle-double-up"></i>
+                Rule of 72 Calculator
               </a>
-          </li>
+            </li>
             <li title="Dividend Details">
               <a href="./indian-stock-market-dividend-details.html">
                 <i class="fas fa-cubes"></i>
@@ -214,12 +214,14 @@
               <div class="col-md-1 st">
               </div>
               <div class="col-md-4 st banner-ad-desktop">
-                <ul>
+                <ul id="show-ads-india-content">
                   <li>
-                    <a target="_blank" tabindex="-1" href="https://amzn.to/4c7FlSR">Top Picks: Best Smartphones Under ₹10,000</a>
+                    <a target="_blank" tabindex="-1" href="https://amzn.to/4c7FlSR">Top Picks: Best Smartphones Under
+                      ₹10,000</a>
                   </li>
                   <li>
-                    <a target="_blank" tabindex="-1" href="https://amzn.to/3SBXMYS">Top Picks: Best 40-Inch 4K Ultra HD Smart TVs – Stunning Clarity and Smart Features!</a>
+                    <a target="_blank" tabindex="-1" href="https://amzn.to/3SBXMYS">Top Picks: Best 40-Inch 4K Ultra HD
+                      Smart TVs – Stunning Clarity and Smart Features!</a>
                   </li>
                   <span class="b-r-block">Books Recommendation</span>
                   <li> <a target="_blank" tabindex="-1"
@@ -231,7 +233,19 @@
                   <li> <a target="_blank" tabindex="-1"
                       href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=c1a731d187981d90a78954327ff9f164&camp=3638&creative=24630&index=books&keywords=startup books">Launching
                       Your Startup: Essential Reads for Success</a></li>
-
+                </ul>
+                <ul id="show-ads-world-content">
+                  <li>
+                    <a target="_blank" tabindex="-1" href="https://amzn.to/41vD4zh">Top Picks: Christmas gifts for
+                      coworkers</a>
+                  </li>
+                  <li>
+                    <a target="_blank" tabindex="-1" href="https://amzn.to/4fSiWLJ">Top Picks: Must-Have Tech Gadgets
+                      for 2024 </a>
+                  </li>
+                  <span class="b-r-block">Books Recommendation</span>
+                  <li> <a target="_blank" tabindex="-1" href="https://amzn.to/3B6Prqu">Mastering
+                      Money Management: Must-Read Books for Financial Success</a></li>
                 </ul>
               </div>
             </div>
@@ -253,12 +267,14 @@
 
               </div>
               <div class="col-md-12 d-block d-md-none display-mobile-ad">
-                <ul>
+                <ul id="show-ads-india-content">
                   <li>
-                    <a target="_blank" tabindex="-1" href="https://amzn.to/4c7FlSR">Top Picks: Best Smartphones Under ₹10,000</a>
+                    <a target="_blank" tabindex="-1" href="https://amzn.to/4c7FlSR">Top Picks: Best Smartphones Under
+                      ₹10,000</a>
                   </li>
                   <li>
-                    <a target="_blank" tabindex="-1" href="https://amzn.to/3SBXMYS">Top Picks: Best 40-Inch 4K Ultra HD Smart TVs Stunning Clarity and Smart Features!</a>
+                    <a target="_blank" tabindex="-1" href="https://amzn.to/3SBXMYS">Top Picks: Best 40-Inch 4K Ultra HD
+                      Smart TVs Stunning Clarity and Smart Features!</a>
                   </li>
                   <span class="b-r-block">Books Recommendation</span>
                   <li> <a target="_blank" tabindex="-1"
@@ -270,6 +286,19 @@
                   <li> <a target="_blank" tabindex="-1"
                       href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=c1a731d187981d90a78954327ff9f164&camp=3638&creative=24630&index=books&keywords=startup books">Launching
                       Your Startup: Essential Reads for Success</a></li>
+                </ul>
+                <ul id="show-ads-world-content">
+                  <li>
+                    <a target="_blank" tabindex="-1" href="https://amzn.to/41vD4zh">Top Picks: Christmas gifts for
+                      coworkers</a>
+                  </li>
+                  <li>
+                    <a target="_blank" tabindex="-1" href="https://amzn.to/4fSiWLJ">Top Picks: Must-Have Tech Gadgets
+                      for 2024 </a>
+                  </li>
+                  <span class="b-r-block">Books Recommendation</span>
+                  <li> <a target="_blank" tabindex="-1" href="https://amzn.to/3B6Prqu">Mastering
+                      Money Management: Must-Read Books for Financial Success</a></li>
                 </ul>
                 <div id="buttonInstall">
                   <image title="Download" src="/stockaveragecalculator/images/download.jpg" height="40px"
@@ -330,574 +359,7 @@
           </div>
         </div>
 
-        <div id="sip-calculator" class="hide">
-          <div class="content-body-wrapper">
-            <div class="row">
-              <div class="col-md-12">
-                <header>
-                  <h2 class="headers">SIP(Systematic Investment Plan) calculator</h2>
-                </header>
-                <hr />
-              </div>
-            </div>
-            <div class="row">
-              <div id="sip-result-wrapper" class="col-md-4">
-                <div>
-                  <label style="float:left;margin-right:10px;">Monthly Investment Amount</label>
-                  <input class="form-control" type="number" id="investment" autocomplete="off" placeholder="3000"
-                    onchange="sipCalculator()" />
-                  <span id='error1'></span>
-                </div>
-                <div style="margin-top:15px">
-                  <label style="float:left;margin-right:10px;">Investment Period in years</label>
-                  <input class="form-control" type="number" id="years" autocomplete="off" placeholder="3"
-                    onchange="sipCalculator()" />
-                  <span id='error2'></span>
-                </div>
-                <div style="margin-top:15px">
-                  <label style="float:left;margin-right:10px;">Expected Annual Returns(%)</label>
-                  <input class="form-control" type="number" id="rateOfInterest" autocomplete="off" placeholder="10"
-                    onchange="sipCalculator()" />
-                  <span id='error2'></span>
-                </div>
-                <div style="margin-top:15px">
-                  <label style="float:left;margin-right:10px;">Step up - Yearly Increase in Monthly
-                    Investment(%)</label>
-                  <input class="form-control" type="number" id="rateIncrease" autocomplete="off" placeholder="0"
-                    onchange="sipCalculator()" />
-                  <span id='error2'></span>
-                </div>
-              </div>
-              <div class="col-md-2">
-              </div>
-              <div class="col-md-4 st banner-ad-desktop">
-                <ul>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=d7b58af7beaaa50e0bf135c06cda27dd&camp=3638&creative=24630&index=books&keywords=Best Stock Market Books, Get Rich">Top
-                      Picks: Essential Stock Market Books for Every Investor</a></li>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=93a73bc45fd282f0b311239075611abf&camp=3638&creative=24630&index=books&keywords=Self-Confidence, Influence People &amp; Wealth English books for Indian ">Mastering
-                      Money Management: Must-Read Books for Financial Success</a></li>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=c1a731d187981d90a78954327ff9f164&camp=3638&creative=24630&index=books&keywords=startup books">Launching
-                      Your Startup: Essential Reads for Success</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="r-sip">
-                  <div class="results">Expected Amount : <span id="tm">0</span> </div>
-                  <hr />
-                  <div class="results"> Amount Invested : <span id="im">0</span></div>
-                  <hr>
-                  <div class="results">Total Gain : <span id="gm">0</span> </div>
-                </div>
 
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 st">
-                <button class="btn btn-success" onclick="sipCalculator()"> Calculate</button>
-                <button class="btn btn-warning" onclick="clearFields1()">Clear Fields</button>
-              </div>
-              <div class="col-md-12 d-block d-md-none display-mobile-ad">
-                <ul>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=d7b58af7beaaa50e0bf135c06cda27dd&camp=3638&creative=24630&index=books&keywords=Best Stock Market Books, Get Rich">Top
-                      Picks: Essential Stock Market Books for Every Investor</a></li>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=93a73bc45fd282f0b311239075611abf&camp=3638&creative=24630&index=books&keywords=Self-Confidence, Influence People &amp; Wealth English books for Indian ">Mastering
-                      Money Management: Must-Read Books for Financial Success</a></li>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=c1a731d187981d90a78954327ff9f164&camp=3638&creative=24630&index=books&keywords=startup books">Launching
-                      Your Startup: Essential Reads for Success</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="content-body-wrapper mt-4">
-            <h4>What is SIP (Systematic Investment Plan)?</h4>
-
-            <p>
-              <strong>Systematic Investment Plan (SIP):</strong> An investment scheme provided by mutual fund companies.
-            </p>
-
-            <p>
-              <strong>Investment Methodology:</strong> Allows individuals to invest a small amount at regular intervals
-              (weekly, monthly, quarterly) in a chosen mutual fund.
-            </p>
-
-            <p>
-              <strong>Objective:</strong> A disciplined and passive approach for retail investors to create long-term
-              wealth, leveraging the power of compounding.
-            </p>
-
-            <p>
-              <strong>Volatility Management:</strong> Reduces the impact of market volatility since investments are made
-              at regular intervals.
-            </p>
-
-            <h4>SIP Calculator Functionality:</h4>
-
-            <ul>
-              <li><strong>Wealth Gain Estimation:</strong> Calculates the potential wealth gain and expected returns for
-                a monthly SIP investment.</li>
-              <li><strong>Estimation Basis:</strong> Provides a rough estimate of the maturity amount based on a
-                projected annual return rate.</li>
-              <li><strong>Comparative Tool:</strong> If the investor holds Fixed Deposits (FD) in their portfolio, a
-                fixed deposit calculator is available to approximate the maturity value.</li>
-            </ul>
-
-            <h4>Benefits of SIP compared to Lumpsum Investment:</h4>
-
-            <ol>
-              <li>
-                <strong>Market Speculation Avoidance:</strong>
-                <p>Eliminates the need to speculate or time the market for generating returns over the long term.</p>
-              </li>
-              <li>
-                <strong>Impact of Market Volatility:</strong>
-                <p>
-                <ul>
-                  <li>Investments made on a monthly basis result in little to no impact from market volatility.</li>
-                  <li>Utilizes the concept of unit cost averaging to mitigate risks associated with market fluctuations.
-                  </li>
-                </ul>
-                </p>
-              </li>
-              <li>
-                <strong>Passive and Automated Approach:</strong>
-                <p>
-                <ul>
-                  <li>Passive Investment: Encourages a passive and automated investment approach.</li>
-                  <li>Monthly Installments: Payments are deducted automatically, promoting a disciplined and committed
-                    savings/investment strategy.</li>
-                </ul>
-                </p>
-              </li>
-              <li>
-                <strong>Flexibility:</strong>
-                <p>
-                <ul>
-                  <li>Investment Amount: SIPs are flexible, allowing investors to start with amounts as low as Rs. 1000
-                    per month.</li>
-                  <li>Easy Management: Investors have the flexibility to create, update, or cancel SIPs at any time.
-                  </li>
-                </ul>
-                </p>
-              </li>
-            </ol>
-
-            <h4>Conclusion:</h4>
-
-            <p>
-              - SIP serves as a strategic investment tool for those seeking a disciplined, low-risk, and automated
-              approach to wealth creation.
-            </p>
-
-            <p>
-              - The flexibility and ease of management make SIP an accessible option for a wide range of investors.
-            </p>
-
-            <p>
-              - The use of calculators enhances the investor's ability to plan and project their investment outcomes
-              effectively.
-            </p>
-
-          </div>
-        </div>
-        <div id="percentage-calculator" class="hide">
-          <div class="content-body-wrapper">
-            <div class="row">
-              <div class="col-md-12">
-                <header>
-                  <h2 class="headers">Percentage(%) calculator</h2>
-                </header>
-                <hr />
-              </div>
-            </div>
-            <div class="row">
-              <div id="percentage-result-wrapper" class="col-md-6">
-                <div class="percentage-wrapper">
-                  <label>What is </label>
-                  <input class="form-control percentage-input" type="number" id="percentage" autocomplete="off"
-                    onchange="checkPercentage()" />
-                </div>
-                <div class="percentage-wrapper">
-                  <label>% (Percentage) of </label>
-                  <input class="form-control percentage-input" type="number" id="percentageNumber" autocomplete="off"
-                    onchange="checkPercentage()" />
-                  <label>?</label>
-                </div>
-              </div>
-              <div class="col-md-8">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4 col-xs-12">
-                <div class="r-sip">
-                  <div class="results">Result : <span id="percentageResult">0</span> </div>
-                </div>
-              </div>
-              <div class="col-md-2 ans-btn-wrapper">
-                <button class="btn btn-success ans-btn"> Answer</button>
-              </div>
-              <div class="col-md-4 st banner-ad-desktop">
-              </div>
-              <div class="col-xs-12 d-block d-md-none display-mobile-ad">
-                <ul>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=d7b58af7beaaa50e0bf135c06cda27dd&camp=3638&creative=24630&index=books&keywords=Best Stock Market Books, Get Rich">Top
-                      Picks: Essential Stock Market Books for Every Investor</a></li>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=93a73bc45fd282f0b311239075611abf&camp=3638&creative=24630&index=books&keywords=Self-Confidence, Influence People &amp; Wealth English books for Indian ">Mastering
-                      Money Management: Must-Read Books for Financial Success</a></li>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=c1a731d187981d90a78954327ff9f164&camp=3638&creative=24630&index=books&keywords=startup books">Launching
-                      Your Startup: Essential Reads for Success</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="content-body-wrapper mt-4">
-            <h4>Key Features:</h4>
-
-            <ul>
-              <li><strong>Percentage of a Number:</strong> Calculates the percentage of a given number.</li>
-              <li><strong>Percentage Change:</strong> Computes the percentage change between two values.</li>
-              <li><strong>Percentage Increase/Decrease:</strong> Determines the percentage increase or decrease from one
-                value to another.</li>
-              <li><strong>Percent to Fraction and Decimal Conversion:</strong> Converts percentages to fractions and
-                decimals.</li>
-              <li><strong>Discount and Mark-up Calculations:</strong> Computes the discounted price or mark-up
-                percentage.</li>
-              <li><strong>Tips and Commissions:</strong> Helps in calculating tips or commissions based on a percentage
-                of the total amount.</li>
-              <li><strong>Loan Interest Rates:</strong> Calculates interest rates on loans given a principal amount and
-                the total interest accrued.</li>
-            </ul>
-
-            <h4>How to Use a Percentage Calculator:</h4>
-
-            <ol>
-              <li><strong>Entering Values:</strong> Users input the necessary values into the calculator depending on
-                the type of percentage calculation they need.</li>
-              <li><strong>Choosing Calculation Type:</strong> Select the specific type of percentage calculation desired
-                (e.g., percentage increase, percentage decrease, etc.).</li>
-              <li><strong>Result Display:</strong> The calculator provides the calculated percentage or related result
-                based on the input values and chosen calculation type.</li>
-            </ol>
-
-            <h4>Benefits of a Percentage Calculator:</h4>
-
-            <ul>
-              <li><strong>Accuracy and Efficiency:</strong> Reduces manual calculation errors, ensuring accurate
-                results. Saves time by automating complex percentage calculations.</li>
-              <li><strong>Versatility:</strong> Useful in various scenarios such as finance, business, education, and
-                everyday calculations.</li>
-              <li><strong>Ease of Use:</strong> Designed to be user-friendly, making percentage-related computations
-                accessible to a wide audience.</li>
-              <li><strong>Educational Tool:</strong> Helps users understand and learn the concept of percentages through
-                practical applications.</li>
-            </ul>
-
-            <h4>Conclusion:</h4>
-
-            <p>
-              The Percentage Calculator is a versatile tool that simplifies percentage-related calculations, providing
-              accurate results efficiently. It is a valuable resource in various fields, aiding users in making informed
-              decisions and solving mathematical problems involving percentages.
-            </p>
-
-          </div>
-        </div>
-        <div id="emi-calculator" class="hide">
-          <div class="content-body-wrapper">
-            <div class="row">
-              <div class="col-md-12">
-                <header>
-                  <h2 class="headers">EMI calculator</h2>
-                </header>
-                <hr />
-              </div>
-            </div>
-            <div class="row">
-              <div id="sip-result-wrapper" class="col-md-4">
-                <div>
-                  <label style="float:left;margin-right:10px;">Loan Amount</label>
-                  <input class="form-control" type="number" id="loanAmount" placeholder="Enter loan amount"
-                    autocomplete="off" onchange="calculateEMI()" required>
-                  <span id='error1'></span>
-                </div>
-                <div style="margin-top:15px">
-                  <label style="float:left;margin-right:10px;" for="interestRate">Annual Interest Rate (%):</label>
-                  <input class="form-control" type="number" id="interestRate" placeholder="Enter annual interest rate"
-                    autocomplete="off" onchange="calculateEMI()" required>
-                  <span id='error2'></span>
-                </div>
-                <div style="margin-top:15px">
-                  <label style="float:left;margin-right:10px;" for="loanTerm">Loan Term (Months):</label>
-                  <input class="form-control" type="number" id="loanTerm" placeholder="Enter loan term in months"
-                    autocomplete="off" onchange="calculateEMI()" required>
-                  <span id='error2'></span>
-                </div>
-              </div>
-              <div class="col-md-2"></div>
-              <div class="col-md-4 st banner-ad-desktop">
-                <ul>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=d7b58af7beaaa50e0bf135c06cda27dd&camp=3638&creative=24630&index=books&keywords=Best Stock Market Books, Get Rich">Top
-                      Picks: Essential Stock Market Books for Every Investor</a></li>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=93a73bc45fd282f0b311239075611abf&camp=3638&creative=24630&index=books&keywords=Self-Confidence, Influence People &amp; Wealth English books for Indian ">Mastering
-                      Money Management: Must-Read Books for Financial Success</a></li>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=c1a731d187981d90a78954327ff9f164&camp=3638&creative=24630&index=books&keywords=startup books">Launching
-                      Your Startup: Essential Reads for Success</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="r-sip">
-                  <div class="results">EMI : <span id="total-emi">0</span> </div>
-                  <hr />
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 st">
-                <button class="btn btn-success" onclick="calculateEMI()"> Calculate</button>
-                <button class="btn btn-warning" onclick="clearFields2()">Clear Fields</button>
-              </div>
-              <div class="col-md-12 d-block d-md-none display-mobile-ad">
-                <ul>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=d7b58af7beaaa50e0bf135c06cda27dd&camp=3638&creative=24630&index=books&keywords=Best Stock Market Books, Get Rich">Top
-                      Picks: Essential Stock Market Books for Every Investor</a></li>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=93a73bc45fd282f0b311239075611abf&camp=3638&creative=24630&index=books&keywords=Self-Confidence, Influence People &amp; Wealth English books for Indian ">Mastering
-                      Money Management: Must-Read Books for Financial Success</a></li>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=c1a731d187981d90a78954327ff9f164&camp=3638&creative=24630&index=books&keywords=startup books">Launching
-                      Your Startup: Essential Reads for Success</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="content-body-wrapper mt-4">
-            <h3 class="mt-4 mb-4">EMI Calculator</h3>
-            <p>An EMI (Equated Monthly Installment) calculator is a financial tool used to calculate the fixed monthly
-              payment amount towards a loan, with a specified interest rate and loan tenure. It helps borrowers
-              understand their repayment obligations and plan their finances accordingly.</p>
-            <p>To use the EMI calculator, enter the loan amount, interest rate (annual percentage), and loan tenure (in
-              months) in the form below and click "Calculate EMI". The calculator will then compute the EMI, total
-              interest payable, and total payment (principal + interest) and display the results.</p>
-          </div>
-        </div>
-        <div id="cagr-calculator" class="hide">
-          <div class="content-body-wrapper">
-            <div class="row">
-              <div class="col-md-12">
-                <header>
-                  <h2 class="headers">CAGR calculator(Compound Annual Growth Rate Calculator)</h2>
-                </header>
-                <hr />
-              </div>
-            </div>
-            <div class="row">
-              <div id="cagr-result-wrapper" class="col-md-4">
-                <div>
-                  <label style="float:left;margin-right:10px;">Initial Value</label>
-                  <input class="form-control" type="number" id="initialValue" placeholder="Enter initial value"
-                    autocomplete="off" onchange="calculateCAGR()">
-                  <span id='error1'></span>
-                </div>
-                <div style="margin-top:15px">
-                  <label style="float:left;margin-right:10px;" for="finalValue">Final Value:</label>
-                  <input class="form-control" type="number" id="finalValue" placeholder="Enter final value"
-                    autocomplete="off" onchange="calculateCAGR()">
-                  <span id='error2'></span>
-                </div>
-                <div style="margin-top:15px">
-                  <label style="float:left;margin-right:10px;" for="cagryears">Years:</label>
-                  <input class="form-control" type="number" id="cagryears" placeholder="Enter years" autocomplete="off"
-                    onchange="calculateCAGR()">
-                  <span id='error2'></span>
-                </div>
-              </div>
-              <div class="col-md-2"></div>
-              <div class="col-md-4 st banner-ad-desktop">
-                <ul>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=d7b58af7beaaa50e0bf135c06cda27dd&camp=3638&creative=24630&index=books&keywords=Best Stock Market Books, Get Rich">Top
-                      Picks: Essential Stock Market Books for Every Investor</a></li>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=93a73bc45fd282f0b311239075611abf&camp=3638&creative=24630&index=books&keywords=Self-Confidence, Influence People &amp; Wealth English books for Indian ">Mastering
-                      Money Management: Must-Read Books for Financial Success</a></li>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=c1a731d187981d90a78954327ff9f164&camp=3638&creative=24630&index=books&keywords=startup books">Launching
-                      Your Startup: Essential Reads for Success</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="r-sip">
-                  <div class="results">CAGR : <span id="cagr-result">0</span> </div>
-                  <hr />
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 st">
-                <button class="btn btn-success" onclick="calculateCAGR()"> Calculate</button>
-                <button class="btn btn-warning" onclick="clearFields3()">Clear Fields</button>
-              </div>
-              <div class="col-md-12 d-block d-md-none display-mobile-ad">
-                <ul>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=d7b58af7beaaa50e0bf135c06cda27dd&camp=3638&creative=24630&index=books&keywords=Best Stock Market Books, Get Rich">Top
-                      Picks: Essential Stock Market Books for Every Investor</a></li>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=93a73bc45fd282f0b311239075611abf&camp=3638&creative=24630&index=books&keywords=Self-Confidence, Influence People &amp; Wealth English books for Indian ">Mastering
-                      Money Management: Must-Read Books for Financial Success</a></li>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=c1a731d187981d90a78954327ff9f164&camp=3638&creative=24630&index=books&keywords=startup books">Launching
-                      Your Startup: Essential Reads for Success</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="content-body-wrapper mt-4">
-            <p>The Compound Annual Growth Rate (CAGR) calculator is a tool used to determine the average annual growth
-              rate of an investment over a specified period. It is particularly useful for assessing the performance of
-              long-term investments such as stocks, mutual funds, and retirement accounts.</p>
-            <p>The formula for calculating CAGR is:</p>
-            <pre>
-        CAGR = ((Final Value / Initial Value)^(1 / Number of Years)) - 1
-            </pre>
-            <p>Where:</p>
-            <ul>
-              <li><strong>Final Value:</strong> The ending balance or value of the investment.</li>
-              <li><strong>Initial Value:</strong> The starting balance or value of the investment.</li>
-              <li><strong>Number of Years:</strong> The total number of years over which the investment has grown.</li>
-            </ul>
-          </div </div>
-        </div>
-        <div id="swp-calculator" class="hide">
-          <div class="content-body-wrapper">
-            <div class="row">
-              <div class="col-md-12">
-                <header>
-                  <h2 class="headers">SWP calculator(Systematic Withdrawal Plan)</h2>
-                </header>
-                <hr />
-              </div>
-            </div>
-            <div class="row">
-              <div id="swp-result-wrapper" class="col-md-4">
-                <div>
-                  <label style="float:left;margin-right:10px;">Initial Investment Amount:</label>
-                  <input class="form-control" type="number" id="swpInvestment" placeholder="Enter investment amount"
-                    autocomplete="off" onchange="calculateSWP()">
-                  <span id='error1'></span>
-                </div>
-                <div style="margin-top:15px">
-                  <label style="float:left;margin-right:10px;" for="monthlyWithdrawal">Monthly Withdrawal Amount</label>
-                  <input class="form-control" type="number" id="monthlyWithdrawal"
-                    placeholder="Enter monthly withdrawal amount" autocomplete="off" onchange="calculateSWP()">
-                  <span id='error2'></span>
-                </div>
-                <div style="margin-top:15px">
-                  <label style="float:left;margin-right:10px;" for="annualInterestRate">Annual Interest Rate
-                    (%):</label>
-                  <input class="form-control" type="number" id="annualInterestRate"
-                    placeholder="Enter annual interest rate" autocomplete="off" onchange="calculateSWP()">
-                  <span id='error2'></span>
-                </div>
-                <div style="margin-top:15px">
-                  <label style="float:left;margin-right:10px;" for="swpMonths">Number of Months</label>
-                  <input class="form-control" type="number" id="swpMonths" placeholder="Enter number of months"
-                    autocomplete="off" onchange="calculateSWP()">
-                  <span id='error2'></span>
-                </div>
-              </div>
-              <div class="col-md-2"></div>
-              <div class="col-md-4 st banner-ad-desktop">
-                <ul>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=d7b58af7beaaa50e0bf135c06cda27dd&camp=3638&creative=24630&index=books&keywords=Best Stock Market Books, Get Rich">Top
-                      Picks: Essential Stock Market Books for Every Investor</a></li>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=93a73bc45fd282f0b311239075611abf&camp=3638&creative=24630&index=books&keywords=Self-Confidence, Influence People &amp; Wealth English books for Indian ">Mastering
-                      Money Management: Must-Read Books for Financial Success</a></li>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=c1a731d187981d90a78954327ff9f164&camp=3638&creative=24630&index=books&keywords=startup books">Launching
-                      Your Startup: Essential Reads for Success</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="r-sip">
-                  <div class="results">SWP : <span id="swp-result">0</span> </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 st">
-                <button class="btn btn-success" onclick="calculateSWP()"> Calculate</button>
-                <button class="btn btn-warning" onclick="clearFields4()">Clear Fields</button>
-              </div>
-              <div class="col-md-12 d-block d-md-none display-mobile-ad">
-                <ul>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=d7b58af7beaaa50e0bf135c06cda27dd&camp=3638&creative=24630&index=books&keywords=Best Stock Market Books, Get Rich">Top
-                      Picks: Essential Stock Market Books for Every Investor</a></li>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=93a73bc45fd282f0b311239075611abf&camp=3638&creative=24630&index=books&keywords=Self-Confidence, Influence People &amp; Wealth English books for Indian ">Mastering
-                      Money Management: Must-Read Books for Financial Success</a></li>
-                  <li> <a target="_blank" tabindex="-1"
-                      href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=c1a731d187981d90a78954327ff9f164&camp=3638&creative=24630&index=books&keywords=startup books">Launching
-                      Your Startup: Essential Reads for Success</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="content-body-wrapper mt-4">
-            <h3 class="mt-4 mb-4">Simple Withdrawal Plan (SWP) Calculator</h3>
-            <p>A Simple Withdrawal Plan (SWP) calculator is a financial tool used to calculate the final value of an
-              investment after a specified period and the total amount withdrawn through monthly withdrawals. It helps
-              investors plan their withdrawals from an investment portfolio while ensuring that they maintain a desired
-              income stream over time.</p>
-            <p>To use the SWP calculator, enter the initial investment amount, monthly withdrawal amount, annual
-              interest rate, and number of months in the form below and click "Calculate". The calculator will then
-              compute the final value after the specified number of months and the total amount withdrawn, and display
-              the results.</p>
-            <form>
-          </div>
-        </div>
-        <div id="buy-me-a-coffee" class="hide">
-          <div class="content-body-wrapper mt-4">
-            <div class="row">
-              <div class="col-md-4">
-                <div>
-                  <h4 class="mt-4 mb-4"> <i class="fas fa-mug-hot"></i> Buy Me a Coffee <i class="fas fa-mug-hot"></i>
-                  </h4>
-                  <p>Buy me a coffee is a way to support the developer of this application. If you find this application
-                    useful, you can buy me a coffee. Your support will help me to keep this application running and
-                    improve it further.</p>
-                  <p>You can scan the QR code using any QR code scanner app on your smartphone.</p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <img src="./images/donate-qr.jpeg" alt="Buy me a coffee" height="700" width="500" class="img-fluid" />
-              </div>
-            </div>
-          </div>
-        </div>
 
 
         <footer class="mb-2">
@@ -925,48 +387,50 @@
         </footer>
 
       </div>
-      <script src="./script.min.js" crossorigin="anonymous"></script>
-      <script>
-        if ('serviceWorker' in navigator) {
-          window.addEventListener('load', function () {
-            navigator.serviceWorker.register('/stockaveragecalculator/service-worker.js');
-          });
-        }
-        // Initialize deferredPrompt for use later to show browser install prompt.
-        let deferredPrompt;
-        let buttonInstall = document.getElementById("buttonInstall");
-        if(buttonInstall) {
-          buttonInstall.style.display = 'none';
-        }
+    </div>
+  </div>
+  <script src="./script.js" crossorigin="anonymous"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/stockaveragecalculator/service-worker.js');
+      });
+    }
+    // Initialize deferredPrompt for use later to show browser install prompt.
+    let deferredPrompt;
+    let buttonInstall = document.getElementById("buttonInstall");
+    if (buttonInstall) {
+      buttonInstall.style.display = 'none';
+    }
 
 
-        window.addEventListener('beforeinstallprompt', (e) => {
-          // Prevent the mini-infobar from appearing on mobile
-          e.preventDefault();
-          // Stash the event so it can be triggered later.
-          deferredPrompt = e;
-          // Update UI notify the user they can install the PWA
-          buttonInstall.style.display = 'block';
-          buttonInstall.addEventListener('click', async () => {
-            // Hide the app provided install promotion
-            // buttonInstall.style.display = 'none';
-            // Show the install prompt
-            deferredPrompt.prompt();
-            // Wait for the user to respond to the prompt
-            const { outcome } = await deferredPrompt.userChoice;
-            // Optionally, send analytics event with outcome of user choice
-            console.log(`User response to the install prompt: ${outcome}`);
-            // We've used the prompt, and can't use it again, throw it away
-            deferredPrompt = null;
-          });
-          // Optionally, send analytics event that PWA install promo was shown.
-          console.log(`'beforeinstallprompt' event was fired.`);
-        });
+    window.addEventListener('beforeinstallprompt', (e) => {
+      // Prevent the mini-infobar from appearing on mobile
+      e.preventDefault();
+      // Stash the event so it can be triggered later.
+      deferredPrompt = e;
+      // Update UI notify the user they can install the PWA
+      buttonInstall.style.display = 'block';
+      buttonInstall.addEventListener('click', async () => {
+        // Hide the app provided install promotion
+        // buttonInstall.style.display = 'none';
+        // Show the install prompt
+        deferredPrompt.prompt();
+        // Wait for the user to respond to the prompt
+        const { outcome } = await deferredPrompt.userChoice;
+        // Optionally, send analytics event with outcome of user choice
+        console.log(`User response to the install prompt: ${outcome}`);
+        // We've used the prompt, and can't use it again, throw it away
+        deferredPrompt = null;
+      });
+      // Optionally, send analytics event that PWA install promo was shown.
+      console.log(`'beforeinstallprompt' event was fired.`);
+    });
 
 
 
 
-      </script>
+  </script>
 </body>
 
 </html>
