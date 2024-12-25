@@ -397,3 +397,21 @@ async function loadContentBasedOnCountry() {
 
 // Call the function
 loadContentBasedOnCountry();
+
+    // Load the snippet dynamically
+    const loadSnippet = async (url, targetElementId) => {
+      try {
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error(`Failed to fetch snippet: ${response.statusText}`);
+        }
+        const html = await response.text();
+        document.getElementById(targetElementId).innerHTML = html;
+      } catch (error) {
+        console.error(error);
+        document.getElementById(targetElementId).innerText = "Error loading content.";
+      }
+    };
+
+    // Load the snippet into the specified container
+    loadSnippet('menu.html', 'load-menu-dynamically');

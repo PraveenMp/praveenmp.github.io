@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Trading Holiday</title>
+</head>
+<body>
+    <div id="holidayDetails"></div>
+    <script>
+        const holidays = [
+            { date: "2025-02-26", name: "Mahashivratri" },
+            { date: "2025-03-14", name: "Holi" },
+            { date: "2025-03-31", name: "Id-Ul-Fitr (Ramadan Eid)" },
+            { date: "2025-04-10", name: "Shri Mahavir Jayanti" },
+            { date: "2025-04-14", name: "Dr. Baba Saheb Ambedkar Jayanti" },
+            { date: "2025-04-18", name: "Good Friday" },
+            { date: "2025-05-01", name: "Maharashtra Day" },
+            { date: "2025-08-15", name: "Independence Day" },
+            { date: "2025-08-27", name: "Ganesh Chaturthi" },
+            { date: "2025-10-02", name: "Mahatma Gandhi Jayanti/Dussehra" },
+            { date: "2025-10-21", name: "Diwali Laxmi Pujan*" },
+            { date: "2025-10-22", name: "Diwali-Balipratipada" },
+            { date: "2025-11-05", name: "Prakash Gurpurb Sri Guru Nanak Dev" },
+            { date: "2025-12-25", name: "Christmas" }
+        ];
+
+        function showNextHoliday(holidays) {
+            const today = new Date();
+            const upcomingHoliday = holidays
+                .map(holiday => ({ ...holiday, date: new Date(holiday.date) }))
+                .filter(holiday => holiday.date >= today)
+                .sort((a, b) => a.date - b.date)[0];
+
+            const holidayDiv = document.getElementById("holidayDetails");
+            if (upcomingHoliday) {
+                holidayDiv.innerHTML = `
+                    <h3>Next Trading Holiday</h3>
+                    <p>${upcomingHoliday.date.toDateString()}- ${upcomingHoliday.name}</p>
+                `;
+            } else {
+                holidayDiv.innerHTML = "<p>No upcoming holidays available.</p>";
+            }
+        }
+
+        showNextHoliday(holidays);
+    </script>
+</body>
+</html>
