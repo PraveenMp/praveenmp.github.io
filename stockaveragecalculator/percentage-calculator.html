@@ -71,99 +71,9 @@
                     </div>
                 </div>
 
-                <div class="top-menu">
-                    <ul>
-                        <li title="Stock Average Calculator">
-                            <a href="./index.html" class="link" >
-                                <i class="fas fa-tachometer-alt"></i>
-                                Stock Average Calculator
-                            </a>
-                        </li>
-                        <li id="sc" title="SIP Calculator">
-                            <a href="./systematic-Investment-plan-calculator.html" class="link">
-                                <i class="fas fa-coins"></i>
-                                SIP Calculator
-                            </a>
-                        </li>
-                        <li title="Percentage Calculator" class="active">
-                            <a href="./percentage-calculator.html" class="link">
-                                <i class="fas fa-percentage"></i>
-                                Percentage Calculator
-                            </a>
-                        </li>
-                        <li title="EMI Calculator">
-                            <a href="./emi-calculator.html" class="link">
-                                <i class="fas fa-wallet"></i>
-                                EMI Calculator
-                            </a>
-                        </li>
-                        <li title="CAGR calculator">
-                            <a href="./compound-annual-growth-rate-calculator.html" class="link">
-                                <i class="fas fa-mountain"></i>
-                                CAGR calculator
-                            </a>
-                        </li>
-                        <li title="SWP Calculator">
-                            <a href="./systematic-withdrawal-plan-calculator.html" class="link">
-                                <i class="fas fa-hand-holding-water"></i>
-                                SWP Calculator
-                            </a>
-                        </li>
-                        <li title="Stock Split Calculator">
-                          <a href="./stock-split.html" class="link">
-                            <i class="fas fa-chart-pie"></i>
-                              Stock Split Calculator
-                          </a>
-                      </li>
-                      <li title="Rule of 72 Calculator">
-                        <a href="./rule-of-72-calculator.html" class="link">
-                            <i class="fas fa-angle-double-up"></i>
-                            Rule of 72 Calculator
-                        </a>
-                    </li>
-                        <li title="Dividend Details">
-                            <a href="./indian-stock-market-dividend-details.html">
-                                <i class="fas fa-cubes"></i>
-                                Dividend Details 2023 - 2024 <img src="./images/new-icon.gif" height="35" width="35" />
-                            </a>
-                        </li>
-                        <li title="Bonus Details" >
-                            <a href="./indian-stock-market-bonus-and-buyback-details.html">
-                                <i class="fas fa-search-dollar"></i>
-                                Bonus & Buyback Details
-                            </a>
-                        </li>
-                        <li title="Face Value Split Details" >
-                            <a href="./indian-stock-market-face-value-and-demerger.html">
-                                <i class="fas fa-cut"></i>
-                                Face value split & Demerger
-                            </a>
-                        </li>
-                        <li title="Best books on investment, trading, stock market" >
-                            <a href="./top-books-on-investment-trading-stock-market.html">
-                                <i class="fas fa-book"></i>
-                                Best books on investment, trading, stock market
-                            </a>
-                        </li>
-                        </li>
-                        <li id="buymeacoffee" title="Buy Me a Coffee" >
-                            <a href="./buy-me-a-coffee.html">
-                                <i class="fas fa-mug-hot"></i>
-                                Buy Me a Coffee
-                            </a>
-                        </li>
-                        <li id="aboutus" title="About Us" >
-                            <a href="./about-us.html"><i class="fas fa-user-friends"></i>
-                                About Us
-                            </a>
-                        </li>
-                        <li id="to-do-list" title="To-do" >
-                          <a href="https://praveenmp.github.io/todo/" target="_blank"><i class="fas fa-th-list"></i>
-                              Your To-do List
-                          </a>
-                      </li>
-                    </ul>
-                </div>
+                <!---Menu Section-->
+                <div hidden id="page-name">Percentage Calculator</div>
+                <div class="top-menu" id="load-menu-dynamically"></div>
             </div>
             <div class="col-md-10 content-right-body-wrapper">
                 <div id="clock"></div>
@@ -178,67 +88,42 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div id="percentage-result-wrapper" class="col-md-6">
+                            <div id="percentage-result-wrapper" class="col-md-4">
                                 <div class="percentage-wrapper">
-                                    <label>What is </label>
-                                    <input class="form-control percentage-input" type="number" id="percentage"
-                                        autocomplete="off" onchange="checkPercentage()" />
+                                    <div class="text-center mt-1"> <label>What is </label></div>
+                                    <div class="input-group">
+                                        <input class="form-control percentage-input" type="number" id="percentage"
+                                            autocomplete="off" onchange="checkPercentage()" />
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">%</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mt-1"> <label>% (Percentage) of </label></div>
+                                    <div class="percentage-wrapper">
+                                        <input class="form-control percentage-input" type="number" id="percentageNumber"
+                                            autocomplete="off" onchange="checkPercentage()" />
+                                    </div>
+                                    <div class="text-center mt-1"> <label>?</label></div>
                                 </div>
-                                <div class="percentage-wrapper">
-                                    <label>% (Percentage) of </label>
-                                    <input class="form-control percentage-input" type="number" id="percentageNumber"
-                                        autocomplete="off" onchange="checkPercentage()" />
-                                    <label>?</label>
+                                <div class="">
+                                    <button class="btn btn-warning" onclick="clearAllFields(['percentage','percentageNumber','percentageResult'])"> Clear Fields</button>
+                                    <button class="btn btn-success"> Calculate</button>
                                 </div>
-                            </div>
-                            <div class="col-md-8">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 col-xs-12">
                                 <div class="r-sip">
                                     <div class="results">Result : <span id="percentageResult">0</span> </div>
                                 </div>
                             </div>
-                            <div class="col-md-2 ans-btn-wrapper">
-                                <button class="btn btn-success ans-btn"> Calculate</button>
+                            <div class="col-md-2">
                             </div>
                             <div class="col-md-4 st banner-ad-desktop">
+                                <div id="load-indian-ads" class="load-indian-ads-option-one"></div>
+                                <div id="load-global-ads" class="load-global-ads-option-one"></div>
                             </div>
+                        </div>
+                        <div class="row">
                             <div class="col-xs-12 d-block d-md-none display-mobile-ad">
-                                <ul id="show-ads-india-content">
-                                    <li>
-                                        <a target="_blank" tabindex="-1" href="https://amzn.to/4c7FlSR">Top Picks: Best
-                                            Smartphones Under ₹10,000</a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" tabindex="-1" href="https://amzn.to/3SBXMYS">Top Picks: Best
-                                            40-Inch 4K Ultra HD Smart TVs Stunning Clarity and Smart Features!</a>
-                                    </li>
-                                    <span class="b-r-block">Books Recommendation</span>
-                                    <li> <a target="_blank" tabindex="-1"
-                                            href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=d7b58af7beaaa50e0bf135c06cda27dd&camp=3638&creative=24630&index=books&keywords=Best Stock Market Books, Get Rich">Top
-                                            Picks: Essential Stock Market Books for Every Investor</a></li>
-                                    <li> <a target="_blank" tabindex="-1"
-                                            href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=93a73bc45fd282f0b311239075611abf&camp=3638&creative=24630&index=books&keywords=Self-Confidence, Influence People &amp; Wealth English books for Indian ">Mastering
-                                            Money Management: Must-Read Books for Financial Success</a></li>
-                                    <li> <a target="_blank" tabindex="-1"
-                                            href="https://www.amazon.in/gp/search?ie=UTF8&tag=stockaverag0c-21&linkCode=ur2&linkId=c1a731d187981d90a78954327ff9f164&camp=3638&creative=24630&index=books&keywords=startup books">Launching
-                                            Your Startup: Essential Reads for Success</a></li>
-                                </ul>
-                                <ul id="show-ads-world-content">
-                                    <li>
-                                      <a target="_blank" tabindex="-1" href="https://amzn.to/41vD4zh">Top Picks: Christmas gifts for
-                                        coworkers</a>
-                                    </li>
-                                    <li>
-                                      <a target="_blank" tabindex="-1" href="https://amzn.to/4fSiWLJ">Top Picks: Must-Have Tech Gadgets
-                                        for 2024 </a>
-                                    </li>
-                                    <span class="b-r-block">Books Recommendation</span>
-                                    <li> <a target="_blank" tabindex="-1" href="https://amzn.to/3B6Prqu">Mastering
-                                        Money Management: Must-Read Books for Financial Success</a></li>
-                                  </ul>
+                                <div id="load-indian-ads" class="load-indian-ads-option-one"></div>
+                                <div id="load-global-ads" class="load-global-ads-option-one"></div>
                             </div>
                         </div>
                     </div>
