@@ -1,95 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trading Holidays 2025</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        tr.highlight {
-            background-color: #ffeb3b;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Menu Example</title>
+  <style>
+    a.active {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <h1>Trading Holidays 2025</h1>
-    <p>The table below lists all the trading holidays for 2025. The next upcoming holiday is highlighted.</p>
-    <table>
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Date</th>
-                <th>Day</th>
-                <th>Holiday Name</th>
-            </tr>
-        </thead>
-        <tbody id="holidayTable">
-            <!-- Rows will be inserted dynamically -->
-        </tbody>
-    </table>
-    <script>
-        const holidays = [
-            { date: "2025-02-26", name: "Mahashivratri", day: "Wednesday" },
-            { date: "2025-03-14", name: "Holi", day: "Friday" },
-            { date: "2025-03-31", name: "Id-Ul-Fitr (Ramadan Eid)", day: "Monday" },
-            { date: "2025-04-10", name: "Shri Mahavir Jayanti", day: "Thursday" },
-            { date: "2025-04-14", name: "Dr. Baba Saheb Ambedkar Jayanti", day: "Monday" },
-            { date: "2025-04-18", name: "Good Friday", day: "Friday" },
-            { date: "2025-05-01", name: "Maharashtra Day", day: "Thursday" },
-            { date: "2025-08-15", name: "Independence Day", day: "Friday" },
-            { date: "2025-08-27", name: "Ganesh Chaturthi", day: "Wednesday" },
-            { date: "2025-10-02", name: "Mahatma Gandhi Jayanti/Dussehra", day: "Thursday" },
-            { date: "2025-10-21", name: "Diwali Laxmi Pujan*", day: "Tuesday" },
-            { date: "2025-10-22", name: "Diwali-Balipratipada", day: "Wednesday" },
-            { date: "2025-11-05", name: "Prakash Gurpurb Sri Guru Nanak Dev", day: "Wednesday" },
-            { date: "2025-12-25", name: "Christmas", day: "Thursday" }
-        ];
+  <ul id="nav">
+    <!-- Menu items will be dynamically loaded here -->
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
 
-        function populateTable(holidays) {
-            const today = new Date();
-            const tableBody = document.getElementById("holidayTable");
+  <button id="loadMenu">Load More Menu</button>
 
-            holidays.forEach((holiday, index) => {
-                const holidayDate = new Date(holiday.date);
-                const isUpcoming = holidayDate >= today;
-                const row = document.createElement("tr");
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const navContainer = document.getElementById('nav');
 
-                if (isUpcoming && !document.querySelector("tr.highlight")) {
-                    row.classList.add("highlight");
-                }
+      // Event delegation for dynamically loaded menu
+      navContainer.addEventListener('click', function (event) {
+        if (event.target && event.target.tagName === 'A') {
+          event.preventDefault();
 
-                row.innerHTML = `
-                    <td>${index + 1}</td>
-                    <td>${holidayDate.toDateString()}</td>
-                    <td>${holiday.day}</td>
-                    <td>${holiday.name}</td>
-                `;
+          // Remove 'active' class from all links
+          const navLinks = navContainer.querySelectorAll('a');
+          navLinks.forEach(link => link.classList.remove('active'));
 
-                tableBody.appendChild(row);
-            });
+          // Add 'active' class to the clicked link
+          event.target.classList.add('active');
         }
+      });
 
-        populateTable(holidays);
-    </script>
+      // Example of dynamically loading menu items
+      document.getElementById('loadMenu').addEventListener('click', function () {
+        navContainer.innerHTML += `
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        `;
+      });
+    });
+  </script>
 </body>
 </html>
