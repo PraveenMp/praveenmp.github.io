@@ -423,7 +423,7 @@ const loadSnippet = async (url, targetElementId) => {
 };
 
 // Load the snippet into the specified container
-loadSnippet('components/menu.html', 'load-menu-dynamically');
+loadSnippet('menu.html', 'load-menu-dynamically');
 
 const loadAds = async (url, targetElementId) => {
   try {
@@ -442,6 +442,6 @@ const loadAds = async (url, targetElementId) => {
   }
 };
 
-loadAds('ads/india/banner-ads-desktop-india-option-one.html', 'load-indian-ads-option-one');
-loadAds('ads/global/banner-ads-desktop-global-option-one.html', 'load-global-ads-option-one');
+loadAds('banner-ads-desktop-india-option-one.html', 'load-indian-ads-option-one');
+loadAds('banner-ads-desktop-global-option-one.html', 'load-global-ads-option-one');
 
