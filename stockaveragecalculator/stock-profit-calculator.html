@@ -11,16 +11,16 @@
 
         gtag('config', 'G-JPBH15FMY4');
     </script>
-    <title>Percentage calculator</title>
+    <title>Stock Profit Calculator</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="manifest" href="./manifest.webmanifest">
     <meta charset="UTF-8">
     <meta name="description"
-        content="This application allows to calculate stock average on entering first and second buy details. A stock average calculator is a tool used to calculate the average value of a list of stock prices." />
+        content="Calculate your stock market profit or loss easily with this stock profit calculator. Get insights on total investment, sold stocks, remaining shares, and profits.">
     <meta name="keywords"
-        content="Indian Percentage calculator, USA Percentage calculator, US Percentage calculator, Japan stock market average-calculator, Australia Percentage calculator. average calculator, stock calculator, percentage calculator,  cash and carry calculator, Stock prices, Average, Calculation, Performance, Investors, Time period, Investment decisions, Spreadsheet, Software program, Stock charting, Technical analysis, Analyzing, Comparison, Investment performance, Stock market.">
+        content="Stock Profit Calculator, Stock Market, Investment Calculator, Share Trading, Profit and Loss Calculator, Stock Analysis">
     <meta name="author" content="Praveen MP">
-    <meta property="og:title" content="Percentage calculator" />
+    <meta property="og:title" content="Systematic Investment Plan calculator" />
     <meta property="og:url" content="https://praveenmp.github.io/stockaveragecalculator/" />
     <meta property="og:description"
         content="This application allows to calculate stock average on entering first and second buy details. A stock average calculator is a tool used to calculate the average value of a list of stock prices.">
@@ -29,10 +29,10 @@
     <meta property="og:type" content="website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="twitter:card" content="Percentage calculator">
-    <meta name="twitter:title" content="Percentage calculator">
+    <meta name="twitter:card" content="Systematic Investment Plan calculator">
+    <meta name="twitter:title" content="Systematic Investment Plan calculator">
     <meta name="twitter:description"
-        content="Indian Percentage calculator, USA Percentage calculator, US Percentage calculator, Japan stock market average-calculator, Australia Percentage calculator. average calculator, stock calculator, percentage calculator,  cash and carry calculator, Stock prices, Average, Calculation, Performance, Investors, Time period, Investment decisions, Spreadsheet, Software program, Stock charting, Technical analysis, Analyzing, Comparison, Investment performance, Stock market.">
+        content="Indian Systematic Investment Plan calculator, USA Systematic Investment Plan calculator, US Systematic Investment Plan calculator, Japan stock market average-calculator, Australia Systematic Investment Plan calculator. average calculator, stock calculator, percentage calculator,  cash and carry calculator, Stock prices, Average, Calculation, Performance, Investors, Time period, Investment decisions, Spreadsheet, Software program, Stock charting, Technical analysis, Analyzing, Comparison, Investment performance, Stock market.">
     <meta name="twitter:image"
         content="https://praveenmp.github.io/stockaveragecalculator/images/android-chrome-512x512.png">
 
@@ -46,9 +46,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <style>
+        <style>
+            #stock-profit {
+                font-size: 1rem;
+            }
+            #stock-profit span {
+                color: green;
+            }
+            #stock-profit span.red {
+                color: red;
+            }
 
-    </style>
+            .hide {
+                display: none;
+            }
+
+            .show {
+                display: block;
+            }
+        </style>
 </head>
 
 <body>
@@ -72,48 +88,51 @@
                 </div>
 
                 <!---Menu Section-->
-                <div hidden id="page-name">Percentage Calculator</div>
+                <div hidden id="page-name">Stock Profit Calculator</div>
                 <div class="top-menu" id="load-menu-dynamically"></div>
             </div>
             <div class="col-md-10 content-right-body-wrapper">
                 <div id="clock"></div>
-                <div id="percentage-calculator">
+                <div id="sip-calculator">
                     <div class="content-body-wrapper">
                         <div class="row">
                             <div class="col-md-12">
                                 <header>
-                                    <h2 class="headers">Percentage(%) calculator</h2>
+                                    <h2 class="headers">Stock Profit or Loss Calculator</h2>
                                 </header>
                                 <hr />
                             </div>
                         </div>
                         <div class="row">
-                            <div id="percentage-result-wrapper" class="col-md-4">
-                                <div class="percentage-wrapper">
-                                    <div class="text-center mt-1"> <label>What is </label></div>
-                                    <div class="input-group">
-                                        <input class="form-control percentage-input" type="number" id="percentage"
-                                            autocomplete="off" onchange="checkPercentage()" />
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">%</span>
-                                        </div>
-                                    </div>
-                                    <div class="text-center mt-1"> <label>% (Percentage) of </label></div>
-                                    <div class="percentage-wrapper">
-                                        <input class="form-control percentage-input" type="number" id="percentageNumber"
-                                            autocomplete="off" onchange="checkPercentage()" />
-                                    </div>
-                                    <div class="text-center mt-1"> <label>?</label></div>
+                            <div id="sip-result-wrapper" class="col-md-4">
+
+                                <div class="mb-3">
+                                    <label for="quantity" class="form-label">Stocks currently owned</label>
+                                    <input type="number" class="form-control" id="quantity"
+                                        placeholder="Enter number of stocks" onchange="calculateProfit()">
                                 </div>
-                                <div class="">
-                                    <button class="btn btn-warning" onclick="clearAllFields(['percentage','percentageNumber','percentageResult'])"> Clear Fields</button>
-                                    <button class="btn btn-success"> Calculate</button>
+                                <div class="mb-3">
+                                    <label for="buyPrice" class="form-label">Buy Price</label>
+                                    <input type="number" class="form-control" id="buyPrice"
+                                        placeholder="Enter buying price" onchange="calculateProfit()">
                                 </div>
-                                <div class="r-sip">
-                                    <div class="results">Result : <span id="percentageResult">0</span> </div>
+                                <div class="mb-3">
+                                    <label for="sellPrice" class="form-label">Sell Price</label>
+                                    <input type="number" class="form-control" id="sellPrice"
+                                        placeholder="Enter selling price" onchange="calculateProfit()" >
+                                </div>
+                                <div class="mb-3">
+                                    <label for="sellQuantity" class="form-label">Stocks intended to sell</label>
+                                    <input type="number" class="form-control" id="sellQuantity"
+                                        placeholder="Enter number of stocks to sell" onchange="calculateProfit()">
+                                    <span class="red error-msg hide" id="sell-quantity-error">Sell quantity cannot be greater than total quantity.</label>
+                                </div>
+                                <div class="result-wrapper">
+                                    <div class="mt-3 text-left" id="stock-profit"></div>
                                 </div>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-3">
+
                             </div>
                             <div class="col-md-4 st banner-ad-desktop">
                                 <div id="load-indian-ads" class="load-indian-ads-option-one"></div>
@@ -121,84 +140,48 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12 d-block d-md-none display-mobile-ad">
+                            <div class="col-md-4">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 st">
+
+                                <button class="btn btn-warning" onclick="clearStockProfitFields()">Clear Fields</button>
+                                <button class="btn btn-success cust-btn-success"
+                                    onclick="calculateProfit()">Calculate</button>
+                            </div>
+                            <div class="col-md-12 d-block d-md-none display-mobile-ad">
                                 <div id="load-indian-ads" class="load-indian-ads-option-one"></div>
                                 <div id="load-global-ads" class="load-global-ads-option-one"></div>
                             </div>
                         </div>
                     </div>
                     <div class="content-body-wrapper mt-4 details-sec-wrapper">
-                        <h6>Key Features:</h6>
-
-                        <ul>
-                            <li><strong>Percentage of a Number:</strong> Calculates the percentage of a given number.
-                            </li>
-                            <li><strong>Percentage Change:</strong> Computes the percentage change between two values.
-                            </li>
-                            <li><strong>Percentage Increase/Decrease:</strong> Determines the percentage increase or
-                                decrease from one
-                                value to another.</li>
-                            <li><strong>Percent to Fraction and Decimal Conversion:</strong> Converts percentages to
-                                fractions and
-                                decimals.</li>
-                            <li><strong>Discount and Mark-up Calculations:</strong> Computes the discounted price or
-                                mark-up
-                                percentage.</li>
-                            <li><strong>Tips and Commissions:</strong> Helps in calculating tips or commissions based on
-                                a percentage
-                                of the total amount.</li>
-                            <li><strong>Loan Interest Rates:</strong> Calculates interest rates on loans given a
-                                principal amount and
-                                the total interest accrued.</li>
-                        </ul>
-
-                        <h6>How to Use a Percentage Calculator:</h6>
-
-                        <ol>
-                            <li><strong>Entering Values:</strong> Users input the necessary values into the calculator
-                                depending on
-                                the type of percentage calculation they need.</li>
-                            <li><strong>Choosing Calculation Type:</strong> Select the specific type of percentage
-                                calculation desired
-                                (e.g., percentage increase, percentage decrease, etc.).</li>
-                            <li><strong>Result Display:</strong> The calculator provides the calculated percentage or
-                                related result
-                                based on the input values and chosen calculation type.</li>
-                        </ol>
-
-                        <h6>Benefits of a Percentage Calculator:</h6>
-
-                        <ul>
-                            <li><strong>Accuracy and Efficiency:</strong> Reduces manual calculation errors, ensuring
-                                accurate
-                                results. Saves time by automating complex percentage calculations.</li>
-                            <li><strong>Versatility:</strong> Useful in various scenarios such as finance, business,
-                                education, and
-                                everyday calculations.</li>
-                            <li><strong>Ease of Use:</strong> Designed to be user-friendly, making percentage-related
-                                computations
-                                accessible to a wide audience.</li>
-                            <li><strong>Educational Tool:</strong> Helps users understand and learn the concept of
-                                percentages through
-                                practical applications.</li>
-                        </ul>
-
-                        <h6>Conclusion:</h6>
-
+                        <h6>What is stock Profit or Loss Calculator?</h6>
                         <p>
-                            The Percentage Calculator is a versatile tool that simplifies percentage-related
-                            calculations, providing
-                            accurate results efficiently. It is a valuable resource in various fields, aiding users in
-                            making informed
-                            decisions and solving mathematical problems involving percentages.
+                            Stock Profit or Loss Calculator is a tool that helps you calculate the profit or loss you
+                            made on your stock investments. It takes into account the number of stocks you own, the
+                            buying
+                            price per stock, the selling price per stock, and the number of stocks you want to sell. The
+                            calculator then calculates the total investment, total sold stocks, remaining shares, and
+                            the
+                            profit or loss you made on your stock investments.
                         </p>
-
+                        <ol>
+                            <li>Enter the number of stocks you own in the "Number of Stocks" field.</li>
+                            <li>Enter the buying price per stock in the "Buying Price per Stock" field.</li>
+                            <li>Enter the selling price per stock in the "Selling Price per Stock" field.</li>
+                            <li>Enter the number of stocks you want to sell in the "Number of Stocks to Sell" field.
+                            </li>
+                            <li>Click on the "Calculate" button to calculate the profit or loss you made on your stock
+                                investments.</li>
+                        </ol>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <footer class="mb-2">
         <div class="container">
             <div class="row">
@@ -224,8 +207,8 @@
     </footer>
 
     </div>
-    <script src="./script.min.js" crossorigin="anonymous"></script>
-    <script>
+    <script src="./script.js" crossorigin="anonymous"></script>
+    <!-- <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function () {
                 navigator.serviceWorker.register('/stockaveragecalculator/service-worker.js');
@@ -258,11 +241,7 @@
             // Optionally, send analytics event that PWA install promo was shown.
             console.log(`'beforeinstallprompt' event was fired.`);
         });
-
-
-
-
-    </script>
+    </script> -->
 </body>
 
 </html>

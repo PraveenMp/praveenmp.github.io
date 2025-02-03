@@ -2,6 +2,57 @@
 
 const intlLanguage = Intl.DateTimeFormat().resolvedOptions().timeZone === 'Asia/Calcutta' ? 'en-IN' : 'en-US';
 
+// Add hide class for error-msg element
+
+function calculateProfit() {
+  let quantity = parseFloat(document.getElementById('quantity').value);
+  let buyPrice = parseFloat(document.getElementById('buyPrice').value);
+  let sellPrice = parseFloat(document.getElementById('sellPrice').value);
+  let sellQuantity = parseFloat(document.getElementById('sellQuantity').value);
+
+  if (isNaN(quantity) || isNaN(buyPrice) || isNaN(sellPrice) || isNaN(sellQuantity)) {
+    document.getElementById('stock-profit').innerText = "";
+    return;
+  }
+
+  if (quantity < sellQuantity) {
+    document.getElementById('sell-quantity-error').classList.remove('hide');
+    document.getElementById('sell-quantity-error').classList.add('show');
+    return;
+  } else {
+    document.getElementById('sell-quantity-error').classList.add('hide');
+    document.getElementById('sell-quantity-error').classList.remove('show');
+  }
+
+  let profitPerShare = sellPrice - buyPrice;
+  let totalProfit = profitPerShare * sellQuantity;
+  let remainingShares = quantity - sellQuantity;
+  let remainingAmount = remainingShares * sellPrice;
+  let totalOwnedValue = quantity * sellPrice;
+  let totalSoldValue = sellQuantity * sellPrice;
+
+  let profitOrLossText = totalProfit >= 0 ? `<span class="green"> Total Profit: ${profitPerShare} * ${sellQuantity} = ${totalProfit} </span>` : `<span class="red"> Total Loss: ${profitPerShare} * ${sellQuantity} = ${Math.abs(totalProfit)}</span>`;
+
+  document.getElementById('stock-profit').innerHTML =
+    `Total Shares Value:<span>${quantity} * ${sellPrice}  </span>  = <b>${totalOwnedValue.toLocaleString(intlLanguage)}</b> </br>` +
+    `Total Sold Value: <span>${sellQuantity} * ${sellPrice} </span> = <b>${totalSoldValue.toLocaleString(intlLanguage)}</b> </br>` +
+    `Remaining Shares Value:<span> ${remainingShares} * ${sellPrice} </span> = <b> ${remainingAmount.toLocaleString(intlLanguage)} </b> </br>` +
+    `<b> ${profitOrLossText} </b>`;
+}
+
+function clearStockProfitFields() {
+  document.getElementById('quantity').value = '';
+  document.getElementById('buyPrice').value = '';
+  document.getElementById('sellPrice').value = '';
+  document.getElementById('sellQuantity').value = '';
+  document.getElementById('result').innerText = '';
+}
+
+
+
+
+
+
 function unitChanged(id, error) {
   const unit1 = document.getElementById("units1").value;
   const price1 = document.getElementById("Price1").value;
@@ -432,7 +483,7 @@ const loadAds = async (url, targetElementId) => {
       throw new Error(`Failed to fetch snippet: ${response.statusText}`);
     }
     const html = await response.text();
-    const targetClass = document.querySelectorAll('.'+targetElementId);
+    const targetClass = document.querySelectorAll('.' + targetElementId);
     targetClass.forEach(function (element) {
       element.innerHTML = html;
     });
