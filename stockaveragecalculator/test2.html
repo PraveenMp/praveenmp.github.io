@@ -1,49 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Next Trading Holiday</title>
-</head>
-<body>
-    <div id="holidayDetails"></div>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JPBH15FMY4"></script>
     <script>
-        const holidays = [
-            { date: "2025-02-26", name: "Mahashivratri" },
-            { date: "2025-03-14", name: "Holi" },
-            { date: "2025-03-31", name: "Id-Ul-Fitr (Ramadan Eid)" },
-            { date: "2025-04-10", name: "Shri Mahavir Jayanti" },
-            { date: "2025-04-14", name: "Dr. Baba Saheb Ambedkar Jayanti" },
-            { date: "2025-04-18", name: "Good Friday" },
-            { date: "2025-05-01", name: "Maharashtra Day" },
-            { date: "2025-08-15", name: "Independence Day" },
-            { date: "2025-08-27", name: "Ganesh Chaturthi" },
-            { date: "2025-10-02", name: "Mahatma Gandhi Jayanti/Dussehra" },
-            { date: "2025-10-21", name: "Diwali Laxmi Pujan*" },
-            { date: "2025-10-22", name: "Diwali-Balipratipada" },
-            { date: "2025-11-05", name: "Prakash Gurpurb Sri Guru Nanak Dev" },
-            { date: "2025-12-25", name: "Christmas" }
-        ];
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-        function showNextHoliday(holidays) {
-            const today = new Date();
-            const upcomingHoliday = holidays
-                .map(holiday => ({ ...holiday, date: new Date(holiday.date) }))
-                .filter(holiday => holiday.date >= today)
-                .sort((a, b) => a.date - b.date)[0];
+        gtag('config', 'G-JPBH15FMY4');
+    </script>
+    <title>Stock Profit Calculator</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="description" content="Calculate your stock market profit or loss easily with this stock profit calculator. Get insights on total investment, sold stocks, remaining shares, and profits.">
+    <meta name="keywords" content="Stock Profit Calculator, Stock Market, Investment Calculator, Share Trading, Profit and Loss Calculator, Stock Analysis">
+    <meta name="author" content="Praveen MP">
+    <meta property="og:title" content="Systematic Investment Plan calculator" />
+    <meta property="og:url" content="https://praveenmp.github.io/stockaveragecalculator/" />
+    <meta property="og:description"
+        content="This application allows to calculate stock average on entering first and second buy details. A stock average calculator is a tool used to calculate the average value of a list of stock prices.">
+    <meta property="og:image"
+        content="https://praveenmp.github.io/stockaveragecalculator/images/android-chrome-512x512.png">
+    <meta property="og:type" content="website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            const holidayDiv = document.getElementById("holidayDetails");
-            if (upcomingHoliday) {
-                holidayDiv.innerHTML = `
-                    <h3>Next Trading Holiday</h3>
-                    <p>${upcomingHoliday.date.toDateString()}- ${upcomingHoliday.name}</p>
-                `;
-            } else {
-                holidayDiv.innerHTML = "<p>No upcoming holidays available.</p>";
-            }
+    <meta name="twitter:card" content="Systematic Investment Plan calculator">
+    <meta name="twitter:title" content="Systematic Investment Plan calculator">
+    <meta name="twitter:description"
+        content="Indian Systematic Investment Plan calculator, USA Systematic Investment Plan calculator, US Systematic Investment Plan calculator, Japan stock market average-calculator, Australia Systematic Investment Plan calculator. average calculator, stock calculator, percentage calculator,  cash and carry calculator, Stock prices, Average, Calculation, Performance, Investors, Time period, Investment decisions, Spreadsheet, Software program, Stock charting, Technical analysis, Analyzing, Comparison, Investment performance, Stock market.">
+    <meta name="twitter:image"
+        content="https://praveenmp.github.io/stockaveragecalculator/images/android-chrome-512x512.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid wrapper-body">
+        <div class="row">
+            <div id="mobile-header" class="hidden-on-desktop-tablet">
+                <div id="toggle-btn">
+                    <i class="fas fa-bars"></i> Menu
+                </div>
+                <div class="mobile-logo">
+                    <h2 class="mobile-app-logo"><i class="fas fa-calculator"></i> Stock-Calc</h2>
+                </div>
+            </div>
+            <div class="col-md-2 sidebar" id="sidebar">
+                <div class="title-wrapper">
+                    <h2 class="app-logo"><i class="fas fa-calculator"></i> Stock-Calc</h2>
+                    <div class="custom-control custom-switch mb-3">
+                        <input type="checkbox" class="custom-control-input" id="darkModeSwitch" data-toggle="toggle">
+                        <label class="custom-control-label" for="darkModeSwitch"></label>
+                    </div>
+                </div>
+
+                <!---Menu Section-->
+                <div hidden id="page-name">SIP Calculator</div>
+                <div class="top-menu" id="load-menu-dynamically"></div>
+            </div>
+            <div class="col-md-10 content-right-body-wrapper">
+                <div id="clock"></div>
+                <div id="sip-calculator">
+                    <div class="content-body-wrapper">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <header>
+                                    <h2 class="headers">SIP(Systematic Investment Plan) calculator</h2>
+                                </header>
+                                <hr />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="sip-result-wrapper" class="col-md-4">
+                                <div>
+                                    <label style="float:left;margin-right:10px;">Monthly Investment Amount</label>
+                                    <input class="form-control" type="number" id="investment" autocomplete="off"
+                                        placeholder="3000" onchange="sipCalculator()" />
+                                    <span id='error1'></span>
+                                </div>
+                                <div style="margin-top:15px">
+                                    <label style="float:left;margin-right:10px;">Investment Period</label>
+                                    <div class="input-group">
+                                        <input class="form-control" type="number" id="years" autocomplete="off"
+                                            placeholder="3" onchange="sipCalculator()" />
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">years</div>
+                                        </div>
+                                    </div>
+                                    <span id='error2'></span>
+                                </div>
+                                <div style="margin-top:15px">
+                                    <label style="float:left;margin-right:10px;">Expected Annual Returns(%)</label>
+                                    <div class="input-group">
+                                        <input class="form-control" type="number" id="rateOfInterest" autocomplete="off"
+                                            placeholder="10" onchange="sipCalculator()" />
+                                        <div class="input-group-append">
+                                            <div class="input-group-text">%</div>
+                                        </div>
+                                    </div>
+                                    <span id='error2'></span>
+                                </div>
+                                <div style="margin-top:15px">
+                                    <label style="float:left;margin-right:10px;">Step up - Yearly Increase in Monthly
+                                        Investment(%)</label>
+                                    <div class="input-group">
+                                        <input class="form-control" type="number" id="rateIncrease" autocomplete="off"
+                                            placeholder="0" onchange="sipCalculator()" />
+                                        <div class="input-group-append">
+                                            <div class="input-group-text">%</div>
+                                        </div>
+                                    </div>
+                                    <span id='error2'></span>
+                                </div>
+                                <div class="r-sip">
+                                    <div class="results">Expected Amount : <span id="tm">0</span> </div>
+                                    <hr />
+                                    <div class="results"> Amount Invested : <span id="im">0</span></div>
+                                    <hr>
+                                    <div class="results">Total Gain : <span id="gm">0</span> </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-3">
+                                <canvas id="sipChart"></canvas>
+                            </div>
+                            <div class="col-md-4 st banner-ad-desktop">
+                                <div id="load-indian-ads" class="load-indian-ads-option-one"></div>
+                                <div id="load-global-ads" class="load-global-ads-option-one"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 st">
+
+                                <button class="btn btn-warning" onclick="clearFields1()">Clear Fields</button>
+                                <button class="btn btn-success cust-btn-success"
+                                    onclick="sipCalculator()">Calculate</button>
+                            </div>
+                            <div class="col-md-12 d-block d-md-none display-mobile-ad">
+                                <div id="load-indian-ads" class="load-indian-ads-option-one"></div>
+                                <div id="load-global-ads" class="load-global-ads-option-one"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-body-wrapper mt-4 details-sec-wrapper">
+                        <h4>What is SIP (Systematic Investment Plan)?</h4>
+                        <p>
+                            <strong>Systematic Investment Plan (SIP):</strong> An investment scheme provided by mutual
+                            fund companies.
+                        </p>
+
+                        <p>
+                            <strong>Investment Methodology:</strong> Allows individuals to invest a small amount at
+                            regular intervals
+                            (weekly, monthly, quarterly) in a chosen mutual fund.
+                        </p>
+
+                        <p>
+                            <strong>Objective:</strong> A disciplined and passive approach for retail investors to
+                            create long-term
+                            wealth, leveraging the power of compounding.
+                        </p>
+
+                        <p>
+                            <strong>Volatility Management:</strong> Reduces the impact of market volatility since
+                            investments are made
+                            at regular intervals.
+                        </p>
+
+                        <h4>SIP Calculator Functionality:</h4>
+
+                        <ul>
+                            <li><strong>Wealth Gain Estimation:</strong> Calculates the potential wealth gain and
+                                expected returns for
+                                a monthly SIP investment.</li>
+                            <li><strong>Estimation Basis:</strong> Provides a rough estimate of the maturity amount
+                                based on a
+                                projected annual return rate.</li>
+                            <li><strong>Comparative Tool:</strong> If the investor holds Fixed Deposits (FD) in their
+                                portfolio, a
+                                fixed deposit calculator is available to approximate the maturity value.</li>
+                        </ul>
+
+                        <h4>Benefits of SIP compared to Lumpsum Investment:</h4>
+
+                        <ol>
+                            <li>
+                                <strong>Market Speculation Avoidance:</strong>
+                                <p>Eliminates the need to speculate or time the market for generating returns over the
+                                    long term.</p>
+                            </li>
+                            <li>
+                                <strong>Impact of Market Volatility:</strong>
+                                <p>
+                                <ul>
+                                    <li>Investments made on a monthly basis result in little to no impact from market
+                                        volatility.</li>
+                                    <li>Utilizes the concept of unit cost averaging to mitigate risks associated with
+                                        market fluctuations.
+                                    </li>
+                                </ul>
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Passive and Automated Approach:</strong>
+                                <p>
+                                <ul>
+                                    <li>Passive Investment: Encourages a passive and automated investment approach.</li>
+                                    <li>Monthly Installments: Payments are deducted automatically, promoting a
+                                        disciplined and committed
+                                        savings/investment strategy.</li>
+                                </ul>
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Flexibility:</strong>
+                                <p>
+                                <ul>
+                                    <li>Investment Amount: SIPs are flexible, allowing investors to start with amounts
+                                        as low as Rs. 1000
+                                        per month.</li>
+                                    <li>Easy Management: Investors have the flexibility to create, update, or cancel
+                                        SIPs at any time.
+                                    </li>
+                                </ul>
+                                </p>
+                            </li>
+                        </ol>
+
+                        <h4>Conclusion:</h4>
+
+                        <p>
+                            - SIP serves as a strategic investment tool for those seeking a disciplined, low-risk, and
+                            automated
+                            approach to wealth creation.
+                        </p>
+
+                        <p>
+                            - The flexibility and ease of management make SIP an accessible option for a wide range of
+                            investors.
+                        </p>
+
+                        <p>
+                            - The use of calculators enhances the investor's ability to plan and project their
+                            investment outcomes
+                            effectively.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="mb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4 text-center mb-2">
+                    &copy; 2018 - 2028. Feedback:<a href="mailto:praveen_mp@live.com">praveen_mp@live.com</a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="social-share-icons">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                            class="btn btn-primary btn-sm"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                            class="btn btn-info btn-sm"><i class="fab fa-twitter"></i></a>
+                        <a href="whatsapp://send?text=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                            class="btn btn-success btn-sm"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/?url=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                            class="btn btn-danger btn-sm"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./script.min.js" crossorigin="anonymous"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/stockaveragecalculator/service-worker.js');
+            });
         }
+        // Initialize deferredPrompt for use later to show browser install prompt.
+        let deferredPrompt;
+        let buttonInstall = document.getElementById("buttonInstall");
+        buttonInstall.style.display = 'none';
 
-        showNextHoliday(holidays);
+        window.addEventListener('beforeinstallprompt', (e) => {
+            // Prevent the mini-infobar from appearing on mobile
+            e.preventDefault();
+            // Stash the event so it can be triggered later.
+            deferredPrompt = e;
+            // Update UI notify the user they can install the PWA
+            buttonInstall.style.display = 'block';
+            buttonInstall.addEventListener('click', async () => {
+                // Hide the app provided install promotion
+                // buttonInstall.style.display = 'none';
+                // Show the install prompt
+                deferredPrompt.prompt();
+                // Wait for the user to respond to the prompt
+                const { outcome } = await deferredPrompt.userChoice;
+                // Optionally, send analytics event with outcome of user choice
+                console.log(`User response to the install prompt: ${outcome}`);
+                // We've used the prompt, and can't use it again, throw it away
+                deferredPrompt = null;
+            });
+            // Optionally, send analytics event that PWA install promo was shown.
+            console.log(`'beforeinstallprompt' event was fired.`);
+        });
     </script>
 </body>
+
 </html>
