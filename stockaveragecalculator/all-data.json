@@ -26314,5 +26314,239 @@
     "FACE VALUE": 10,
     "EX-DATE": "25-Feb-25",
     "RECORD DATE": "25-Feb-25"
+  },
+  {
+    "SYMBOL": "STEELCITY",
+    "COMPANY NAME": "Steel City Securities Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 1 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "27-Feb-25",
+    "RECORD DATE": "27-Feb-25"
+  },
+  {
+    "SYMBOL": "795GS2032",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "27-Feb-25",
+    "RECORD DATE": "27-Feb-25"
+  },
+  {
+    "SYMBOL": "JINDWORLD",
+    "COMPANY NAME": "Jindal Worldwide Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 4:1",
+    "FACE VALUE": 1,
+    "EX-DATE": "28-Feb-25",
+    "RECORD DATE": "28-Feb-25"
+  },
+  {
+    "SYMBOL": "NAVA",
+    "COMPANY NAME": "NAVA LIMITED",
+    "SERIES": "EQ",
+    "PURPOSE": "Buy Back",
+    "FACE VALUE": 1,
+    "EX-DATE": "28-Feb-25",
+    "RECORD DATE": "28-Feb-25"
+  },
+  {
+    "SYMBOL": "PFC",
+    "COMPANY NAME": "Power Finance Corporation Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 3.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "28-Feb-25",
+    "RECORD DATE": "28-Feb-25"
+  },
+  {
+    "SYMBOL": "IGIL",
+    "COMPANY NAME": "International Gemmological Institute (India) Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 2.44 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "28-Feb-25",
+    "RECORD DATE": "28-Feb-25"
+  },
+  {
+    "SYMBOL": "MGEL",
+    "COMPANY NAME": "Mangalam Global Enterprise Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "4-Mar-25",
+    "RECORD DATE": "4-Mar-25"
+  },
+  {
+    "SYMBOL": "COASTCORP",
+    "COMPANY NAME": "Coastal Corporation Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "4-Mar-25",
+    "RECORD DATE": "4-Mar-25"
+  },
+  {
+    "SYMBOL": "CAPINVIT",
+    "COMPANY NAME": "Capital Infra Trust",
+    "SERIES": "IV",
+    "PURPOSE": "Distribution - Rs 12.71 Per Unit Consisting Of Rs 11.22 Per Unit Taxable Dividend & Rs 1.38 Per Unit Exempt Dividend/ Interest Payment Re 0.11 Per Unit",
+    "FACE VALUE": 99,
+    "EX-DATE": "4-Mar-25",
+    "RECORD DATE": "4-Mar-25"
+  },
+  {
+    "SYMBOL": "697GS2026",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "5-Mar-25",
+    "RECORD DATE": "5-Mar-25"
+  },
+  {
+    "SYMBOL": "ANANDRATHI",
+    "COMPANY NAME": "Anand Rathi Wealth Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 1:1",
+    "FACE VALUE": 5,
+    "EX-DATE": "5-Mar-25",
+    "RECORD DATE": "5-Mar-25"
+  },
+  {
+    "SYMBOL": "SBILIFE",
+    "COMPANY NAME": "SBI Life Insurance Company Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 2.70 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "7-Mar-25",
+    "RECORD DATE": "7-Mar-25"
+  },
+  {
+    "SYMBOL": "74GS2035",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "7-Mar-25",
+    "RECORD DATE": "7-Mar-25"
+  },
+  {
+    "SYMBOL": "METROBRAND",
+    "COMPANY NAME": "Metro Brands Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 3 Per Share & Special Dividend - Rs 14.50 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "7-Mar-25",
+    "RECORD DATE": "7-Mar-25"
+  },
+  {
+    "SYMBOL": "SBC",
+    "COMPANY NAME": "SBC Exports Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 1:2",
+    "FACE VALUE": 1,
+    "EX-DATE": "10-Mar-25",
+    "RECORD DATE": "10-Mar-25"
+  },
+  {
+    "SYMBOL": "KESORAMIND",
+    "COMPANY NAME": "Kesoram Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Demerger",
+    "FACE VALUE": 10,
+    "EX-DATE": "10-Mar-25",
+    "RECORD DATE": "10-Mar-25"
+  },
+  {
+    "SYMBOL": "JASH",
+    "COMPANY NAME": "Jash Engineering Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 0.80 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "10-Mar-25",
+    "RECORD DATE": "10-Mar-25"
+  },
+  {
+    "SYMBOL": "ABINFRA",
+    "COMPANY NAME": "A B Infrabuild Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Rights 1:5 @ Premium Rs 27.50/-",
+    "FACE VALUE": 10,
+    "EX-DATE": "10-Mar-25",
+    "RECORD DATE": "10-Mar-25"
+  },
+  {
+    "SYMBOL": "1018GS2026",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "10-Mar-25",
+    "RECORD DATE": "10-Mar-25"
+  },
+  {
+    "SYMBOL": "BEL",
+    "COMPANY NAME": "Bharat Electronics Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 1.5 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "11-Mar-25",
+    "RECORD DATE": "11-Mar-25"
+  },
+  {
+    "SYMBOL": "IOLCP",
+    "COMPANY NAME": "IOL Chemicals and Pharmaceuticals Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "11-Mar-25",
+    "RECORD DATE": "11-Mar-25"
+  },
+  {
+    "SYMBOL": "HUDCO",
+    "COMPANY NAME": "Housing & Urban Development Corporation Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 1.05 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "13-Mar-25",
+    "RECORD DATE": "14-Mar-25"
+  },
+  {
+    "SYMBOL": "GRINFRA",
+    "COMPANY NAME": "G R Infraprojects Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 12.50 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "13-Mar-25",
+    "RECORD DATE": "13-Mar-25"
+  },
+  {
+    "SYMBOL": "SUNTV",
+    "COMPANY NAME": "Sun TV Network Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 2.50 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "13-Mar-25",
+    "RECORD DATE": "13-Mar-25"
+  },
+  {
+    "SYMBOL": "668GS2031",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "13-Mar-25",
+    "RECORD DATE": "15-Mar-25"
+  },
+  {
+    "SYMBOL": "IRISDOREME",
+    "COMPANY NAME": "Iris Clothings Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Rights 1:6 @ Premium Rs 33/-",
+    "FACE VALUE": 2,
+    "EX-DATE": "13-Mar-25",
+    "RECORD DATE": "13-Mar-25"
   }
 ]
