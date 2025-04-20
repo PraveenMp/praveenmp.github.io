@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JPBH15FMY4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-JPBH15FMY4');
+  </script>
+  <title>TAX Calculator</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <meta charset="UTF-8">
+  <meta name="description"
+    content="This Tax Calculator helps individuals in India estimate their income tax liability under both the New Tax Regime and the Old Tax Regime." />
+  <meta name="keywords"
+    content="Indian Tax Calculator, USA Tax Calculator, US Tax Calculator, Japan stock market average-calculator, Australia Tax Calculator. average calculator, stock calculator, percentage calculator,  cash and carry calculator, Stock prices, Average, Calculation, Performance, Investors, Time period, Investment decisions, Spreadsheet, Software program, Stock charting, Technical analysis, Analyzing, Comparison, Investment performance, Stock market.">
+  <meta name="author" content="Praveen MP">
+  <meta property="og:title" content="Tax Calculator" />
+  <meta property="og:url" content="https://praveenmp.github.io/stockaveragecalculator/" />
+  <meta property="og:description"
+    content="This Tax Calculator helps individuals in India estimate their income tax liability under both the New Tax Regime and the Old Tax Regime.">
+  <meta property="og:image"
+    content="https://praveenmp.github.io/stockaveragecalculator/images/android-chrome-512x512.png">
+  <meta property="og:type" content="website">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="twitter:card" content="Tax Calculator">
+  <meta name="twitter:title" content="Tax Calculator">
+  <meta name="twitter:description"
+    content="Indian Tax Calculator, Time period, Investment decisions, Spreadsheet, Software program, Stock charting, Technical analysis, Analyzing, Comparison, Investment performance, Stock market.">
+  <meta name="twitter:image"
+    content="https://praveenmp.github.io/stockaveragecalculator/images/android-chrome-512x512.png">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <style>
+    .slab-table th, .slab-table td {
+      white-space: nowrap;
+    }
+    span {
+        font-size: 14px;
+        font-weight: bold;
+        color: blueviolet;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid wrapper-body">
+    <div class="row">
+      <div id="mobile-header" class="hidden-on-desktop-tablet">
+        <div id="toggle-btn">
+          <i class="fas fa-bars"></i> Menu
+        </div>
+        <div class="mobile-logo">
+          <h2 class="mobile-app-logo"><i class="fas fa-calculator"></i> Stock-Calc</h2>
+        </div>
+      </div>
+      <div class="col-md-2 sidebar" id="sidebar">
+        <div class="title-wrapper">
+          <h2 class="app-logo"><i class="fas fa-calculator"></i> Stock-Calc</h2>
+          <div class="custom-control custom-switch mb-3">
+            <input type="checkbox" class="custom-control-input" id="darkModeSwitch" data-toggle="toggle">
+            <label class="custom-control-label" for="darkModeSwitch"></label>
+          </div>
+        </div>
+
+        <!---Menu Section-->
+        <div hidden id="page-name">Tax Calculator</div>
+        <div class="top-menu" id="load-menu-dynamically"></div>
+      </div>
+      <div class="col-md-10 content-right-body-wrapper">
+        <div id="clock"></div>
+        <div id="Tax-calculator">
+          <div class="content-body-wrapper">
+            <div class="row">
+              <div class="col-md-12">
+                <header>
+                  <h2 class="headers">Tax Calculator</h2>
+                  <ul class="nav nav-tabs" id="taxTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="new-tab" data-bs-toggle="tab" data-bs-target="#newTax" type="button" role="tab">New Regime</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="old-tab" data-bs-toggle="tab" data-bs-target="#oldTax" type="button" role="tab">Old Regime</button>
+                    </li>
+                  </ul>
+                </header>
+              </div>
+            </div>
+            <div class="row">
+              <div id="sip-result-wrapper" class="col-md-7">
+                <div class="tab-content mt-4">
+                    <!-- New Regime Tab -->
+                    <div class="tab-pane fade show active" id="newTax" role="tabpanel">
+                      <div class="row g-3">
+                        <div class="col-12 col-md-4">
+                          <label class="form-label">Gross Income</label>
+                          <input type="number" id="grossIncome" class="form-control">
+                        </div>
+                        <div class="col-12 col-md-4">
+                          <label class="form-label">Standard Deduction</label>
+                          <input type="number" id="standardDeduction" class="form-control" value="75000">
+                        </div>
+                        <div class="col-12 col-md-4">
+                          <label class="form-label">Chapter VI-A Deductions</label>
+                          <input type="number" id="chapter6a" class="form-control" value="50000">
+                        </div>
+                      </div>
+                      <div class="mt-3">
+                        <button class="btn btn-success" onclick="calculateNewTax()">Calculate</button>
+                      </div>
+              
+                      <div class="mt-4">
+                        <p><strong>Total Deductions:</strong> ₹<span id="totalDeductionsNew">0</span></p>
+                        <p><strong>Net Taxable Income:</strong> ₹<span id="netIncomeNew">0</span></p>
+                        <p><strong>Total Tax (Before Cess):</strong> ₹<span id="taxBeforeCessNew">0</span></p>
+                        <p><strong>Total Tax (After 4% Cess):</strong> ₹<span id="taxAfterCessNew">0</span></p>
+                      </div>
+              
+                      <div class="table-responsive mt-4">
+                        <table class="table table-bordered slab-table">
+                          <thead class="table-light">
+                            <tr>
+                              <th>Slab</th>
+                              <th>Rate</th>
+                              <th>Taxable Amount</th>
+                              <th>Tax</th>
+                            </tr>
+                          </thead>
+                          <tbody id="slabTableNew"></tbody>
+                        </table>
+                      </div>
+                    </div>
+              
+                    <!-- Old Regime Tab -->
+                    <div class="tab-pane fade" id="oldTax" role="tabpanel">
+                      <div class="row g-3">
+                        <div class="col-12 col-md-4">
+                          <label class="form-label">Gross Income</label>
+                          <input type="number" id="grossIncomeOld" class="form-control">
+                        </div>
+                        <div class="col-12 col-md-4">
+                          <label class="form-label">HRA + LTA Exemption (Sec 10)</label>
+                          <input type="number" id="sec10Old" class="form-control">
+                        </div>
+                        <div class="col-12 col-md-4">
+                          <label class="form-label">Professional Tax</label>
+                          <input type="number" id="profTaxOld" class="form-control">
+                        </div>
+                        <div class="col-12 col-md-4">
+                          <label class="form-label">Interest on Housing Loan</label>
+                          <input type="number" id="housingLoanOld" class="form-control">
+                        </div>
+                        <div class="col-12 col-md-4">
+                          <label class="form-label">80C Deductions</label>
+                          <input type="number" id="sec80COld" class="form-control">
+                        </div>
+                        <div class="col-12 col-md-4">
+                          <label class="form-label">Chapter VI-A Deductions</label>
+                          <input type="number" id="chapter6aOld" class="form-control">
+                        </div>
+                        <div class="col-12 col-md-4">
+                          <label class="form-label">80CCD(2) - NPS</label>
+                          <input type="number" id="npsOld" class="form-control">
+                        </div>
+                      </div>
+                      <div class="mt-3">
+                        <button class="btn btn-success" onclick="calculateOldTax()">Calculate</button>
+                      </div>
+              
+                      <div class="mt-4">
+                        <p><strong>Total Deductions:</strong> ₹<span id="totalDeductionsOld">0</span></p>
+                        <p><strong>Net Taxable Income:</strong> ₹<span id="netIncomeOld">0</span></p>
+                        <p><strong>Total Tax (Before Cess):</strong> ₹<span id="taxBeforeCessOld">0</span></p>
+                        <p><strong>Total Tax (After 4% Cess):</strong> ₹<span id="taxAfterCessOld">0</span></p>
+                      </div>
+              
+                      <div class="table-responsive mt-4">
+                        <table class="table table-bordered slab-table">
+                          <thead class="table-light">
+                            <tr>
+                              <th>Slab</th>
+                              <th>Rate</th>
+                              <th>Taxable Amount</th>
+                              <th>Tax</th>
+                            </tr>
+                          </thead>
+                          <tbody id="slabTableOld"></tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-4 st banner-ad-desktop">
+                <div id="load-indian-ads" class="load-indian-ads-option-one"></div>
+                <div id="load-global-ads" class="load-global-ads-option-one"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 d-block d-md-none display-mobile-ad">
+                <div id="load-indian-ads" class="load-indian-ads-option-one"></div>
+                <div id="load-global-ads" class="load-global-ads-option-one"></div>
+              </div>
+            </div>
+          </div>
+          <div class="content-body-wrapper mt-4 details-sec-wrapper">
+            <h6 class="mb-2">About the Tax Calculator</h6>
+            <div class="row">
+                <div class="col-md-12">
+                  <p>This <strong>Tax Calculator</strong> helps individuals in India estimate their income tax liability under both the <strong>New Tax Regime</strong> and the <strong>Old Tax Regime</strong>.</p>
+                  
+                  <h5>💡 Features:</h5>
+                  <ul>
+                    <li>🔄 Two-tab layout: one for <strong>New Regime</strong> and one for <strong>Old Regime</strong></li>
+                    <li>🧮 Real-time calculation of:
+                      <ul>
+                        <li>Total Deductions</li>
+                        <li>Net Taxable Income</li>
+                        <li>Tax before and after 4% Health & Education Cess</li>
+                      </ul>
+                    </li>
+                    <li>📊 Slab-wise tax breakdown for full transparency</li>
+                    <li>📱 Mobile-friendly and works seamlessly on desktops, tablets, and smartphones</li>
+                  </ul>
+          
+                  <h5>📌 Input Fields:</h5>
+                  <ul>
+                    <li><strong>New Regime</strong>: Gross Income, Standard Deduction, Chapter VI-A deductions</li>
+                    <li><strong>Old Regime</strong>: Gross Income, Section 10 Exemptions (HRA/LTA), Professional Tax, Interest on Home Loan, 80C, 80CCD(2) – NPS, and other Chapter VI-A deductions</li>
+                  </ul>
+          
+                  <p>This tool helps users <strong>compare the two regimes</strong> side-by-side and <strong>choose the most tax-efficient option</strong>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <footer class="mb-2">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+              </div>
+              <div class="col-md-4 text-center mb-2">
+                &copy; 2018 - 2028. Feedback:<a href="mailto:praveen_mp@live.com">praveen_mp@live.com</a>
+              </div>
+              <div class="col-md-4 text-center">
+                <div class="social-share-icons">
+                  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                    class="btn btn-primary btn-sm"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                    class="btn btn-info btn-sm"><i class="fab fa-twitter"></i></a>
+                  <a href="whatsapp://send?text=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                    class="btn btn-success btn-sm"><i class="fab fa-whatsapp"></i></a>
+                  <a href="https://www.instagram.com/?url=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                    class="btn btn-danger btn-sm"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+      <script>
+        const newRegimeSlabs = [
+          { upto: 400000, rate: 0 },
+          { upto: 800000, rate: 5 },
+          { upto: 1200000, rate: 10 },
+          { upto: 1600000, rate: 15 },
+          { upto: 2000000, rate: 20 },
+          { upto: 2400000, rate: 25 },
+          { upto: Infinity, rate: 30 },
+        ];
+    
+        const oldRegimeSlabs = [
+          { upto: 250000, rate: 0 },
+          { upto: 500000, rate: 5 },
+          { upto: 1000000, rate: 20 },
+          { upto: Infinity, rate: 30 },
+        ];
+    
+        function calculateSlabs(netIncome, slabs, tableId) {
+          let tax = 0, lastLimit = 0;
+          const table = document.getElementById(tableId);
+          table.innerHTML = '';
+    
+          slabs.forEach(slab => {
+            if (netIncome > lastLimit) {
+              let taxableAmount = Math.min(netIncome, slab.upto) - lastLimit;
+              let slabTax = (taxableAmount * slab.rate) / 100;
+              tax += slabTax;
+    
+              table.innerHTML += `<tr>
+                <td>₹${lastLimit.toLocaleString()} – ₹${(slab.upto === Infinity ? '∞' : slab.upto.toLocaleString())}</td>
+                <td>${slab.rate}%</td>
+                <td>₹${taxableAmount.toLocaleString()}</td>
+                <td>₹${Math.round(slabTax).toLocaleString()}</td>
+              </tr>`;
+    
+              lastLimit = slab.upto;
+            }
+          });
+    
+          return Math.round(tax);
+        }
+    
+        function calculateNewTax() {
+          const gross = parseFloat(document.getElementById('grossIncome').value) || 0;
+          const stdDed = parseFloat(document.getElementById('standardDeduction').value) || 0;
+          const ch6 = parseFloat(document.getElementById('chapter6a').value) || 0;
+    
+          const totalDed = stdDed + ch6;
+          const netIncome = Math.max(gross - totalDed, 0);
+          const taxBeforeCess = calculateSlabs(netIncome, newRegimeSlabs, 'slabTableNew');
+          const taxAfterCess = Math.round(taxBeforeCess * 1.04);
+    
+          document.getElementById('totalDeductionsNew').innerText = totalDed.toLocaleString();
+          document.getElementById('netIncomeNew').innerText = netIncome.toLocaleString();
+          document.getElementById('taxBeforeCessNew').innerText = taxBeforeCess.toLocaleString();
+          document.getElementById('taxAfterCessNew').innerText = taxAfterCess.toLocaleString();
+        }
+    
+        function calculateOldTax() {
+          const gross = parseFloat(document.getElementById('grossIncomeOld').value) || 0;
+          const sec10 = parseFloat(document.getElementById('sec10Old').value) || 0;
+          const prof = parseFloat(document.getElementById('profTaxOld').value) || 0;
+          const loan = parseFloat(document.getElementById('housingLoanOld').value) || 0;
+          const sec80C = parseFloat(document.getElementById('sec80COld').value) || 0;
+          const ch6 = parseFloat(document.getElementById('chapter6aOld').value) || 0;
+          const nps = parseFloat(document.getElementById('npsOld').value) || 0;
+    
+          const stdDed = 50000;
+          const totalDed = sec10 + stdDed + prof + loan + sec80C + ch6 + nps;
+          const netIncome = Math.max(gross - totalDed, 0);
+          const taxBeforeCess = calculateSlabs(netIncome, oldRegimeSlabs, 'slabTableOld');
+          const taxAfterCess = Math.round(taxBeforeCess * 1.04);
+    
+          document.getElementById('totalDeductionsOld').innerText = totalDed.toLocaleString();
+          document.getElementById('netIncomeOld').innerText = netIncome.toLocaleString();
+          document.getElementById('taxBeforeCessOld').innerText = taxBeforeCess.toLocaleString();
+          document.getElementById('taxAfterCessOld').innerText = taxAfterCess.toLocaleString();
+        }
+      </script>
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="./script.min.js" crossorigin="anonymous"></script>
+      <!-- <script src="./script.min.js" crossorigin="anonymous"></script> -->
+
+      <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', function () {
+            navigator.serviceWorker.register('/stockaveragecalculator/service-worker.js');
+          });
+        }
+        // Initialize deferredPrompt for use later to show browser install prompt.
+        let deferredPrompt;
+        let buttonInstall = document.getElementById("buttonInstall");
+        if (buttonInstall) {
+          buttonInstall.style.display = 'none';
+        }
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+          // Prevent the mini-infobar from appearing on mobile
+          e.preventDefault();
+          // Stash the event so it can be triggered later.
+          deferredPrompt = e;
+          // Update UI notify the user they can install the PWA
+          buttonInstall.style.display = 'block';
+          buttonInstall.addEventListener('click', async () => {
+            // Hide the app provided install promotion
+            // buttonInstall.style.display = 'none';
+            // Show the install prompt
+            deferredPrompt.prompt();
+            // Wait for the user to respond to the prompt
+            const { outcome } = await deferredPrompt.userChoice;
+            // Optionally, send analytics event with outcome of user choice
+            console.log(`User response to the install prompt: ${outcome}`);
+            // We've used the prompt, and can't use it again, throw it away
+            deferredPrompt = null;
+          });
+          // Optionally, send analytics event that PWA install promo was shown.
+          console.log(`'beforeinstallprompt' event was fired.`);
+        });
+
+
+
+
+      </script>
+</body>
+
+</html>
