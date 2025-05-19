@@ -11,7 +11,7 @@ function calculateProfit() {
   let sellQuantity = parseFloat(document.getElementById('sellQuantity').value);
 
   if (isNaN(quantity) || isNaN(buyPrice) || isNaN(sellPrice) || isNaN(sellQuantity)) {
-    document.getElementById('stock-profit').innerText = "";
+    document.getElementById('stock-profit').innerHTML = "";
     return;
   }
 
@@ -30,15 +30,52 @@ function calculateProfit() {
   let remainingAmount = remainingShares * sellPrice;
   let totalOwnedValue = quantity * sellPrice;
   let totalSoldValue = sellQuantity * sellPrice;
+  let initialPurchaseValue = quantity * buyPrice;
 
-  let profitOrLossText = totalProfit >= 0 ? `<span class="green"> Total Profit: ${profitPerShare} * ${sellQuantity} = ${totalProfit} </span>` : `<span class="red"> Total Loss: ${profitPerShare} * ${sellQuantity} = ${Math.abs(totalProfit)}</span>`;
+  let profitOrLossText = totalProfit >= 0
+    ? `<span class="text-success">Total Profit: ${profitPerShare} * ${sellQuantity} = ${totalProfit}</span>`
+    : `<span class="text-danger">Total Loss: ${profitPerShare} * ${sellQuantity} = ${Math.abs(totalProfit)}</span>`;
 
-  document.getElementById('stock-profit').innerHTML =
-    `Total Shares Value:<span>${quantity} * ${sellPrice}  </span>  = <b>${totalOwnedValue.toLocaleString(intlLanguage)}</b> </br>` +
-    `Total Sold Value: <span>${sellQuantity} * ${sellPrice} </span> = <b>${totalSoldValue.toLocaleString(intlLanguage)}</b> </br>` +
-    `Remaining Shares Value:<span> ${remainingShares} * ${sellPrice} </span> = <b> ${remainingAmount.toLocaleString(intlLanguage)} </b> </br>` +
-    `<b> ${profitOrLossText} </b>`;
+  let tableHTML = `
+    <table class="stock-profit-table table table-bordered table-striped mt-3">
+      <thead class="thead-light">
+        <tr>
+          <th>Description</th>
+          <th>Calculation</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Initial Purchase Value</td>
+          <td>${quantity} * ${buyPrice}</td>
+          <td><b>${initialPurchaseValue.toLocaleString(intlLanguage)}</b></td>
+        </tr>
+        <tr>
+          <td>Current Shares Value</td>
+          <td>${quantity} * ${sellPrice}</td>
+          <td><b>${totalOwnedValue.toLocaleString(intlLanguage)}</b></td>
+        </tr>
+        <tr>
+          <td>Current Sale Value</td>
+          <td>${sellQuantity} * ${sellPrice}</td>
+          <td><b>${totalSoldValue.toLocaleString(intlLanguage)}</b></td>
+        </tr>
+        <tr>
+          <td>Remaining Shares Value</td>
+          <td>${remainingShares} * ${sellPrice}</td>
+          <td><b>${remainingAmount.toLocaleString(intlLanguage)}</b></td>
+        </tr>
+        <tr>
+          <td><b>Profit / Loss</b></td>
+          <td colspan="2"><b>${profitOrLossText}</b></td>
+        </tr>
+      </tbody>
+    </table>`;
+
+  document.getElementById('stock-profit').innerHTML = tableHTML;
 }
+
 
 function clearStockProfitFields() {
   document.getElementById('quantity').value = '';
