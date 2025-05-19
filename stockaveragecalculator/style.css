@@ -612,6 +612,7 @@ body.dark-mode,
   background-color: #ffd279;
   border-color: #ffd279;
   color: #000;
+  height: 39px;
 }
 
 .dark-mode hr {
@@ -647,7 +648,7 @@ body.dark-mode,
 }
 
 .dark-mode .form-control {
-  background-color: rgb(211 211 211);
+  background-color: rgb(243 243 243);
   font-weight: 600;
   color: #000;
 }

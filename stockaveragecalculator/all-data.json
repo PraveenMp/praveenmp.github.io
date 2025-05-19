@@ -27295,5 +27295,419 @@
     "FACE VALUE": 10,
     "EX-DATE": "5-May-25",
     "RECORD DATE": "5-May-25"
-  }
-]
+  },
+    {
+      "SYMBOL": "MINDSPACE",
+      "COMPANY NAME": "Mindspace Business Parks REIT",
+      "SERIES": "RR",
+      "PURPOSE": "Distribution - Rs 6.44 Per Unit Consisting Of Dividend - Rs 2.77 Per Unit/ Interest - Re 0.13 Per Unit/ Repayment Of Spv Debt - Rs 3.48 Per Unit /Other Income - Rs 0.06 Per Unit",
+      "FACE VALUE": 275,
+      "EX-DATE": "06-May-2025",
+      "RECORD DATE": "06-May-2025"
+    },
+    {
+      "SYMBOL": "AVANTEL",
+      "COMPANY NAME": "Avantel Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Rights 10:121@ Premium Rs 38/-",
+      "FACE VALUE": 2,
+      "EX-DATE": "07-May-2025",
+      "RECORD DATE": "07-May-2025"
+    },
+    {
+      "SYMBOL": "NAUKRI",
+      "COMPANY NAME": "Info Edge (India) Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share",
+      "FACE VALUE": 2,
+      "EX-DATE": "07-May-2025",
+      "RECORD DATE": "07-May-2025"
+    },
+    {
+      "SYMBOL": "VBL",
+      "COMPANY NAME": "Varun Beverages Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Interim Dividend - Re 0.50 Per Share",
+      "FACE VALUE": 2,
+      "EX-DATE": "07-May-2025",
+      "RECORD DATE": "07-May-2025"
+    },
+    {
+      "SYMBOL": "SUNDRMFAST",
+      "COMPANY NAME": "Sundram Fasteners Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Interim Dividend - Rs 4.20 Per Share",
+      "FACE VALUE": 1,
+      "EX-DATE": "07-May-2025",
+      "RECORD DATE": "07-May-2025"
+    },
+    {
+      "SYMBOL": "CRISIL",
+      "COMPANY NAME": "CRISIL Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Interim Dividend - Rs 8 Per Share",
+      "FACE VALUE": 1,
+      "EX-DATE": "07-May-2025",
+      "RECORD DATE": "07-May-2025"
+    },
+    {
+      "SYMBOL": "OFSS",
+      "COMPANY NAME": "Oracle Financial Services Software Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Interim Dividend - Rs 265 Per Share",
+      "FACE VALUE": 5,
+      "EX-DATE": "08-May-2025",
+      "RECORD DATE": "08-May-2025"
+    },
+    {
+      "SYMBOL": "BIRET",
+      "COMPANY NAME": "Brookfield India Real Estate Trust",
+      "SERIES": "RR",
+      "PURPOSE": "Distribution - Rs 5.25 Per Unit Consisting Of Interest - Rs 1.97 Per Unit/ Repayment Of Spv Debt And Ncds - Rs 2.70 Per Unit/ Dividend - Re 0.54 Per Unit/ Interest On Fixed Deposit - Re 0.04 Per Unit",
+      "FACE VALUE": 275,
+      "EX-DATE": "08-May-2025",
+      "RECORD DATE": "08-May-2025"
+    },
+    {
+      "SYMBOL": "761GS2030",
+      "COMPANY NAME": "GOVERNMENT OF INDIA",
+      "SERIES": "GS",
+      "PURPOSE": "Interest Payment",
+      "FACE VALUE": 100,
+      "EX-DATE": "08-May-2025",
+      "RECORD DATE": "08-May-2025"
+    },
+    {
+      "SYMBOL": "SHREMINVIT",
+      "COMPANY NAME": "Shrem Invit",
+      "SERIES": "IV",
+      "PURPOSE": "Distribution - Rs 6.1297 Per Unit Consists Of Rs. 0.3606 Per Unit As Dividend/Rs. 2.3983 Per Unit As Interest/ Rs. 3.3708 Per Unit As Return Of Capital",
+      "FACE VALUE": 100,
+      "EX-DATE": "08-May-2025",
+      "RECORD DATE": "08-May-2025"
+    },
+    {
+      "SYMBOL": "GRAVITA",
+      "COMPANY NAME": "Gravita India Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Interim Dividend - Rs 6.35 Per Share",
+      "FACE VALUE": 2,
+      "EX-DATE": "08-May-2025",
+      "RECORD DATE": "08-May-2025"
+    },
+    {
+      "SYMBOL": "CHEMBOND",
+      "COMPANY NAME": "Chembond Chemicals Ltd",
+      "SERIES": "EQ",
+      "PURPOSE": "Demerger",
+      "FACE VALUE": 5,
+      "EX-DATE": "09-May-2025",
+      "RECORD DATE": "09-May-2025"
+    },
+    {
+      "SYMBOL": "ANANDRATHI",
+      "COMPANY NAME": "Anand Rathi Wealth Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Dividend - Rs 7 Per Share",
+      "FACE VALUE": 5,
+      "EX-DATE": "09-May-2025",
+      "RECORD DATE": "09-May-2025"
+    },
+    {
+      "SYMBOL": "MAHABANK",
+      "COMPANY NAME": "Bank of Maharashtra",
+      "SERIES": "EQ",
+      "PURPOSE": "Dividend - Rs 1.50 Per Share",
+      "FACE VALUE": 10,
+      "EX-DATE": "09-May-2025",
+      "RECORD DATE": "09-May-2025"
+    },
+    {
+      "SYMBOL": "LAURUSLABS",
+      "COMPANY NAME": "Laurus Labs Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Interim Dividend - Rs  0.80 Per Share",
+      "FACE VALUE": 2,
+      "EX-DATE": "09-May-2025",
+      "RECORD DATE": "09-May-2025"
+    },
+    {
+      "SYMBOL": "NAVKARURB",
+      "COMPANY NAME": "Navkar Urbanstructure Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share",
+      "FACE VALUE": 1,
+      "EX-DATE": "09-May-2025",
+      "RECORD DATE": "09-May-2025"
+    },
+    {
+      "SYMBOL": "INDUSINVIT",
+      "COMPANY NAME": "Indus Infra Trust",
+      "SERIES": "IV",
+      "PURPOSE": "Distribution - Rs 2.25 Per Unit Consisting Of Interest - Re 0.96 Per Unit/ Dividend - Rs 1.05 Per Unit/Return On Capital - Re 0.24 Per Unit",
+      "FACE VALUE": 100,
+      "EX-DATE": "09-May-2025",
+      "RECORD DATE": "12-May-2025"
+    },
+    {
+      "SYMBOL": "824GS2033",
+      "COMPANY NAME": "GOVERNMENT OF INDIA",
+      "SERIES": "GS",
+      "PURPOSE": "Interest Payment",
+      "FACE VALUE": 100,
+      "EX-DATE": "09-May-2025",
+      "RECORD DATE": "09-May-2025"
+    },
+    {
+      "SYMBOL": "COFORGE",
+      "COMPANY NAME": "Coforge Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Interim Dividend - Rs 19 Per Share",
+      "FACE VALUE": 10,
+      "EX-DATE": "09-May-2025",
+      "RECORD DATE": "12-May-2025"
+    },
+    {
+      "SYMBOL": "UCOBANK",
+      "COMPANY NAME": "UCO Bank",
+      "SERIES": "EQ",
+      "PURPOSE": "Dividend - Rs 0.39 Per Share",
+      "FACE VALUE": 10,
+      "EX-DATE": "09-May-2025",
+      "RECORD DATE": "09-May-2025"
+    },
+    {
+      "SYMBOL": "TARIL",
+      "COMPANY NAME": "Transformers And Rectifiers (India) Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Dividend - Re 0.20  Per Share",
+      "FACE VALUE": 1,
+      "EX-DATE": "09-May-2025",
+      "RECORD DATE": "09-May-2025"
+    },
+    {
+      "SYMBOL": "BAJFINANCE",
+      "COMPANY NAME": "Bajaj Finance Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Special Dividend - Rs 12 Per Share",
+      "FACE VALUE": 2,
+      "EX-DATE": "09-May-2025",
+      "RECORD DATE": "09-May-2025"
+    },
+    {
+      "SYMBOL": "CPCAP",
+      "COMPANY NAME": "CP Capital Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Demerger",
+      "FACE VALUE": 10,
+      "EX-DATE": "09-May-2025",
+      "RECORD DATE": "09-May-2025"
+    },
+    {
+      "SYMBOL": "IFGLEXPOR",
+      "COMPANY NAME": "IFGL Refractories Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Interim Dividend - Rs  6 Per Share",
+      "FACE VALUE": 10,
+      "EX-DATE": "13-May-2025",
+      "RECORD DATE": "13-May-2025"
+    },
+    {
+      "SYMBOL": "GODREJCP",
+      "COMPANY NAME": "Godrej Consumer Products Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Interim Dividend - Rs 5 Per Share",
+      "FACE VALUE": 1,
+      "EX-DATE": "13-May-2025",
+      "RECORD DATE": "13-May-2025"
+    },
+    {
+      "SYMBOL": "IRBINVIT",
+      "COMPANY NAME": "IRB InvIT Fund",
+      "SERIES": "IV",
+      "PURPOSE": "Distribution - Rs 2 Per Unit Consisting Of Re 1.69 Per Unit As Interest / Re 0.05 Per Unit As Return Of Capital / Re 0.26 As Dividend",
+      "FACE VALUE": 102,
+      "EX-DATE": "13-May-2025",
+      "RECORD DATE": "13-May-2025"
+    },
+    {
+      "SYMBOL": "IRBIT",
+      "COMPANY NAME": "IRB INFRASTRUCTURE TRUST",
+      "SERIES": "IV",
+      "PURPOSE": "Distribution - Re 0.46 Per Unit Consisting Of Re 0.24 Per Unit As Interest & Re 0.22 Per Unit As Return On Capital",
+      "FACE VALUE": 100,
+      "EX-DATE": "13-May-2025",
+      "RECORD DATE": "13-May-2025"
+    },
+    {
+      "SYMBOL": "RAYMOND",
+      "COMPANY NAME": "Raymond Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Demerger",
+      "FACE VALUE": 10,
+      "EX-DATE": "14-May-2025",
+      "RECORD DATE": "14-May-2025"
+    },
+    {
+      "SYMBOL": "FOSECOIND",
+      "COMPANY NAME": "Foseco India Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Dividend - Rs 25 Per Share",
+      "FACE VALUE": 10,
+      "EX-DATE": "14-May-2025",
+      "RECORD DATE": "14-May-2025"
+    },
+    {
+      "SYMBOL": "BSE",
+      "COMPANY NAME": "BSE Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Dividend - Rs 23 Per Share",
+      "FACE VALUE": 2,
+      "EX-DATE": "14-May-2025",
+      "RECORD DATE": "14-May-2025"
+    },
+    {
+      "SYMBOL": "RSYSTEMS",
+      "COMPANY NAME": "R Systems International Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Interim Dividend - Rs 6 Per Share",
+      "FACE VALUE": 1,
+      "EX-DATE": "14-May-2025",
+      "RECORD DATE": "14-May-2025"
+    },
+    {
+      "SYMBOL": "679GS2027",
+      "COMPANY NAME": "GOVERNMENT OF INDIA",
+      "SERIES": "GS",
+      "PURPOSE": "Interest Payment",
+      "FACE VALUE": 100,
+      "EX-DATE": "14-May-2025",
+      "RECORD DATE": "14-May-2025"
+    },
+    {
+      "SYMBOL": "M&MFIN",
+      "COMPANY NAME": "Mahindra & Mahindra Financial Services Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Rights 1:8 @ Premium Rs 192/-",
+      "FACE VALUE": 2,
+      "EX-DATE": "14-May-2025",
+      "RECORD DATE": "14-May-2025"
+    },
+    {
+      "SYMBOL": "MANAPPURAM",
+      "COMPANY NAME": "Manappuram Finance Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Interim Dividend - Rs 0.50 Per Share",
+      "FACE VALUE": 2,
+      "EX-DATE": "15-May-2025",
+      "RECORD DATE": "15-May-2025"
+    },
+    {
+      "SYMBOL": "BEML",
+      "COMPANY NAME": "BEML Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Interim Dividend - Rs 15 Per Share",
+      "FACE VALUE": 10,
+      "EX-DATE": "15-May-2025",
+      "RECORD DATE": "15-May-2025"
+    },
+    {
+      "SYMBOL": "GESHIP",
+      "COMPANY NAME": "The Great Eastern Shipping Company Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Interim Dividend - Rs 5.40 Per Share",
+      "FACE VALUE": 10,
+      "EX-DATE": "15-May-2025",
+      "RECORD DATE": "15-May-2025"
+    },
+    {
+      "SYMBOL": "ALICON",
+      "COMPANY NAME": "Alicon Castalloy Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Interim Dividend - Rs 2.5 Per Share",
+      "FACE VALUE": 5,
+      "EX-DATE": "16-May-2025",
+      "RECORD DATE": "17-May-2025"
+    },
+    {
+      "SYMBOL": "ADVENZYMES",
+      "COMPANY NAME": "Advanced Enzyme Technologies Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Interim Dividend - Rs 4 Per Share",
+      "FACE VALUE": 2,
+      "EX-DATE": "16-May-2025",
+      "RECORD DATE": "17-May-2025"
+    },
+    {
+      "SYMBOL": "APTECHT",
+      "COMPANY NAME": "Aptech Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Interim Dividend - Rs 4.5 Per Share",
+      "FACE VALUE": 10,
+      "EX-DATE": "16-May-2025",
+      "RECORD DATE": "16-May-2025"
+    },
+    {
+      "SYMBOL": "APTUS",
+      "COMPANY NAME": "Aptus Value Housing Finance India Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Interim Dividend - Rs 2.5 Per Share",
+      "FACE VALUE": 2,
+      "EX-DATE": "16-May-2025",
+      "RECORD DATE": "16-May-2025"
+    },
+    {
+      "SYMBOL": "AIIL",
+      "COMPANY NAME": "Authum Investment & Infrastructure Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Interim Dividend - Re 0.50 Per Share",
+      "FACE VALUE": 1,
+      "EX-DATE": "16-May-2025",
+      "RECORD DATE": "16-May-2025"
+    },
+    {
+      "SYMBOL": "692GS2039",
+      "COMPANY NAME": "Government of India",
+      "SERIES": "GS",
+      "PURPOSE": "Interest Payment",
+      "FACE VALUE": 100,
+      "EX-DATE": "16-May-2025",
+      "RECORD DATE": "16-May-2025"
+    },
+    {
+      "SYMBOL": "IEX",
+      "COMPANY NAME": "Indian Energy Exchange Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Dividend - Rs 1.50 Per Share",
+      "FACE VALUE": 1,
+      "EX-DATE": "16-May-2025",
+      "RECORD DATE": "16-May-2025"
+    },
+    {
+      "SYMBOL": "SBIN",
+      "COMPANY NAME": "State Bank of India",
+      "SERIES": "EQ",
+      "PURPOSE": "Dividend - Rs 15.90 Per Share",
+      "FACE VALUE": 1,
+      "EX-DATE": "16-May-2025",
+      "RECORD DATE": "16-May-2025"
+    },
+    {
+      "SYMBOL": "NXST",
+      "COMPANY NAME": "Nexus Select Trust",
+      "SERIES": "RR",
+      "PURPOSE": "Distribution - Rs 2 Per Unit Comprises Of Interest - Re 0.593 Per Unit / Dividend - Rs 1.221 Per Unit / Other Income - Re 0.043 Per Unit / Repayment Of Spv Level Debt - Rs 0.143 Per Unit",
+      "FACE VALUE": 100,
+      "EX-DATE": "16-May-2025",
+      "RECORD DATE": "16-May-2025"
+    },
+    {
+      "SYMBOL": "KKCL",
+      "COMPANY NAME": "Kewal Kiran Clothing Limited",
+      "SERIES": "EQ",
+      "PURPOSE": "Interim Dividend - Rs 2 Per Share",
+      "FACE VALUE": 10,
+      "EX-DATE": "16-May-2025",
+      "RECORD DATE": "16-May-2025"
+    }
+  ]
