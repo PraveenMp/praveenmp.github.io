@@ -2,215 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Tax Calculator</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  >
+  <title>Dividend Ticker</title>
   <style>
-    .slab-table th, .slab-table td {
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .ticker-container {
+      background: #f5f5f5;
+      overflow: hidden;
       white-space: nowrap;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 10px 0;
+    }
+
+    .ticker-text {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-left 150s linear infinite;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .ticker-item {
+      display: inline-block;
+      margin-right: 50px;
+      font-size: 16px;
+      color: #333;
     }
   </style>
 </head>
 <body>
-  <div class="container-fluid p-4">
-    <h2 class="text-center mb-4">Tax Calculator</h2>
 
-    <ul class="nav nav-tabs" id="taxTab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="new-tab" data-bs-toggle="tab" data-bs-target="#newTax" type="button" role="tab">New Regime</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="old-tab" data-bs-toggle="tab" data-bs-target="#oldTax" type="button" role="tab">Old Regime</button>
-      </li>
-    </ul>
-
-    <div class="tab-content mt-4">
-      <!-- New Regime Tab -->
-      <div class="tab-pane fade show active" id="newTax" role="tabpanel">
-        <div class="row g-3">
-          <div class="col-12 col-md-4">
-            <label class="form-label">Gross Income</label>
-            <input type="number" id="grossIncome" class="form-control">
-          </div>
-          <div class="col-12 col-md-4">
-            <label class="form-label">Standard Deduction</label>
-            <input type="number" id="standardDeduction" class="form-control" value="75000">
-          </div>
-          <div class="col-12 col-md-4">
-            <label class="form-label">Chapter VI-A Deductions</label>
-            <input type="number" id="chapter6a" class="form-control" value="50000">
-          </div>
-        </div>
-        <div class="mt-3">
-          <button class="btn btn-primary" onclick="calculateNewTax()">Calculate</button>
-        </div>
-
-        <div class="mt-4">
-          <p><strong>Total Deductions:</strong> ₹<span id="totalDeductionsNew">0</span></p>
-          <p><strong>Net Taxable Income:</strong> ₹<span id="netIncomeNew">0</span></p>
-          <p><strong>Total Tax (Before Cess):</strong> ₹<span id="taxBeforeCessNew">0</span></p>
-          <p><strong>Total Tax (After 4% Cess):</strong> ₹<span id="taxAfterCessNew">0</span></p>
-        </div>
-
-        <div class="table-responsive mt-4">
-          <table class="table table-bordered slab-table">
-            <thead class="table-light">
-              <tr>
-                <th>Slab</th>
-                <th>Rate</th>
-                <th>Taxable Amount</th>
-                <th>Tax</th>
-              </tr>
-            </thead>
-            <tbody id="slabTableNew"></tbody>
-          </table>
-        </div>
-      </div>
-
-      <!-- Old Regime Tab -->
-      <div class="tab-pane fade" id="oldTax" role="tabpanel">
-        <div class="row g-3">
-          <div class="col-12 col-md-4">
-            <label class="form-label">Gross Income</label>
-            <input type="number" id="grossIncomeOld" class="form-control">
-          </div>
-          <div class="col-12 col-md-4">
-            <label class="form-label">HRA + LTA Exemption (Sec 10)</label>
-            <input type="number" id="sec10Old" class="form-control">
-          </div>
-          <div class="col-12 col-md-4">
-            <label class="form-label">Professional Tax</label>
-            <input type="number" id="profTaxOld" class="form-control">
-          </div>
-          <div class="col-12 col-md-4">
-            <label class="form-label">Interest on Housing Loan</label>
-            <input type="number" id="housingLoanOld" class="form-control">
-          </div>
-          <div class="col-12 col-md-4">
-            <label class="form-label">80C Deductions</label>
-            <input type="number" id="sec80COld" class="form-control">
-          </div>
-          <div class="col-12 col-md-4">
-            <label class="form-label">Chapter VI-A Deductions</label>
-            <input type="number" id="chapter6aOld" class="form-control">
-          </div>
-          <div class="col-12 col-md-4">
-            <label class="form-label">80CCD(2) - NPS</label>
-            <input type="number" id="npsOld" class="form-control">
-          </div>
-        </div>
-        <div class="mt-3">
-          <button class="btn btn-primary" onclick="calculateOldTax()">Calculate</button>
-        </div>
-
-        <div class="mt-4">
-          <p><strong>Total Deductions:</strong> ₹<span id="totalDeductionsOld">0</span></p>
-          <p><strong>Net Taxable Income:</strong> ₹<span id="netIncomeOld">0</span></p>
-          <p><strong>Total Tax (Before Cess):</strong> ₹<span id="taxBeforeCessOld">0</span></p>
-          <p><strong>Total Tax (After 4% Cess):</strong> ₹<span id="taxAfterCessOld">0</span></p>
-        </div>
-
-        <div class="table-responsive mt-4">
-          <table class="table table-bordered slab-table">
-            <thead class="table-light">
-              <tr>
-                <th>Slab</th>
-                <th>Rate</th>
-                <th>Taxable Amount</th>
-                <th>Tax</th>
-              </tr>
-            </thead>
-            <tbody id="slabTableOld"></tbody>
-          </table>
-        </div>
-      </div>
-    </div>
+<div class="ticker-container">
+  <div class="ticker-text">
+    <span class="ticker-item">Varun Beverages Limited (VBL): Re 0.50 per share, Ex-Date: 07-May-2025</span>
+    <span class="ticker-item">Sundram Fasteners Limited (SUNDRMFAST): Rs 4.20 per share, Ex-Date: 07-May-2025</span>
+    <span class="ticker-item">CRISIL Limited (CRISIL): Rs 8 per share, Ex-Date: 07-May-2025</span>
+    <span class="ticker-item">Oracle Financial Services Software Limited (OFSS): Rs 265 per share, Ex-Date: 08-May-2025</span>
+    <span class="ticker-item">Gravita India Limited (GRAVITA): Rs 6.35 per share, Ex-Date: 08-May-2025</span>
+    <span class="ticker-item">Laurus Labs Limited (LAURUSLABS): Rs 0.80 per share, Ex-Date: 09-May-2025</span>
+    <span class="ticker-item">Coforge Limited (COFORGE): Rs 19 per share, Ex-Date: 09-May-2025</span>
+    <span class="ticker-item">IFGL Refractories Limited (IFGLEXPOR): Rs 6 per share, Ex-Date: 13-May-2025</span>
+    <span class="ticker-item">Godrej Consumer Products Limited (GODREJCP): Rs 5 per share, Ex-Date: 13-May-2025</span>
+    <span class="ticker-item">Manappuram Finance Limited (MANAPPURAM): Rs 0.50 per share, Ex-Date: 15-May-2025</span>
+    <span class="ticker-item">BEML Limited (BEML): Rs 15 per share, Ex-Date: 15-May-2025</span>
+    <span class="ticker-item">The Great Eastern Shipping Company Limited (GESHIP): Rs 5.40 per share, Ex-Date: 15-May-2025</span>
+    <span class="ticker-item">Alicon Castalloy Limited (ALICON): Rs 2.50 per share, Ex-Date: 16-May-2025</span>
+    <span class="ticker-item">Advanced Enzyme Technologies Limited (ADVENZYMES): Rs 4 per share, Ex-Date: 16-May-2025</span>
+    <span class="ticker-item">Aptech Limited (APTECHT): Rs 4.50 per share, Ex-Date: 16-May-2025</span>
+    <span class="ticker-item">Aptus Value Housing Finance India Limited (APTUS): Rs 2.50 per share, Ex-Date: 16-May-2025</span>
+    <span class="ticker-item">Authum Investment & Infrastructure Limited (AIIL): Re 0.50 per share, Ex-Date: 16-May-2025</span>
+    <span class="ticker-item">Kewal Kiran Clothing Limited (KKCL): Rs 2 per share, Ex-Date: 16-May-2025</span>
   </div>
+</div>
 
-  <script>
-    const newRegimeSlabs = [
-      { upto: 400000, rate: 0 },
-      { upto: 800000, rate: 5 },
-      { upto: 1200000, rate: 10 },
-      { upto: 1600000, rate: 15 },
-      { upto: 2000000, rate: 20 },
-      { upto: 2400000, rate: 25 },
-      { upto: Infinity, rate: 30 },
-    ];
-
-    const oldRegimeSlabs = [
-      { upto: 250000, rate: 0 },
-      { upto: 500000, rate: 5 },
-      { upto: 1000000, rate: 20 },
-      { upto: Infinity, rate: 30 },
-    ];
-
-    function calculateSlabs(netIncome, slabs, tableId) {
-      let tax = 0, lastLimit = 0;
-      const table = document.getElementById(tableId);
-      table.innerHTML = '';
-
-      slabs.forEach(slab => {
-        if (netIncome > lastLimit) {
-          let taxableAmount = Math.min(netIncome, slab.upto) - lastLimit;
-          let slabTax = (taxableAmount * slab.rate) / 100;
-          tax += slabTax;
-
-          table.innerHTML += `<tr>
-            <td>₹${lastLimit.toLocaleString()} – ₹${(slab.upto === Infinity ? '∞' : slab.upto.toLocaleString())}</td>
-            <td>${slab.rate}%</td>
-            <td>₹${taxableAmount.toLocaleString()}</td>
-            <td>₹${Math.round(slabTax).toLocaleString()}</td>
-          </tr>`;
-
-          lastLimit = slab.upto;
-        }
-      });
-
-      return Math.round(tax);
-    }
-
-    function calculateNewTax() {
-      const gross = parseFloat(document.getElementById('grossIncome').value) || 0;
-      const stdDed = parseFloat(document.getElementById('standardDeduction').value) || 0;
-      const ch6 = parseFloat(document.getElementById('chapter6a').value) || 0;
-
-      const totalDed = stdDed + ch6;
-      const netIncome = Math.max(gross - totalDed, 0);
-      const taxBeforeCess = calculateSlabs(netIncome, newRegimeSlabs, 'slabTableNew');
-      const taxAfterCess = Math.round(taxBeforeCess * 1.04);
-
-      document.getElementById('totalDeductionsNew').innerText = totalDed.toLocaleString();
-      document.getElementById('netIncomeNew').innerText = netIncome.toLocaleString();
-      document.getElementById('taxBeforeCessNew').innerText = taxBeforeCess.toLocaleString();
-      document.getElementById('taxAfterCessNew').innerText = taxAfterCess.toLocaleString();
-    }
-
-    function calculateOldTax() {
-      const gross = parseFloat(document.getElementById('grossIncomeOld').value) || 0;
-      const sec10 = parseFloat(document.getElementById('sec10Old').value) || 0;
-      const prof = parseFloat(document.getElementById('profTaxOld').value) || 0;
-      const loan = parseFloat(document.getElementById('housingLoanOld').value) || 0;
-      const sec80C = parseFloat(document.getElementById('sec80COld').value) || 0;
-      const ch6 = parseFloat(document.getElementById('chapter6aOld').value) || 0;
-      const nps = parseFloat(document.getElementById('npsOld').value) || 0;
-
-      const stdDed = 50000;
-      const totalDed = sec10 + stdDed + prof + loan + sec80C + ch6 + nps;
-      const netIncome = Math.max(gross - totalDed, 0);
-      const taxBeforeCess = calculateSlabs(netIncome, oldRegimeSlabs, 'slabTableOld');
-      const taxAfterCess = Math.round(taxBeforeCess * 1.04);
-
-      document.getElementById('totalDeductionsOld').innerText = totalDed.toLocaleString();
-      document.getElementById('netIncomeOld').innerText = netIncome.toLocaleString();
-      document.getElementById('taxBeforeCessOld').innerText = taxBeforeCess.toLocaleString();
-      document.getElementById('taxAfterCessOld').innerText = taxAfterCess.toLocaleString();
-    }
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

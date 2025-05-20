@@ -4,6 +4,38 @@ html {
   min-height: 100%;
 }
 
+.ticker-container {
+  background: #ffffff;
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 4px 0;
+  border-radius: 10px;
+  margin: 5px 15px 0px 15px;
+}
+
+.ticker-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 250s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.ticker-item {
+  display: inline-block;
+  margin-right: 50px;
+  font-size: 11px;
+  color: #333;
+}
+
 .hide-india-content, .hide-world-content {
   display: none;
 }
@@ -50,7 +82,7 @@ body {
   border: 1px solid #ddd;
   border-radius: 16px;
   padding: 15px;
-  margin: 15px;
+  margin: 10px 15px 10px 15px;
 }
 
 .sidebar.col-md-2 {
@@ -218,7 +250,7 @@ font-weight: 600;
   color: #000;
   position: absolute;
   right: 3%;
-  top: 2.5%;
+  top: 5.5%;
 }
 
 .headers {
@@ -298,7 +330,11 @@ font-weight: 600;
   }
 
   .content-body-wrapper {
-    margin: 15px 0px;
+    margin: 10px 0px;
+  }
+
+  .ticker-container {
+    margin: 5px 0px 0px 0px !important;
   }
 
   .top-menu ul li a img {
@@ -323,9 +359,9 @@ font-weight: 600;
   .hidden-on-desktop-tablet {
     display: block;
   }
-  .wrapper-body {
+  /* .wrapper-body {
     padding-top: 10px;
-  }
+  } */
   .top-menu ul li {
     margin-top: 5px;
   }
@@ -360,7 +396,7 @@ font-weight: 600;
     background: #eceff0;
     color: #000;
     z-index: 1;
-    top: 40px;
+    top: 27px;
     left: -500px;
     transition: left 0.5s ease-in-out;
     width: 62%;
