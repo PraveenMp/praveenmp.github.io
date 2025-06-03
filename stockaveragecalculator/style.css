@@ -4,6 +4,10 @@ html {
   min-height: 100%;
 }
 
+.buy-book {
+  width: 60%;
+}
+
 .ticker-container {
   background: #ffffff;
   overflow: hidden;
@@ -358,6 +362,7 @@ font-weight: 600;
   }
   .hidden-on-desktop-tablet {
     display: block;
+    margin: 5px 0px;
   }
   /* .wrapper-body {
     padding-top: 10px;
