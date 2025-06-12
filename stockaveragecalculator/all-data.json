@@ -27916,5 +27916,815 @@
     "FACE VALUE": 5,
     "EX-DATE": "26-May-25",
     "RECORD DATE": "26-May-25"
+  },
+  {
+    "SYMBOL": "MANINFRA",
+    "COMPANY NAME": "Man Infraconstruction Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 0.45 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "27-May-25",
+    "RECORD DATE": "27-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "662GS2051",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "27-May-25",
+    "RECORD DATE": "27-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "TRIDENT",
+    "COMPANY NAME": "Trident Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 0.50 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "27-May-25",
+    "RECORD DATE": "27-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "LTF",
+    "COMPANY NAME": "L&T Finance Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 2.75 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "27-May-25",
+    "RECORD DATE": "27-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "INFOBEAN",
+    "COMPANY NAME": "InfoBeans Technologies Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Buy Back",
+    "FACE VALUE": 10,
+    "EX-DATE": "27-May-25",
+    "RECORD DATE": "27-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "SUNDARMHLD",
+    "COMPANY NAME": "Sundaram Finance Holdings Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 0.60 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "28-May-25",
+    "RECORD DATE": "28-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "ITC",
+    "COMPANY NAME": "ITC Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 7.85 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "28-May-25",
+    "RECORD DATE": "28-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "COLPAL",
+    "COMPANY NAME": "Colgate Palmolive (India) Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 27 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "28-May-25",
+    "RECORD DATE": "28-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "NDRINVIT",
+    "COMPANY NAME": "NDR INVIT Trust",
+    "SERIES": "IV",
+    "PURPOSE": "Distribution - Rs 1.80 Per Unit Comprising Of Re 0.72 Per Unit In The Form Of Interest/ Rs 1.08 Per Unit In The Form Of Return Of Capital",
+    "FACE VALUE": 100,
+    "EX-DATE": "29-May-25",
+    "RECORD DATE": "29-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "TATACONSUM",
+    "COMPANY NAME": "TATA CONSUMER PRODUCTS LIMITED",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 8.25 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "29-May-25",
+    "RECORD DATE": "29-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "PGINVIT",
+    "COMPANY NAME": "POWERGRID Infrastructure Investment Trust",
+    "SERIES": "IV",
+    "PURPOSE": "Distribution - Rs 3 Per Unit Consists Of Interest- Rs 1.67 Per Unit/Total Dividend - Re 0.57 Per Unit/Repayment Of Spv Debt- Re 0.75 Per Unit/Treasury Income Re 0.01 Per Unit",
+    "FACE VALUE": 100,
+    "EX-DATE": "29-May-25",
+    "RECORD DATE": "29-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "817GS2044",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "30-May-25",
+    "RECORD DATE": "31-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "86GS2028",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "30-May-25",
+    "RECORD DATE": "31-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "OSEINTRUST",
+    "COMPANY NAME": "Oriental InfraTrust",
+    "SERIES": "IV",
+    "PURPOSE": "Distribution - Rs 3.649 Per Unit Consists Of Interest- Rs 1.8475 Per Unit/Dividend - Re 0.9003 Per Unit/ Dividend For Apr 01 To Apr 15, 2025 - Re 0.6669 /Return Of Capital Re 0.2343 Per Unit",
+    "FACE VALUE": 100,
+    "EX-DATE": "30-May-25",
+    "RECORD DATE": "30-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "PONNIERODE",
+    "COMPANY NAME": "Ponni Sugars (Erode) Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 3 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "30-May-25",
+    "RECORD DATE": "30-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "CAPLIPOINT",
+    "COMPANY NAME": "Caplin Point Laboratories Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 3 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "30-May-25",
+    "RECORD DATE": "30-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "ROADSTAR",
+    "COMPANY NAME": "Roadstar Infra Investment Trust",
+    "SERIES": "IV",
+    "PURPOSE": "Distribution - Rs 8.90 Per Unit Comprising Interest - Rs 5.35 Per Unit / Return On Capital - Rs 3.21 Per Unit / Other Income  Re - 0.34",
+    "FACE VALUE": 100,
+    "EX-DATE": "30-May-25",
+    "RECORD DATE": "30-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "SCHAND",
+    "COMPANY NAME": "S Chand And Company Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 4 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "30-May-25",
+    "RECORD DATE": "30-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "HOMEFIRST",
+    "COMPANY NAME": "Home First Finance Company India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 3.70 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "30-May-25",
+    "RECORD DATE": "30-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "INFY",
+    "COMPANY NAME": "Infosys Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 22 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "30-May-25",
+    "RECORD DATE": "30-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "JAGRAN",
+    "COMPANY NAME": "Jagran Prakashan Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 6 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "30-May-25",
+    "RECORD DATE": "30-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "GLAXO",
+    "COMPANY NAME": "GlaxoSmithKline Pharmaceuticals Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 42 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "30-May-25",
+    "RECORD DATE": "30-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "JWL",
+    "COMPANY NAME": "Jupiter Wagons Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 1 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "30-May-25",
+    "RECORD DATE": "30-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "ADVANIHOTR",
+    "COMPANY NAME": "Advani Hotels & Resorts (India) Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 0.90 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "30-May-25",
+    "RECORD DATE": "30-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "ANGELONE",
+    "COMPANY NAME": "Angel One Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 26 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "30-May-25",
+    "RECORD DATE": "30-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "ANZEN",
+    "COMPANY NAME": "Anzen India Energy Yield Plus Trust",
+    "SERIES": "IV",
+    "PURPOSE": "Distribution - Rs 2.45 Per Unit Consisting Of Interest - Rs 1.74 Per Unit Principal Payment - Re 0.67 Per Unit Other Income - Re 0.04 Per Unit",
+    "FACE VALUE": 100,
+    "EX-DATE": "30-May-25",
+    "RECORD DATE": "30-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "679GS2034A",
+    "COMPANY NAME": "Government of India",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "30-May-25",
+    "RECORD DATE": "31-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "BAJFINANCE",
+    "COMPANY NAME": "Bajaj Finance Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 44 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "30-May-25",
+    "RECORD DATE": "30-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "UEL",
+    "COMPANY NAME": "Ujaas Energy Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 17:25",
+    "FACE VALUE": 1,
+    "EX-DATE": "30-May-25",
+    "RECORD DATE": "30-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "UNOMINDA",
+    "COMPANY NAME": "UNO Minda Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 1.50 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "30-May-25",
+    "RECORD DATE": "30-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "VIMTALABS",
+    "COMPANY NAME": "Vimta Labs Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 2 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "30-May-25",
+    "RECORD DATE": "30-May-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "NHIT",
+    "COMPANY NAME": "National Highways Infra Trust",
+    "SERIES": "IV",
+    "PURPOSE": "Distribution - Re 0.395 Per Unit Consists Of Re 0.392 Per Unit As Interest/ Re 0.003 Per Unit As Other Income",
+    "FACE VALUE": 101,
+    "EX-DATE": "2-Jun-25",
+    "RECORD DATE": "2-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "CUBEINVIT",
+    "COMPANY NAME": "Cube Highways Trust",
+    "SERIES": "IV",
+    "PURPOSE": "Distribution - Rs 3.75 Per Unit Consisting Of Interest Rs 1.96 Per Unit/ Treasury Income Re 0.01 Per Unit/Dividend Re 0.32 Per Unit/ Repayment Of Spv Loan Rs 1.46 Per Unit",
+    "FACE VALUE": 100,
+    "EX-DATE": "2-Jun-25",
+    "RECORD DATE": "2-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "NXT-INFRA",
+    "COMPANY NAME": "Nxt-Infra Trust",
+    "SERIES": "IV",
+    "PURPOSE": "Distribution - Rs 6.5921 Per Unit Consisting Of Interest Rs 1.9463 And Return Of Capital Rs 4.6458 Per Unit",
+    "FACE VALUE": 100,
+    "EX-DATE": "3-Jun-25",
+    "RECORD DATE": "3-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "CAPINVIT",
+    "COMPANY NAME": "Capital Infra Trust",
+    "SERIES": "IV",
+    "PURPOSE": "Distribution - Rs 2.61 Per Unit Consisting Of Interest - Rs 0.06 Per Unit / Repayment Of Capital - Rs 2.55 Per Unit",
+    "FACE VALUE": 99,
+    "EX-DATE": "3-Jun-25",
+    "RECORD DATE": "3-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "CAPINVIT",
+    "COMPANY NAME": "Capital Infra Trust",
+    "SERIES": "IV",
+    "PURPOSE": "Distribution - Rs 11.18 Per Unit Consisting Of Interest - Re 0.93 Per Unit/ Dividend - Rs 6.87 Per Unit/ Return Of Capital - Rs 3.37 Per Unit/ Other Income - Re 0.01 Per Unit",
+    "FACE VALUE": 99,
+    "EX-DATE": "3-Jun-25",
+    "RECORD DATE": "3-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "LT",
+    "COMPANY NAME": "Larsen & Toubro Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 34 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "3-Jun-25",
+    "RECORD DATE": "3-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "613GS2028",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "3-Jun-25",
+    "RECORD DATE": "3-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "NUVAMA",
+    "COMPANY NAME": "Nuvama Wealth Management Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 69 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "3-Jun-25",
+    "RECORD DATE": "3-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "TCS",
+    "COMPANY NAME": "Tata Consultancy Services Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 30 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "4-Jun-25",
+    "RECORD DATE": "4-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "657GS2033",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "4-Jun-25",
+    "RECORD DATE": "4-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "SESHAPAPER",
+    "COMPANY NAME": "Seshasayee Paper and Boards Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Annual General Meeting/Dividend - Rs  2.50 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "4-Jun-25",
+    "RECORD DATE": "4-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "INOXINDIA",
+    "COMPANY NAME": "INOX India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 2 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "4-Jun-25",
+    "RECORD DATE": "4-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "TATAMOTORS",
+    "COMPANY NAME": "Tata Motors Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 6 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "4-Jun-25",
+    "RECORD DATE": "4-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "897GS2030",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "4-Jun-25",
+    "RECORD DATE": "4-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "COFORGE",
+    "COMPANY NAME": "Coforge Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "4-Jun-25",
+    "RECORD DATE": "4-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "RALLIS",
+    "COMPANY NAME": "Rallis India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 2.50 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "5-Jun-25",
+    "RECORD DATE": "5-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "UGROCAP",
+    "COMPANY NAME": "Ugro Capital Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Rights 50:189 @ Premium Rs 152/-",
+    "FACE VALUE": 10,
+    "EX-DATE": "5-Jun-25",
+    "RECORD DATE": "5-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "JINDALSAW",
+    "COMPANY NAME": "Jindal Saw Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 2 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "5-Jun-25",
+    "RECORD DATE": "5-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "RKFORGE",
+    "COMPANY NAME": "Ramkrishna Forgings Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 1 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "6-Jun-25",
+    "RECORD DATE": "6-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "CONCOR",
+    "COMPANY NAME": "Container Corporation of India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 2 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "6-Jun-25",
+    "RECORD DATE": "6-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "TORNTPOWER",
+    "COMPANY NAME": "Torrent Power Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 5 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "6-Jun-25",
+    "RECORD DATE": "6-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "TIIL",
+    "COMPANY NAME": "Technocraft Industries (India) Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 20 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "6-Jun-25",
+    "RECORD DATE": "6-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "JSWENERGY",
+    "COMPANY NAME": "JSW Energy Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 2 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "6-Jun-25",
+    "RECORD DATE": "6-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "KHADIM",
+    "COMPANY NAME": "Khadim India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Demerger",
+    "FACE VALUE": 10,
+    "EX-DATE": "6-Jun-25",
+    "RECORD DATE": "7-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "LALPATHLAB",
+    "COMPANY NAME": "Dr. Lal Path Labs Ltd.",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 6 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "6-Jun-25",
+    "RECORD DATE": "6-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "ICICIGI",
+    "COMPANY NAME": "ICICI Lombard General Insurance Company Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 7 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "6-Jun-25",
+    "RECORD DATE": "6-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "LTTS",
+    "COMPANY NAME": "L&T Technology Services Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 38 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "6-Jun-25",
+    "RECORD DATE": "6-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "MAITHANALL",
+    "COMPANY NAME": "Maithan Alloys Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 7 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "6-Jun-25",
+    "RECORD DATE": "6-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "833GS2036",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "6-Jun-25",
+    "RECORD DATE": "6-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "HDFCAMC",
+    "COMPANY NAME": "HDFC Asset Management Company Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 90 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "6-Jun-25",
+    "RECORD DATE": "6-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "664GS2027",
+    "COMPANY NAME": "Government of India",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "6-Jun-25",
+    "RECORD DATE": "7-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "IFGLEXPOR",
+    "COMPANY NAME": "IFGL Refractories Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 1 Per Sh",
+    "FACE VALUE": 10,
+    "EX-DATE": "6-Jun-25",
+    "RECORD DATE": "6-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "INDIAMART",
+    "COMPANY NAME": "Indiamart Intermesh Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 30 Per Share/Special Dividend - Rs 20 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "6-Jun-25",
+    "RECORD DATE": "6-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "TATASTEEL",
+    "COMPANY NAME": "Tata Steel Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 3.60 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "6-Jun-25",
+    "RECORD DATE": "6-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "BANKBARODA",
+    "COMPANY NAME": "Bank of Baroda",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 8.35 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "6-Jun-25",
+    "RECORD DATE": "6-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "SIS",
+    "COMPANY NAME": "SIS LIMITED",
+    "SERIES": "EQ",
+    "PURPOSE": "Buy Back",
+    "FACE VALUE": 5,
+    "EX-DATE": "6-Jun-25",
+    "RECORD DATE": "6-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "NELCO",
+    "COMPANY NAME": "NELCO Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 1 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "9-Jun-25",
+    "RECORD DATE": "9-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "ASIANPAINT",
+    "COMPANY NAME": "Asian Paints Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 20.55 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "10-Jun-25",
+    "RECORD DATE": "10-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "JCHAC",
+    "COMPANY NAME": "Johnson Controls - Hitachi Air Conditioning India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 15 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "10-Jun-25",
+    "RECORD DATE": "10-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "INDIANB",
+    "COMPANY NAME": "Indian Bank",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 16.25 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "10-Jun-25",
+    "RECORD DATE": "10-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "VESUVIUS",
+    "COMPANY NAME": "Vesuvius India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "10-Jun-25",
+    "RECORD DATE": "10-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "TATAINVEST",
+    "COMPANY NAME": "Tata Investment Corporation Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 27 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "10-Jun-25",
+    "RECORD DATE": "10-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "883GS2041",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "11-Jun-25",
+    "RECORD DATE": "11-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "TATAELXSI",
+    "COMPANY NAME": "Tata Elxsi Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 75 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "11-Jun-25",
+    "RECORD DATE": "11-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "ICICIPRULI",
+    "COMPANY NAME": "ICICI Prudential Life Insurance Company Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 0.85 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jun-25",
+    "RECORD DATE": "12-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "AVANTEL",
+    "COMPANY NAME": "Avantel Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 0.20 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "12-Jun-25",
+    "RECORD DATE": "12-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "JKLAKSHMI",
+    "COMPANY NAME": "JK Lakshmi Cement Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 6.50 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "12-Jun-25",
+    "RECORD DATE": "12-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "TRENT",
+    "COMPANY NAME": "Trent Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 5 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "12-Jun-25",
+    "RECORD DATE": "12-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "TATACHEM",
+    "COMPANY NAME": "Tata Chemicals Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 11 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jun-25",
+    "RECORD DATE": "12-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
+  },
+  {
+    "SYMBOL": "ETHOSLTD",
+    "COMPANY NAME": "Ethos Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Rights 4:43@ Premium Rs 1790/-",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jun-25",
+    "RECORD DATE": "12-Jun-25",
+    "BOOK CLOSURE START DATE": "-"
   }
 ]
