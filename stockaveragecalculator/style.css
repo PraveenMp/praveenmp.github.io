@@ -324,6 +324,28 @@ footer {
   display: none;
 }
 
+.share-button {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 40px;
+}
+
+.share-button a {
+  padding: 8px 12px;
+  background-color: #2c7045;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.share-button a:hover {
+  background-color: rgb(41, 78, 54);
+  text-decoration: none;
+  color: white;
+}
+
+
 @media all and (-maxwidth: 600px) and (orientation: landscape) {
   .display-mobile-ad {
     display: block !important;
@@ -348,6 +370,15 @@ footer {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+
+  .share-button {
+    right: 20px;
+    top: 25px;
+  }
+  .share-button a {
+    font-size: 8px;
+    padding: 4px;
+  }
 
   .details-sec-wrapper {
     font-size: 12px;
