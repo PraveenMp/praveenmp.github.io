@@ -798,6 +798,117 @@ body.dark-mode,
   color: #000;
 }
 
+/* ===================== Stock Card Grid (Bonus & Buyback) ===================== */
+.stock-card-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  padding: 4px;
+}
+
+@media (max-width: 1400px) {
+  .stock-card-grid { grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 1100px) {
+  .stock-card-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 880px) {
+  .stock-card-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px) {
+  .stock-card-grid { grid-template-columns: repeat(1, 1fr); }
+}
+
+.stock-item-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 8px 10px 10px 10px;
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 160px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+  position: relative;
+  transition: box-shadow .25s ease, transform .25s ease;
+}
+
+.stock-item-card:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  transform: translateY(-3px);
+}
+
+.stock-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-size: 10px;
+  color: #2d2d2d;
+}
+
+.stock-symbol {
+  background: #056c05;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.stock-series {
+  background: #f0f3f5;
+  color: #333;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+}
+
+.stock-company {
+  font-weight: 600;
+  font-size: 13px; /* increased by 2px */
+  margin-bottom: 6px;
+  color: #173046;
+  line-height: 1.25;
+}
+
+.stock-purpose {
+  font-size: 12px; /* increased by 2px */
+  color: #444;
+  line-height: 1.2;
+  flex-grow: 1;
+  margin-bottom: 8px;
+}
+
+.stock-dates {
+  display: flex;
+  flex-direction: row; /* horizontal alignment */
+  column-gap: 10px;
+  font-size: 11px; /* slightly larger for readability */
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+  color: #000;
+}
+.stock-dates span { margin-bottom: 2px; }
+
+.stock-face {
+  font-size: 10px;
+  font-weight: 600;
+  color: #2c7045;
+}
+
+/* Dark mode adjustments */
+.dark-mode .stock-item-card { background: #1f1f1f; border-color: #3a3a3a; }
+.dark-mode .stock-symbol { background: #2c7045; }
+.dark-mode .stock-company { color: #e6e6e6; }
+.dark-mode .stock-purpose { color: #c7c7c7; }
+.dark-mode .stock-dates { color: #d5d5d5; }
+.dark-mode .stock-series { background: #2d2d2d; color: #e6e6e6; }
+.dark-mode .stock-face { color: #5cb85c; }
+
+
 
 .dark-mode .content-body-wrapper,
 .dark-mode .sidebar,

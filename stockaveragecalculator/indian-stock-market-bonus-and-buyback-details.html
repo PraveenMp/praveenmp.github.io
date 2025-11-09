@@ -101,24 +101,9 @@
                         <div id="stockTablesContainer" class="table-mobile-view"></div>
                     </div>
 
-                    <div class="table-responsive tb-content">
-                        <table class="table table-bordered table-striped table-mobile-view">
-                            <thead>
-                                <tr>
-                                    <th class="tbv">Number</th>
-                                    <th class="tbv">Symbol</th>
-                                    <th>Company Name</th>
-                                    <th class="tbv">Series</th>
-                                    <th>Purpose</th>
-                                    <!-- <th>Dividend Type</th>
-                                    <th>Dividend per share</th> -->
-                                    <th>Face Value</th>
-                                    <th>Ex-Date</th>
-                                    <th>Record Date</th>
-                                </tr>
-                            </thead>
-                            <tbody id="stockTableBody" class="table-mobile-view"></tbody>
-                        </table>
+                    <!-- Card Grid Replacing Table View -->
+                    <div class="cards-responsive tb-content" aria-label="Bonus and buyback details cards">
+                        <div id="stockCardGrid" class="stock-card-grid" role="list"></div>
                     </div>
                 </div>
                 <!-- <span>Source: NSE</span> -->
@@ -207,12 +192,12 @@
             fetch('all-data.json')
                 .then(response => response.json())
                 .then(jsonData => {
-                    // Get the table body element
-                    var tableBody = document.getElementById('stockTableBody');
+                    const grid = document.getElementById('stockCardGrid');
+                    if (!grid) return;
 
-                    // Filter out rows with specific PURPOSE values or containing "Bonus" or "Rights"
-                    var filteredData = jsonData.filter(function (item) {
-                        var excludedPurposes = [
+                    // Filter logic retained from table view
+                    const filteredData = jsonData.filter(item => {
+                        const excludedPurposes = [
                             "Annual General Meeting",
                             "Buy Back",
                             "Interest Payment",
@@ -225,9 +210,7 @@
                             "Extra Annual General Meeting",
                             "Annual General Meetingdividend - "
                         ];
-
                         const excludeRegex = /^(?!.*Annual General Meetingdividend -).*/;
-
                         return !(
                             !item.PURPOSE.match(excludeRegex) ||
                             excludedPurposes.includes(item.PURPOSE) ||
@@ -238,53 +221,34 @@
                         );
                     });
 
-
-                    // Sort data by "Ex-Date" field in ascending order (chronological order)
+                    // Sort by Ex-Date descending
                     filteredData.sort((a, b) => new Date(b["EX-DATE"]) - new Date(a["EX-DATE"]));
 
-                    // Loop through the sorted data and create table rows
-                    filteredData.forEach(function (item, index) {
-                        // Create a new table row
-                        var row = document.createElement('tr');
+                    // Create card elements
+                    filteredData.forEach((item) => {
+                        const card = document.createElement('div');
+                        card.className = 'stock-item-card';
+                        card.setAttribute('role', 'listitem');
+                        card.title = `${item.SYMBOL} | ${item.PURPOSE}`; // Tooltip
 
-                        // Create and append table cells
-                        var numberCell = document.createElement('td');
-                        numberCell.textContent = index + 1; // Start numbering from 1
-                        // append class to the cell
-                        numberCell.classList.add('tbv');
-                        row.appendChild(numberCell);
+                        const purpose = item.PURPOSE.length > 70 ? item.PURPOSE.substring(0, 67) + '…' : item.PURPOSE;
+                        const company = item["COMPANY NAME"].length > 38 ? item["COMPANY NAME"].substring(0, 35) + '…' : item["COMPANY NAME"];
 
-                        Object.keys(item).forEach(function (key) {
-                            var cell = document.createElement('td');
-                            if (key === 'SERIES' || key === 'SYMBOL') {
-                                cell.classList.add('tbv');
-                            }
+                        card.innerHTML = `
+                            <div class="stock-card-header">
+                                <span class="stock-symbol" aria-label="Symbol">${item.SYMBOL}</span>
+                                <span class="stock-series" aria-label="Series">${item.SERIES}</span>
+                            </div>
+                            <div class="stock-company" aria-label="Company">${company}</div>
+                            <div class="stock-purpose" aria-label="Purpose">${purpose}</div>
+                            <div class="stock-dates" aria-label="Key dates">
+                                <span class="ex-date" aria-label="Ex date"><strong>Ex:</strong> ${item["EX-DATE"]}</span>
+                                <span class="record-date" aria-label="Record date"><strong>Rec:</strong> ${item["RECORD DATE"] || '-'}</span>
+                            </div>
+                            <div class="stock-face" aria-label="Face value"><strong>FV:</strong> ${item["FACE VALUE"]}</div>
+                        `;
 
-                            // Populate "Dividend Type" based on the content of "Purpose"
-                            if (key === 'PURPOSE') {
-                                // Add an additional column for "Purpose"
-                                var purposeCell = document.createElement('td');
-                                purposeCell.textContent = item[key];
-                                row.appendChild(purposeCell);
-
-                                // Add an additional column for "Dividend Type"
-                                // var dividendTypeCell = document.createElement('td');
-                                // dividendTypeCell.textContent = getDividendType(item[key]);
-                                // row.appendChild(dividendTypeCell);
-
-                                // Add an additional column for "Dividend per share"
-                                // var dividendPerShareCell = document.createElement('td');
-                                // dividendPerShareCell.textContent = extractDividendPerShare(item[key]);
-                                // row.appendChild(dividendPerShareCell);
-                            } else if (key !== 'DIVIDEND_TYPE') {
-                                // For other columns, just set the content
-                                cell.textContent = item[key];
-                                row.appendChild(cell);
-                            }
-                        });
-
-                        // Append the row to the table body
-                        tableBody.appendChild(row);
+                        grid.appendChild(card);
                     });
                 })
                 .catch(error => console.error('Error fetching data:', error));
