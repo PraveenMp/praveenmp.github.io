@@ -96,6 +96,7 @@
                         <label for="companyFilter" class="form-label">Filter by Company Name:</label>
                         <input type="text" class="form-control" id="companyFilter" placeholder="Type company name...">
                     </div> -->
+                    <div id="yearNavBonus" class="year-nav" aria-label="Year navigation"></div>
 
                     <div class="table-responsive">
                         <div id="stockTablesContainer" class="table-mobile-view"></div>
@@ -187,97 +188,82 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
         <script>
+            const currentYearBonus = new Date().getFullYear();
+            let selectedYearBonus = currentYearBonus;
+            const bonusCache = {};
+            const bonusGrid = document.getElementById('stockCardGrid');
 
-            // Fetch JSON data from external file
-            fetch('all-data.json')
-                .then(response => response.json())
-                .then(jsonData => {
-                    const grid = document.getElementById('stockCardGrid');
-                    if (!grid) return;
+            function bonusDataFile(year){ return `d-${year}.json`; }
 
-                    // Filter logic retained from table view
-                    const filteredData = jsonData.filter(item => {
-                        const excludedPurposes = [
-                            "Annual General Meeting",
-                            "Buy Back",
-                            "Interest Payment",
-                            "Demerger",
-                            "Extra Ordinary General Meeting",
-                            "Extra-Ordinary General Meeting",
-                            "Extra Oridinary General Meeting",
-                            "Extra- Ordinary General Meeting",
-                            "Capital Reduction",
-                            "Extra Annual General Meeting",
-                            "Annual General Meetingdividend - "
-                        ];
-                        const excludeRegex = /^(?!.*Annual General Meetingdividend -).*/;
-                        return !(
-                            !item.PURPOSE.match(excludeRegex) ||
-                            excludedPurposes.includes(item.PURPOSE) ||
-                            item.PURPOSE.includes("Rights") ||
-                            item.PURPOSE.includes("Dividend") ||
-                            item.PURPOSE.includes("Distribution") ||
-                            item.PURPOSE.includes("Face Value Split (Sub-Division)")
-                        );
-                    });
-
-                    // Sort by Ex-Date descending
-                    filteredData.sort((a, b) => new Date(b["EX-DATE"]) - new Date(a["EX-DATE"]));
-
-                    // Create card elements
-                    filteredData.forEach((item) => {
-                        const card = document.createElement('div');
-                        card.className = 'stock-item-card';
-                        card.setAttribute('role', 'listitem');
-                        card.title = `${item.SYMBOL} | ${item.PURPOSE}`; // Tooltip
-
-                        const purpose = item.PURPOSE.length > 70 ? item.PURPOSE.substring(0, 67) + '…' : item.PURPOSE;
-                        const company = item["COMPANY NAME"].length > 38 ? item["COMPANY NAME"].substring(0, 35) + '…' : item["COMPANY NAME"];
-
-                        card.innerHTML = `
-                            <div class="stock-card-header">
-                                <span class="stock-symbol" aria-label="Symbol">${item.SYMBOL}</span>
-                                <span class="stock-series" aria-label="Series">${item.SERIES}</span>
-                            </div>
-                            <div class="stock-company" aria-label="Company">${company}</div>
-                            <div class="stock-purpose" aria-label="Purpose">${purpose}</div>
-                            <div class="stock-dates" aria-label="Key dates">
-                                <span class="ex-date" aria-label="Ex date"><strong>Ex:</strong> ${item["EX-DATE"]}</span>
-                                <span class="record-date" aria-label="Record date"><strong>Rec:</strong> ${item["RECORD DATE"] || '-'}</span>
-                            </div>
-                            <div class="stock-face" aria-label="Face value"><strong>FV:</strong> ${item["FACE VALUE"]}</div>
-                        `;
-
-                        grid.appendChild(card);
-                    });
-                })
-                .catch(error => console.error('Error fetching data:', error));
-
-            // Function to determine "Dividend Type" based on "Purpose"
-            function getDividendType(purpose) {
-                if (purpose.includes("Special Interim Dividend")) {
-                    return "Special Interim";
-                } else if (purpose.includes("Special")) {
-                    return "Special Dividend";
-                } else if (purpose.includes("Interim Dividend")) {
-                    return "Special Dividend";
-                } else if (purpose.includes("Interim")) {
-                    return "Special Dividend";
-                } else if (purpose.includes("Special Dividend")) {
-                    return "Special Dividend";
+            function renderBonusYearNav(){
+                const nav = document.getElementById('yearNavBonus');
+                if(!nav) return;
+                nav.innerHTML='';
+                if(selectedYearBonus === currentYearBonus){
+                    const prev = document.createElement('button');
+                    prev.textContent = `Previous < ${currentYearBonus-1}`;
+                    prev.addEventListener('click', ()=> loadBonusYear(currentYearBonus-1));
+                    nav.appendChild(prev);
                 } else {
-                    return "Other";
+                    const next = document.createElement('button');
+                    next.className='secondary';
+                    next.textContent = `Next > ${currentYearBonus}`;
+                    next.addEventListener('click', ()=> loadBonusYear(currentYearBonus));
+                    nav.appendChild(next);
                 }
             }
 
-            // Function to extract numeric and floating values from "Purpose" column
-            function extractDividendPerShare(purpose) {
-                // Regular expression to match numeric and floating values
-                var match = purpose.match(/(\d+(\.\d+)?)/);
-
-                // If a match is found, return the matched value, otherwise return an empty string
-                return match ? match[0] : "";
+            function loadBonusYear(year){
+                selectedYearBonus = year;
+                renderBonusYearNav();
+                if(bonusCache[year]){ renderBonusCards(bonusCache[year]); return; }
+                fetch(bonusDataFile(year))
+                    .then(r=> r.json())
+                    .then(data=> { bonusCache[year]=data; renderBonusCards(data); })
+                    .catch(err=> { console.error('Bonus year load failed', err); bonusGrid.innerHTML = `<div class='alert alert-danger'>Failed to load data for ${year}</div>`; });
             }
+
+            function renderBonusCards(data){
+                bonusGrid.innerHTML='';
+                const filtered = data.filter(item=> {
+                    const excludedPurposes = ["Annual General Meeting","Buy Back","Interest Payment","Demerger","Extra Ordinary General Meeting","Extra-Ordinary General Meeting","Extra Oridinary General Meeting","Extra- Ordinary General Meeting","Capital Reduction","Extra Annual General Meeting","Annual General Meetingdividend - "];
+                    const excludeRegex = /^(?!.*Annual General Meetingdividend -).*/;
+                    return !(
+                        !item.PURPOSE.match(excludeRegex) ||
+                        excludedPurposes.includes(item.PURPOSE) ||
+                        item.PURPOSE.includes("Rights") ||
+                        item.PURPOSE.includes("Dividend") ||
+                        item.PURPOSE.includes("Distribution") ||
+                        item.PURPOSE.includes("Face Value Split (Sub-Division)")
+                    );
+                });
+                filtered.sort((a,b)=> new Date(b["EX-DATE"]) - new Date(a["EX-DATE"]));
+                filtered.forEach(item=> {
+                    const card = document.createElement('div');
+                    card.className='stock-item-card';
+                    card.setAttribute('role','listitem');
+                    card.title = `${item.SYMBOL} | ${item.PURPOSE}`;
+                    const purpose = item.PURPOSE.length>70 ? item.PURPOSE.substring(0,67)+'…' : item.PURPOSE;
+                    const company = item["COMPANY NAME"].length>38 ? item["COMPANY NAME"].substring(0,35)+'…' : item["COMPANY NAME"];
+                    card.innerHTML = `
+                        <div class="stock-card-header">
+                            <span class="stock-symbol">${item.SYMBOL}</span>
+                            <span class="stock-series">${item.SERIES}</span>
+                        </div>
+                        <div class="stock-company">${company}</div>
+                        <div class="stock-purpose">${purpose}</div>
+                        <div class="stock-dates">
+                            <span><strong>Ex:</strong> ${item["EX-DATE"]}</span>
+                            <span><strong>Rec:</strong> ${item["RECORD DATE"] || '-'}</span>
+                        </div>
+                        <div class="stock-face"><strong>FV:</strong> ${item["FACE VALUE"]}</div>
+                    `;
+                    bonusGrid.appendChild(card);
+                });
+            }
+
+            renderBonusYearNav();
+            loadBonusYear(currentYearBonus);
         </script>
         <script src="./script.min.js" crossorigin="anonymous"></script>
 </body>

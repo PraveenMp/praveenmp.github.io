@@ -907,6 +907,12 @@ body.dark-mode,
 .dark-mode .stock-dates { color: #d5d5d5; }
 .dark-mode .stock-series { background: #2d2d2d; color: #e6e6e6; }
 .dark-mode .stock-face { color: #5cb85c; }
+.year-nav { display:flex; gap:12px; margin:5px 0 15px 0; }
+.year-nav button { background:#056c05; color:#fff; border:1px solid #056c05; border-radius:6px; padding:6px 14px; font-size:12px; font-weight:600; cursor:pointer; }
+.year-nav button.secondary { background:#2c7045; border-color:#2c7045; }
+.year-nav button:hover { background:#045204; }
+.dark-mode .year-nav button { background:#2c7045; border-color:#2c7045; }
+.dark-mode .year-nav button:hover { background:#225536; }
 
 
 
