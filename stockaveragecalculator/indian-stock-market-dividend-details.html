@@ -86,9 +86,7 @@
         <div class="top-menu" id="load-menu-dynamically"></div>
             </div>
             <div class="col-md-10 content-right-body-wrapper">
-                <h3 class="card-header-title">2023- 2025 Update: Insights into Dividends, Bonuses, and Interest Details
-                    in the
-                    Indian Equity Market and Bonds
+                <h3 class="card-header-title"> Indian Stock Market Dividend, Bonus, and Interest Details 2025
                 </h3>
                 <div class="table-body-main-wrapper">
                     <!-- Filter input box -->
@@ -96,8 +94,10 @@
                         <label for="companyFilter" class="form-label">Filter by Company Name:</label>
                         <input type="text" class="form-control" id="companyFilter" placeholder="Type company name...">
                     </div>
+                    <div id="yearNav" class="year-nav" aria-label="Year navigation"></div>
 
-                    <div class="table-responsive">
+                    <!-- Legacy grouped table view removed; hidden container kept for backward compatibility -->
+                    <div class="table-responsive" style="display:none" aria-hidden="true">
                         <div id="stockTablesContainer" class="table-mobile-view"></div>
                     </div>
 
@@ -187,174 +187,134 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
         <script>
-            // // Fetch JSON data from external file
-            fetch('all-data.json')
-                .then(response => response.json())
-                .then(jsonData => {
-                    // Group data by Company Name
-                    var groupedData = groupBy(jsonData, 'COMPANY NAME');
+            const currentYear = new Date().getFullYear();
+            let selectedYear = currentYear;
+            const jsonCache = {}; // cache year data
+            let currentData = [];
 
-                    // Sort the keys alphabetically
-                    var sortedCompanies = Object.keys(groupedData).sort();
+            const companyFilterInput = document.getElementById('companyFilter');
+            const tablesContainer = document.getElementById('stockTablesContainer');
+            const cardGrid = document.getElementById('stockDividendCardGrid');
 
-                    // Get the container element
-                    var container = document.getElementById('stockTablesContainer');
+            function getDataFile(year) { return `d-${year}.json`; }
 
-                    // Filter input box
-                    var filterInput = document.getElementById('companyFilter');
+            function renderYearNav() {
+                const nav = document.getElementById('yearNav');
+                if (!nav) return;
+                nav.innerHTML = '';
+                if (selectedYear === currentYear) {
+                    const prevBtn = document.createElement('button');
+                    prevBtn.textContent = `Previous < ${currentYear - 1}`;
+                    prevBtn.addEventListener('click', () => loadYear(currentYear - 1));
+                    nav.appendChild(prevBtn);
+                } else if (selectedYear < currentYear) {
+                    const nextBtn = document.createElement('button');
+                    nextBtn.className = 'secondary';
+                    nextBtn.textContent = `Next > ${currentYear}`;
+                    nextBtn.addEventListener('click', () => loadYear(currentYear));
+                    nav.appendChild(nextBtn);
+                }
+            }
 
-                    // Event listener for filtering
-                    filterInput.addEventListener('input', function () {
-                        var filterValue = filterInput.value.toLowerCase();
-
-                        // Clear the container
-                        container.innerHTML = '';
-
-                        // Loop through sorted keys and create tables for each matching company
-                        sortedCompanies.forEach(function (company) {
-                            if (company.toLowerCase().includes(filterValue)) {
-                                // Create a new table for the current company
-                                var tableContainer = document.createElement('div');
-                                tableContainer.className = 'table-container';
-                                container.appendChild(tableContainer);
-
-                                var table = document.createElement('table');
-                                table.className = 'table table-bordered table-striped table-responsive';
-
-                                // Create table header
-                                var thead = document.createElement('thead');
-                                var headerRow = document.createElement('tr');
-                                Object.keys(jsonData[0]).forEach(function (key) {
-                                    var th = document.createElement('th');
-                                    th.textContent = key;
-                                    headerRow.appendChild(th);
-                                });
-                                thead.appendChild(headerRow);
-                                table.appendChild(thead);
-
-                                // Create table body
-                                var tbody = document.createElement('tbody');
-                                groupedData[company].forEach(function (item, index) {
-                                    var row = document.createElement('tr');
-                                    // Create and append table cells
-                                    Object.keys(item).forEach(function (key) {
-                                        var cell = document.createElement('td');
-                                        cell.textContent = item[key];
-                                        row.appendChild(cell);
-                                    });
-                                    tbody.appendChild(row);
-                                });
-                                table.appendChild(tbody);
-
-                                // Append the table to the container
-                                tableContainer.appendChild(table);
-                            }
-                        });
-                    });
-
-                })
-                .catch(error => console.error('Error fetching data:', error));
-
-            // Function to group data by a specified property
             function groupBy(array, property) {
-                return array.reduce(function (acc, obj) {
-                    var key = obj[property];
-                    if (!acc[key]) {
-                        acc[key] = [];
-                    }
+                return array.reduce((acc, obj) => {
+                    const key = obj[property];
+                    if (!acc[key]) acc[key] = [];
                     acc[key].push(obj);
                     return acc;
                 }, {});
             }
 
-            // Fetch JSON data from external file
-            fetch('all-data.json')
-                .then(response => response.json())
-                .then(jsonData => {
-                    const grid = document.getElementById('stockDividendCardGrid');
-                    if(!grid) return;
+            function renderCompanyTables(){ /* table view deprecated */ }
 
-                    const filteredData = jsonData.filter(item => {
-                        const excludedPurposes = [
-                            "Annual General Meeting",
-                            "Buy Back",
-                            "Interest Payment",
-                            "Demerger",
-                            "Extra Ordinary General Meeting",
-                            "Extra-Ordinary General Meeting",
-                            "Extra Oridinary General Meeting",
-                            "Extra- Ordinary General Meeting",
-                            "Capital Reduction",
-                            "Extra Annual General Meeting",
-                        ];
-                        return !(
-                            excludedPurposes.includes(item.PURPOSE) ||
-                            item.PURPOSE.includes("Rights") ||
-                            item.PURPOSE.includes("Bonus") ||
-                            item.PURPOSE.includes("Face Value Split (Sub-Division)")
-                        );
-                    });
+            function renderCards(data) {
+                cardGrid.innerHTML = '';
+                if (!data.length) return;
+                const filteredData = data.filter(item => {
+                    const excludedPurposes = [
+                        "Annual General Meeting","Buy Back","Interest Payment","Demerger","Extra Ordinary General Meeting","Extra-Ordinary General Meeting","Extra Oridinary General Meeting","Extra- Ordinary General Meeting","Capital Reduction","Extra Annual General Meeting"
+                    ];
+                    return !(
+                        excludedPurposes.includes(item.PURPOSE) ||
+                        item.PURPOSE.includes("Rights") ||
+                        item.PURPOSE.includes("Bonus") ||
+                        item.PURPOSE.includes("Face Value Split (Sub-Division)")
+                    );
+                });
+                filteredData.sort((a,b)=> new Date(b["EX-DATE"]) - new Date(a["EX-DATE"]));
+                filteredData.forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = 'stock-item-card';
+                    card.setAttribute('role','listitem');
+                    card.title = `${item.SYMBOL} | ${item.PURPOSE}`;
+                    const purposeFull = item.PURPOSE || '';
+                    const purpose = purposeFull.length > 70 ? purposeFull.substring(0,67)+'…' : purposeFull;
+                    const companyFull = item["COMPANY NAME"] || '';
+                    const company = companyFull.length > 38 ? companyFull.substring(0,35)+'…' : companyFull;
+                    const dividendPerShare = extractDividendPerShare(purposeFull);
+                    card.innerHTML = `
+                        <div class="stock-card-header">
+                            <span class="stock-symbol">${item.SYMBOL}</span>
+                            <span class="stock-series">${item.SERIES}</span>
+                        </div>
+                        <div class="stock-company">${company}</div>
+                        <div class="stock-purpose">${purpose}</div>
+                        <div class="stock-dates">
+                            <span><strong>Ex:</strong> ${item["EX-DATE"]}</span>
+                            <span><strong>Rec:</strong> ${item["RECORD DATE"] || '-'}</span>
+                        </div>
+                        <div class="stock-face"><strong>FV:</strong> ${item["FACE VALUE"]}</div>
+                        <div class="stock-dividend"><strong>Amount:</strong> <b><i>${dividendPerShare || '-'}</i></b></div>
+                    `;
+                    cardGrid.appendChild(card);
+                });
+            }
 
-                    filteredData.sort((a, b) => new Date(b["EX-DATE"]) - new Date(a["EX-DATE"]));
-
-                    filteredData.forEach((item) => {
-                        const card = document.createElement('div');
-                        card.className = 'stock-item-card';
-                        card.setAttribute('role','listitem');
-                        card.title = `${item.SYMBOL} | ${item.PURPOSE}`;
-
-                        const purposeFull = item.PURPOSE || '';
-                        const purpose = purposeFull.length > 70 ? purposeFull.substring(0,67)+'…' : purposeFull;
-                        const companyFull = item["COMPANY NAME"] || '';
-                        const company = companyFull.length > 38 ? companyFull.substring(0,35)+'…' : companyFull;
-                        const dividendType = getDividendType(purposeFull);
-                        const dividendPerShare = extractDividendPerShare(purposeFull);
-
-                        card.innerHTML = `
-                            <div class="stock-card-header">
-                                <span class="stock-symbol">${item.SYMBOL}</span>
-                                <span class="stock-series">${item.SERIES}</span>
-                            </div>
-                            <div class="stock-company">${company}</div>
-                            <div class="stock-purpose">${purpose}</div>
-                            <div class="stock-dates">
-                                <span><strong>Ex:</strong> ${item["EX-DATE"]}</span>
-                                <span><strong>Rec:</strong> ${item["RECORD DATE"] || '-'}</span>
-                            </div>
-                            <div class="stock-face"><strong>FV:</strong> ${item["FACE VALUE"]}</div>
-                            <div class="stock-dividend"><strong>Amount:</strong> <b><i>${dividendPerShare || '-'}</i></b></div>
-                        `;
-
-                        grid.appendChild(card);
-                    });
-                })
-                .catch(error => console.error('Error fetching data:', error));
-
-            // Function to determine "Dividend Type" based on "Purpose"
-            function getDividendType(purpose) {
-                if (purpose.includes("Special Interim Dividend")) {
-                    return "Special Interim";
-                } else if (purpose.includes("Special")) {
-                    return "Special Dividend";
-                } else if (purpose.includes("Interim Dividend")) {
-                    return "Special Dividend";
-                } else if (purpose.includes("Interim")) {
-                    return "Special Dividend";
-                } else if (purpose.includes("Special Dividend")) {
-                    return "Special Dividend";
-                } else {
-                    return "Other";
+            function loadYear(year) {
+                selectedYear = year;
+                renderYearNav();
+                if (jsonCache[year]) {
+                    currentData = jsonCache[year];
+                    renderCards(currentData);
+                    filterCards();
+                    return;
                 }
+                const file = getDataFile(year);
+                fetch(file)
+                    .then(r => r.json())
+                    .then(data => {
+                        jsonCache[year] = data;
+                        currentData = data;
+                        renderCards(currentData);
+                        filterCards();
+                    })
+                    .catch(err => {
+                        console.error('Error loading year data', err);
+                        tablesContainer.innerHTML = `<div class='alert alert-danger'>Failed to load data for ${year}</div>`;
+                    });
             }
 
-            // Function to extract numeric and floating values from "Purpose" column
+            companyFilterInput.addEventListener('input', () => { filterCards(); });
+
+            function filterCards(){
+                const term = (companyFilterInput.value || '').toLowerCase();
+                const cards = cardGrid.querySelectorAll('.stock-item-card');
+                cards.forEach(card => {
+                    const companyEl = card.querySelector('.stock-company');
+                    const symbolEl = card.querySelector('.stock-symbol');
+                    const text = ((companyEl?.textContent)||'') + ' ' + ((symbolEl?.textContent)||'');
+                    card.style.display = (!term || text.toLowerCase().includes(term)) ? 'flex' : 'none';
+                });
+            }
+
             function extractDividendPerShare(purpose) {
-                // Regular expression to match numeric and floating values
-                var match = purpose.match(/(\d+(\.\d+)?)/);
-
-                // If a match is found, return the matched value, otherwise return an empty string
-                return match ? match[0] : "";
+                const match = purpose.match(/(\d+(\.\d+)?)/);
+                return match ? match[0] : '';
             }
+
+            // Initialize
+            renderYearNav();
+            loadYear(currentYear); // default current year
         </script>
         <script src="./script.min.js" crossorigin="anonymous"></script>
 </body>
