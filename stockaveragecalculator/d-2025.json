@@ -17053,5 +17053,140 @@
     "FACE VALUE": 10,
     "EX-DATE": "26-Nov-25",
     "RECORD DATE": "26-Nov-25"
+  },
+  {
+    "SYMBOL": "SIKKO",
+    "COMPANY NAME": "Sikko Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "27-Nov-25",
+    "RECORD DATE": "27-Nov-25"
+  },
+  {
+    "SYMBOL": "662GS2051",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "27-Nov-25",
+    "RECORD DATE": "27-Nov-25"
+  },
+  {
+    "SYMBOL": "THYROCARE",
+    "COMPANY NAME": "Thyrocare Technologies Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 2:1",
+    "FACE VALUE": 10,
+    "EX-DATE": "28-Nov-25",
+    "RECORD DATE": "28-Nov-25"
+  },
+  {
+    "SYMBOL": "817GS2044",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "28-Nov-25",
+    "RECORD DATE": "28-Nov-25"
+  },
+  {
+    "SYMBOL": "86GS2028",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "1-Dec-25",
+    "RECORD DATE": "1-Dec-25"
+  },
+  {
+    "SYMBOL": "613GS2028",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "3-Dec-25",
+    "RECORD DATE": "3-Dec-25"
+  },
+  {
+    "SYMBOL": "ENGINERSIN",
+    "COMPANY NAME": "Engineers India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 1 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "4-Dec-25",
+    "RECORD DATE": "4-Dec-25"
+  },
+  {
+    "SYMBOL": "897GS2030",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "4-Dec-25",
+    "RECORD DATE": "4-Dec-25"
+  },
+  {
+    "SYMBOL": "PATELENG",
+    "COMPANY NAME": "Patel Engineering Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Rights 7:40 @ Premium Rs 26/-",
+    "FACE VALUE": 1,
+    "EX-DATE": "4-Dec-25",
+    "RECORD DATE": "4-Dec-25"
+  },
+  {
+    "SYMBOL": "657GS2033",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "4-Dec-25",
+    "RECORD DATE": "4-Dec-25"
+  },
+  {
+    "SYMBOL": "HCC",
+    "COMPANY NAME": "Hindustan Construction Company Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Rights 277:630 @ Premium Rs 11.50/-",
+    "FACE VALUE": 1,
+    "EX-DATE": "5-Dec-25",
+    "RECORD DATE": "5-Dec-25"
+  },
+  {
+    "SYMBOL": "CAMS",
+    "COMPANY NAME": "Computer Age Management Services Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "5-Dec-25",
+    "RECORD DATE": "5-Dec-25"
+  },
+  {
+    "SYMBOL": "HINDUNILVR",
+    "COMPANY NAME": "Hindustan Unilever Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Demerger",
+    "FACE VALUE": 1,
+    "EX-DATE": "5-Dec-25",
+    "RECORD DATE": "5-Dec-25"
+  },
+  {
+    "SYMBOL": "MODISONLTD",
+    "COMPANY NAME": "MODISON LIMITED",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 2.50 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "8-Dec-25",
+    "RECORD DATE": "8-Dec-25"
+  },
+  {
+    "SYMBOL": "SIKKO",
+    "COMPANY NAME": "Sikko Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 1:1",
+    "FACE VALUE": 1,
+    "EX-DATE": "8-Dec-25",
+    "RECORD DATE": "8-Dec-25"
   }
 ]
