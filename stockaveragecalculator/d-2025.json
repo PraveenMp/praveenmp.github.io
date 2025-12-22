@@ -17188,5 +17188,140 @@
     "FACE VALUE": 1,
     "EX-DATE": "8-Dec-25",
     "RECORD DATE": "8-Dec-25"
+  },
+  {
+    "SYMBOL": "STEELCITY",
+    "COMPANY NAME": "Steel City Securities Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 1 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "11-Dec-25",
+    "RECORD DATE": "11-Dec-25"
+  },
+  {
+    "SYMBOL": "VLSFINANCE",
+    "COMPANY NAME": "VLS Finance Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Buy Back",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Dec-25",
+    "RECORD DATE": "12-Dec-25"
+  },
+  {
+    "SYMBOL": "BHARATRAS",
+    "COMPANY NAME": "Bharat Rasayan Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "12-Dec-25",
+    "RECORD DATE": "12-Dec-25"
+  },
+  {
+    "SYMBOL": "BHARATRAS",
+    "COMPANY NAME": "Bharat Rasayan Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 1:1",
+    "FACE VALUE": 5,
+    "EX-DATE": "12-Dec-25",
+    "RECORD DATE": "12-Dec-25"
+  },
+  {
+    "SYMBOL": "NACLIND",
+    "COMPANY NAME": "NACL Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Rights 5:31 @ Premium Rs 75.70/-",
+    "FACE VALUE": 1,
+    "EX-DATE": "12-Dec-25",
+    "RECORD DATE": "12-Dec-25"
+  },
+  {
+    "SYMBOL": "BECTORFOOD",
+    "COMPANY NAME": "Mrs. Bectors Food Specialities Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "12-Dec-25",
+    "RECORD DATE": "12-Dec-25"
+  },
+  {
+    "SYMBOL": "NURECA",
+    "COMPANY NAME": "Nureca Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Buy Back",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Dec-25",
+    "RECORD DATE": "12-Dec-25"
+  },
+  {
+    "SYMBOL": "MONEYBOXX",
+    "COMPANY NAME": "Moneyboxx Finance Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 1:1",
+    "FACE VALUE": 10,
+    "EX-DATE": "15-Dec-25",
+    "RECORD DATE": "15-Dec-25"
+  },
+  {
+    "SYMBOL": "ECLERX",
+    "COMPANY NAME": "eClerx Services Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Buy Back",
+    "FACE VALUE": 10,
+    "EX-DATE": "17-Dec-25",
+    "RECORD DATE": "17-Dec-25"
+  },
+  {
+    "SYMBOL": "KRISHIVAL",
+    "COMPANY NAME": "Krishival Foods Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Rights 45:301 @ Premium Rs 290/-",
+    "FACE VALUE": 10,
+    "EX-DATE": "17-Dec-25",
+    "RECORD DATE": "17-Dec-25"
+  },
+  {
+    "SYMBOL": "IOC",
+    "COMPANY NAME": "Indian Oil Corporation Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 5 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "18-Dec-25",
+    "RECORD DATE": "18-Dec-25"
+  },
+  {
+    "SYMBOL": "CANFINHOME",
+    "COMPANY NAME": "Can Fin Homes Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 7 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "19-Dec-25",
+    "RECORD DATE": "19-Dec-25"
+  },
+  {
+    "SYMBOL": "LALPATHLAB",
+    "COMPANY NAME": "Dr. Lal Path Labs Ltd.",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 1:1",
+    "FACE VALUE": 10,
+    "EX-DATE": "19-Dec-25",
+    "RECORD DATE": "19-Dec-25"
+  },
+  {
+    "SYMBOL": "CRAMC",
+    "COMPANY NAME": "Canara Robeco Asset Management Company Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 1.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "22-Dec-25",
+    "RECORD DATE": "22-Dec-25"
+  },
+  {
+    "SYMBOL": "KMEW",
+    "COMPANY NAME": "Knowledge Marine & Engineering Works Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "22-Dec-25",
+    "RECORD DATE": "22-Dec-25"
   }
 ]
