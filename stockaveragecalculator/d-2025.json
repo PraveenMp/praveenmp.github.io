@@ -17323,5 +17323,77 @@
     "FACE VALUE": 5,
     "EX-DATE": "22-Dec-25",
     "RECORD DATE": "22-Dec-25"
+  },
+  {
+    "SYMBOL": "VINEETLAB",
+    "COMPANY NAME": "Vineet Laboratories Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Rights 13:12 @ Premium Rs 20/-",
+    "FACE VALUE": 10,
+    "EX-DATE": "23-Dec-25",
+    "RECORD DATE": "23-Dec-25"
+  },
+  {
+    "SYMBOL": "GRMOVER",
+    "COMPANY NAME": "GRM Overseas Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 2:1",
+    "FACE VALUE": 2,
+    "EX-DATE": "24-Dec-25",
+    "RECORD DATE": "24-Dec-25"
+  },
+  {
+    "SYMBOL": "NECLIFE",
+    "COMPANY NAME": "Nectar Lifesciences Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Buy Back",
+    "FACE VALUE": 1,
+    "EX-DATE": "24-Dec-25",
+    "RECORD DATE": "24-Dec-25"
+  },
+  {
+    "SYMBOL": "PPL",
+    "COMPANY NAME": "Prakash Pipes Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 1 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "24-Dec-25",
+    "RECORD DATE": "24-Dec-25"
+  },
+  {
+    "SYMBOL": "DCMSRIND",
+    "COMPANY NAME": "DCM Shriram Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Demerger",
+    "FACE VALUE": 2,
+    "EX-DATE": "26-Dec-25",
+    "RECORD DATE": "26-Dec-25"
+  },
+  {
+    "SYMBOL": "HILTON",
+    "COMPANY NAME": "Hilton Metal Forging Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Rights 14:29 @ Premium Rs 18.32/-",
+    "FACE VALUE": 10,
+    "EX-DATE": "26-Dec-25",
+    "RECORD DATE": "26-Dec-25"
+  },
+  {
+    "SYMBOL": "RAMRAT",
+    "COMPANY NAME": "Ram Ratna Wires Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 1:1",
+    "FACE VALUE": 5,
+    "EX-DATE": "26-Dec-25",
+    "RECORD DATE": "26-Dec-25"
+  },
+  {
+    "SYMBOL": "NUVAMA",
+    "COMPANY NAME": "Nuvama Wealth Management Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "26-Dec-25",
+    "RECORD DATE": "26-Dec-25"
   }
 ]
