@@ -375,6 +375,7 @@ footer {
     right: 20px;
     top: 25px;
   }
+
   .share-button a {
     font-size: 8px;
     padding: 4px;
@@ -534,6 +535,7 @@ footer {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 8;
+  line-clamp: 8;
   -webkit-box-orient: vertical;
   margin-bottom: 0px;
   font-size: 13px;
@@ -554,6 +556,7 @@ footer {
 .best-book-suggestion-wrapper .card-title {
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -807,16 +810,27 @@ body.dark-mode,
 }
 
 @media (max-width: 1400px) {
-  .stock-card-grid { grid-template-columns: repeat(4, 1fr); }
+  .stock-card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
+
 @media (max-width: 1100px) {
-  .stock-card-grid { grid-template-columns: repeat(3, 1fr); }
+  .stock-card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
+
 @media (max-width: 880px) {
-  .stock-card-grid { grid-template-columns: repeat(2, 1fr); }
+  .stock-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
+
 @media (max-width: 520px) {
-  .stock-card-grid { grid-template-columns: repeat(1, 1fr); }
+  .stock-card-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .stock-item-card {
@@ -829,13 +843,13 @@ body.dark-mode,
   flex-direction: column;
   justify-content: space-between;
   min-height: 160px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
   position: relative;
   transition: box-shadow .25s ease, transform .25s ease;
 }
 
 .stock-item-card:hover {
-  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
   transform: translateY(-3px);
 }
 
@@ -868,14 +882,16 @@ body.dark-mode,
 
 .stock-company {
   font-weight: 600;
-  font-size: 13px; /* increased by 2px */
+  font-size: 13px;
+  /* increased by 2px */
   margin-bottom: 6px;
   color: #173046;
   line-height: 1.25;
 }
 
 .stock-purpose {
-  font-size: 12px; /* increased by 2px */
+  font-size: 12px;
+  /* increased by 2px */
   color: #444;
   line-height: 1.2;
   flex-grow: 1;
@@ -884,14 +900,19 @@ body.dark-mode,
 
 .stock-dates {
   display: flex;
-  flex-direction: row; /* horizontal alignment */
+  flex-direction: row;
+  /* horizontal alignment */
   column-gap: 10px;
-  font-size: 11px; /* slightly larger for readability */
+  font-size: 11px;
+  /* slightly larger for readability */
   margin-bottom: 6px;
   flex-wrap: wrap;
   color: #000;
 }
-.stock-dates span { margin-bottom: 2px; }
+
+.stock-dates span {
+  margin-bottom: 2px;
+}
 
 .stock-face {
   font-size: 10px;
@@ -900,19 +921,70 @@ body.dark-mode,
 }
 
 /* Dark mode adjustments */
-.dark-mode .stock-item-card { background: #1f1f1f; border-color: #3a3a3a; }
-.dark-mode .stock-symbol { background: #2c7045; }
-.dark-mode .stock-company { color: #e6e6e6; }
-.dark-mode .stock-purpose { color: #c7c7c7; }
-.dark-mode .stock-dates { color: #d5d5d5; }
-.dark-mode .stock-series { background: #2d2d2d; color: #e6e6e6; }
-.dark-mode .stock-face { color: #5cb85c; }
-.year-nav { display:flex; gap:12px; margin:5px 0 15px 0; }
-.year-nav button { background:#056c05; color:#fff; border:1px solid #056c05; border-radius:6px; padding:6px 14px; font-size:12px; font-weight:600; cursor:pointer; }
-.year-nav button.secondary { background:#2c7045; border-color:#2c7045; }
-.year-nav button:hover { background:#045204; }
-.dark-mode .year-nav button { background:#2c7045; border-color:#2c7045; }
-.dark-mode .year-nav button:hover { background:#225536; }
+.dark-mode .stock-item-card {
+  background: #1f1f1f;
+  border-color: #3a3a3a;
+}
+
+.dark-mode .stock-symbol {
+  background: #2c7045;
+}
+
+.dark-mode .stock-company {
+  color: #e6e6e6;
+}
+
+.dark-mode .stock-purpose {
+  color: #c7c7c7;
+}
+
+.dark-mode .stock-dates {
+  color: #d5d5d5;
+}
+
+.dark-mode .stock-series {
+  background: #2d2d2d;
+  color: #e6e6e6;
+}
+
+.dark-mode .stock-face {
+  color: #5cb85c;
+}
+
+.year-nav {
+  display: flex;
+  gap: 12px;
+  margin: 5px 0 15px 0;
+}
+
+.year-nav button {
+  background: #056c05;
+  color: #fff;
+  border: 1px solid #056c05;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.year-nav button.secondary {
+  background: #2c7045;
+  border-color: #2c7045;
+}
+
+.year-nav button:hover {
+  background: #045204;
+}
+
+.dark-mode .year-nav button {
+  background: #2c7045;
+  border-color: #2c7045;
+}
+
+.dark-mode .year-nav button:hover {
+  background: #225536;
+}
 
 
 
@@ -945,4 +1017,124 @@ body.dark-mode {
 input::placeholder {
   font-size: 14px;
   font-weight: 400;
+}
+
+/* Graph Styles */
+#graph-container {
+  display: none;
+  margin-top: 40px;
+  /* Increased margin to accommodate top labels */
+  margin-bottom: 40px;
+  /* Increased margin to accommodate bottom labels */
+  width: 100%;
+  height: 40px;
+  /* Reduced height from 60px */
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+.graph-bar {
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  /* Reduced font size to fit */
+  color: black;
+  /* background-color: white; Removed to allow custom colors */
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Remove double borders */
+.graph-bar+.graph-bar {
+  border-left: none;
+}
+
+.graph-label-top {
+  position: absolute;
+  top: -35px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+}
+
+/* Dimension lines simulation */
+.dimension-line {
+  position: absolute;
+  top: -10px;
+  /* Position relative to the label top */
+  left: 0;
+  width: 100%;
+  height: 10px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  /* We can't easily do the horizontal line with text in middle without complex HTML.
+       Simple markers at the ends of the segment are provided by border-left/right here.
+    */
+}
+
+/* To match the image better:
+   The image has vertical ticks at the ends of the segment ABOVE the bar.
+   And a horizontal line connecting them? No, the text is in the middle.
+   Let's just use the vertical ticks on the label container.
+*/
+.graph-label-top::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  /* Just above the bar */
+  left: 0;
+  width: 1px;
+  height: 10px;
+  background-color: black;
+}
+
+.graph-label-top::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  width: 1px;
+  height: 10px;
+  background-color: black;
+}
+
+/* Actually, the image shows thick black borders for the bars themselves. */
+
+/* Bottom Labels for Price */
+.graph-label-bottom {
+  position: absolute;
+  bottom: -35px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+}
+
+.graph-label-bottom::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  /* Just below the bar */
+  left: 0;
+  width: 1px;
+  height: 10px;
+  background-color: black;
+}
+
+.graph-label-bottom::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 0;
+  width: 1px;
+  height: 10px;
+  background-color: black;
 }

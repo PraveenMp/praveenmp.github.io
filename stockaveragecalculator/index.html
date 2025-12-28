@@ -133,7 +133,7 @@
                   <a href="https://topmate.io/praveen_mp10/1841408" target="_blank" tabindex="-1">
                     <image src="./images/Front Page.png" alt="Books Recommendation"
                       style="width: 30%; height: 30%; margin-bottom: 10px;"> </image>
-                      <br/>
+                    <br />
                     <button class="btn btn-warning btn-sm buy-book">Buy E Book</button>
                   </a>
                 </div>
@@ -155,6 +155,9 @@
                 <button class="btn btn-warning" onclick="clearFields()">Clear Fields</button>
                 <button class="btn btn-success" onclick="getAverage()"> Calculate Average</button>
 
+              </div>
+              <div class="col-md-12">
+                <div id="graph-container"></div>
               </div>
               <div class="col-md-12 d-block d-md-none display-mobile-ad">
                 <div id="load-indian-ads" class="load-indian-ads-option-one"></div>
@@ -236,6 +239,7 @@
       </div>
     </div>
   </div>
+  <script src="./script.js" crossorigin="anonymous"></script>
   <script src="./script.min.js" crossorigin="anonymous"></script>
   <script>
     if ('serviceWorker' in navigator) {

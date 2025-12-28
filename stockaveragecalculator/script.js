@@ -141,7 +141,92 @@ function getAverage() {
     + totalUnits + "</bold><br/><br/><span>Average Price</span> &nbsp;&nbsp;&nbsp;<bold>" + averagePrice.toLocaleString(intlLanguage) + "</bold>"
     + "<br/><br/><span>Total Amount</span> &nbsp;&nbsp;&nbsp;<bold>"
     + totalAmount.toLocaleString(intlLanguage) + "</bold>";
+
+  drawGraph(unit1, price1, unit2, price2);
 }
+
+function drawGraph(unit1, price1, unit2, price2) {
+  var val1 = unit1 * price1;
+  var val2 = unit2 * price2;
+  var totalVal = val1 + val2;
+
+  if (totalVal === 0) {
+    document.getElementById('graph-container').style.display = 'none';
+    return;
+  }
+
+  var pct1 = (val1 / totalVal) * 100;
+  var pct2 = (val2 / totalVal) * 100;
+
+  var html = `
+        <div class="graph-bar" style="width: ${pct1}%">
+            <div class="graph-label-top">
+                <div style="border-bottom: 2px solid black; margin: 0 5px 5px 5px;"></div>
+                ${unit1} Units
+            </div>
+            ${val1.toLocaleString(intlLanguage)}
+        </div>
+        <div class="graph-bar" style="width: ${pct2}%">
+            <div class="graph-label-top">
+                <div style="border-bottom: 2px solid black; margin: 0 5px 5px 5px;"></div>
+                ${unit2} Units
+            </div>
+            ${val2.toLocaleString(intlLanguage)}
+        </div>
+    `;
+
+  // Adjusting label top structure to look more like the dimensions in the image
+  // The image has a line across the width with the text in the middle (implied) or above/below.
+  // Actually the image shows:
+  //  |________ 150 Units ________|
+  //
+  // My Css .graph-label-top handles positioning.
+  // The inner div with border-bottom is an attempt to draw the line.
+  // Let's refine the HTML structure in a subsequent edit if needed, but this is a start.
+
+  var averagePrice = (totalVal / (Number(unit1) + Number(unit2))).toFixed(2);
+
+  // Better structure for dimensions:
+  html = `
+        <div class="graph-bar" style="width: ${pct1}%; background-color: #81c784;">
+            <div class="graph-label-top">
+               <div style="display: flex; align-items: center; width: 100%;">
+                  <div style="flex: 1; height: 1px; background: black; margin-right: 5px;"></div>
+                  <span style="white-space: nowrap;">${unit1} Units</span>
+                  <div style="flex: 1; height: 1px; background: black; margin-left: 5px;"></div>
+               </div>
+               <div style="position: absolute; left: 0; bottom: 0; width: 2px; height: 10px; background: black;"></div>
+               <div style="position: absolute; right: 0; bottom: 0; width: 2px; height: 10px; background: black;"></div>
+            </div>
+            ${val1.toLocaleString(intlLanguage)}
+        </div>
+        <div class="graph-bar" style="width: ${pct2}%; background-color: #64b5f6;">
+            <div class="graph-label-top">
+               <div style="display: flex; align-items: center; width: 100%;">
+                  <div style="flex: 1; height: 1px; background: black; margin-right: 5px;"></div>
+                  <span style="white-space: nowrap;">${unit2} Units</span>
+                  <div style="flex: 1; height: 1px; background: black; margin-left: 5px;"></div>
+               </div>
+               <div style="position: absolute; left: 0; bottom: 0; width: 2px; height: 10px; background: black;"></div>
+               <div style="position: absolute; right: 0; bottom: 0; width: 2px; height: 10px; background: black;"></div>
+            </div>
+            ${val2.toLocaleString(intlLanguage)}
+        </div>
+        <div class="graph-label-bottom">
+            <div style="position: absolute; left: 0; top: 0; width: 2px; height: 10px; background: black;"></div>
+            <div style="position: absolute; right: 0; top: 0; width: 2px; height: 10px; background: black;"></div>
+            <div style="display: flex; align-items: center; width: 100%;">
+               <div style="flex: 1; height: 1px; background: black; margin-right: 5px;"></div>
+               <span style="white-space: nowrap;">Avg Price ${Number(averagePrice).toLocaleString(intlLanguage)}</span>
+               <div style="flex: 1; height: 1px; background: black; margin-left: 5px;"></div>
+            </div>
+        </div>
+    `;
+
+  document.getElementById('graph-container').innerHTML = html;
+  document.getElementById('graph-container').style.display = 'flex';
+}
+
 
 function updateInput(inputId, sliderId) {
   // Update input value when slider is moved
@@ -159,6 +244,8 @@ function clearFields() {
   document.getElementById("result").innerHTML = '';
   document.getElementById("investedamount1").innerHTML = '';
   document.getElementById("investedamount2").innerHTML = '';
+  document.getElementById("graph-container").innerHTML = '';
+  document.getElementById("graph-container").style.display = 'none';
 }
 
 // Get all anchor elements with class 'link'
