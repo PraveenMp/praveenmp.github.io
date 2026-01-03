@@ -87,45 +87,50 @@
                 <div class="top-menu" id="load-menu-dynamically"></div>
             </div>
             <div class="col-md-10">
-                <div class="content-body-wrapper mt-4 details-sec-wrapper">                 
-                        <div class="row">
-                       
-                            <div class="col-md-6">
-                                <h4 class="mt-4 mb-4">Contact Us</h4>
+                <div class="content-body-wrapper mt-4 details-sec-wrapper">
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <h4 class="mt-4 mb-4">Contact Us</h4>
                             <div class="card p-4">
-                           
+
                                 <p class="text-center text-muted">
-                                    We would love to hear your feedback and suggestions. Feel free to reach out to us with any questions or comments!
+                                    We would love to hear your feedback and suggestions. Feel free to reach out to us
+                                    with any questions or comments!
                                 </p>
-                                <form id="my-form"  action="https://formspree.io/f/mwplpbbr"
-                                method="POST">
+                                <form id="my-form" action="https://formspree.io/f/mwplpbbr" method="POST">
                                     <div class="mb-3">
                                         <label for="name" class="form-label">Full Name</label>
-                                        <input type="text" class="form-control" name="fullname" id="name" placeholder="Enter your name" required>
+                                        <input type="text" class="form-control" name="fullname" id="name"
+                                            placeholder="Enter your name" required>
                                     </div>
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email address</label>
-                                        <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                        <input type="email" name="email" class="form-control" id="email"
+                                            placeholder="Enter your email" required>
                                     </div>
                                     <div class="mb-3">
                                         <label for="message" class="form-label">Message</label>
-                                        <textarea name="message" class="form-control" id="message" rows="4" placeholder="Write your message" required></textarea>
+                                        <textarea name="message" class="form-control" id="message" rows="4"
+                                            placeholder="Write your message" required></textarea>
                                     </div>
                                     <button class="btn btn-primary w-100" id="my-form-button">Send Message</button>
                                     <p id="my-form-status"></p>
                                 </form>
                             </div>
-                            </div>
-                            <div class="col-md-6">
-                                <h4 class="mt-4 mb-4">About Us</h4>
-                                <p>Welcome to our website!</p>
-                                <p>We are a group of friends passionate about finance and technology, and we created this website to
-                                    provide useful tools and resources to fellow investors.</p>
-                                <p>Our mission is to simplify complex financial calculations and help individuals make informed
-                                    investment decisions.</p>
-                            </div>
                         </div>
-                    
+                        <div class="col-md-6">
+                            <h4 class="mt-4 mb-4">About Us</h4>
+                            <p>Welcome to our website!</p>
+                            <p>We are a group of friends passionate about finance and technology, and we created this
+                                website to
+                                provide useful tools and resources to fellow investors.</p>
+                            <p>Our mission is to simplify complex financial calculations and help individuals make
+                                informed
+                                investment decisions.</p>
+                        </div>
+                    </div>
+
                     <div class="row mt-4">
                         <div class="alert alert-warning" role="alert">
                             <h4 class="alert-heading">Cautionary Warning for Stock Market Information</h4>
@@ -214,39 +219,39 @@
     <!-- Add Bootstrap JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="./script.min.js" crossorigin="anonymous"></script>
+    <script src="./script.js" crossorigin="anonymous"></script>
     <script>
         var form = document.getElementById("my-form");
-        
+
         async function handleSubmit(event) {
-          event.preventDefault();
-          var status = document.getElementById("my-form-status");
-          var data = new FormData(event.target);
-          fetch(event.target.action, {
-            method: form.method,
-            body: data,
-            headers: {
-                'Accept': 'application/json'
-            }
-          }).then(response => {
-            if (response.ok) {
-              status.innerHTML = "Thanks for your submission!";
-              form.reset()
-            } else {
-              response.json().then(data => {
-                if (Object.hasOwn(data, 'errors')) {
-                  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-                } else {
-                  status.innerHTML = "Oops! There was a problem submitting your form"
+            event.preventDefault();
+            var status = document.getElementById("my-form-status");
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
                 }
-              })
-            }
-          }).catch(error => {
-            status.innerHTML = "Oops! There was a problem submitting your form"
-          });
+            }).then(response => {
+                if (response.ok) {
+                    status.innerHTML = "Thanks for your submission!";
+                    form.reset()
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                        } else {
+                            status.innerHTML = "Oops! There was a problem submitting your form"
+                        }
+                    })
+                }
+            }).catch(error => {
+                status.innerHTML = "Oops! There was a problem submitting your form"
+            });
         }
         form.addEventListener("submit", handleSubmit)
-      </script>
+    </script>
 </body>
 
 </html>
