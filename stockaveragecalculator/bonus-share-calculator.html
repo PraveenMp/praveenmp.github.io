@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JPBH15FMY4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-JPBH15FMY4');
+    </script>
+    <title>Bonus Share Calculator</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Calculate standard bonus share adjustments including new stock price and total shares details with this Bonus Share Calculator." />
+    <meta name="keywords"
+        content="Bonus Share Calculator, Stock Bonus Calculator, Indian Stock Market, Share Market Tool, Investment Calculator">
+    <meta name="author" content="Praveen MP">
+    <meta property="og:title" content="Bonus Share Calculator" />
+    <meta property="og:url" content="https://praveenmp.github.io/stockaveragecalculator/" />
+    <meta property="og:description"
+        content="Calculate standard bonus share adjustments including new stock price and total shares details with this Bonus Share Calculator.">
+    <meta property="og:image"
+        content="https://praveenmp.github.io/stockaveragecalculator/images/android-chrome-512x512.png">
+    <meta property="og:type" content="website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid wrapper-body">
+        <div class="row">
+            <div id="mobile-header" class="hidden-on-desktop-tablet">
+                <div id="toggle-btn">
+                    <i class="fas fa-bars"></i> Menu
+                </div>
+                <div class="mobile-logo">
+                    <h2 class="mobile-app-logo"><i class="fas fa-calculator"></i> Stock-Calc</h2>
+                </div>
+            </div>
+            <div class="col-md-2 sidebar" id="sidebar">
+                <div class="title-wrapper">
+                    <h2 class="app-logo"><i class="fas fa-calculator"></i> Stock-Calc</h2>
+                    <div class="custom-control custom-switch mb-3">
+                        <input type="checkbox" class="custom-control-input" id="darkModeSwitch" data-toggle="toggle">
+                        <label class="custom-control-label" for="darkModeSwitch"></label>
+                    </div>
+                </div>
+
+                <!---Menu Section-->
+                <div hidden id="page-name">Bonus Share Calculator</div>
+                <div class="top-menu" id="load-menu-dynamically"></div>
+            </div>
+            <div class="col-md-10 content-right-body-wrapper">
+                <div id="clock"></div>
+                <div id="emi-calculator">
+                    <div class="content-body-wrapper">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <header>
+                                    <h2 class="headers">Bonus Share Calculator</h2>
+                                </header>
+                                <hr />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="sip-result-wrapper" class="col-md-4">
+                                <form id="stockForm">
+                                    <div class="form-group">
+                                        <label for="currentPrice">Current Stock Price</label>
+                                        <input type="number" class="form-control" tabindex="0" id="currentPrice"
+                                            placeholder="stock price" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="bonusRatio">Bonus Ratio (Bonus:Held):</label>
+                                        <div class="input-group">
+
+                                            <input type="text" class="form-control" tabindex="0" id="bonusRatio"
+                                                placeholder="bonus:held (e.g., 2:1)" required>
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">Example 2:1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="numberOfShares">Number of Shares Owned:</label>
+                                        <input type="number" class="form-control" tabindex="0" id="numberOfShares"
+                                            placeholder="number of shares owned" required>
+                                    </div>
+                                </form>
+                                <div class="btn-wrapper">
+                                    <button class="btn btn-warning"
+                                        onclick="clearAllFields(['bonusRatio','numberOfShares','currentPrice','newPrice','newShares','totalShares','investmentValue'])">Clear
+                                        Fields</button>
+                                    <button type="submit" class="btn btn-success"
+                                        onclick="bonusShareCalculator()">Calculate</button>
+                                </div>
+                                <div class="r-sip mt-4">
+                                    <h5 id="newPrice">New Stock Price: ₹0.00</h5>
+                                    <h5 id="newShares">Bonus Shares Received: 0</h5>
+                                    <h5 id="totalShares">Total Shares After Bonus: 0</h5>
+                                    <h5 id="investmentValue">Investment Value: ₹0.00</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-2"></div>
+                            <div class="col-md-4 st banner-ad-desktop">
+                                <div id="load-indian-ads" class="load-indian-ads-option-one"></div>
+                                <div id="load-global-ads" class="load-global-ads-option-one"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 d-block d-md-none display-mobile-ad">
+                                <div id="load-indian-ads" class="load-indian-ads-option-one"></div>
+                                <div id="load-global-ads" class="load-global-ads-option-one"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-body-wrapper mt-4 details-sec-wrapper">
+                        <h6 class="mb-2">Bonus Share Calculator</h3>
+
+
+                            Use this calculator to determine the new stock price and the number of shares you will own
+                            after a bonus issue.
+                            <br />
+
+                            A bonus issue increases the number of shares in a company by issuing more shares to
+                            current shareholders based on their existing holding. In a 2:1 bonus issue, for every 1
+                            share owned, you get 2 additional shares.
+                            <br />
+                            Inputs:
+                            <br />
+                            Current Stock Price (₹): The current price per share of the stock.
+                            <br />
+                            Bonus Ratio (Bonus:Held): The ratio indicating how many bonus shares will be given for each
+                            held share.
+                            <br />
+                            Number of Shares Owned: The number of shares you currently own.
+                            <br />
+                            Outputs:
+                            <br />
+
+                            New Stock Price: The adjusted price per share after the bonus issue.
+                            <br />
+                            Total Shares After Bonus: The total number of shares you will own after the bonus issue.
+                            <br />
+                            Additional Shares: The number of new shares received as bonus.
+                            <br />
+                            Investment Value: The total value of your investment should theoretically remain the same.
+                    </div>
+                </div>
+
+
+
+
+
+                <footer class="mb-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                            </div>
+                            <div class="col-md-4 text-center mb-2">
+                                &copy; 2018 - 2028. Feedback:<a
+                                    href="mailto:praveen_mp@live.com">praveen_mp@live.com</a>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <div class="social-share-icons">
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                                        class="btn btn-primary btn-sm"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                                        class="btn btn-info btn-sm"><i class="fab fa-twitter"></i></a>
+                                    <a href="whatsapp://send?text=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                                        class="btn btn-success btn-sm"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="https://www.instagram.com/?url=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                                        class="btn btn-danger btn-sm"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+            <script src="./script.js" crossorigin="anonymous"></script>
+            <script>
+                function bonusShareCalculator() {
+                    event.preventDefault();
+                    let currentPrice = parseFloat(document.getElementById('currentPrice').value);
+                    let bonusRatioParts = document.getElementById('bonusRatio').value.split(':');
+                    let bonusShares = parseFloat(bonusRatioParts[0]);
+                    let heldShares = parseFloat(bonusRatioParts[1]);
+                    let numberOfShares = parseInt(document.getElementById('numberOfShares').value);
+
+                    if (!currentPrice || !bonusShares || !heldShares || !numberOfShares) return;
+
+                    // Calculate Factor.
+                    // Bonus 2:1 means for every 1 share, you get 2. Total becomes 3. Factor = (Bonus + Held) / Held?
+                    // New Qty = Old Qty * (1 + Bonus/Held)
+
+                    let ratio = bonusShares / heldShares;
+
+                    // Total New Shares
+                    let totalFinalShares = numberOfShares * (1 + ratio);
+
+                    // New Price
+                    let newPrice = currentPrice / (1 + ratio);
+
+                    document.getElementById('newPrice').innerText = 'New Stock Price: ₹' + newPrice.toFixed(2);
+
+                    // Additional shares
+                    let additionalShares = totalFinalShares - numberOfShares;
+                    document.getElementById('newShares').innerText = 'Bonus Shares Received: ' + Math.floor(additionalShares);
+
+                    // Total Whole Shares
+                    let totalWholeShares = Math.floor(totalFinalShares);
+                    document.getElementById('totalShares').innerText = 'Total Shares After Bonus: ' + totalWholeShares;
+
+                    // Investment Value
+                    // Should match old value approx (ignoring fractional lost)
+                    let totalValue = totalFinalShares * newPrice;
+                    document.getElementById('investmentValue').innerText = 'Investment Value: ₹' + totalValue.toFixed(2);
+                }
+            </script>
+            <!-- Service worker registration skipped to avoid duplication/errors since this is a new page, 
+                 but keeping general script include -->
+</body>
+
+</html>

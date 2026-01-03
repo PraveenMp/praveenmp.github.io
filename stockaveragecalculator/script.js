@@ -100,37 +100,26 @@ function unitChanged(id, error) {
     getAverage();
   }
 
-
-  if (document.getElementById(id).value != '') {
-    document.getElementById(error).innerHTML = '';
-    return;
-  } else {
-    document.getElementById(error).innerHTML = 'Field is Required';
-  }
-
+  // Clear error if value exists, but no need to show error if empty per user request
+  document.getElementById(error).innerHTML = '';
 }
 
 
 function getAverage() {
 
-  if (document.getElementById("units1").value == '') {
-    document.getElementById("error1").innerHTML = "Units required";
-    return;
-  } else if (document.getElementById("Price1").value == '') {
-    document.getElementById("error2").innerHTML = "Price required";
-    return;
-  } else if (document.getElementById("units2").value == '') {
-    document.getElementById("error3").innerHTML = "Units required";
-    return;
-  } else if (document.getElementById("Price2").value == '') {
-    document.getElementById("error4").innerHTML = "Price required";
-    return;
-  }
-
   var unit1 = document.getElementById("units1").value;
   var price1 = document.getElementById("Price1").value;
   var unit2 = document.getElementById("units2").value;
   var price2 = document.getElementById("Price2").value;
+
+  // Only calculate if all fields are entered
+  if (unit1 === '' || price1 === '' || unit2 === '' || price2 === '') {
+    document.getElementById("result").innerHTML = "";
+    document.getElementById("investedamount1").innerHTML = "";
+    document.getElementById("investedamount2").innerHTML = "";
+    document.getElementById("graph-container").style.display = 'none';
+    return;
+  }
 
   var totalAmount = Number(((unit1 * price1) + (unit2 * price2)).toFixed(2));
   var totalUnits = +unit1 + +unit2;

@@ -88,6 +88,99 @@
             </div>
             <div class="col-md-10">
                 <div class="content-body-wrapper mt-4 details-sec-wrapper">
+                    <!-- Modern Promotional Banner -->
+                    <style>
+                        .promo-banner {
+                            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                            border-radius: 15px;
+                            padding: 30px;
+                            color: white;
+                            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                            position: relative;
+                            overflow: hidden;
+                            transition: transform 0.3s ease;
+                            margin-bottom: 30px;
+                        }
+
+                        .promo-banner:hover {
+                            transform: translateY(-5px);
+                        }
+
+                        .promo-banner::before {
+                            content: '';
+                            position: absolute;
+                            top: -50%;
+                            left: -50%;
+                            width: 200%;
+                            height: 200%;
+                            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 60%);
+                            transform: rotate(45deg);
+                        }
+
+                        .promo-content {
+                            position: relative;
+                            z-index: 1;
+                            text-align: center;
+                        }
+
+                        .promo-title {
+                            font-size: 1.8rem;
+                            font-weight: 700;
+                            margin-bottom: 15px;
+                            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                        }
+
+                        .promo-price {
+                            background: rgba(255, 255, 255, 0.2);
+                            padding: 5px 15px;
+                            border-radius: 20px;
+                            font-weight: bold;
+                            font-size: 1.1rem;
+                            display: inline-block;
+                            margin-bottom: 20px;
+                            border: 1px solid rgba(255, 255, 255, 0.3);
+                        }
+
+                        .promo-btn {
+                            background: white;
+                            color: #764ba2;
+                            padding: 12px 30px;
+                            border-radius: 50px;
+                            font-weight: 800;
+                            text-decoration: none;
+                            transition: all 0.3s ease;
+                            display: inline-block;
+                            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+                        }
+
+                        .promo-btn:hover {
+                            background: #f8f9fa;
+                            color: #5a32a3;
+                            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+                            transform: scale(1.05);
+                            text-decoration: none;
+                        }
+                    </style>
+
+                    <div class="promo-banner">
+                        <div class="promo-content">
+                            <div class="promo-title">
+                                <i class="fas fa-rocket" style="margin-right: 10px;"></i>
+                                Launch Your Dream Website!
+                            </div>
+                            <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 15px;">
+                                Professional stock market tools, portfolios, or business sites.
+                            </p>
+                            <div class="promo-price">
+                                Starting at ₹1,000 / $12
+                            </div>
+                            <br>
+                            <a href="mailto:praveen_mp@live.com" class="promo-btn">
+                                <i class="fas fa-paper-plane" style="margin-right: 5px;"></i> Hire Me Now
+                            </a>
+                        </div>
+                    </div>
+
                     <div class="row">
 
                         <div class="col-md-6">
