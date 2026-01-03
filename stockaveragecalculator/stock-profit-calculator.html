@@ -46,28 +46,31 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <style>
-            #stock-profit {
-                font-size: 1rem;
-            }
-            #stock-profit span {
-                color: green;
-            }
-            #stock-profit span.red {
-                color: red;
-            }
+    <style>
+        #stock-profit {
+            font-size: 1rem;
+        }
 
-            .hide {
-                display: none;
-            }
+        #stock-profit span {
+            color: green;
+        }
 
-            .show {
-                display: block;
-            }
-            .dark-mode .stock-profit-table {
-                color: #fff;
-            }
-        </style>
+        #stock-profit span.red {
+            color: red;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .dark-mode .stock-profit-table {
+            color: #fff;
+        }
+    </style>
 </head>
 
 <body>
@@ -84,6 +87,7 @@
             <div class="col-md-2 sidebar" id="sidebar">
                 <div class="title-wrapper">
                     <h2 class="app-logo"><i class="fas fa-calculator"></i> Stock-Calc</h2>
+                    <div class="close-sidebar-btn" id="close-sidebar-btn"><i class="fas fa-times"></i></div>
                     <div class="custom-control custom-switch mb-3">
                         <input type="checkbox" class="custom-control-input" id="darkModeSwitch" data-toggle="toggle">
                         <label class="custom-control-label" for="darkModeSwitch"></label>
@@ -122,13 +126,14 @@
                                 <div class="mb-3">
                                     <label for="sellPrice" class="form-label">Sell Price</label>
                                     <input type="number" class="form-control" id="sellPrice"
-                                        placeholder="Enter selling price" onchange="calculateProfit()" >
+                                        placeholder="Enter selling price" onchange="calculateProfit()">
                                 </div>
                                 <div class="mb-3">
                                     <label for="sellQuantity" class="form-label">Stocks intended to sell</label>
                                     <input type="number" class="form-control" id="sellQuantity"
                                         placeholder="Enter number of stocks to sell" onchange="calculateProfit()">
-                                    <span class="red error-msg hide" id="sell-quantity-error">Sell quantity cannot be greater than total quantity.</label>
+                                    <span class="red error-msg hide" id="sell-quantity-error">Sell quantity cannot be
+                                        greater than total quantity.</label>
                                 </div>
                                 <div class="result-wrapper">
                                     <div class="mt-3 text-left" id="stock-profit"></div>
