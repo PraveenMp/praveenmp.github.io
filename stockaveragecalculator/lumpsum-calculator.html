@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JPBH15FMY4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-JPBH15FMY4');
+    </script>
+    <title>Lumpsum Calculator</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Calculate standard Lumpsum investment returns with this Lumpsum Calculator. Estimate future value of one-time investments." />
+    <meta name="keywords"
+        content="Lumpsum Calculator, Mutual Fund Calculator, Lumpsum Investment, Investment Calculator, Financial Tool">
+    <meta name="author" content="Praveen MP">
+    <meta property="og:title" content="Lumpsum Calculator" />
+    <meta property="og:url" content="https://praveenmp.github.io/stockaveragecalculator/" />
+    <meta property="og:description"
+        content="Calculate standard Lumpsum investment returns with this Lumpsum Calculator. Estimate future value of one-time investments.">
+    <meta property="og:image"
+        content="https://praveenmp.github.io/stockaveragecalculator/images/android-chrome-512x512.png">
+    <meta property="og:type" content="website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .slider-container {
+            margin-bottom: 20px;
+        }
+
+        .form-range {
+            width: 100%;
+        }
+
+        .input-group-text {
+            min-width: 45px;
+            justify-content: center;
+        }
+
+        /* Custom range slider styling for better visibility */
+        input[type=range] {
+            -webkit-appearance: none;
+            width: 100%;
+            background: transparent;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 10px;
+            width: 16px;
+            border-radius: 5px;
+            background: #ced4da;
+            /* Lighter Grey */
+            cursor: pointer;
+            margin-top: -4px;
+        }
+
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 2px;
+            cursor: pointer;
+            background: #e9ecef;
+            border-radius: 1.3px;
+        }
+
+        input[type=range]:focus::-webkit-slider-runnable-track {
+            background: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid wrapper-body">
+        <div class="row">
+            <div id="mobile-header" class="hidden-on-desktop-tablet">
+                <div id="toggle-btn">
+                    <i class="fas fa-bars"></i> Menu
+                </div>
+                <div class="mobile-logo">
+                    <h2 class="mobile-app-logo"><i class="fas fa-calculator"></i> Stock-Calc</h2>
+                </div>
+            </div>
+            <div class="col-md-2 sidebar" id="sidebar">
+                <div class="title-wrapper">
+                    <h2 class="app-logo"><i class="fas fa-calculator"></i> Stock-Calc</h2>
+                    <div class="custom-control custom-switch mb-3">
+                        <input type="checkbox" class="custom-control-input" id="darkModeSwitch" data-toggle="toggle">
+                        <label class="custom-control-label" for="darkModeSwitch"></label>
+                    </div>
+                </div>
+
+                <!---Menu Section-->
+                <div hidden id="page-name">Lumpsum Calculator</div>
+                <div class="top-menu" id="load-menu-dynamically"></div>
+            </div>
+            <div class="col-md-10 content-right-body-wrapper">
+                <div id="clock"></div>
+                <div id="emi-calculator">
+                    <div class="content-body-wrapper">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <header>
+                                    <h2 class="headers">Lumpsum Calculator</h2>
+                                </header>
+                                <hr />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="sip-result-wrapper" class="col-md-4">
+                                <form id="lumpsumForm">
+                                    <!-- Investment Amount -->
+                                    <div class="form-group slider-container">
+                                        <label for="investmentAmount">Total Investment</label>
+                                        <div class="input-group mb-2">
+                                            <input type="number" class="form-control" id="investmentAmount"
+                                                value="25000" min="500" max="10000000">
+                                        </div>
+                                        <input type="range" class="form-range" id="investmentRange" min="500"
+                                            max="10000000" step="500" value="25000">
+                                    </div>
+
+                                    <!-- Expected Return Rate -->
+                                    <div class="form-group slider-container">
+                                        <label for="returnRate">Expected Return Rate (p.a)</label>
+                                        <div class="input-group mb-2">
+                                            <input type="number" class="form-control" id="returnRate" value="12"
+                                                min="-100" max="1000">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">%</span>
+                                            </div>
+                                        </div>
+                                        <input type="range" class="form-range" id="returnRateRange" min="-100"
+                                            max="1000" step="0.5" value="12">
+                                    </div>
+
+                                    <!-- Time Period -->
+                                    <div class="form-group slider-container">
+                                        <label for="timePeriod">Time Period (Months)</label>
+                                        <div class="input-group mb-2">
+                                            <input type="number" class="form-control" id="timePeriod" value="60" min="1"
+                                                max="360">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">M</span>
+                                            </div>
+                                        </div>
+                                        <input type="range" class="form-range" id="timePeriodRange" min="1" max="360"
+                                            step="1" value="60">
+                                        <small class="text-muted" id="yearsDisplay">5 Years</small>
+                                    </div>
+                                </form>
+
+                                <div class="btn-wrapper mt-4">
+                                    <button class="btn btn-warning" onclick="resetFields()">Clear Fields</button>
+                                    <!-- Calculation happens automatically on input change, but keeping button for consistency if needed, 
+                                         though standard sliders usually auto-calc -->
+                                </div>
+
+                                <div class="r-sip mt-4">
+                                    <h5>Invested Amount: <span id="investedAmountDisplay"
+                                            style="color: #000; font-family: 'Roboto', sans-serif;">25,000</span></h5>
+                                    <h5 class="text-success">Est. Returns: <span id="estReturnsDisplay"
+                                            style="color: #000; font-family: 'Roboto', sans-serif;">19,058</span>
+                                    </h5>
+                                    <h5>Total Value: <span id="totalValueDisplay"
+                                            style="color: #000; font-family: 'Roboto', sans-serif;">44,058</span></h5>
+                                </div>
+                            </div>
+                            <div class="col-md-2"></div>
+                            <div class="col-md-4 st banner-ad-desktop">
+                                <div id="load-indian-ads" class="load-indian-ads-option-one"></div>
+                                <div id="load-global-ads" class="load-global-ads-option-one"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 d-block d-md-none display-mobile-ad">
+                                <div id="load-indian-ads" class="load-indian-ads-option-one"></div>
+                                <div id="load-global-ads" class="load-global-ads-option-one"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-body-wrapper details-sec-wrapper">
+                    <h6>What is Lumpsum Calculator?</h6>
+                    <p>
+                        A Lumpsum Calculator is a simple yet powerful financial tool designed to help investors estimate
+                        the future value of a one-time investment. Unlike Systematic Investment Plans (SIPs) where you
+                        invest small amounts periodically, a lumpsum investment involves parking a significant amount of
+                        money in a mutual fund or stock at once. This tool specifically helps in calculating the
+                        maturity amount based on the principal amount, expected annual return rate, and the duration of
+                        the investment.
+                    </p>
+
+                    <h6>How it Works?</h6>
+                    <p>
+                        The Lumpsum Calculator uses the compound interest formula to determine the potential growth of
+                        your investment over time. The power of compounding ensures that your earnings also generate
+                        earnings, leading to exponential growth.
+                    </p>
+                    <p>
+                        <strong>Formula Used:</strong><br>
+                        <code>A = P (1 + r/n) ^ nt</code>
+                        <br>
+                        <em>(Simulated here as: Future Value = Investment * (1 + Annual Rate) ^ Years)</em>
+                    </p>
+                    <p>
+                        <strong>Key Variables:</strong>
+                    </p>
+                    <ul>
+                        <li><strong>Present Value (Investment Amount):</strong> The initial sum of money you invest.
+                        </li>
+                        <li><strong>Rate of Return:</strong> The expected annual percentage capability of your
+                            investment to grow.</li>
+                        <li><strong>Time Period:</strong> The number of years you plan to stay invested.</li>
+                    </ul>
+                    <p>
+                        By entering these three inputs, the calculator instantly computes the <strong>Estimated
+                            Returns</strong> (wealth gained) and the <strong>Total Value</strong> (Principal + Gains) at
+                        the end of the tenure. This helps in better financial planning and goal setting.
+                    </p>
+                </div>
+            </div>
+
+            <footer class="mb-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                        </div>
+                        <div class="col-md-4 text-center mb-2">
+                            &copy; 2018 - 2028. Feedback:<a href="mailto:praveen_mp@live.com">praveen_mp@live.com</a>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="social-share-icons">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                                    class="btn btn-primary btn-sm"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                                    class="btn btn-info btn-sm"><i class="fab fa-twitter"></i></a>
+                                <a href="whatsapp://send?text=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                                    class="btn btn-success btn-sm"><i class="fab fa-whatsapp"></i></a>
+                                <a href="https://www.instagram.com/?url=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                                    class="btn btn-danger btn-sm"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+    </div>
+    <script src="./script.js" crossorigin="anonymous"></script>
+    <script>
+        // Get Elements
+        const investmentInput = document.getElementById('investmentAmount');
+        const investmentRange = document.getElementById('investmentRange');
+        const returnInput = document.getElementById('returnRate');
+        const returnRange = document.getElementById('returnRateRange');
+        const timeInput = document.getElementById('timePeriod');
+        const timeRange = document.getElementById('timePeriodRange');
+
+        const investedDisplay = document.getElementById('investedAmountDisplay');
+        const estReturnsDisplay = document.getElementById('estReturnsDisplay');
+        const totalValueDisplay = document.getElementById('totalValueDisplay');
+        const yearsDisplay = document.getElementById('yearsDisplay');
+
+        // Sync function
+        function syncInputs(input, range) {
+            input.addEventListener('input', () => {
+                range.value = input.value;
+                calculateLumpsum();
+            });
+            range.addEventListener('input', () => {
+                input.value = range.value;
+                calculateLumpsum();
+            });
+        }
+
+        syncInputs(investmentInput, investmentRange);
+        syncInputs(returnInput, returnRange);
+        syncInputs(timeInput, timeRange);
+
+        function formatCurrency(num) {
+            return new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 }).format(num);
+        }
+
+        function calculateLumpsum() {
+            const P = parseFloat(investmentInput.value);
+            const r = parseFloat(returnInput.value);
+            const n = parseFloat(timeInput.value);
+
+            if (isNaN(P) || isNaN(r) || isNaN(n)) return;
+
+            // Years display update
+            const years = (n / 12).toFixed(1);
+            yearsDisplay.textContent = `${years} Year${years !== "1.0" ? 's' : ''}`;
+
+            // Formula: FV = P * (1 + r/100)^N_years
+            // Since n is months, exponent is n/12
+
+            const timeInYears = n / 12;
+            const totalValue = P * Math.pow((1 + r / 100), timeInYears);
+            const estReturns = totalValue - P;
+
+            investedDisplay.textContent = formatCurrency(P);
+            estReturnsDisplay.textContent = formatCurrency(estReturns);
+            totalValueDisplay.textContent = formatCurrency(totalValue);
+        }
+
+        function resetFields() {
+            investmentInput.value = 25000;
+            investmentRange.value = 25000;
+            returnInput.value = 12;
+            returnRange.value = 12;
+            timeInput.value = 60;
+            timeRange.value = 60;
+            calculateLumpsum();
+        }
+
+        // Initial Calc
+        calculateLumpsum();
+    </script>
+</body>
+
+</html>
