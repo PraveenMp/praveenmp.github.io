@@ -99,7 +99,48 @@ body {
 }
 
 .form-control {
-  border: 1px solid #b1b1b1 !important;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 12px !important;
+  padding: 10px 15px !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02) !important;
+  transition: all 0.3s ease;
+  height: auto;
+}
+
+.form-control:focus {
+  border-color: #667eea !important;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2) !important;
+  background: white !important;
+}
+
+.btn {
+  border-radius: 50px !important;
+  padding: 10px 25px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: none !important;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #23d5ab 0%, #23a6d5 100%) !important;
+  color: white !important;
+}
+
+.btn-warning {
+  background: linear-gradient(135deg, #fce38a 0%, #f38181 100%) !important;
+  color: #fff !important;
 }
 
 .st {
@@ -205,8 +246,10 @@ footer {
 
 .top-menu ul li:hover {
   color: #000;
-  background-color: #eaebee;
-  border-radius: 15px 20px 20px 15px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  transform: translateX(5px);
+  transition: all 0.2s ease;
 }
 
 .top-menu ul li.active {
@@ -368,8 +411,13 @@ footer {
   }
 }
 
-/* Small Devices, Tablets */
+/* Mobile Aesthetics */
+.close-sidebar-btn {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
+
 
   .share-button {
     right: 20px;
@@ -460,17 +508,70 @@ footer {
   }
 
   .sidebar.col-md-2 {
-    height: 90%;
+    height: 100vh;
+    position: fixed;
+    background: #ffffff;
+    color: #333;
+    z-index: 1050;
+    top: 0;
+    left: -100%;
+    transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 80%;
+    max-width: 300px;
+    font-size: 14px;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
+  }
+
+  .close-sidebar-btn {
+    display: block;
     position: absolute;
-    background: #eceff0;
-    color: #000;
-    z-index: 1;
-    top: 27px;
-    left: -500px;
-    transition: left 0.5s ease-in-out;
-    width: 62%;
-    font-size: 13px;
-    border-radius: 0px 5px 5px 0px;
+    right: 15px;
+    top: 15px;
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+    background: #f0f0f0;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+  }
+
+  .close-sidebar-btn:hover {
+    background: #e0e0e0;
+    color: #333;
+  }
+
+  .sidebar .custom-control {
+    float: left !important;
+    margin-right: 0 !important;
+    margin-left: 15px !important;
+  }
+
+  .sidebar.col-md-2.active {
+    left: 0 !important;
+  }
+
+  .sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1040;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .sidebar-open .sidebar-overlay {
+    display: block;
+    opacity: 1;
   }
 
   #clock {
