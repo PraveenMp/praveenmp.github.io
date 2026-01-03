@@ -72,8 +72,8 @@
                 </div>
 
                 <!---Menu Section-->
-                  <div hidden id="page-name">Stock Split Calculator</div>
-        <div class="top-menu" id="load-menu-dynamically"></div>
+                <div hidden id="page-name">Stock Split Calculator</div>
+                <div class="top-menu" id="load-menu-dynamically"></div>
             </div>
             <div class="col-md-10 content-right-body-wrapper">
                 <div id="clock"></div>
@@ -92,13 +92,15 @@
                                 <form id="stockForm">
                                     <div class="form-group">
                                         <label for="currentPrice">Current Stock Price</label>
-                                        <input type="number" class="form-control" tabindex="0" id="currentPrice" placeholder="stock price" required>
+                                        <input type="number" class="form-control" tabindex="0" id="currentPrice"
+                                            placeholder="stock price" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="splitRatio">Stock Split Ratio (New Shares:Old Shares):</label>
                                         <div class="input-group">
 
-                                            <input type="text" class="form-control" tabindex="0" id="splitRatio" placeholder="new shares:old shares" required>
+                                            <input type="text" class="form-control" tabindex="0" id="splitRatio"
+                                                placeholder="new shares:old shares" required>
                                             <div class="input-group-append">
                                                 <span class="input-group-text">Example 1:2</span>
                                             </div>
@@ -106,12 +108,16 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="numberOfShares">Number of Shares Owned:</label>
-                                        <input type="number" class="form-control" tabindex="0" id="numberOfShares" placeholder="number of shares owned" required>
+                                        <input type="number" class="form-control" tabindex="0" id="numberOfShares"
+                                            placeholder="number of shares owned" required>
                                     </div>
                                 </form>
                                 <div class="btn-wrapper">
-                                    <button class="btn btn-warning" onclick="clearAllFields(['splitRatio','numberOfShares','currentPrice','newPrice','newShares','totalShares','refundAmount'])">Clear Fields</button>
-                                    <button type="submit" class="btn btn-success" onclick="stockSpiltCalculator()">Calculate</button>
+                                    <button class="btn btn-warning"
+                                        onclick="clearAllFields(['splitRatio','numberOfShares','currentPrice','newPrice','newShares','totalShares','refundAmount'])">Clear
+                                        Fields</button>
+                                    <button type="submit" class="btn btn-success"
+                                        onclick="stockSpiltCalculator()">Calculate</button>
                                 </div>
                                 <div class="r-sip mt-4">
                                     <h5 id="newPrice">New Stock Price: ₹0.00</h5>
@@ -137,35 +143,37 @@
                         <h6 class="mb-2">Stock Split Calculator</h3>
 
 
-                        Use this calculator to determine the new stock price and the number of shares you will own after
-                        a stock split.
-                        <br />
+                            Use this calculator to determine the new stock price and the number of shares you will own
+                            after
+                            a stock split.
+                            <br />
 
-                        A stock split increases the number of shares in a company by issuing more shares to
-                        current shareholders. In a 2:5 stock split, for every 5 shares owned, shareholders will receive
-                        2 additional shares.
-                        <br />
-                        Inputs:
-                        <br />
-                        Current Stock Price (₹): The current price per share of the stock.
-                        <br />
-                        Stock Split Ratio (New Shares
-                        Shares): The ratio indicating how many new shares will be given for each old share.
-                        <br />
-                        Number of Shares Owned: The number of shares you currently own.
-                        <br />
-                        Outputs:
-                        <br />
+                            A stock split increases the number of shares in a company by issuing more shares to
+                            current shareholders. In a 2:5 stock split, for every 5 shares owned, shareholders will
+                            receive
+                            2 additional shares.
+                            <br />
+                            Inputs:
+                            <br />
+                            Current Stock Price (₹): The current price per share of the stock.
+                            <br />
+                            Stock Split Ratio (New Shares
+                            Shares): The ratio indicating how many new shares will be given for each old share.
+                            <br />
+                            Number of Shares Owned: The number of shares you currently own.
+                            <br />
+                            Outputs:
+                            <br />
 
-                        New Stock Price: The adjusted price per share after the stock split.
-                        <br />
-                        Total Shares After Split: The total number of shares you will own after the stock split,
-                        <br />
-                        including any fractional shares.
-                        <br />
-                        Whole Shares After Split: The number of whole shares you will own after the stock split.
-                        <br />
-                        Refund Amount: The monetary value of any fractional shares after the stock split.
+                            New Stock Price: The adjusted price per share after the stock split.
+                            <br />
+                            Total Shares After Split: The total number of shares you will own after the stock split,
+                            <br />
+                            including any fractional shares.
+                            <br />
+                            Whole Shares After Split: The number of whole shares you will own after the stock split.
+                            <br />
+                            Refund Amount: The monetary value of any fractional shares after the stock split.
                     </div>
                 </div>
 
@@ -199,29 +207,40 @@
                 </footer>
 
             </div>
-            <script src="./script.min.js" crossorigin="anonymous"></script>
+            <script src="./script.js" crossorigin="anonymous"></script>
             <script>
                 function stockSpiltCalculator() {
                     event.preventDefault();
                     let currentPrice = parseFloat(document.getElementById('currentPrice').value);
                     let splitRatio = document.getElementById('splitRatio').value.split(':');
-                    let newShares = parseFloat(splitRatio[0]);
-                    let oldShares = parseFloat(splitRatio[1]);
+                    let newSharesUnit = parseFloat(splitRatio[0]);
+                    let oldSharesUnit = parseFloat(splitRatio[1]);
                     let numberOfShares = parseInt(document.getElementById('numberOfShares').value);
 
+                    // Calculate Ratio (New Shares / Old Shares)
+                    // Example: 10:2 => 5. 1 share becomes 5.
+                    if (oldSharesUnit === 0) return; // Prevent division by zero
+                    let ratio = newSharesUnit / oldSharesUnit;
+
                     // Calculate new stock price
-                    let newPrice = (currentPrice * oldShares) / (newShares + oldShares);
+                    // Price decreases by the factor of the ratio
+                    let newPrice = currentPrice / ratio;
                     document.getElementById('newPrice').innerText = 'New Stock Price: ₹' + newPrice.toFixed(2);
 
-                    // Calculate shares after split
-                    let totalSharesAfterSplit = (newShares / oldShares) * numberOfShares;
-                    document.getElementById('newShares').innerText = 'Additional Shares: ' + Math.floor(totalSharesAfterSplit);
+                    // Calculate total shares after split
+                    let totalFinalShares = numberOfShares * ratio;
 
-                    // Calculate whole shares after split
-                    let totalShares = Math.floor(totalSharesAfterSplit) + numberOfShares;
-                    document.getElementById('totalShares').innerText = 'Total Shares: ' + totalShares;
+                    // Additional shares (Total - Original)
+                    let additionalShares = totalFinalShares - numberOfShares;
+
+                    document.getElementById('newShares').innerText = 'Additional Shares: ' + Math.floor(additionalShares);
+
+                    // Total Whole Shares
+                    let totalWholeShares = Math.floor(totalFinalShares);
+                    document.getElementById('totalShares').innerText = 'Total Shares: ' + totalWholeShares;
+
                     // Calculate refund amount if there's any fractional share
-                    let fractionalShare = totalSharesAfterSplit - Math.floor(totalSharesAfterSplit);
+                    let fractionalShare = totalFinalShares - totalWholeShares;
                     let refundAmount = fractionalShare * newPrice;
                     document.getElementById('refundAmount').innerText = 'Refund Amount: ₹' + refundAmount.toFixed(2);
                 }

@@ -635,3 +635,151 @@ const loadAds = async (url, targetElementId) => {
 loadAds('banner-ads-desktop-india-option-one.html', 'load-indian-ads-option-one');
 loadAds('banner-ads-desktop-global-option-one.html', 'load-global-ads-option-one');
 
+/* Stock Data Manager for Detail Pages */
+class StockDataManager {
+  constructor(config) {
+    this.config = config;
+    this.currentYear = new Date().getFullYear();
+    this.selectedYear = this.currentYear;
+    this.dataCache = {};
+
+    this.gridEl = document.getElementById(config.gridId);
+    this.navEl = document.getElementById(config.navId);
+    this.titleEl = document.querySelector(config.titleSelector);
+    this.filterInput = document.getElementById('companyFilter'); // Common ID
+  }
+
+  init() {
+    this.renderYearNav();
+    this.loadYear(this.selectedYear);
+    if (this.filterInput) {
+      this.filterInput.addEventListener('input', () => this.filterCards());
+    }
+  }
+
+  dataFile(year) {
+    return `d-${year}.json`;
+  }
+
+  updateHeader(year) {
+    if (this.titleEl) {
+      // Replace any 4-digit year in the text with the selected year
+      this.titleEl.textContent = this.titleEl.textContent.replace(/\b\d{4}\b/g, year);
+    }
+  }
+
+  renderYearNav() {
+    if (!this.navEl) return;
+    this.navEl.innerHTML = '';
+
+    // Previous Button (Allow going back at least few years)
+    const minYear = this.config.minYear || 2023;
+    if (this.selectedYear > minYear) {
+      const prevBtn = document.createElement('button');
+      prevBtn.textContent = `Previous < ${this.selectedYear - 1}`;
+      prevBtn.addEventListener('click', () => this.loadYear(this.selectedYear - 1));
+      this.navEl.appendChild(prevBtn);
+    }
+
+    // Next Button (Allow going forward up to currentYear)
+    if (this.selectedYear < this.currentYear) {
+      const nextBtn = document.createElement('button');
+      nextBtn.className = 'secondary';
+      nextBtn.textContent = `Next > ${this.selectedYear + 1}`;
+      nextBtn.addEventListener('click', () => this.loadYear(this.selectedYear + 1));
+      // Add spacing if previous button exists
+      if (this.navEl.children.length > 0) {
+        nextBtn.style.marginLeft = '10px';
+      }
+      this.navEl.appendChild(nextBtn);
+    }
+  }
+
+  loadYear(year) {
+    this.selectedYear = year;
+    this.updateHeader(year);
+    this.renderYearNav();
+
+    if (this.dataCache[year]) {
+      this.renderCards(this.dataCache[year]);
+      return;
+    }
+
+    fetch(this.dataFile(year))
+      .then(r => r.json())
+      .then(data => {
+        this.dataCache[year] = data;
+        this.renderCards(data);
+      })
+      .catch(err => {
+        console.error('Data load failed', err);
+        this.gridEl.innerHTML = `<div class='alert alert-danger'>Failed to load data for ${year}</div>`;
+      });
+  }
+
+  renderCards(data) {
+    this.gridEl.innerHTML = '';
+    if (!data || !data.length) return;
+
+    const filteredData = data.filter(item => this.config.filterPredicate(item));
+
+    // Sort by date descending
+    filteredData.sort((a, b) => new Date(b["EX-DATE"]) - new Date(a["EX-DATE"]));
+
+    filteredData.forEach(item => {
+      const card = document.createElement('div');
+      card.className = 'stock-item-card';
+      card.setAttribute('role', 'listitem');
+      card.title = `${item.SYMBOL} | ${item.PURPOSE}`;
+
+      const purposeFull = item.PURPOSE || '';
+      const purpose = purposeFull.length > 70 ? purposeFull.substring(0, 67) + '…' : purposeFull;
+      const companyFull = item["COMPANY NAME"] || '';
+      const company = companyFull.length > 38 ? companyFull.substring(0, 35) + '…' : companyFull;
+
+      // Custom fields based on page type
+      let extraFields = '';
+      if (this.config.type === 'dividend') {
+        const amount = this.extractDividendAmount(purposeFull);
+        extraFields = `<div class="stock-dividend"><strong>Amount:</strong> <b><i>${amount}</i></b></div>`;
+      }
+
+      card.innerHTML = `
+                <div class="stock-card-header">
+                    <span class="stock-symbol">${item.SYMBOL}</span>
+                    <span class="stock-series">${item.SERIES}</span>
+                </div>
+                <div class="stock-company">${company}</div>
+                <div class="stock-purpose">${purpose}</div>
+                <div class="stock-dates">
+                    <span><strong>Ex:</strong> ${item["EX-DATE"]}</span>
+                    <span><strong>Rec:</strong> ${item["RECORD DATE"] || '-'}</span>
+                </div>
+                <div class="stock-face"><strong>FV:</strong> ${item["FACE VALUE"]}</div>
+                ${extraFields}
+            `;
+      this.gridEl.appendChild(card);
+    });
+
+    this.filterCards(); // Re-apply search filter if any
+  }
+
+  filterCards() {
+    if (!this.filterInput) return;
+    const term = (this.filterInput.value || '').toLowerCase();
+    const cards = this.gridEl.querySelectorAll('.stock-item-card');
+
+    cards.forEach(card => {
+      const companyEl = card.querySelector('.stock-company');
+      const symbolEl = card.querySelector('.stock-symbol');
+      const text = ((companyEl?.textContent) || '') + ' ' + ((symbolEl?.textContent) || '');
+      card.style.display = (!term || text.toLowerCase().includes(term)) ? 'flex' : 'none';
+    });
+  }
+
+  extractDividendAmount(purpose) {
+    const match = purpose.match(/(\d+(\.\d+)?)/);
+    return match ? match[0] : '-';
+  }
+}
+

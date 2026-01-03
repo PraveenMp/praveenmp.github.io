@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JPBH15FMY4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-JPBH15FMY4');
+    </script>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore detailed information on Indian stock market dividend details for the year 2023. Get insights into dividend, interest, and bonus details for equity market companies." />
+    <meta name="keywords"
+        content="Indian stock market, stock market dividends, equity market, stock market data, 2023 dividends, dividend details, bonus details, interest details" />
+    <meta name="author" content="Your Name">
+    <title>About US</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Add Bootstrap CSS -->
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        tr.highlight {
+            background-color: #009bff !important;
+            /* Highlight next holiday */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid wrapper-body">
+        <div class="row">
+            <div id="mobile-header" class="hidden-on-desktop-tablet">
+                <div id="toggle-btn">
+                    <i class="fas fa-bars"></i> Menu
+                </div>
+                <div class="mobile-logo">
+                    <h2 class="mobile-app-logo"><i class="fas fa-calculator"></i> Stock-Calc</h2>
+                </div>
+            </div>
+            <div class="col-md-2 sidebar" id="sidebar">
+                <div class="title-wrapper">
+                    <h2 class="app-logo"><i class="fas fa-calculator"></i> Stock-Calc</h2>
+                    <div class="custom-control custom-switch mb-3">
+                        <input type="checkbox" class="custom-control-input" id="darkModeSwitch" data-toggle="toggle">
+                        <label class="custom-control-label" for="darkModeSwitch"></label>
+                    </div>
+                </div>
+                <!---Menu Section-->
+                <div hidden id="page-name">holiday Calender 2025</div>
+                <div class="top-menu" id="load-menu-dynamically"></div>
+            </div>
+            <div class="col-md-10 content-right-body-wrapper">
+                <div class="content-body-wrapper">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <!-- Year Navigation -->
+                            <div class="mb-4 text-center">
+                                <div class="btn-group" role="group" aria-label="Year Selection">
+                                    <button type="button" class="btn btn-primary" id="btn2025"
+                                        onclick="selectYear(2025)">2025</button>
+                                    <button type="button" class="btn btn-outline-primary" id="btn2026"
+                                        onclick="selectYear(2026)">2026</button>
+                                </div>
+                            </div>
+
+                            <!-- Indian Market Holidays -->
+                            <div class="mb-5">
+                                <h2 class="headers" id="indianHeader">Indian Market Trading Holidays - 2025</h2>
+                                <hr />
+                                <div class="table-responsive">
+                                    <table class="cust-table table table-bordered table-striped">
+                                        <thead class="table-dark">
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Date</th>
+                                                <th>Day</th>
+                                                <th>Holiday Name</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="indianHolidaysTable">
+                                            <!-- Rows will be inserted dynamically -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- USA Nasdaq Holidays -->
+                            <div>
+                                <h2 class="headers" id="usaHeader">USA Nasdaq Holidays - 2025</h2>
+                                <hr />
+                                <div class="table-responsive">
+                                    <table class="cust-table table table-bordered table-striped">
+                                        <thead class="table-dark">
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Holiday Name</th>
+                                                <th>Date</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="usaHolidaysTable">
+                                            <!-- Rows will be inserted dynamically -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 st banner-ad-desktop">
+                            <div id="load-indian-ads" class="load-indian-ads-option-one"></div>
+                            <div id="load-global-ads" class="load-global-ads-option-one"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 d-block d-md-none display-mobile-ad">
+                            <div id="load-indian-ads" class="load-indian-ads-option-one"></div>
+                            <div id="load-global-ads" class="load-global-ads-option-one"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="mb-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4 text-center mb-2">
+                        &copy; 2018 - 2028. Feedback:<a href="mailto:praveen_mp@live.com">praveen_mp@live.com</a>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="social-share-icons">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                                class="btn btn-primary btn-sm"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                                class="btn btn-info btn-sm"><i class="fab fa-twitter"></i></a>
+                            <a href="whatsapp://send?text=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                                class="btn btn-success btn-sm"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/?url=https%3A%2F%2Fpraveenmp.github.io/stockaveragecalculator"
+                                class="btn btn-danger btn-sm"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Add Bootstrap JS and Popper.js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="./script.js" crossorigin="anonymous"></script>
+        <script>
+            const holidaysData = {
+                2025: {
+                    indian: [
+                        { date: "2025-02-26", name: "Mahashivratri", day: "Wednesday" },
+                        { date: "2025-03-14", name: "Holi", day: "Friday" },
+                        { date: "2025-03-31", name: "Id-Ul-Fitr (Ramadan Eid)", day: "Monday" },
+                        { date: "2025-04-10", name: "Shri Mahavir Jayanti", day: "Thursday" },
+                        { date: "2025-04-14", name: "Dr. Baba Saheb Ambedkar Jayanti", day: "Monday" },
+                        { date: "2025-04-18", name: "Good Friday", day: "Friday" },
+                        { date: "2025-05-01", name: "Maharashtra Day", day: "Thursday" },
+                        { date: "2025-08-15", name: "Independence Day", day: "Friday" },
+                        { date: "2025-08-27", name: "Ganesh Chaturthi", day: "Wednesday" },
+                        { date: "2025-10-02", name: "Mahatma Gandhi Jayanti/Dussehra", day: "Thursday" },
+                        { date: "2025-10-21", name: "Diwali Laxmi Pujan*", day: "Tuesday" },
+                        { date: "2025-10-22", name: "Diwali-Balipratipada", day: "Wednesday" },
+                        { date: "2025-11-05", name: "Prakash Gurpurb Sri Guru Nanak Dev", day: "Wednesday" },
+                        { date: "2025-12-25", name: "Christmas", day: "Thursday" }
+                    ],
+                    usa: [
+                        { name: "New Year's Day", date: "2025-01-01", status: "Closed" },
+                        { name: "MLK, Jr. Day", date: "2025-01-20", status: "Closed" },
+                        { name: "Presidents Day", date: "2025-02-17", status: "Closed" },
+                        { name: "Good Friday", date: "2025-04-18", status: "Closed" },
+                        { name: "Memorial Day", date: "2025-05-26", status: "Closed" },
+                        { name: "Juneteenth", date: "2025-06-19", status: "Closed" },
+                        { name: "Early Close", date: "2025-07-03", status: "1:00 p.m." },
+                        { name: "Independence Day", date: "2025-07-04", status: "Closed" },
+                        { name: "Labor Day", date: "2025-09-01", status: "Closed" },
+                        { name: "Thanksgiving Day", date: "2025-11-27", status: "Closed" },
+                        { name: "Early Close", date: "2025-11-28", status: "1:00 p.m." },
+                        { name: "Early Close", date: "2025-12-24", status: "1:00 p.m." },
+                        { name: "Christmas Day", date: "2025-12-25", status: "Closed" }
+                    ]
+                },
+                2026: {
+                    indian: [
+                        { date: "2026-01-26", name: "Republic Day", day: "Monday" },
+                        { date: "2026-03-03", name: "Holi", day: "Tuesday" },
+                        { date: "2026-03-26", name: "Shri Rama Navami", day: "Thursday" },
+                        { date: "2026-03-31", name: "Shri Mahavir Jayanti", day: "Tuesday" },
+                        { date: "2026-04-03", name: "Good Friday", day: "Friday" },
+                        { date: "2026-04-14", name: "Dr. Baba Saheb Ambedkar Jayanti", day: "Tuesday" },
+                        { date: "2026-05-01", name: "Maharashtra Day", day: "Friday" },
+                        { date: "2026-05-28", name: "Bakri Id", day: "Thursday" },
+                        { date: "2026-06-26", name: "Muharram", day: "Friday" },
+                        { date: "2026-09-14", name: "Ganesh Chaturthi", day: "Monday" },
+                        { date: "2026-10-02", name: "Mahatma Gandhi Jayanti", day: "Friday" },
+                        { date: "2026-10-20", name: "Dussehra", day: "Tuesday" },
+                        { date: "2026-11-08", name: "Diwali Laxmi Pujan*", day: "Sunday" },
+                        { date: "2026-11-10", name: "Diwali-Balipratipada", day: "Tuesday" },
+                        { date: "2026-11-24", name: "Prakash Gurpurb Sri Guru Nanak Dev", day: "Tuesday" },
+                        { date: "2026-12-25", name: "Christmas", day: "Friday" }
+                    ],
+                    usa: [
+                        { name: "New Year's Day", date: "2026-01-01", status: "Closed" },
+                        { name: "MLK, Jr. Day", date: "2026-01-19", status: "Closed" },
+                        { name: "Presidents Day", date: "2026-02-16", status: "Closed" },
+                        { name: "Good Friday", date: "2026-04-03", status: "Closed" },
+                        { name: "Memorial Day", date: "2026-05-25", status: "Closed" },
+                        { name: "Juneteenth", date: "2026-06-19", status: "Closed" },
+                        { name: "Independence Day (Observed)", date: "2026-07-03", status: "Closed" },
+                        { name: "Labor Day", date: "2026-09-07", status: "Closed" },
+                        { name: "Thanksgiving Day", date: "2026-11-26", status: "Closed" },
+                        { name: "Early Close", date: "2026-11-27", status: "1:00 p.m." },
+                        { name: "Early Close", date: "2026-12-24", status: "1:00 p.m." },
+                        { name: "Christmas Day", date: "2026-12-25", status: "Closed" }
+                    ]
+                }
+            };
+
+            function populateTable(holidays, tableId) {
+                const today = new Date(); // Current system date for highlighting
+                const tableBody = document.getElementById(tableId);
+                tableBody.innerHTML = ''; // Clear existing
+
+                holidays.forEach((holiday, index) => {
+                    const holidayDate = new Date(holiday.date);
+                    // Simple logic: Highlight holidays that are today or in the future
+                    // For a past year, nothing will highlight (which is fine). 
+                    // For a future year, everything might highlight (or we can skip highlighting if year > currentYear).
+                    // As per current logic: highlight upcoming.
+                    const isUpcoming = holidayDate >= today;
+                    const row = document.createElement("tr");
+
+                    // Only highlight first upcoming match in the specific table
+                    if (isUpcoming && !tableBody.querySelector('.highlight')) {
+                        row.classList.add("highlight");
+                    }
+
+                    if (tableId === "indianHolidaysTable") {
+                        row.innerHTML = `
+                            <td>${index + 1}</td>
+                            <td>${holidayDate.toDateString()}</td>
+                            <td>${holiday.day || getDayName(holiday.date)}</td>
+                            <td>${holiday.name}</td>
+                        `;
+                    } else {
+                        row.innerHTML = `
+                            <td>${index + 1}</td>
+                            <td>${holiday.name}</td>
+                            <td>${holidayDate.toDateString()}</td>
+                            <td>${holiday.status}</td>
+                        `;
+                    }
+
+                    tableBody.appendChild(row);
+                });
+            }
+
+            function getDayName(dateStr) {
+                const d = new Date(dateStr);
+                return d.toLocaleDateString('en-US', { weekday: 'long' });
+            }
+
+            function selectYear(year) {
+                const data = holidaysData[year];
+                if (!data) return;
+
+                // Update headers
+                document.getElementById('indianHeader').innerText = `Indian Market Trading Holidays - ${year}`;
+                document.getElementById('usaHeader').innerText = `USA Nasdaq Holidays - ${year}`;
+                document.getElementById('page-name').innerText = `holiday Calender ${year}`;
+
+                // Update tables
+                populateTable(data.indian, "indianHolidaysTable");
+                populateTable(data.usa, "usaHolidaysTable");
+
+                // Update buttons
+                document.querySelectorAll('.btn-group .btn').forEach(btn => {
+                    btn.classList.remove('btn-primary');
+                    btn.classList.add('btn-outline-primary');
+                });
+                const activeBtn = document.getElementById(`btn${year}`);
+                if (activeBtn) {
+                    activeBtn.classList.remove('btn-outline-primary');
+                    activeBtn.classList.add('btn-primary');
+                }
+            }
+
+            // Init default
+            selectYear(2026);
+        </script>
+</body>
+
+</html>

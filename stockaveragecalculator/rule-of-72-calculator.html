@@ -94,8 +94,8 @@
                 </div>
 
                 <!---Menu Section-->
-                  <div hidden id="page-name">Rule of 72 Calculator</div>
-                  <div class="top-menu" id="load-menu-dynamically"></div>
+                <div hidden id="page-name">Rule of 72 Calculator</div>
+                <div class="top-menu" id="load-menu-dynamically"></div>
             </div>
             <div class="col-md-10 content-right-body-wrapper">
                 <div id="clock"></div>
@@ -116,7 +116,7 @@
                                         (%)</label>
                                     <div class="input-group">
                                         <input class="form-control" type="number" id="interestRate"
-                                        placeholder="Interest Rate (%)" />
+                                            placeholder="Interest Rate (%)" />
                                         <div class="input-group-append">
                                             <div class="input-group-text">%</div>
                                         </div>
@@ -126,7 +126,8 @@
                                         class="btn btn-success mt-2">Calculate</button>
                                     <div class="result1" id="result1">
                                         <p class="r-sip">It will take approximately <strong>0 years </strong> and
-                                            <strong>0 months </strong>to double your investment.</p>
+                                            <strong>0 months </strong>to double your investment.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -152,14 +153,14 @@
                     </div>
                     <div class="content-body-wrapper mt-4 details-sec-wrapper">
                         <h6 class="mb-2">Rule of 72 Calculator</h3>
-                        <p>The Rule of 72 Calculator is a financial tool used to estimate the time it takes for an
-                            investment to double in value based on a fixed annual interest rate or return. This is
-                            based on the "Rule of 72,"
-                            a simple mathematical formula widely used in finance and investing.</p>
-                        <p>This tool saves time and effort by automating the calculation, making it
-                            accessible even to those without financial expertise. It's ideal for individuals making
-                            quick financial assessments or planning long-term investment strategies.</p>
-                        <form>
+                            <p>The Rule of 72 Calculator is a financial tool used to estimate the time it takes for an
+                                investment to double in value based on a fixed annual interest rate or return. This is
+                                based on the "Rule of 72,"
+                                a simple mathematical formula widely used in finance and investing.</p>
+                            <p>This tool saves time and effort by automating the calculation, making it
+                                accessible even to those without financial expertise. It's ideal for individuals making
+                                quick financial assessments or planning long-term investment strategies.</p>
+                            <form>
                     </div>
                 </div>
             </div>
@@ -209,7 +210,7 @@
                 `<p class="r-sip">It will take approximately <strong>${years} years </strong>  and <strong>${months} months </strong>to double your investment.</p>`;
         }
     </script>
-    <script src="./script.min.js" crossorigin="anonymous"></script>
+    <script src="./script.js" crossorigin="anonymous"></script>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function () {
