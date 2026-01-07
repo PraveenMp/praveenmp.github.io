@@ -123,7 +123,8 @@ function getAverage() {
 
   var totalAmount = Number(((unit1 * price1) + (unit2 * price2)).toFixed(2));
   var totalUnits = +unit1 + +unit2;
-  var averagePrice = Number((((unit1 * price1) + (unit2 * price2)) / totalUnits).toFixed(2));
+  var averagePriceRaw = ((unit1 * price1) + (unit2 * price2)) / totalUnits;
+  var averagePrice = averagePriceRaw < 1 ? Number(averagePriceRaw.toFixed(4)) : Number(averagePriceRaw.toFixed(2));
   document.getElementById("investedamount1").innerHTML = "<span>The amount invested in the 1st purchase: </span>  <span class='unit-amount'>" + (unit1 * price1).toLocaleString(intlLanguage) + "</span>";
   document.getElementById("investedamount2").innerHTML = "<span>The amount invested in the 2nd purchase: </span> <span class='unit-amount'>" + (unit2 * price2).toLocaleString(intlLanguage) + "</span>";
   document.getElementById("result").innerHTML = "<span>Total units </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<bold>"
@@ -173,7 +174,8 @@ function drawGraph(unit1, price1, unit2, price2) {
   // The inner div with border-bottom is an attempt to draw the line.
   // Let's refine the HTML structure in a subsequent edit if needed, but this is a start.
 
-  var averagePrice = (totalVal / (Number(unit1) + Number(unit2))).toFixed(2);
+  var averagePriceRaw = totalVal / (Number(unit1) + Number(unit2));
+  var averagePrice = averagePriceRaw < 1 ? averagePriceRaw.toFixed(4) : averagePriceRaw.toFixed(2);
 
   // Better structure for dimensions:
   html = `
