@@ -97,5 +97,50 @@
     "FACE VALUE": 2,
     "EX-DATE": "2-Jan-26",
     "RECORD DATE": "2-Jan-26"
+  },
+  {
+    "SYMBOL": "SILGO",
+    "COMPANY NAME": "Silgo Retail Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Rights 3:10 @ Premium Rs 50/-",
+    "FACE VALUE": 10,
+    "EX-DATE": "5-Jan-26",
+    "RECORD DATE": "5-Jan-26"
+  },
+  {
+    "SYMBOL": "ORIENTTECH",
+    "COMPANY NAME": "Orient Technologies Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 1:10",
+    "FACE VALUE": 10,
+    "EX-DATE": "5-Jan-26",
+    "RECORD DATE": "5-Jan-26"
+  },
+  {
+    "SYMBOL": "FAIRCHEMOR",
+    "COMPANY NAME": "Fairchem Organics Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Buy Back",
+    "FACE VALUE": 10,
+    "EX-DATE": "5-Jan-26",
+    "RECORD DATE": "5-Jan-26"
+  },
+  {
+    "SYMBOL": "668GS2040",
+    "COMPANY NAME": "Government of India",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "6-Jan-26",
+    "RECORD DATE": "6-Jan-26"
+  },
+  {
+    "SYMBOL": "717GS2028",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "7-Jan-26",
+    "RECORD DATE": "7-Jan-26"
   }
 ]
