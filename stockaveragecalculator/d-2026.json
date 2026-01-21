@@ -1,95 +1,5 @@
 [
   {
-    "SYMBOL": "KMEW",
-    "COMPANY NAME": "Knowledge Marine & Engineering Works Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share",
-    "FACE VALUE": 5,
-    "EX-DATE": "22-Dec-25",
-    "RECORD DATE": "22-Dec-25"
-  },
-  {
-    "SYMBOL": "CRAMC",
-    "COMPANY NAME": "Canara Robeco Asset Management Company Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Rs 1.50 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "22-Dec-25",
-    "RECORD DATE": "22-Dec-25"
-  },
-  {
-    "SYMBOL": "VINEETLAB",
-    "COMPANY NAME": "Vineet Laboratories Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Rights 13:12 @ Premium Rs 20/-",
-    "FACE VALUE": 10,
-    "EX-DATE": "23-Dec-25",
-    "RECORD DATE": "23-Dec-25"
-  },
-  {
-    "SYMBOL": "PPL",
-    "COMPANY NAME": "Prakash Pipes Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Interim Dividend - Re 1 Per Share",
-    "FACE VALUE": 10,
-    "EX-DATE": "24-Dec-25",
-    "RECORD DATE": "24-Dec-25"
-  },
-  {
-    "SYMBOL": "NECLIFE",
-    "COMPANY NAME": "Nectar Lifesciences Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Buy Back",
-    "FACE VALUE": 1,
-    "EX-DATE": "24-Dec-25",
-    "RECORD DATE": "24-Dec-25"
-  },
-  {
-    "SYMBOL": "GRMOVER",
-    "COMPANY NAME": "GRM Overseas Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Bonus 2:1",
-    "FACE VALUE": 2,
-    "EX-DATE": "24-Dec-25",
-    "RECORD DATE": "24-Dec-25"
-  },
-  {
-    "SYMBOL": "DCMSRIND",
-    "COMPANY NAME": "DCM Shriram Industries Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Demerger",
-    "FACE VALUE": 2,
-    "EX-DATE": "26-Dec-25",
-    "RECORD DATE": "26-Dec-25"
-  },
-  {
-    "SYMBOL": "HILTON",
-    "COMPANY NAME": "Hilton Metal Forging Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Rights 14:29 @ Premium Rs 18.32/-",
-    "FACE VALUE": 10,
-    "EX-DATE": "26-Dec-25",
-    "RECORD DATE": "26-Dec-25"
-  },
-  {
-    "SYMBOL": "RAMRAT",
-    "COMPANY NAME": "Ram Ratna Wires Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Bonus 1:1",
-    "FACE VALUE": 5,
-    "EX-DATE": "26-Dec-25",
-    "RECORD DATE": "26-Dec-25"
-  },
-  {
-    "SYMBOL": "NUVAMA",
-    "COMPANY NAME": "Nuvama Wealth Management Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share",
-    "FACE VALUE": 2,
-    "EX-DATE": "26-Dec-25",
-    "RECORD DATE": "26-Dec-25"
-  },
-  {
     "SYMBOL": "MCX",
     "COMPANY NAME": "Multi Commodity Exchange of India Limited",
     "SERIES": "EQ",
@@ -97,6 +7,15 @@
     "FACE VALUE": 2,
     "EX-DATE": "2-Jan-26",
     "RECORD DATE": "2-Jan-26"
+  },
+  {
+    "SYMBOL": "FAIRCHEMOR",
+    "COMPANY NAME": "Fairchem Organics Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Buy Back",
+    "FACE VALUE": 10,
+    "EX-DATE": "5-Jan-26",
+    "RECORD DATE": "5-Jan-26"
   },
   {
     "SYMBOL": "SILGO",
@@ -112,15 +31,6 @@
     "COMPANY NAME": "Orient Technologies Limited",
     "SERIES": "EQ",
     "PURPOSE": "Bonus 1:10",
-    "FACE VALUE": 10,
-    "EX-DATE": "5-Jan-26",
-    "RECORD DATE": "5-Jan-26"
-  },
-  {
-    "SYMBOL": "FAIRCHEMOR",
-    "COMPANY NAME": "Fairchem Organics Limited",
-    "SERIES": "EQ",
-    "PURPOSE": "Buy Back",
     "FACE VALUE": 10,
     "EX-DATE": "5-Jan-26",
     "RECORD DATE": "5-Jan-26"
@@ -142,5 +52,131 @@
     "FACE VALUE": 100,
     "EX-DATE": "7-Jan-26",
     "RECORD DATE": "7-Jan-26"
+  },
+  {
+    "SYMBOL": "833GS2026",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "8-Jan-26",
+    "RECORD DATE": "8-Jan-26"
+  },
+  {
+    "SYMBOL": "SKMEGGPROD",
+    "COMPANY NAME": "SKM Egg Products Export (India) Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "12-Jan-26",
+    "RECORD DATE": "12-Jan-26"
+  },
+  {
+    "SYMBOL": "628GS2032",
+    "COMPANY NAME": "Government of India",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "13-Jan-26",
+    "RECORD DATE": "13-Jan-26"
+  },
+  {
+    "SYMBOL": "AIIL",
+    "COMPANY NAME": "Authum Investment & Infrastructure Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 4:1",
+    "FACE VALUE": 1,
+    "EX-DATE": "13-Jan-26",
+    "RECORD DATE": "13-Jan-26"
+  },
+  {
+    "SYMBOL": "726GS2029",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "13-Jan-26",
+    "RECORD DATE": "13-Jan-26"
+  },
+  {
+    "SYMBOL": "AJMERA",
+    "COMPANY NAME": "Ajmera Realty & Infra India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "14-Jan-26",
+    "RECORD DATE": "15-Jan-26"
+  },
+  {
+    "SYMBOL": "KOTAKBANK",
+    "COMPANY NAME": "Kotak Mahindra Bank Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 5/- Per Share To Re 1/- Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "14-Jan-26",
+    "RECORD DATE": "14-Jan-26"
+  },
+  {
+    "SYMBOL": "JARO",
+    "COMPANY NAME": "Jaro Institute of Technology Management and Research Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 2 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "16-Jan-26",
+    "RECORD DATE": "16-Jan-26"
+  },
+  {
+    "SYMBOL": "HCLTECH",
+    "COMPANY NAME": "HCL Technologies Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 12 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "16-Jan-26",
+    "RECORD DATE": "17-Jan-26"
+  },
+  {
+    "SYMBOL": "TCS",
+    "COMPANY NAME": "Tata Consultancy Services Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend Rs 11 Per Share/ Special Dividend Rs 46 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "16-Jan-26",
+    "RECORD DATE": "17-Jan-26"
+  },
+  {
+    "SYMBOL": "683GS2039",
+    "COMPANY NAME": "GOVERNMENT OF INDIA",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "16-Jan-26",
+    "RECORD DATE": "17-Jan-26"
+  },
+  {
+    "SYMBOL": "BESTAGRO",
+    "COMPANY NAME": "Best Agrolife Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 1:2",
+    "FACE VALUE": 1,
+    "EX-DATE": "16-Jan-26",
+    "RECORD DATE": "16-Jan-26"
+  },
+  {
+    "SYMBOL": "TEMBO",
+    "COMPANY NAME": "Tembo Global Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 1 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "16-Jan-26",
+    "RECORD DATE": "16-Jan-26"
+  },
+  {
+    "SYMBOL": "BESTAGRO",
+    "COMPANY NAME": "Best Agrolife Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share ",
+    "FACE VALUE": 1,
+    "EX-DATE": "16-Jan-26",
+    "RECORD DATE": "16-Jan-26"
   }
 ]
