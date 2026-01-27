@@ -178,5 +178,158 @@
     "FACE VALUE": 1,
     "EX-DATE": "16-Jan-26",
     "RECORD DATE": "16-Jan-26"
+  },
+   {
+    "SYMBOL": "601GS2030",
+    "COMPANY NAME": "Government of India",
+    "SERIES": "GS",
+    "PURPOSE": "Interest Payment",
+    "FACE VALUE": 100,
+    "EX-DATE": "20-Jan-26",
+    "RECORD DATE": "20-Jan-26"
+  },
+  {
+    "SYMBOL": "NLCINDIA",
+    "COMPANY NAME": "NLC India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 3.60 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "20-Jan-26",
+    "RECORD DATE": "20-Jan-26"
+  },
+  {
+    "SYMBOL": "MAHABANK",
+    "COMPANY NAME": "Bank of Maharashtra",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 1 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "20-Jan-26",
+    "RECORD DATE": "20-Jan-26"
+  },
+  {
+    "SYMBOL": "ANGELONE",
+    "COMPANY NAME": "Angel One Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 23 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "21-Jan-26",
+    "RECORD DATE": "21-Jan-26"
+  },
+  {
+    "SYMBOL": "ICICIAMC",
+    "COMPANY NAME": "ICICI Prudential Asset Management Company Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 14.85 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "21-Jan-26",
+    "RECORD DATE": "21-Jan-26"
+  },
+  {
+    "SYMBOL": "DBCORP",
+    "COMPANY NAME": "D.B.Corp Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 2 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "22-Jan-26",
+    "RECORD DATE": "22-Jan-26"
+  },
+  {
+    "SYMBOL": "TIPSMUSIC",
+    "COMPANY NAME": "Tips Music Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 5 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "23-Jan-26",
+    "RECORD DATE": "23-Jan-26"
+  },
+  {
+    "SYMBOL": "SURAJLTD",
+    "COMPANY NAME": "Suraj Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 1.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "23-Jan-26",
+    "RECORD DATE": "23-Jan-26"
+  },
+  {
+    "SYMBOL": "DCMSHRIRAM",
+    "COMPANY NAME": "DCM Shriram Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 3.60 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "23-Jan-26",
+    "RECORD DATE": "24-Jan-26"
+  },
+  {
+    "SYMBOL": "HAVELLS",
+    "COMPANY NAME": "Havells India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 4 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "23-Jan-26",
+    "RECORD DATE": "23-Jan-26"
+  },
+  {
+    "SYMBOL": "CENTRALBK",
+    "COMPANY NAME": "Central Bank of India",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Re 0.20 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "23-Jan-26",
+    "RECORD DATE": "23-Jan-26"
+  },
+  {
+    "SYMBOL": "OBEROIRLTY",
+    "COMPANY NAME": "Oberoi Realty Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 2 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "23-Jan-26",
+    "RECORD DATE": "23-Jan-26"
+  },
+  {
+    "SYMBOL": "PERSISTENT",
+    "COMPANY NAME": "Persistent Systems Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 22 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "27-Jan-26",
+    "RECORD DATE": "27-Jan-26"
+  },
+  {
+    "SYMBOL": "SRF",
+    "COMPANY NAME": "SRF Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 5 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "27-Jan-26",
+    "RECORD DATE": "27-Jan-26"
+  },
+  {
+    "SYMBOL": "WIPRO",
+    "COMPANY NAME": "Wipro Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 6 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "27-Jan-26",
+    "RECORD DATE": "27-Jan-26"
+  },
+  {
+    "SYMBOL": "KSOLVES",
+    "COMPANY NAME": "Ksolves India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 5 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "27-Jan-26",
+    "RECORD DATE": "27-Jan-26"
+  },
+  {
+    "SYMBOL": "UNITDSPR",
+    "COMPANY NAME": "United Spirits Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 6 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "27-Jan-26",
+    "RECORD DATE": "27-Jan-26"
   }
 ]
