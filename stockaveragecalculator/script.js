@@ -756,7 +756,7 @@ class StockDataManager {
       let extraFields = '';
       if (this.config.type === 'dividend') {
         const amount = this.extractDividendAmount(purposeFull);
-        extraFields = `<div class="stock-dividend"><strong>Amount:</strong> <b><i>${amount}</i></b></div>`;
+        extraFields = `<div class="stock-dividend"><strong>Amount:</strong> <b><i><span class="stock-amount">${amount}</span></i></b></div>`;
       }
 
       card.innerHTML = `

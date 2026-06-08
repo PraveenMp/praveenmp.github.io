@@ -7,6 +7,14 @@ html {
   width: 60%;
 }
 
+.stock-amount {
+  color: #2c7045;
+}
+
+.stock-amount, .stock-dividend {
+  font-size: 18px;
+}
+
 .ticker-container {
   background: #ffffff;
   overflow: hidden;
