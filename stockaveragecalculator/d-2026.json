@@ -4471,5 +4471,401 @@
     "FACE VALUE": 10,
     "EX-DATE": "08-Jun-26",
     "RECORD DATE": "08-Jun-26"
+  },
+  {
+    "SYMBOL": "INOXINDIA",
+    "COMPANY NAME": "INOX India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 2 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "09-Jun-26",
+    "RECORD DATE": "09-Jun-26"
+  },
+  {
+    "SYMBOL": "NELCO",
+    "COMPANY NAME": "NELCO Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 1 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "09-Jun-26",
+    "RECORD DATE": "09-Jun-26"
+  },
+  {
+    "SYMBOL": "INDIANB",
+    "COMPANY NAME": "Indian Bank",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 18.25 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "10-Jun-26",
+    "RECORD DATE": "10-Jun-26"
+  },
+  {
+    "SYMBOL": "SESHAPAPER",
+    "COMPANY NAME": "Seshasayee Paper and Boards Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 2 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "10-Jun-26",
+    "RECORD DATE": "10-Jun-26"
+  },
+  {
+    "SYMBOL": "TATACHEM",
+    "COMPANY NAME": "Tata Chemicals Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 11 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "10-Jun-26",
+    "RECORD DATE": "10-Jun-26"
+  },
+  {
+    "SYMBOL": "TATAINVEST",
+    "COMPANY NAME": "Tata Investment Corporation Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 3.40 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "10-Jun-26",
+    "RECORD DATE": "10-Jun-26"
+  },
+  {
+    "SYMBOL": "TATAELXSI",
+    "COMPANY NAME": "Tata Elxsi Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 75 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "10-Jun-26",
+    "RECORD DATE": "10-Jun-26"
+  },
+  {
+    "SYMBOL": "INFY",
+    "COMPANY NAME": "Infosys Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 25 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "10-Jun-26",
+    "RECORD DATE": "10-Jun-26"
+  },
+  {
+    "SYMBOL": "RIIL",
+    "COMPANY NAME": "Reliance Industrial Infrastructure Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 3.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "EIMCOELECO",
+    "COMPANY NAME": "Eimco Elecon (India) Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 4 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "ELECON",
+    "COMPANY NAME": "Elecon Engineering Company Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 1.5 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "ICICIAMC",
+    "COMPANY NAME": "ICICI Prudential Asset Management Company Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 12.40 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "DCBBANK",
+    "COMPANY NAME": "DCB Bank Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 1.45 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "CUB",
+    "COMPANY NAME": "City Union Bank Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 1:3",
+    "FACE VALUE": 1,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "PNB",
+    "COMPANY NAME": "Punjab National Bank",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 3 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "13-Jun-26"
+  },
+  {
+    "SYMBOL": "PIRAMALFIN",
+    "COMPANY NAME": "Piramal Finance Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 11 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "PETRONET",
+    "COMPANY NAME": "Petronet LNG Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 3 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "ORIENTCEM",
+    "COMPANY NAME": "Orient Cement Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 0.50 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "CEMPRO",
+    "COMPANY NAME": "Cemindia Projects Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 3 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "CANBK",
+    "COMPANY NAME": "Canara Bank",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 4.20 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "NAVINFLUOR",
+    "COMPANY NAME": "Navin Fluorine International Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 8.60 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "ATGL",
+    "COMPANY NAME": "Adani Total Gas Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 0.25 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "AVANTEL",
+    "COMPANY NAME": "Avantel Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 0.20 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "MMFL",
+    "COMPANY NAME": "MM Forgings Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 4 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "APCOTEXIND",
+    "COMPANY NAME": "Apcotex Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 5.50 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "AMBUJACEM",
+    "COMPANY NAME": "Ambuja Cements Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 2 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "ADANIPORTS",
+    "COMPANY NAME": "Adani Ports and Special Economic Zone Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 7.50 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "VOLTAS",
+    "COMPANY NAME": "Voltas Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 4 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "SUMEETINDS",
+    "COMPANY NAME": "Sumeet Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Rights 8:25 @ Premium Rs 9.86/-",
+    "FACE VALUE": 2,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "TATASTEEL",
+    "COMPANY NAME": "Tata Steel Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 4 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "JMFINANCIL",
+    "COMPANY NAME": "JM Financial Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 1.75 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "TMB",
+    "COMPANY NAME": "Tamilnad Mercantile Bank Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 12.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "TMCV",
+    "COMPANY NAME": "Tata Motors Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 4 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "TRENT",
+    "COMPANY NAME": "Trent Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 4 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "LLOYDSME",
+    "COMPANY NAME": "Lloyds Metals And Energy Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 1 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "ACC",
+    "COMPANY NAME": "ACC Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 7.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "ADANIENT",
+    "COMPANY NAME": "Adani Enterprises Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 1.30 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "12-Jun-26",
+    "RECORD DATE": "12-Jun-26"
+  },
+  {
+    "SYMBOL": "SMCGLOBAL",
+    "COMPANY NAME": "SMC Global Securities Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 0.60 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "15-Jun-26",
+    "RECORD DATE": "15-Jun-26"
+  },
+  {
+    "SYMBOL": "RRKABEL",
+    "COMPANY NAME": "R R Kabel Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 5.50 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "16-Jun-26",
+    "RECORD DATE": "16-Jun-26"
+  },
+  {
+    "SYMBOL": "STEELCITY",
+    "COMPANY NAME": "Steel City Securities Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 1 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "16-Jun-26",
+    "RECORD DATE": "16-Jun-26"
+  },
+  {
+    "SYMBOL": "KRISHANA",
+    "COMPANY NAME": "Krishana Phoschem Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 0.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "17-Jun-26",
+    "RECORD DATE": "17-Jun-26"
+  },
+  {
+    "SYMBOL": "BRIGADE",
+    "COMPANY NAME": "Brigade Enterprises Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Bonus 1:3",
+    "FACE VALUE": 10,
+    "EX-DATE": "17-Jun-26",
+    "RECORD DATE": "17-Jun-26"
+  },
+  {
+    "SYMBOL": "CYIENT",
+    "COMPANY NAME": "Cyient Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Buy Back",
+    "FACE VALUE": 5,
+    "EX-DATE": "17-Jun-26",
+    "RECORD DATE": "17-Jun-26"
+  },
+  {
+    "SYMBOL": "MBAPL",
+    "COMPANY NAME": "Madhya Bharat Agro Products Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 0.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "17-Jun-26",
+    "RECORD DATE": "17-Jun-26"
   }
 ]
