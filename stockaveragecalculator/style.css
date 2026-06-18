@@ -53,6 +53,24 @@ html {
   display: none;
 }
 
+/* Show-only-on-mobile helper class
+   Usage: add `only-mobile` to elements that should be hidden on desktop
+   and visible on small screens (<=768px). */
+.only-mobile {
+  display: none !important;
+}
+
+/* Remove padding on desktop only */
+.padding-0-desktop {
+  /* default: do nothing on small screens */
+}
+
+@media only screen and (min-width: 992px) {
+  .padding-0-desktop {
+    padding: 0 !important;
+  }
+}
+
 
 label {
   font-weight: 500;
@@ -476,6 +494,10 @@ footer {
   .hidden-on-desktop-tablet {
     display: block;
     margin: 5px 0px;
+  }
+
+  .only-mobile {
+    display: inline-block !important;
   }
 
   /* .wrapper-body {
