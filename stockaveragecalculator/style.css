@@ -442,6 +442,23 @@ footer {
   display: none;
 }
 
+.stock-market-updates-card {
+  font-size: 14px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.stock-market-updates-card .list-group-item {
+  font-size: 14px;
+  text-align: left;
+  line-height: 1.5;
+  padding: 0.5rem 0.75rem;
+}
+
+.stock-market-updates-card .list-group {
+  margin-bottom: 0;
+}
+
 @media only screen and (max-width: 768px) {
 
 
