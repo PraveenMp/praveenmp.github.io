@@ -949,6 +949,21 @@ body.dark-mode,
   color: #000;
 }
 
+.dark-mode .stock-market-updates-card {
+  background-color: #1a1a1a;
+  color: #f1f1f1;
+}
+
+.dark-mode .stock-market-updates-card .list-group-item {
+  background-color: #1a1a1a;
+  color: #f1f1f1;
+  border-color: #444;
+}
+
+.dark-mode .stock-market-updates-card strong {
+  color: #ffffff;
+}
+
 /* ===================== Stock Card Grid (Bonus & Buyback) ===================== */
 .stock-card-grid {
   display: grid;
