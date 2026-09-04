@@ -9952,5 +9952,500 @@
     "FACE VALUE": 2,
     "EX-DATE": "01-Sep-26",
     "RECORD DATE": "01-Sep-26"
+  },
+  {
+    "SYMBOL": "INDIAGLYCO",
+    "COMPANY NAME": "India Glycols Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Demerger",
+    "FACE VALUE": 5,
+    "EX-DATE": "02-Sep-26",
+    "RECORD DATE": "02-Sep-26"
+  },
+  {
+    "SYMBOL": "TBZ",
+    "COMPANY NAME": "Tribhovandas Bhimji Zaveri Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 2.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "02-Sep-26",
+    "RECORD DATE": "02-Sep-26"
+  },
+  {
+    "SYMBOL": "BLACKROSE",
+    "COMPANY NAME": "Black Rose Inds. Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 1.25 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "02-Sep-26",
+    "RECORD DATE": "02-Sep-26"
+  },
+  {
+    "SYMBOL": "TRITURBINE",
+    "COMPANY NAME": "Triveni Turbine Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 2 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "02-Sep-26",
+    "RECORD DATE": "02-Sep-26"
+  },
+  {
+    "SYMBOL": "GAIL",
+    "COMPANY NAME": "GAIL (India) Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 0.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "02-Sep-26",
+    "RECORD DATE": "02-Sep-26"
+  },
+  {
+    "SYMBOL": "GEEKAYWIRE",
+    "COMPANY NAME": "Geekay Wires Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 0.35 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "02-Sep-26",
+    "RECORD DATE": "02-Sep-26"
+  },
+  {
+    "SYMBOL": "DRAGARWQ",
+    "COMPANY NAME": "Dr Agarwals Eye Hospital Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 4 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "02-Sep-26",
+    "RECORD DATE": "02-Sep-26"
+  },
+  {
+    "SYMBOL": "GPPL",
+    "COMPANY NAME": "Gujarat Pipavav Port Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 5 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "02-Sep-26",
+    "RECORD DATE": "02-Sep-26"
+  },
+  {
+    "SYMBOL": "CHEMFAB",
+    "COMPANY NAME": "Chemfab Alkalis Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 1.25 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "02-Sep-26",
+    "RECORD DATE": "02-Sep-26"
+  },
+  {
+    "SYMBOL": "COMPUSOFT",
+    "COMPANY NAME": "Compucom Software Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 0.25 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "02-Sep-26",
+    "RECORD DATE": "02-Sep-26"
+  },
+  {
+    "SYMBOL": "NTPC",
+    "COMPANY NAME": "NTPC Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 3.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "02-Sep-26",
+    "RECORD DATE": "02-Sep-26"
+  },
+  {
+    "SYMBOL": "BIRLAPREC",
+    "COMPANY NAME": "Birla Precision Technologies Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 0.05 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "03-Sep-26",
+    "RECORD DATE": "03-Sep-26"
+  },
+  {
+    "SYMBOL": "CARRARO",
+    "COMPANY NAME": "Carraro India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 6.75 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "03-Sep-26",
+    "RECORD DATE": "03-Sep-26"
+  },
+  {
+    "SYMBOL": "VADILALIND",
+    "COMPANY NAME": "Vadilal Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 43 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "03-Sep-26",
+    "RECORD DATE": "03-Sep-26"
+  },
+  {
+    "SYMBOL": "ACE",
+    "COMPANY NAME": "Action Construction Equipment Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 2 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "03-Sep-26",
+    "RECORD DATE": "03-Sep-26"
+  },
+  {
+    "SYMBOL": "NIRLON",
+    "COMPANY NAME": "Nirlon Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 15 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "03-Sep-26",
+    "RECORD DATE": "03-Sep-26"
+  },
+  {
+    "SYMBOL": "INTERARCH",
+    "COMPANY NAME": "Interarch Building Solutions Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 12.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "03-Sep-26",
+    "RECORD DATE": "03-Sep-26"
+  },
+  {
+    "SYMBOL": "PVRINOX",
+    "COMPANY NAME": "PVR INOX Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Buy Back",
+    "FACE VALUE": 10,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "SPAL",
+    "COMPANY NAME": "S. P. Apparels Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 3 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "SPECIALITY",
+    "COMPANY NAME": "Speciality Restaurants Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 1 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "SPORTKING",
+    "COMPANY NAME": "Sportking India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 1 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "05-Sep-26"
+  },
+  {
+    "SYMBOL": "STOVEKRAFT",
+    "COMPANY NAME": "Stove Kraft Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 3.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "MAZDA",
+    "COMPANY NAME": "Mazda Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 4 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "SUPRIYA",
+    "COMPANY NAME": "Supriya Lifescience Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 1 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "ARVIND",
+    "COMPANY NAME": "Arvind Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 4.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "HITECHCORP",
+    "COMPANY NAME": "Hitech Corporation Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 1 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "CLEAN",
+    "COMPANY NAME": "Clean Science and Technology Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 4 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "05-Sep-26"
+  },
+  {
+    "SYMBOL": "COALINDIA",
+    "COMPANY NAME": "Coal India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 5.25 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "INDIGOPNTS",
+    "COMPANY NAME": "Indigo Paints Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 5 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "EMCURE",
+    "COMPANY NAME": "Emcure Pharmaceuticals Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 3.60 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "FCL",
+    "COMPANY NAME": "Fineotex Chemical Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 0.05 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "FINCABLES",
+    "COMPANY NAME": "Finolex Cables Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 9 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "FMGOETZE",
+    "COMPANY NAME": "Federal-Mogul Goetze (India) Limited.",
+    "SERIES": "EQ",
+    "PURPOSE": "Interim Dividend - Rs 7.50 Per Share & Special Dividend Rs 86.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "GICRE",
+    "COMPANY NAME": "General Insurance Corporation of India",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 13.25 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "CGCL",
+    "COMPANY NAME": "Capri Global Capital Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 0.20 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "GULFOILLUB",
+    "COMPANY NAME": "Gulf Oil Lubricants India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 30 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "AIAENG",
+    "COMPANY NAME": "AIA Engineering Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 16 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "05-Sep-26"
+  },
+  {
+    "SYMBOL": "SHILPAMED",
+    "COMPANY NAME": "Shilpa Medicare Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 0.60 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "POEL",
+    "COMPANY NAME": "POCL Enterprises Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 0.80 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "SCILAL",
+    "COMPANY NAME": "Shipping Corporation of India Land and Assets Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 0.55 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "SCI",
+    "COMPANY NAME": "Shipping Corporation Of India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 1 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "PARADEEP",
+    "COMPANY NAME": "Paradeep Phosphates Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 1.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "ONGC",
+    "COMPANY NAME": "Oil & Natural Gas Corporation Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 1 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "OMINFRAL",
+    "COMPANY NAME": "OM INFRA LIMITED",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 0.50 Per Share",
+    "FACE VALUE": 1,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "OIL",
+    "COMPANY NAME": "Oil India Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 1 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "VENUSPIPES",
+    "COMPANY NAME": "Venus Pipes & Tubes Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 0.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "NAHARSPING",
+    "COMPANY NAME": "Nahar Spinning Mills Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 1 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "NAHARPOLY",
+    "COMPANY NAME": "Nahar Poly Films Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 1.50 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "NAHARCAP",
+    "COMPANY NAME": "Nahar Capital and Financial Services Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 1.50 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "TCC",
+    "COMPANY NAME": "TCC Concept Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "JOCIL",
+    "COMPANY NAME": "Jocil Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 3.50 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "MMP",
+    "COMPANY NAME": "MMP Industries Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 2 Per Share",
+    "FACE VALUE": 10,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "05-Sep-26"
+  },
+  {
+    "SYMBOL": "HIKAL",
+    "COMPANY NAME": "Hikal Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Re 0.40 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "JAGSNPHARM",
+    "COMPANY NAME": "Jagsonpal Pharmaceuticals Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 4 Per Share",
+    "FACE VALUE": 2,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
+  },
+  {
+    "SYMBOL": "METROBRAND",
+    "COMPANY NAME": "Metro Brands Limited",
+    "SERIES": "EQ",
+    "PURPOSE": "Dividend - Rs 3 Per Share",
+    "FACE VALUE": 5,
+    "EX-DATE": "04-Sep-26",
+    "RECORD DATE": "04-Sep-26"
   }
 ]
